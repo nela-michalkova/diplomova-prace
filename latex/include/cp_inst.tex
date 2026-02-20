@@ -1,0 +1,232 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toto je inkludovaný LaTeXový soubor `cp_inst.tex'.           %%
+%% ------------------------------------------------------------ %%
+%% Verze 2022-05-23                                             %%
+%% Vyvíjí & udržuje <stanislav.hledik@physics.slu.cz>           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Instalace}\label{install}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Získání balíčku \ipotname{}}\label{instgetpack}%%%%%%%%%%%%%%%%%%%
+
+Domovská stránka balíčku \pkg{\ipotname} je \theshome, sekce \TeX. Můžete se
+rozhodnout pro jeden z~následujících způsobů instalace: \uv{vše v~jednom} nebo
+\uv{zdrojové texty a knihovny odděleně}. Ke stažení pro vás vhodné varianty
+využijte odkazů v~textu níže. Kontrolní součty jsou v~souboru
+\href{https://is.slu.cz/www/hle0002/vyuka/aid/ipothes/CHECKSUMS.md5}%
+{\pgm{CHECKSUMS.md5}}.
+
+\section{Instalace \uv{vše v~jednom}}\label{installinone}%%%%%%%%%%%%%%%%%%
+
+Stáhněte si archiv
+\href{https://is.slu.cz/www/hle0002/vyuka/aid/ipothes/vzorova\_prace.ipothes.zip}%
+{\pgm{\thesnamecze .\ipotname .zip}} obsahující ve společném adresáři
+\pgm{manual} po rozbalení kromě nezbytných \LaTeX ových
+knihoven\footnote{Dokumentní třída, bibliografický styl, lokalizační soubory a
+  systémové obrázky s~fiktivním zadáním a aktuálně se znaky Fyzikálního ústavu
+  v~Opavě, Fi\-lo\-zo\-fic\-ko-pří\-ro\-do\-vě\-dec\-ké fakulty v~Opavě a
+  Matematického ústavu v~Opavě.} také zdrojové soubory nutné pro kompilaci
+tohoto hypertextového českého manuálu
+\href{https://is.slu.cz/www/hle0002/vyuka/aid/ipothes/vzorova\_prace.pdf}%
+{\pgm{\thesnamecze .pdf}}.\footnote{Není součástí výše uvedeného archivu, jenž
+  neobsahuje výstupy ani intermediální soubory \pgm{*.aux}, \pgm{*.log},
+  \pgm{*.toc}, \pgm{*.lof}, \pgm{*.lot}, \pgm{*.out}, \pgm{*.bbl},
+  \pgm{*.blg}, \pgm{*.idx}, \pgm{*.ind}, \pgm{*.ilg}.} Tuto možnost nejspíše
+zvolí uživatelé, kteří zamýšlejí využít \pkg{\ipotname} pouze pro jednorázové
+napsání závěrečné práce a nechtějí si jím \uv{kontaminovat} svůj \TeX{}
+systém. Je rovněž určena pro uživatele cloudového systému
+Overleaf~\cite{Ovr:LIVE::Overleaf}.\footnote{Výhodou je také, že po dokončení
+  práce a archivování se uchovají pohromadě zdrojové texty i~\LaTeX ové
+  knihovny (jež budou pravděpodobně vyvíjeny bez záruky zpětné kompatibility),
+  takže kompatibilita je víceméně zachována. Nevýhodou je vyšší míra chaosu ve
+  vašem pracovním adresáři.}
+
+Váš \TeX{} systém není třeba v~tomto případě nijak konfigurovat, všechny
+soubory budou nalezeny. V~pracovním adresáři \pgm{manual} (klidně si jej
+přejmenujte) si vytvořte nový vlastní hlavní \LaTeX ový soubor a případně
+i~inkludované soubory \pgm{include/*.tex} podle ukázkového hlavního \LaTeX
+ového souboru \pgm{\thesnamecze .tex}\footnote{Velmi doporučujeme, aby
+  v~názvech vašich zdrojových souborů ani v~cestách k~nim nebyly znaky
+  s~diakritikou a mezery. Ušetříte si tím možná nepříjemná překvapení.} nebo
+pokračujte formou přejmenovávání a editace obsahu zdrojáků tohoto manuálu.
+
+\section{Instalace \uv{zdrojové texty a knihovny odděleně}}\label{instsepar}%%
+
+Stáhněte si archivy
+
+\begin{enumerate}
+\item \href{https://is.slu.cz/www/hle0002/vyuka/aid/ipothes/ipothes.tds.zip}%
+  {\pgm{\ipotname .tds.zip}} obsahující pouze knihovní
+  soubory\footnote{Dokumentní třída, bibliografický styl, dokumentační
+    soubory, lokalizační soubory a systémové obrázky s~fiktivním zadáním a
+    aktuálně se znaky Fyzikálního ústavu v~Opavě,
+    Fi\-lo\-zo\-fic\-ko-pří\-ro\-do\-vě\-dec\-ké fakulty v~Opavě a
+    Matematického ústavu v~Opavě.} uložené v~kanonické adresářové struktuře
+  požadované systémem \TeX~\cite{Sch:LIVE::TDS}, a to v~adresářích
+  \pgm{bibtex}, \pgm{doc} a \pgm{tex} a struktuře pod nimi;
+\item
+  \href{https://is.slu.cz/www/hle0002/vyuka/aid/ipothes/vzorova\_prace.zip}%
+  {\pgm{\thesnamecze .zip}} obsahující v~adresáři \pgm{manual} pouze zdrojové
+  soubory nutné ke kompilaci tohoto českého manuálu
+  \href{https://is.slu.cz/www/hle0002/vyuka/aid/ipothes/vzorova\_prace.pdf}%
+  {\pgm{\thesnamecze .pdf}}.\footnote{Není součástí výše uvedeného archivu,
+    jenž neobsahuje výstupy ani intermediální soubory \pgm{*.aux},
+    \pgm{*.log}, \pgm{*.toc}, \pgm{*.lof}, \pgm{*.lot}, \pgm{*.out},
+    \pgm{*.bbl}, \pgm{*.blg}, \pgm{*.idx}, \pgm{*.ind}, \pgm{*.ilg}.}
+\end{enumerate}
+
+\noindent
+Tato možnost je vhodná pro ty uživatele, kteří si chtějí integrovat balíček
+\pkg{\ipotname} do svého \TeX{} systému, takže jej budou moci využívat pro
+více projektů.
+
+\begin{figure}[p]
+\setlength{\fboxsep}{0sp}
+\begin{center}
+\fbox{\includegraphics[width=.86\linewidth]{MiKTeXdirs}}
+\end{center}
+\caption[Přidání adresáře do cest \distroMiKTeX u]%
+{\label{MiKTeXdirs}Přidání adresáře do cest distribuce \distroMiKTeX .}
+\end{figure}
+
+\begin{figure}[p]
+\setlength{\fboxsep}{0sp}
+\begin{center}
+\fbox{\includegraphics[width=.86\linewidth]{TeXLiveInstaller1}}
+\end{center}
+\caption[Přidání adresáře do cest \distroTeXLive]%
+{\label{TeXLivedirs}Přidání adresáře do cest distribuce \distroTeXLive{} (TEXMFHOME).}
+\end{figure}
+
+Integraci provedete rozbalením prvního archivu včetně celých adresářových
+stromů do libovolného adresáře,\footnote{Název a cesta opět bez znaků
+  s~diakritikou a mezer.}  který následně pomocí konsole vašeho \TeX{} systému
+přidáte do databáze prohledávaných cest. Kupříkladu v~konsoli distribuce
+\distroMiKTeX~\cite{Sch:LIVE::MiKTeX} použijete postup znázorněný na
+obrázku~\ref{MiKTeXdirs}, v~instalátoru distribuce
+\distroTeXLive~\cite{TUG:LIVE::TeXLive} použijete postup znázorněný na
+obrázku~\ref{TeXLivedirs}, přičemž obsah archivu byl v~obou případech rozbalen
+to prázdného adresáře \pgm{texmf}. Po přidání cesty je třeba aktualizovat
+databázi prohledávaných cest; příklad tohoto kroku v~\distroMiKTeX u je na
+obrázku~\ref{MiKTeXrefr}, v~\distroTeXLive{} na obrázku~\ref{TeXLiverefr}.
+
+\begin{figure}[p]
+\setlength{\fboxsep}{0sp}
+\begin{center}
+\fbox{\includegraphics[width=.82\linewidth]{MiKTeXrefr}}
+\end{center}
+\caption[Aktualizace databáze cest \distroMiKTeX u]%
+{\label{MiKTeXrefr}Aktualizace databáze cest distribuce \distroMiKTeX .}
+\end{figure}
+
+\begin{figure}[p]
+\setlength{\fboxsep}{0sp}
+\begin{center}
+\fbox{\includegraphics[width=.82\linewidth]{TeXLiveShell}}
+\end{center}
+\caption[Aktualizace databáze cest \distroTeXLive]%
+{\label{TeXLiverefr}Aktualizace databáze cest distribuce \distroTeXLive .}
+\end{figure}
+
+Alternativní možností je rozbalení prvního archivu včetně celých adresářových
+stromů do některého ze systémových adresářů vaší instalace \TeX
+u.\footnote{V~\distroMiKTeX u např. do \pgm{c:\textbackslash
+    Users\textbackslash username\textbackslash AppData\textbackslash
+    Roaming\textbackslash MiKTeX}.}  Takový adresář není třeba přidávat do
+databáze prohledávaných cest (již v~ní je), opět je však třeba aktualizovat
+databázi prohledávaných cest podle obrázku~\ref{MiKTeXrefr}
+nebo~\ref{TeXLiverefr}.
+
+S~obsahem druhého archivu, \pgm{\thesnamecze .zip}, pak naložíte způsobem
+analogickým jako v~Sekci~\ref{installinone}. Nebude již obsahovat nepřehledné
+množství systémových souborů, funkčnost však bude identická.
+
+\section{Testování}\label{insttest}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Po instalaci libovolným z~obou výše popsaných způsobů doporučujeme otestovat
+funkčnost balíčku \pkg{\ipotname} v~\TeX{} systému na vašem počítači
+následovně. Aniž byste na zdrojových textech či názvech adresářů cokoli
+měnili, přemístěte se do adresáře s~fiktivní závěrečnou prací \pgm{manual} a
+proveďte kompilaci pomocí formátu pdf\LaTeX, poté zformátujte bibliografii
+pomocí \BibTeX u, a nakonec kompilujte pdf\LaTeX em tolikrát, dokud z~logu
+nezmizí hlášky typu\footnote{Jsou-li příkazy \pgm{\textbackslash cite}
+  přítomny přímo v~bibliografických položkách v~\pgm{*.bib} souborech, což je
+  případ tohoto manuálu, je zapotřebí dokonce dvojí zpracování \BibTeX em:
+  nejprve pdf\LaTeX, poté \BibTeX, pdf\LaTeX, opět \BibTeX, a pdf\LaTeX{}
+  tolikrát, dokud nezmizí uvedené hlášky.}
+
+{\small
+\begin{verbatim}
+Package natbib Warning: There were undefined citations.
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed.
+               Rerun to get cross-references right.
+\end{verbatim}
+\par}
+
+Mějte na paměti, že některá IDE jako např. TeXworks distribuovaný jako součást
+\distroMiKTeX u mají implicitně nastavenu kompilaci
+pdf\LaTeX${}+{}$\MakeIndex${}+{}$\BibTeX; toto je třeba změnit na kompilaci
+pouze pdf\LaTeX em a \BibTeX em podle obrázku~\ref{TeXworksCompile}: nechceme
+aktualizovat soubor s~vytvořeným rejstříkem \pgm{\thesnamecze .ind} a
+spouštění pomocného programu \MakeIndex{} je zbytečné. Uživatelé linuxového
+shellu~\cite{Sie:1999:LinuxNutshell:} mohou kompilovat pomocí příkazového
+řádku jako na obrázku~\ref{BashCompile}.
+
+\begin{figure}[t]
+\setlength{\fboxsep}{0sp}
+\begin{minipage}{.48\linewidth}
+\begin{center}
+\fbox{\includegraphics[width=0.99\linewidth]{TeXworks_pdfLaTeX}}
+\end{center}
+\end{minipage}\hfill%
+\begin{minipage}{.48\linewidth}
+\begin{center}
+\fbox{\includegraphics[width=0.99\linewidth]{TeXworks_TypesetMenu}}
+\end{center}
+\end{minipage}
+\caption[Nastavení testovací kompilace v~IDE TeXworks]%
+{\label{TeXworksCompile}Nastavení testovací kompilace v~integrovaném vývojovém
+  prostředí TeXworks z~distribuce \distroMiKTeX .}
+\end{figure}
+\begin{figure}[t]
+{\small
+\begin{verbatim}
+$ c=pdflatex; i=vzorova_prace; $c $i; bibtex $i; $c $i; $c $i
+\end{verbatim}
+\par}
+\caption[Testovací kompilace v~bash]%
+{\label{BashCompile}Testovací kompilace v~shellu \pkg{bash}. Počet běhů
+  pdf\LaTeX u (\pgm{\$c \$i}) po sestavení bibliografie může být v~případě
+  potřeby zvýšen.}
+\end{figure}
+
+Kompilace by měla proběhnout bez chyb, pochopitelně po \emph{on the fly}
+doinstalaci chybějících požadovaných balíčků při první kompilaci, jak to dělá
+např. distribuce \distroMiKTeX~\cite{Sch:LIVE::MiKTeX} (což může trvat nějaký
+čas). Jejím výsledkem by měl být hypertextový \designation{pdf} soubor
+\pgm{\thesnamecze .pdf} obsahově shodný s~tímto manuálem ve formě fiktivní
+závěrečné práce.\footnote{Velikost se může lišit podle nastavené komprese
+  \designation{pdf}.}
+
+Proběhla-li kompilace bez chyb, lze bez obav začít používat balíček
+\pkg{\ipotname} pro přípravu vlastní práce.
+
+Pokud nic z~výše uvedeného nefunguje, kontaktujte lokálního \TeX ového wizarda
+nebo se obraťe o~radu na \url{https://tex.stackexchange.com/} resp.
+\url{https://stackoverflow.com/questions/tagged/latex}.
+
+\section{Copyright}\label{copyright}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Balíček \pkg{\ipotname} je freeware. Omezení: kýmkoli (kromě autora) provedená
+jakákoli úprava nesmí být distribuována pod stejným jménem, včetně jmen
+adresářů, souborů s~dokumentní třídou, bibliografickým stylem, a všech výskytů
+retězce \pgm{"\ipotname "} v~nich a ve zdrojových, konfiguračních a ostatních
+textových souborech knihovny a manuálu.
+
+\endinput
+
+%% 
+%% End of file `cp_inst.tex'.

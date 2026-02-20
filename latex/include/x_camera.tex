@@ -1,0 +1,515 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toto je inkludovaný LaTeXový soubor `x_camera.tex'.          %%
+%% This is the `x_camera.tex' included LaTeX file.              %%
+%% ------------------------------------------------------------ %%
+%% Verze / Version 2022-04-30                                   %%
+%% Vyvíjí & udržuje / Developed & maintained by                 %%
+%%                           <stanislav.hledik@physics.slu.cz>  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Kamerový zobrazovací model}\label{CAPczm}%######################
+
+V~této kapitole rozebereme následující úlohu: mějme dvě různě umístěné kamery,
+které budeme označovat referenční (reference) a snímací (sensed), což v~dalším
+textu systematicky odlišíme odpovídajícími indexy \uv{r} a \uv{s}. Tyto kamery
+snímají identickou trojrozměrnou scénu a zobrazují ji na film či jiné
+záznamové médium jako CCD nebo CMOS čip. Vzájemná poloha kamer se liší
+posunutím a rotací, vlastní kamery mohou mít různé ohniskové
+vzdálenosti. Cílem je nalézt transformaci mezi dvourozměrnými obrazy na
+záznamovém médiu. Je zřejmé, že tato úloha nemá obecné řešení~-- uvažujme
+například, že mohou existovat body, které se jednou kamerou mapují do jediného
+bodu na záznamovém médiu, kdežto druhou kamerou do různých bodů. Hledaná
+transformace tedy je obecně typu \uv{many-to-one}, a~nemůže být vzájemně
+jednoznačná. Rovněž si snadno můžeme představit situaci, kdy jedna kamera
+\uv{vidí} objekty, které jsou na obrazu druhé kamery zastíněny. V~našem
+případě však pozice obou kamer jsou velmi blízké (nebo to bylo alespoň
+cílem). Ukážeme, že za jistých omezujících podmínek je hledanou transformací
+\emph{perspektivní transformace}. Tato kapitola vznikla úplným přepracováním a
+rozšířením sekce 13.4 knihy~\cite{Pra:2007:DigImageProc:4}, včetně odstranění
+chyb v~ní se vyskytujících.
+
+Všechny v~této kapitole presentované vztahy jsou odvozeny v~implementační
+části v~exportu notebooku systému \Mma{} s~využitím symbolických manipulací.
+
+\section{Transformace obrazů kamer}\label{SECcamtr}%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Uvažujme referenční kameru $\mathcal{C}_{\mathrm{r}}$, do jejíž optické osy
+položíme osu $Z$ \uv{svě\-to\-vé} souřadnicové soustavy
+$\mathcal{F}_{\mathrm{r}}$; rovina $X$-$Y$ koinciduje s~obrazovou ohniskovou
+rovinou,\footnote{Pokud bychom volili rovinu $X$-$Y$ tak, aby obsahovala
+  optický střed, změnila by se diskuse v~podobném smyslu, jak je uvedeno na
+  konci předešlé sekce.} osa $X$ je horizontální, osa $Y$ vertikální. Bod
+$\mathcal{P}$ se \uv{světovými} souřadnicemi
+$(X_{\mathrm{r}}, Y_{\mathrm{r}}, Z_{\mathrm{r}})$ vzhledem k
+$\mathcal{F}_{\mathrm{r}}$ bude optickým systémem kamery projektován do obrazu
+se souřadnicemi $(x_{\mathrm{r}}, y_{\mathrm{r}}, z_{\mathrm{r}})$; z~těchto
+souřadnic nás zajímá pouze $(x_{\mathrm{r}}, y_{\mathrm{r}})$ udávající polohu
+bodu na snímači (filmu nebo čipu). Toto zobrazení je výhodné vyjádřit pomocí
+homogenních souřadnic a projekční matice $\mx{P}_{\mathrm{r}}$. Snímací
+(sensed) kamera $\mathcal{C}_{\mathrm{s}}$ je vůči referenční kameře posunuta
+a pootočena a její \uv{světová} souřadnicová soustava
+$\mathcal{F}_{\mathrm{r}}$ má opět osu $Z$ v~ose kamery a rovinu $X$-$Y$
+v~obrazové ohniskové rovině;\footnote{Na rozdíl od referenční soustavy
+  $\mathcal{F}_{\mathrm{r}}$, u~soustavy $\mathcal{F}_{\mathrm{s}}$ osa $X$
+  resp. $Y$ již nemusí být horizontální resp. vertikální.} v~této soustavě má
+bod $\mathcal{P}$ souřadnice
+$(X_{\mathrm{s}}, Y_{\mathrm{s}}, Z_{\mathrm{s}})$, a~bude jejím optickým
+systémem projektován do obrazu se souřadnicemi
+$(x_{\mathrm{s}}, y_{\mathrm{s}}, z_{\mathrm{s}})$; z~těchto souřadnic nás
+zajímá pouze $(x_{\mathrm{s}}, y_{\mathrm{s}})$ udávající polohu bodu na
+snímači. Rovněž toto zobrazení vyjádříme pomocí homogenních souřadnic a
+odpovídající projekční matice $\mx{P}_{\mathrm{s}}$. Projekční matice mají
+jediný parametr~-- ohniskovou vzdálenost objektivu $f_{\mathrm{r}}$
+resp. $f_{\mathrm{s}}$ a mají následující tvar (včetně inverze
+$\mx{P}_{\mathrm{s}}$, kterou budeme později potřebovat):
+\begin{gather}
+  \mx{P}_{\mathrm{r}}=
+  \begin{pmatrix}
+    1&0&0&0\\0&1&0&0\\0&0&0&f_{\mathrm{r}}\\0&0&-1/f_{\mathrm{r}}&1
+  \end{pmatrix}                                                \label{EQprojr}\\
+  \mx{P}_{\mathrm{s}}=
+  \begin{pmatrix}
+    1&0&0&0\\0&1&0&0\\0&0&0&f_{\mathrm{s}}\\0&0&-1/f_{\mathrm{s}}&1
+  \end{pmatrix}                                                \label{EQprojs}\\
+  \mx{P}_{\mathrm{r}}^{-1}=
+  \begin{pmatrix}
+    1&0&0&0\\0&1&0&0\\0&0&1&-f_{\mathrm{r}}\\0&0&1/f_{\mathrm{r}}&0
+  \end{pmatrix}                                                 \label{EQprojir}
+\end{gather}
+Souřadnice bodu $\mathcal{P}$ ve \uv{světových} souřadnicových soustavách
+$\mathcal{F}_{\mathrm{r}}$ referenční a $\mathcal{F}_{\mathrm{s}}$ snímací
+(sensed) kamery jsou pomocí homogenních souřadnic vzájemně transformovány
+prostřednictvím translační a rotační matice $\mx{T}$ a $\mx{R}$, které
+rozšíříme o~čtvrtý řádek a sloupec tak, aby odpovídaly použití v~homogenních
+souřadnicích. Translační matice $\mx{T}$ má v~homogenních souřadnicích
+jednoduchý tvar
+\begin{equation}
+  \mx{T} =
+  \begin{pmatrix}
+    1&0&0&-\tau_{x}\\
+    0&1&0&-\tau_{y}\\
+    0&0&1&-\tau_{z}\\
+    0&0&0&1
+  \end{pmatrix}                                                  \label{EQtrans}
+\end{equation}
+zatímco rotační matice $\mx{R}$ je dána součinem tří matic popisujících rotaci
+podle jednotlivých os o~Eulerovy úhly $\phi$, $\theta$, $\psi$ (viz
+např.~\cite{Soj-Gau-Kru:2011:MatZaDiZpraSig:2,%
+  Gol-Poo-Saf:2002:ClassMech:3})
+\begin{equation}
+  \mx{R} = \mx{R}_{\psi}\mx{R}_{\theta}\mx{R}_{\phi}                    \label{EQr3}
+\end{equation}
+kde
+\begin{gather}
+  \mx{R}_{\phi} =
+  \begin{pmatrix}
+    \cos\phi & 0 & -\sin\phi & 0\\
+    0        & 1 & 0         & 0\\
+    \sin\phi & 0 & \cos\phi  & 0\\
+    0&0&0&1
+  \end{pmatrix}                                                  \label{EQpan}\\
+  \mx{R}_{\theta} =
+  \begin{pmatrix}
+    1 & 0           & 0          & 0\\
+    0 & \cos\theta  & \sin\theta & 0\\
+    0 & -\sin\theta & \cos\theta & 0\\
+    0&0&0&1
+  \end{pmatrix}                                                 \label{EQtilt}\\
+  \mx{R}_{\psi} =
+  \begin{pmatrix}
+    \cos\psi  & \sin\psi & 0 & 0\\
+    -\sin\psi & \cos\psi & 0 & 0\\
+    0&0&1&0\\
+    0&0&0&1
+  \end{pmatrix}                                                   \label{EQroll}
+\end{gather}
+Vynásobením těchto tří matic podle~(\ref{EQr3}) obdržíme (pro kompaktnost
+zápisu je použito zkratek $\sin(\theta)\equiv\mathrm{s}_{\theta}$,
+$\cos(\theta)\equiv\mathrm{c}_{\theta}$, $\sin(\phi)\equiv\mathrm{s}_{\phi}$,
+$\cos(\phi)\equiv\mathrm{c}_{\phi}$, $\sin(\psi)\equiv\mathrm{s}_{\psi}$ a
+$\cos(\psi)\equiv\mathrm{c}_{\psi}$):
+\begin{equation}
+  \mx{R} =
+  \begin{pmatrix}
+    \mathrm{s}_{\theta}\mathrm{s}_{\psi}\mathrm{s}_{\phi}
+      +\mathrm{c}_{\psi}\mathrm{c}_{\phi}&
+    \mathrm{c}_{\theta}\mathrm{s}_{\psi}&
+    \mathrm{s}_{\theta}\mathrm{s}_{\psi}\mathrm{c}_{\phi}
+      -\mathrm{c}_{\psi}\mathrm{s}_{\phi}&
+    0\\
+    \mathrm{s}_{\theta}\mathrm{c}_{\psi}\mathrm{s}_{\phi}
+      -\mathrm{s}_{\psi}\mathrm{c}_{\phi}&
+    \mathrm{c}_{\theta}\mathrm{c}_{\psi}&
+    \mathrm{s}_{\theta}\mathrm{c}_{\psi}\mathrm{c}_{\phi}
+      +\mathrm{s}_{\psi}\mathrm{s}_{\phi}&
+    0\\
+    \mathrm{c}_{\theta}\mathrm{s}_{\phi}&
+    -\mathrm{s}_{\theta}&
+    \mathrm{c}_{\theta}\mathrm{c}_{\phi}&
+    0\\
+    0&0&0&1
+  \end{pmatrix}                                                    \label{EQrot}
+\end{equation}
+Translační matice~(\ref{EQtrans}) je parametrizována translacemi ve směru
+jednotlivých os (ve filmové terminologii \emph{truck}: $\tau_{x}$, tedy
+horizontální posuv kolmo na optickou osu, \emph{pedestal}: $\tau_{y}$, tedy
+vertikální posuv kolmo na optickou osu, a \emph{dolly}: $\tau_{z}$, tedy
+přibližování či vzdalování od scény beze směny ohniskové vzdálenosti),
+druhá~(\ref{EQrot}) pak Eulerovými úhly (ve filmové terminologii
+\emph{panning}: $\phi$, tedy natáčení okolo vertikální osy kolmé na optickou
+osu, \emph{tilting}: $\theta$, tedy natáčení okolo horizontální osy kolmé na
+optickou osu, a \emph{rolling}: $\psi$, tedy natáčení okolo optické
+osy).\footnote{Existuje analogická \uv{letecká} terminogie, v~níž se používá
+  tomtéž pořadí termínů yaw (zatáčení), pitch (klopení), roll (klonění).}
+
+Odpovídající inversní matice mají tvar
+\begin{gather}
+  \mx{T}^{-1} =
+  \begin{pmatrix}
+    1&0&0&\tau_{x}\\
+    0&1&0&\tau_{y}\\
+    0&0&1&\tau_{z}\\
+    0&0&0&1
+  \end{pmatrix}                                               \label{EQitrans}\\
+  \mx{R}^{-1} =
+  \begin{pmatrix}
+    \mathrm{s}_{\theta} \mathrm{s}_{\psi} \mathrm{s}_{\phi}
+      + \mathrm{c}_{\psi} \mathrm{c}_{\phi}&
+    \mathrm{s}_{\theta} \mathrm{c}_{\psi} \mathrm{s}_{\phi}
+      - \mathrm{s}_{\psi} \mathrm{c}_{\phi}&
+    \mathrm{c}_{\theta} \mathrm{s}_{\phi}&
+    0\\
+    \mathrm{c}_{\theta} \mathrm{s}_{\psi}&
+    \mathrm{c}_{\theta} \mathrm{c}_{\psi}&
+    -\mathrm{s}_{\theta}&
+    0\\
+    \mathrm{s}_{\theta} \mathrm{s}_{\psi} \mathrm{c}_{\phi}
+      - \mathrm{c}_{\psi} \mathrm{s}_{\phi}&
+    \mathrm{s}_{\theta} \mathrm{c}_{\psi} \mathrm{c}_{\phi}
+      + \mathrm{s}_{\psi} \mathrm{s}_{\phi}&
+    \mathrm{c}_{\theta} \mathrm{c}_{\phi}&
+    0\\
+    0& 0& 0& 1
+  \end{pmatrix}                                                   \label{EQirot}
+\end{gather}
+U~translační matice $\mx{T}$ a její inverse je čtvrtý sloupec využit pro
+přičtení posuvu. U~rotační matice $\mx{R}$ a její inverse je čtvrtý sloupec
+i~řádek nulový s~výjimkou jejich průsečíku, kde je $1$, takže škálovací
+parametr homogenních souřadnic nijak neinterferuje s~\uv{prostorovou}
+submaticí $3\times 3$, a rotační matice (i~její inverse) representuje obecné
+prostorové otáčení.
+
+Ve \uv{světovém} souřadnicovém systému $\mathcal{F}_{\mathrm{r}}$ referenční
+kamery je poloha bodu $\mathcal{P}$ reprezentována homogenním vektorem
+\begin{equation} \label{EQXYZr}
+  \tilde{\vec{W}}_{\mathrm{r}} =
+  \begin{pmatrix}
+    sX_{\mathrm{r}}\\sY_{\mathrm{r}}\\sZ_{\mathrm{r}}\\s
+  \end{pmatrix}
+\end{equation}
+Jeho projekce optickým systémem kamery má homogenní souřadnice
+\begin{equation} \label{EQxyzr2}
+  \tilde{\vec{w}}_{\mathrm{r}} = \mx{P}_{\mathrm{r}} \tilde{\vec{W}}_{\mathrm{r}}
+\end{equation}
+Ve \uv{světovém} souřadnicovém systému $\mathcal{F}_{\mathrm{s}}$ snímací
+kamery je poloha bodu $\mathcal{P}$ reprezentována homogenním vektorem
+\begin{equation} \label{EQrtW}
+  \mx{R}\mx{T}\tilde{\vec{W}}_{\mathrm{r}}
+\end{equation}
+a analogicky jeho projekce optickým systémem kamery má homogenní souřadnice
+\begin{equation} \label{EQwrtW}
+  \tilde{\vec{w}}_{\mathrm{s}}
+    = \mx{P}_{\mathrm{s}}\mx{R}\mx{T}\tilde{\vec{W}}_{\mathrm{r}}
+\end{equation}
+Vyjádříme-li z~poslední rovnice $\tilde{\vec{W}}_{\mathrm{r}}$ pomocí inverse
+\begin{equation} \label{EQirtW}
+  \tilde{\vec{W}}_{\mathrm{r}}
+    = \mx{T}^{-1}\mx{R}^{-1}\mx{P}_{\mathrm{s}}^{-1}\tilde{\vec{w}}_{\mathrm{s}}
+\end{equation}
+a dosadíme do vztahu~(\ref{EQxyzr2}), dostaneme transformační formuli mezi
+oběma obrazy v~homogenním tvaru
+\begin{equation} \label{EQww}
+  \tilde{\vec{w}}_{\mathrm{r}}
+    = \mx{P}_{\mathrm{r}}
+      \mx{T}^{-1}\mx{R}^{-1}\mx{P}_{\mathrm{s}}^{-1}\tilde{\vec{w}}_{\mathrm{s}}
+\end{equation}
+Vztah mezi souřadnicemi projekce světového bodu $\mathcal{P}$ na snímku
+snímací kamery $(x_{\mathrm{s}},y_{\mathrm{s}})$ a referenční kamery
+$(x_{\mathrm{r}},y_{\mathrm{r}})$ pak dostaneme dělením první a druhé
+komponenty $\tilde{\vec{w}}_{\mathrm{r}}$ vypočteného podle~(\ref{EQww})
+komponentou čtvrtou, symbolicky
+\begin{subequations}\label{EQxryr}
+  \begin{align}
+  x_{\mathrm{r}}
+  = \frac{\left(
+        \mx{P}_{\mathrm{r}}\mx{T}^{-1}\mx{R}^{-1}\mx{P}_{\mathrm{s}}^{-1}
+        \tilde{\vec{w}}_{\mathrm{s}}
+      \right)[1]}%
+         {\left(
+        \mx{P}_{\mathrm{r}}\mx{T}^{-1}\mx{R}^{-1}\mx{P}_{\mathrm{s}}^{-1}
+        \tilde{\vec{w}}_{\mathrm{s}}
+      \right)[4]}\\
+  y_{\mathrm{r}}
+  = \frac{\left(
+        \mx{P}_{\mathrm{r}}\mx{T}^{-1}\mx{R}^{-1}\mx{P}_{\mathrm{s}}^{-1}
+        \tilde{\vec{w}}_{\mathrm{s}}
+      \right)[2]}%
+         {\left(
+        \mx{P}_{\mathrm{r}}\mx{T}^{-1}\mx{R}^{-1}\mx{P}_{\mathrm{s}}^{-1}
+        \tilde{\vec{w}}_{\mathrm{s}}
+      \right)[4]}
+  \end{align}
+\end{subequations}
+Explicitní forma tohoto vztahu je komplikovaná a v~plném tvaru ji lze nalézt
+v~implementační části v~sekci nazvané \uv{Transformace obrazů dvou
+  kamer}. Plynou z~ní dvě důležité věci:
+\begin{enumerate}
+\item Obě komponenty transformace, pro $x_{\mathrm{r}}$ i $y_{\mathrm{r}}$,
+  obsahují explicitně komponentu $z_{\mathrm{s}}$, kterou však z~obrazu
+  neznáme.
+\item Obě komponenty transformace mají tvar lineárních lomených funkcí
+  (vzhledem k~proměnným $x_{\mathrm{s}}$, $y_{\mathrm{s}}$, $z_{\mathrm{s}}$),
+  jejichž jmenovatele jsou stejné; liší se pouze čitateli.
+\end{enumerate}
+Důkaz obou tvrzení lze opět nalézt v~sekci \uv{Transformace obrazů dvou kamer}
+implementační části, kde je výhodně využito symbolických manipulací
+implementovaných v~systému \Mma.
+
+\section{Perspektivní, afinní a podobnostní transformace}\label{SECpafpo}%%%%%
+
+Nyní vyjasníme roli \uv{hloubkové} souřadnice $z_{\mathrm{s}}$, která
+vystupuje na pravé straně transformací~(\ref{EQxryr}). Předpokládejme, že
+zobrazujeme rovinu, která je ve \uv{světových} souřadnicích
+$\mathcal{F}_{\mathrm{s}}$, jejichž počátek pro tento případ s~výhodou
+položíme do optického středu kamery, popsána rovnicí
+\begin{equation}
+  aX_{\mathrm{s}} + bY_{\mathrm{s}} + cZ_{\mathrm{s}} + 1 = 0          \label{EQsplane}
+\end{equation}
+v~níž jsme se omezili na roviny procházející mimo optický střed kamery,
+v~jejichž rovnicích je v~důsledku toho absolutní člen nenulový a můžeme jej
+tak normalizovat na jednotku. Obrazy bodů roviny~(\ref{EQsplane}) opět leží
+v~rovině, jejíž rovnice je\footnote{Samozřejmě se započtením \uv{hloubkové}
+  souřadnice $z_{\mathrm{s}}$.}
+\begin{equation}
+  ax_{\mathrm{s}}+by_{\mathrm{s}}
+    +\left(c+\frac{1}{f_{\mathrm{s}}}\right)z_{\mathrm{s}}+1 = 0    \label{EQiplane}
+\end{equation}
+Pro naše potřeby fotografického zobrazování je koeficient $c+1/f_{\mathrm{s}}$
+nenulový; skutečně, dosazením $c=-1/f_{\mathrm{s}}$ do~(\ref{EQsplane}) a
+položením $X_{\mathrm{s}} = Y_{\mathrm{s}} = 0$ dostaneme $Z_{\mathrm{s}} =
+f_{\mathrm{s}}$, tj. rovina by procházela předmětovým ohniskem. Vyloučením
+těchto rovin, které se v~praxi nevyskytují, můžeme koeficient
+u~$z_{\mathrm{s}}$ v~(\ref{EQiplane}) brát jako nenulový, a tedy vyjádřit
+explicitně $z_{\mathrm{s}}$ jako
+\begin{equation}
+  z_{\mathrm{s}} = \alpha x_{\mathrm{s}} + \beta y_{\mathrm{s}} + \gamma  \label{EQabg}
+\end{equation}
+Tento závěr platí i~tehdy, klademe-li počátek souřadnic do roviny obrazového
+ohniska~-- dojde pouze ke změně koeficientu $\gamma$.
+
+Jelikož v~čitateli i~jmenovateli transformací~(\ref{EQxryr}) je lineární
+funkce vzhledem k~$x_{\mathrm{s}}$, $y_{\mathrm{s}}$ a $z_{\mathrm{s}}$,
+substitucí za $z_{\mathrm{s}}$ z~(\ref{EQabg}) dostaneme opět lineární funkci
+vzhledem k~proměnným $x_{\mathrm{s}}$ a $y_{\mathrm{s}}$. Absolutní člen ve
+jmenovatelích transformací~(\ref{EQxryr}) je podle výsledků v~implementační
+sekci \uv{Transformace obrazů dvou kamer} roven
+\begin{equation}
+  \gamma\left(2f_{\mathrm{r}}-2f_{\mathrm{s}}\cos\theta\cos\phi-\tau_{z}\right)
+  + f_{\mathrm{s}}^{2}\cos\theta\cos\phi                           \label{EQabsden}
+\end{equation}
+Při praktickém fotografickém zobrazování je koeficient $\gamma$ velmi malý~--
+obraz vzniká těsně za rovinou obrazového ohniska, a Eulerovy úhly $\theta$
+(tilting) a $\phi$ (panning) jsou blízké nule~-- kamery nejsou vůči sobě
+příliš natočené, takže absolutní člen je nenulový. Pak ovšem můžeme
+normalizovat transformace~(\ref{EQxryr}) rozšířením tímto absolutním členem,
+čímž dostaneme (s~přihlédnutím k~výše zmíněné rovnosti jmenovatelů)
+\begin{subequations}\label{EQpersptran}
+  \begin{align}
+  x_{\mathrm{r}}
+  = \frac{ax_{\mathrm{s}}+by_{\mathrm{s}}+c}%
+         {gx_{\mathrm{s}}+hy_{\mathrm{s}}+1}\\
+  y_{\mathrm{r}}
+  = \frac{dx_{\mathrm{s}}+ey_{\mathrm{s}}+f}%
+         {gx_{\mathrm{s}}+hy_{\mathrm{s}}+1}
+  \end{align}
+\end{subequations}
+To je perspektivní transformace, jak je popsána
+např. v~\cite{Gon-Woo:2007:DigImageProc:3,%
+  AGo:2012:ImageReg:2012}. Obsahuje
+osm parametrů,\footnote{Parametry $a,\ldots,h$ nemají nic společného
+  s~koeficienty v~rovnici~(\ref{EQsplane}) ani s~ohniskovou vzdáleností.}
+které mohou být určeny, známe-li souřadnice čtyř nekolineárních\footnote{Žádné
+tři neleží na jedné přímce.}
+korespondujících bodů obrazu. Perspektivní transformace~(\ref{EQpersptran})
+zachovává přímky, ale nikoli jejich paralelnost a úhly mezi
+nimi~\cite{AGo:2012:ImageReg:2012,%
+  Son-Hla-Boy:2007:ImPrAnMachVi:3}.
+
+Je-li scéna daleko od kamery a leží v~rovině kolmé k~optické ose kamery, dá se
+perspektivní transformace aproximovat \emph{afinní transformací}
+(viz~\cite{AGo:2012:ImageReg:2012} výpočty v~implementační sekci
+\uv{Transformace obrazů dvou kamer})
+\begin{subequations}\label{EQaffintran}
+  \begin{align}
+  x_{\mathrm{r}} = ax_{\mathrm{s}}+by_{\mathrm{s}}+c\\
+  y_{\mathrm{r}} = dx_{\mathrm{s}}+ey_{\mathrm{s}}+f
+  \end{align}
+\end{subequations}
+Afinní transformace obsahuje šest parametrů, které mohou být určeny,
+zná\-me-li souřadnice tří nekolineárních korespondujících bodů obrazu. Afinní
+transformace~(\ref{EQaffintran}) zachovává přímky a jejich paralelnost, nikoli
+však úhly jimi sevřené~\cite{AGo:2012:ImageReg:2012}.
+
+Speciálním případem afinní transformace je \emph{podobnostní transformace},
+která sestává z~rotace v~rovině~-- úhel $\psi$, škálování~-- parametr $S$ a
+translací~-- parametry $\tau_{x}$, $\tau_{y}$. Pro určení těchto čtyř
+parametrů je zapotřebí znalost dvou různých korespondujících bodů
+obrazu. Podobnostní transformace zachovává přímky, jejich rovnoběžnost i~úhly
+mezi nimi~\cite{AGo:2012:ImageReg:2012}.
+
+Konečně speciálním případem podobnostní transformace je \emph{translační
+  transformace}, která je určena dvěma parametry ($\tau_{x}$, $\tau_{y}$), pro
+jejichž určení je zapotřebí znalost jediného páru korespondujících bodů.
+
+Perspektivní transformaci~(\ref{EQpersptran}) lze elegantně vyjádřit
+analogickým způsobem jako v~předešlé sekci pomocí homogenních souřadnic,
+jež jsou rozšířením nyní dvourozměrných vektorů $(x,y)$. Vektory popisující
+polohu na obrazu snímací a referenční kamery
+\begin{equation}                                                   \label{VEC2s}
+  \vec{w}_{\mathrm{s}} =
+  \begin{pmatrix}
+    x_{\mathrm{s}}\\y_{\mathrm{s}}
+  \end{pmatrix}
+\end{equation}
+a
+\begin{equation}                                                   \label{VEC2r}
+  \vec{w}_{\mathrm{r}} =
+  \begin{pmatrix}
+    x_{\mathrm{r}}\\y_{\mathrm{r}}
+  \end{pmatrix}
+\end{equation}
+rozšíříme na odpovídající homogenní vektory\footnote{Pro odlišení homogenních
+  vektorů budeme, stejně jako v~předešlé sekci, opět systematicky používat
+  vlnky (tildy).}
+\begin{equation}                                                   \label{HOM2s}
+  \tilde{\vec{w}}_{\mathrm{s}} =
+  \begin{pmatrix}
+    sx_{\mathrm{s}}\\sy_{\mathrm{s}}\\s
+  \end{pmatrix}
+\end{equation}
+a
+\begin{equation}                                                  \label{HOM2r}
+  \tilde{\vec{w}}_{\mathrm{r}} =
+  \begin{pmatrix}
+    sx_{\mathrm{r}}\\sy_{\mathrm{r}}\\s
+  \end{pmatrix}
+\end{equation}
+Perspektivní transformaci~(\ref{EQpersptran}) potom můžeme zapsat ve formě
+\begin{equation} \label{HOM3rs}
+  \tilde{\vec{w}}_{\mathrm{r}} = \mx{M} \tilde{\vec{w}}_{\mathrm{s}}
+\end{equation}
+kde transformační matice $\mx{M}$ je
+\begin{equation}                                                \label{HOMmtxM}
+  \mx{M} =
+  \begin{pmatrix}
+    a & b & c\\
+    d & e & f\\
+    g & h & 1
+  \end{pmatrix}
+\end{equation}
+
+Máme-li k~dispozici $N$ párů korespondujících bodů
+$(x_{\mathrm{r}i},x_{\mathrm{r}i})\leftrightarrow
+(x_{\mathrm{s}i},x_{\mathrm{s}i})$, $i\in\{1,\ldots,N\}$, můžeme dosazením
+do~(\ref{EQpersptran}) či do~(\ref{EQaffintran}) dostat soustavu lineárních
+rovnic pro její parametry:
+\begin{enumerate}
+\item Pro čtyři páry nekolineárních korespondujících bodů ($N=4$) máme
+  nedegenerovanou soustavu 8 rovnic pro 8 neznámých $a,\ldots,h$
+  z~(\ref{EQpersptran}) a~(\ref{HOMmtxM}).
+\item Pro tři páry nekolineárních korespondujících bodů ($N=3$) máme
+  nedegenerovanou soustavu 6 rovnic pro 6 neznámých $a,\ldots,f$
+  z~(\ref{EQaffintran}). Matice~(\ref{HOMmtxM}) se zjednoduší na
+\begin{equation}                                              \label{HOMmtxMAff}
+  \mx{M} =
+  \begin{pmatrix}
+    a & b & c\\
+    d & e & f\\
+    0 & 0 & 1
+  \end{pmatrix}
+\end{equation}
+\item\label{N2} Pro dva páry korespondujících bodů ($N=2$) máme
+  nedegenerovanou soustavu 4 rovnic pro 4 neznámé~-- úhel rotace $\psi$,
+  škálovací parametr $S$ a parametry translace $\tau_{x}$, $\tau_{y}$
+  podobnostní transformace. Matice~(\ref{HOMmtxM}) má v~tom případě tvar
+\begin{equation}                                              \label{HOMmtxMSim}
+  \mx{M} =
+  \begin{pmatrix}
+    S\cos\psi & -S\sin\psi & \tau_{x}\\
+    S\sin\psi & S\cos\psi & \tau_{y}\\
+    0 & 0 & 1
+  \end{pmatrix}
+\end{equation}
+\item\label{N1} Pro jediný pár korespondujících bodů ($N=1$) máme
+  nedegenerovanou soustavu 2 rovnic pro 2 neznámé~-- parametry translace
+  $\tau_{x}$, $\tau_{y}$ translační transformace. Matice~(\ref{HOMmtxM}) pak
+  má jednoduché vyjádření
+\begin{equation}                                              \label{HOMmtxMTra}
+  \mx{M} =
+  \begin{pmatrix}
+    1 & 0 & \tau_{x}\\
+    0 & 1 & \tau_{y}\\
+    0 & 0 & 1
+  \end{pmatrix}
+\end{equation}
+\end{enumerate}
+
+Je-li určení korespondujících bodů zatíženo šumem či zaokrouhlováním, je třeba
+vzít více než výše popsaný počet korespondujících bodů. V~takovém případě je
+nutno řešit příslušnou lineární soustavu, která je přeurčená, má více rovnic
+než proměnných. Uplatní ze zde několik přístupů~-- lineární fit založený na
+zobecněné lineární metodě nejmenších čtverců využívající \emph{Singular Value
+  Decomposition} popsanou např. v~\cite{Son-Hla-Boy:2007:ImPrAnMachVi:3} a
+rozebraný v~sekcích~2.6 a 15.4 (konkrétně 15.4.2)
+monografie~\cite{Pre-etal:2007:NumReCpp:CD-ROM}, nebo lineární fit založený na
+normálních rovnicích rozebraný v~sekci~15.4.1 téže monografie. Další informace
+lze získat z~\cite{AGo:2012:ImageReg:2012}; technické detaily implementace
+v~systému \Mma{} uvedu v~následující kapitole.
+
+Přeurčené soustavy umožňují doplnit mezi případy~\ref{N2} a~\ref{N1} ještě
+případ tzv.~\emph{rigidní transformace}, která zahrnuje 3 neznámé: úhel rotace
+$\psi$ a parametry translace $\tau_{x}$, $\tau_{y}$, pro jejichž určení
+potřebujeme 2~páry korespondujících bodů a tedy 4~rovnice. Tvar transformační
+matice~(\ref{HOMmtxM}) dostaneme položením škálovacího parametru \mbox{$S=1$}
+v~matici podobnostní transformace~(\ref{HOMmtxMSim}):
+\begin{equation}                                              \label{HOMmtxMRig}
+  \mx{M} =
+  \begin{pmatrix}
+    \cos\psi & -\sin\psi & \tau_{x}\\
+    \sin\psi & \cos\psi & \tau_{y}\\
+    0 & 0 & 1
+  \end{pmatrix}
+\end{equation}
+Zmiňuji se o~této možnosti zejména z~toho důvodu, že systém \Mma{} má rigidní
+transformaci implementovánu; podorbněji se o~tom zmíním
+v~následující kapitole.
+
+Specializovaná literatura, jako
+např. monografie~\cite{AGo:2012:ImageReg:2012}, věnuje transformačním
+funkcím mnoho místa; citovaná monografie např. celou Kapitolu~5. Kromě výše
+popsané perspektivní transformace a jejích simplifikací popisuje transformaci
+\emph{Thin-plate spline (TPS)},\footnote{Česky by se to dalo volně přepožit
+  jako membránový splajn.} \emph{Multiquadratic (MQ)}, \emph{Weighted mean
+  methods}, \emph{Piecewise linear},\footnote{Česky \protect\uv{po částech
+    lineární}.} a \emph{Weighted linear}. Svoji aplikaci by zde jistě našla
+metoda nelineární korekce pomocí metod warpingu, zejména tehdy, byl-li některý
+z~lícovaných obrazů \uv{postižen} některou z~optických vad jako je soudkovité
+či polštářové zkreslení; soustředíme se však na aplikaci perspektivní
+transformace a jejích derivátů, jak jsou implementovány v~systému \Mma. Díky
+jejím interaktivním schopnostem umožňuje vhled do možností a limitací této
+transformace v~aplikaci, která je tématem této práce.
+
+\endinput
+
+%%
+%% End of file `x_camera.tex'.

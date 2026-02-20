@@ -1,0 +1,164 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toto je inkludovaný LaTeXový soubor `ca_lopkg.tex'.          %%
+%% ------------------------------------------------------------ %%
+%% Verze 2022-06-03                                             %%
+%% Vyvíjí & udržuje <stanislav.hledik@physics.slu.cz>           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Načítané balíčky}\label{packages}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Následující balíčky jsou načítány v~uvedeném pořadí dokumentní třídou
+\pgm{\ipotname .cls} pomocí příkazu \pgm{\textbackslash RequirePackage}, takže
+není třeba je v~preambuli pomocí příkazu \pgm{\textbackslash usepackage} znovu
+načítat.\footnote{Balíčky \pkg{hyperref} resp. \pkg{url} jsou načítány
+  v~argumentu makra \protect\pgm{\textbackslash AtEndPreamble}, což zajistí
+  načtení \pkg{hyperref} jako posledního i~v~případě, že v~preambuli budou
+  načítány další uživatelem požadované balíčky.}
+
+\begin{description}
+  \pkgitem{etoolbox}\label{pkgetoolbox} je sada programovacích nástrojů
+  primárně určených pro autory \LaTeX ových tříd a
+  balíčků~\cite{Wri-Leh:LIVE:CTAN:etoolbox}. Díky makru \pgm{\textbackslash
+    AtEndPreamble} definovanému tímto balíčkem je možné odložit načtení
+  určitého kódu, včetně balíčku \pkg{hyperref}, až na samý konec preambule,
+  nikoli však do argumentu \pgm{\textbackslash AtBeginDocument}, kde by nové
+  verze \pkg{hyperref} nefungovaly správně.
+  
+\pkgitem{natbib}\label{pkgnatbib} podporuje flexibilitu vytváření referencí
+  a citací pomocí pomocného programu \BibTeX{}~\cite{Dal:LIVE:CTAN:natbib,%
+    Dal:LIVE::Natbib,%
+    Kop-Dal:2004:LaTeXPodrPruv:,%
+    Goo-Mit-Sam:1994:Companion:}.
+% Pro formátování databázových záznamů do \LaTeX u\INDEX{publikační
+% systém!\LaTeX{}} používá \RINDEX{bibliografický styl} \pgm{\ipotname
+% .bst}, jenž je součástí balíčku \pkg{\ipotname}.
+%  (viz Dodatek~\ref{files}).
+%   Pro jeho správnou funkci je třeba mít ve vyhledávacích cestách soubor
+%   \pgm{babelbst.tex} a lokalizační \pgm{*.bld} soubory pro jednotlivé jazyky
+%   (vše je součástí \pkg{\ipotname} s~podporou jazyků: čeština, angličtina
+%   britská a americká, slovenština, francouzština, němčina).
+% %  (viz též sekci~\ref{bibliodb}).
+
+\pkgitem{amsmath, amssymb}\label{pkgams} výrazně rozšiřují možnosti \LaTeX
+  u\INDEX{publikační systém!\LaTeX{}} v~oblasti sazby matematiky jak co do
+  definic příkazů a prostředí, tak výběru
+  symbolů~\cite{LtX:LIVE:CTAN:AMSmath,%
+    AMS:LIVE:CTAN:AMSfonts,%
+    Kop-Dal:2004:LaTeXPodrPruv:,%
+    Goo-Mit-Sam:1994:Companion:}.\footnote{Jelikož \pkg{amssymb} interně
+    načítá \pkg{amsfonts} (jak se lze přesvědčit nahlédnutím do logu
+    překladu), není již třeba \pkg{amsfonts} explicitně načítat. Zamýšlíte-li
+    užívat matematický styl definice--věta--důkaz, zvažte načtení balíčku
+    \pgm{amsthm} v~preambuli.}
+
+\pkgitem{graphicx}\label{pkggraphicx} poskytuje, mimo jiné, unifikované
+  rozhraní pro vkládání obrázků obsažených v~externích
+  souborech~\cite{Car:LIVE:CTAN:Graphics,%
+    Kop-Dal:2004:LaTeXPodrPruv:,%
+    Goo-Rah-Mit:1994:GraComp:}.
+
+\pkgitem{hyperref, url}\label{pkghyperref} slouží k~transformaci externích
+  i~interních křížových odkazů na
+  hypertext~\cite{LtX:LIVE:CTAN:hyperref}. Balíček~\pkg{url} nutný pro řádkový
+  zlom URL v~místě teček, lomítek
+  atd~\cite{Ars:LIVE:CTAN:url,Goo-Mit-Sam:1994:Companion:} se implicitně načítá
+  přes balíček \pkg{hyperref}, jenž je sám načítán pouze při zapnuté volbě
+  \opt{htext} (viz stranu~\pageref{opthtext}); v~opačném případě je tedy nutno
+  jej načíst samostatně~-- vše je ošetřeno v~\pgm{\ipotname .cls}.
+\end{description}
+
+\noindent
+Máte-li v~úmyslu načítat v~preambuli nějaké balíčky, vyhněte se opětovnému
+načítání výše vyjmenovaných nebo v~sekci~\ref{dependencies} níže uvedených;
+mohlo by to vést k~těžko odhalitelným chybám. Obzvláště citlivý je na to
+balíček \pkg{hyperref}~\cite{LtX:LIVE:CTAN:hyperref}, u~kterého je automaticky
+zajištěno načtení jako posledního ze všech. Například potřebujeme-li pro
+matematicky zaměřenou závěrečnou práci balíček
+\pkg{amsthm}~\cite{AMS:LIVE:CTAN:AMSthm}, stačí v~preambuli načíst pouze jej,
+jelikož na něj úzce vázané balíčky \pkg{amsmath} a \pkg{amssymb}
+resp. \pkg{amsfonts}~\cite{LtX:LIVE:CTAN:AMSmath,%
+  AMS:LIVE:CTAN:AMSfonts} jsou již načteny.
+
+\section{Závislosti}\label{dependencies}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Každý z~uvedených balíčků závisí na množství dalších balíčků, kromě toho
+v~preambuli jsou zaváděny další balíčky a ty také mohou záviset na
+dalších. V~následujících seznamech jsou uvedeny pouze další balíčky načítané
+těmi, jenž jsou zaváděny dokumentní třídou \pgm{\ipotname .cls}\footnote{Platí
+  pro aktuální verzi \pkg{\ipotname} a distribuci \distroMiKTeX{} verze~22.3
+  pro Windows~10.}  (jejich seznam je výše) a těmi, jenž jsou zaváděny
+v~preambuli hlavního zdrojového souboru \pgm{\thesnamecze .tex} tohoto
+manuálu\footnote{Ty se mohou měnit v~závislosti na tom, jaké balíčky načte
+  v~preambuli uživatel.} (viz Kapitolu~\ref{preamble}):
+
+\begin{description*}
+\raggedright
+%\sloppy
+\item[Bez volby \opt{htext} (viz s.~\pageref{opthtext}):]
+%natbib,
+%amsmath,
+\pkg{amstext},
+\pkg{amsgen},
+\pkg{amsbsy},
+\pkg{amsopn},
+%amssymb,
+\pkg{amsfonts},
+%graphicx,
+\pkg{keyval},
+\pkg{graphics},
+\pkg{trig},
+%lmodern,
+%fontenc,
+%inputenc,
+%babel,
+%fancyvrb,
+%url,
+\pkg{epstopdf-base} (pouze při kompilaci formátem \pkg{pdflatex})
+\item[S~volbou \opt{htext}:]
+%etoolbox,  
+%natbib,
+%amsmath,
+\pkg{amstext},
+\pkg{amsgen},
+\pkg{amsbsy},
+\pkg{amsopn},
+%amssymb,
+\pkg{amsfonts},
+%graphicx,
+\pkg{keyval},
+\pkg{graphics},
+\pkg{trig},
+%lmodern,
+%fontenc,
+%inputenc,
+%babel,
+%fancyvrb,
+%hyperref,
+\pkg{ltxcmds},
+\pkg{iftex},
+\pkg{pdftexcmds},
+\pkg{kvdefinekeys},
+\pkg{hycolor},
+\pkg{letltxmacro},
+\pkg{auxhook},
+\pkg{nameref},
+\pkg{refcount},
+\pkg{gettitlestring},
+\pkg{kvoptions},
+\pkg{intcalc},
+\pkg{etexcmds},
+%url,
+\pkg{bitset},
+\pkg{bigintcalc},
+\pkg{atbegshi-ltx},
+\pkg{atveryend-ltx},
+\pkg{rerunfilecheck},
+\pkg{uniquecounter},
+\pkg{epstopdf-base} (pouze při kompilaci formátem \pkg{pdflatex}),
+\pkg{color}
+\end{description*}
+
+\endinput
+
+%%
+%% End of file `ca_lopkg.tex'.

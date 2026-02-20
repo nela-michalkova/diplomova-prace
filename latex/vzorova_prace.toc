@@ -1,0 +1,279 @@
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\contentsline {chapter}{Seznam obr\'azk\r {u}}{xvii}{Doc-Start}%
+\contentsline {chapter}{Seznam tabulek}{xix}{Doc-Start}%
+\contentsline {chapter}{Úvod}{1}{Doc-Start}%
+\contentsline {section}{Cíl}{1}{Doc-Start}%
+\contentsline {section}{Prerekvizity}{2}{Item.7}%
+\contentsline {section}{Struktura}{2}{Item.7}%
+\contentsline {section}{Další vývoj}{3}{Item.7}%
+\contentsline {part}{\numberline {I\relax .\enspace }Postupy a řešení}{5}{part.1}%
+\contentsline {chapter}{Kapitola\ 1\relax .\enspace Instalace}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1\relax .\enspace }Získání balíčku ipothes{}}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2\relax .\enspace }Instalace \uv {vše v~jednom}}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3\relax .\enspace }Instalace \uv {zdrojové texty a knihovny odděleně}}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.4\relax .\enspace }Testování}{11}{section.1.4}%
+\contentsline {section}{\numberline {1.5\relax .\enspace }Copyright}{12}{section.1.5}%
+\contentsline {chapter}{Kapitola\ 2\relax .\enspace Preambule}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1\relax .\enspace }Specifikace dokumentní třídy}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2\relax .\enspace }Fonty a jazyková lokalizace}{14}{section.2.2}%
+\contentsline {section}{\numberline {2.3\relax .\enspace }Podpora tvorby rejstříku}{15}{section.2.3}%
+\contentsline {section}{\numberline {2.4\relax .\enspace }Další balíčky}{15}{section.2.4}%
+\contentsline {section}{\numberline {2.5\relax .\enspace }Nastavení, definice a redefinice}{16}{section.2.5}%
+\contentsline {section}{\numberline {2.6\relax .\enspace }Vzory dělení slov}{16}{section.2.6}%
+\contentsline {section}{\numberline {2.7\relax .\enspace }Konec preambule}{16}{section.2.7}%
+\contentsline {chapter}{Kapitola\ 3\relax .\enspace Některá drobná vylepšení}{17}{chapter.3}%
+\contentsline {part}{\numberline {II\relax .\enspace }Ukázky z~obhájených závěrečných prací}{19}{part.2}%
+\contentsline {chapter}{Kapitola\ 4\relax .\enspace Rotací stabilizovaná magnetická levitace}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1\relax .\enspace }Earnshawův teorém}{24}{section.4.1}%
+\contentsline {section}{\numberline {4.2\relax .\enspace }Jak dosáhnout prostorově stabilní levitace?}{28}{section.4.2}%
+\contentsline {section}{\numberline {4.3\relax .\enspace }Levitron\textsuperscript {\textregistered }{} a teorie jeho stability}{30}{section.4.3}%
+\contentsline {chapter}{Kapitola\ 5\relax .\enspace Diagnostika s~obrazovým výstupem}{41}{chapter.5}%
+\contentsline {section}{\numberline {5.1\relax .\enspace }Ultrazvuková sonografie}{41}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1\relax .\enspace }Základní pojmy ultrazvukové akustiky}{43}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2\relax .\enspace }Ultrazvuková sonda}{49}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2\relax .\enspace }Nukleární magnetická rezonance (NMR/MRI)}{53}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1\relax .\enspace }Stručný nástin principu MRI}{53}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2\relax .\enspace }Fyzika jaderného spinu}{55}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3\relax .\enspace }Podstata MRI zobrazování}{61}{subsection.5.2.3}%
+\contentsline {chapter}{Kapitola\ 6\relax .\enspace Kamerový zobrazovací model}{67}{chapter.6}%
+\contentsline {section}{\numberline {6.1\relax .\enspace }Transformace obrazů kamer}{67}{section.6.1}%
+\contentsline {section}{\numberline {6.2\relax .\enspace }Perspektivní, afinní a podobnostní transformace}{72}{section.6.2}%
+\contentsline {chapter}{Chapter\ 7\relax .\enspace Configurations of uniform density}{77}{chapter.7}%
+\contentsline {section}{\numberline {7.1\relax .\enspace }Structure of the polytropes}{77}{section.7.1}%
+\contentsline {section}{\numberline {7.2\relax .\enspace }Existence conditions and compactness of \mbox {n\,=\,0} polytropes}{80}{section.7.2}%
+\contentsline {section}{\numberline {7.3\relax .\enspace }Gravitational binding of \mbox {n\,=\,0} polytropes}{82}{section.7.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\contentsline {part}{\numberline {III\relax .\enspace }Dodatky}{85}{part.3}%
+\contentsline {chapter}{Dodatek\ A\relax .\enspace Volby dokumentní třídy}{87}{appendix.A}%
+\contentsline {chapter}{Dodatek\ B\relax .\enspace Načítané balíčky}{89}{appendix.B}%
+\contentsline {section}{\numberline {B.1\relax .\enspace }Závislosti}{90}{section.B.1}%
+\contentsline {chapter}{Dodatek\ C\relax .\enspace Umístění sazebního obrazce}{91}{appendix.C}%
+\contentsline {chapter}{Dodatek\ D\relax .\enspace Konfigurační soubor}{93}{appendix.D}%
+\contentsline {chapter}{Dodatek\ E\relax .\enspace Konfigurace balíčku \mbox {\textsf {hyperref}}}{95}{appendix.E}%
+\contentsline {chapter}{Pár doporučení na závěr \ldots }{99}{figure.E.2}%
+\contentsline {chapter}{Literatura}{101}{figure.E.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 

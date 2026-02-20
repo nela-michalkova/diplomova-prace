@@ -1,0 +1,76 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toto je inkludovaný LaTeXový soubor `ca_conf.tex'.           %%
+%% ------------------------------------------------------------ %%
+%% Verze 2022-05-23                                             %%
+%% Vyvíjí & udržuje <stanislav.hledik@physics.slu.cz>           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Konfigurační soubor}\label{config}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Balíček \pkg{\ipotname} volitelně používá konfigurační soubor \pgm{\ipotname
+  .cfg}. Je-li takto pojmenovaný soubor přítomen v~pracovním adresáři, bude
+automaticky nalezen a načten, o~čemž bude uživatel informován hláškou
+
+\medskip
+
+{\small\ttfamily
+\noindent
+** \ipotname : user config file loaded:\\
+(\ipotname .cfg)
+\par}
+
+\medskip
+
+\noindent
+O~nepřítomnosti konfiguračního souboru bude uživatel informován takto:
+
+\medskip
+
+{\small\ttfamily
+\noindent
+Class \ipotname{} Warning: `\ipotname .cfg' not found;\\
+create one or use preamble to place your stuff.
+\par}
+
+\medskip
+
+\noindent
+Do \pgm{\ipotname .cfg} si uživatel může uložit vlastní definice a nastavení,
+aniž by jimi \uv{plevelil} preambuli hlavního souboru. Prvních 46~řádků
+načtených z~aktuálního~\pgm{\ipotname .cfg} pomocí balíčku
+\pkg{fancyvrb}~\cite{Vos:LIVE:CTAN:fancyvrb} vypadá takto:
+
+\VerbatimInput[frame=none,firstline=19,lastline=64,fontsize=\footnotesize]%
+  {\ipotname .cfg}
+\noindent$\langle$\emph{zbývající řádky vynechány}$\rangle$
+
+\medskip
+
+V~první sekci \emph{PDF document information} jsou nastaveny údaje pro
+vlastnosti dokumentu zobrazované Adobe Acrobat
+Readerem~\cite{Adobe:LIVE::AcrobatReader} i~jinými
+prohlížeči~\designation{pdf}, např.~M$\mu$PDF~\cite{Art:LIVE::MuPDF}. Další
+sekce \emph{Page positioning} je připravena pro jemné doladění umístění
+sazebního obrazce popsané v~Dodatku~\ref{mirror}. Sekce \emph{TOC and
+  sectioning} je připravena na změnu hloubky Obsahu a číslování sekcí. Sekce
+\emph{Repeatedly used URLs} a \emph{Base URLs for arXiv and doi} definuje
+opakovaně používaná URL a bázová URL pro \designation{arXiv} a
+\designation{doi}. Následuje sekce \emph{General text macros and
+  abbreviations} s~obecně použitelnými makry.
+
+Soubor \pgm{\ipotname .cfg} dodávaný v~balíčku \pkg{\ipotname} je mnohem
+rozsáhlejší, další materiál lze nalézt přímo v~něm. Předpokládá se, že
+uživatel si jej přizpůsobí pro své vlastní potřeby. Zejména je záhodno změnit
+údaje v~sekci \emph{PDF document information}. Tyto údaje se uvádějí zvlášť
+(místo aby byly vzaty z~údajů pro titulní stránky popsané
+v~Kapitole~\ref{titpages}) z~toho důvodu, že vyžadují absenci diakritiky,
+která je ve vlastnostech dokumentu chybně zobrazována. Zakomentujete-li
+některý z~příkazů \pgm{\textbackslash pdfinfo*}, zůstane odpovídající políčko
+ve vlastnostech dokumentu prázdné.
+
+
+
+\endinput
+
+%%
+%% End of file `ca_conf.tex'.

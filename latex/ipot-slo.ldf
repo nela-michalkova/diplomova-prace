@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is the `ipot-slo.ldf' file: Slovak language definitions.%%
+%% ------------------------------------------------------------ %%
+%% Version 2022-04-30                                           %%
+%% Developed & maintained by <stanislav.hledik@physics.slu.cz>  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\appendixname{Dodatok}
+\def\@annotationname{Abstrakt}
+\def\@keywordsname{K\v{l}\'u\v{c}ov\'e  slov\'a}
+\def\@acknowledgementname{Po\v{d}akovanie}
+\def\@declarationname{Prehl\'asenie}
+\def\@dedicationname{Venovanie}
+\def\@thesiskind{bakal\'arska pr\'aca}
+\if@narrowmargin
+  \def\@institution{Sliezska univerzita v Opave\enspace
+    $\boldsymbol\vert$\enspace Fyzik\'alny \'ustav v Opave}
+\else
+  \def\@institution{Sliezska univerzita v Opave\\
+    Fyzik\'alny \'ustav v Opave}
+\fi
+\def\@programname{Program}
+\def\@specializationname{\v{S}pecializ\'acia}
+\def\@supervisorname{Ved\'uci}
+\def\@advisorname{Konzultant}
+\def\@refereename{Oponent}
+\def\@seat{Opava}
+
+\endinput
+
+%%
+%% End of file `ipot-slo.ldf'.

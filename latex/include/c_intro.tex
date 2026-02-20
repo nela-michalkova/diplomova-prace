@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toto je inkludovaný LaTeXový soubor `c_intro.tex'.           %%
+%% ------------------------------------------------------------ %%
+%% Verze 2022-05-31                                             %%
+%% Vyvíjí & udržuje <stanislav.hledik@physics.slu.cz>           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Text vaší závěrečné práce by měl začínat nečíslovanou kapitolou
+%% Úvod. Potlačení číslování lze dosáhnout pomocí "hvězdičkové
+%% formy" příkazu \chapter, jak je vidět níže. Dokumentní třída
+%% je naprogramována tak, aby do Obsahu vložila i nečíslované
+%% kapitoly. Všimněte si, jak je každý příkaz, který generuje
+%% nějaký čítač, označen unikátním štítkem pomocí \label. To se
+%% může hodit pro pozdější křížové reference.
+
+%#################################################################
+\chapter*{Úvod}\label{intro}
+
+%% Motto, pokud je chcete:
+
+\begin{motto}{Murphy (Allenův nebo Cannův axiom)}
+Když už nefunguje vůbec nic, přečti si konečně návod k~použití.
+\end{motto}
+
+%% Implicitně je první odstavec po nadpisu (kapitola, sekce, ...)
+%% neindentovaný (bez horizontální odstavcové zarážky, to lze ale
+%% globálně změnit aktivací volby `indentfirst'). V tomto případě
+%% se však nejedná o první odstavec, jelikož před ním se vyskytuje
+%% prostředí `motto'. Proto musíme indentaci explicitně potlačit.
+%% Tento odstavec rovněž demostruje vložení hesla pro rejstřík:
+\noindent
+Publikační systém\INDEX{publikační systém} \LaTeX{}\INDEX{publikační
+  systém!\LaTeX{}}~\cite{Lam:1994:LaTeX:,%
+  Goo-Mit-Sam:1994:Companion:,%
+  LaTeXNet:LIVE:TheLaTeXNetwork:} je de~facto standardem pro sazbu prací
+obsahujících množství matematiky. Do této kategorie dokumentů spadají také
+bakalářské, diplomové, rigorózní a dizertační práce (jež jsou v~dalším
+souhrnně nazývány \emph{závěrečnými pracemi}) v~matematických, fyzikálních a
+informatických oborech.
+
+%% Obsahuje-li Úvod sekce hlubší úrovně (\section, ...), potlačte
+%% jejich číslování "hvězdičkovou formou":
+\section*{Cíl}\label{aim}
+
+Po ustavení Fyzikálního ústavu v~Opavě v~r.~2020 vyvstala v~návaznosti na nové
+studijní předpisy a množící se dotazy studentů na formální uspořádání
+závěrečné práce potřeba poskytnout vhodné \LaTeX ové řešení.  Po rešerši
+balíčků dostupných z~CTAN~\cite{CTAN:LIVE:CompTeXArNet:} a
+z~Overleaf~\cite{Ovr:LIVE::Overleaf} se autor rozhodl nové řešení založit na
+předchozích balíčcích pro Ústav fyziky FPF SU v~Opavě \pkg{physuth} (z~let
+2007--2009) a \pkg{fpfslut} (2015), avšak pod změněným názvem \pkg{\ipotname}
+(akronym Institute of Physics in Opava THESis).
+
+Klíčovými požadavky při vývoji balíčku \pkg{\ipotname} byla
+\begin{enumerate}
+\item\label{easyuse} snadnost instalace a základního použití pro ty, kdo
+  nemají zkušenosti s~publikačním systémem \LaTeX;
+\item\label{autotitle} snadné generování obsahově a graficky jednotných
+  titulních stránek\footnote{Sestávajících z~patitulu, titulní stránky,
+    abstraktu, klíčových slov, zadání práce, prohlášení, obsahu, volitelně
+    protititulu (frontispice), poděkování, dedikace, seznamu obrázků a seznamu
+    tabulek.} (\uv{front matter});
+\item\label{langsup} podpora jazyků schválených pro psaní závěrečných prací na
+  Fyzikálním ústavu;
+\item\label{bibgen} podpora tvorby bibliografie ve formě bibliografického
+  stylu\INDEX{bibliografický styl} pro pomocný program
+  \BibTeX{}~\cite{Pat:LIVE:CTAN:BibTeX};
+\item\label{indgen} podpora tvorby rejstříku pomocí pomocného programu
+  \MakeIndex{}~\cite{Bee:LIVE:CTAN:MakeIndex,%
+    LtX:LIVE:CTAN:makeidx};
+\item\label{advposs} konfigurovatelnost podle potřeb pokročilejšího uživatele;
+\item\label{sufdoc} dostatečná a srozumitelná dokumentace.
+\end{enumerate}
+
+\section*{Prerekvizity}\label{prereq}
+
+Předpokládá se, že čtenář je obeznámen se základy publikačního
+systému\INDEX{publikační systém} \LaTeX\INDEX{publikační systém!\LaTeX{}}
+zhruba v~rozsahu volitelného předmětu bakalářského studijního programu Fyzika
+FU:FYBPV0006 \LaTeX{}\footnote{Viz
+  \url{https://is.slu.cz/predmet/fu/FYBPV0006}.} nebo
+příručky~\cite{Ryb:2005:LaTeX:3}, proto se zabývá jen specifiky \LaTeX
+ového\INDEX{publikační systém!\LaTeX{}} balíčku \pkg{\ipotname} a
+nesubstituuje běžné manuály~\cite{Ryb:2005:LaTeX:3,%
+  Lam:1994:LaTeX:,%
+  Goo-Mit-Sam:1994:Companion:,%
+  Goo-Rah-Mit:1994:GraComp:,%
+  Goo-Rah:1994:WebComp:,%
+  Kop-Dal:2004:LaTeXPodrPruv:,%
+  Wri-Fai-etal:LIVE::TeXFAQ} nebo online dokumentaci a
+příručky~\cite{Oet-etal:LIVE::lshort,%
+  Hle:LIVE::Bazak}.  Pro podrobnější poučení o~problematice sazby závěrečných
+prací lze doporučit~\cite{Pol:1998:PravidlaSazbyDP:,%
+  Ryb:2006:ZpracZP:} a odkazy v~nich uvedené.
+
+\section*{Struktura}\label{struct}
+
+Tento dokument má formu fiktivní bakalářské práce sloužící jako uživatelský
+manuál a je rozdělen do tří částí. V~Části~\ref{procsol} jsou soustředěny
+popisy konkrétních činností, postupů a řešení (zhruba v~pořadí, v~němž se
+s~nimi uživatel setkává), dále tipy a triky uplatnitelné při psaní závěrečných
+prací pomocí \pkg{\ipotname}.
+
+Část~\ref{findef} sestává z~poněkud nesourodých ukázek vybraných a mírně
+upravených a/nebo zkrácených kapitol a partií ze skutečných již obhájených
+závěrečných prací (s~laskavým svolením jejich autorů) s~vesměs zaslepenými
+obrázky (to hlavně kvůli redukci velikosti obrázkových souborů). Konkrétně se
+jedná o~ukázky z~bakalářských prací~\cite{Val:2015:BcProj:NumMagLev,%
+  Bry:2007:BcProj:ModMedDiag} na stránkách~\pageref{SpinLev}
+a~\pageref{princtwo}, o~ukázku z~diplomové
+práce~\cite{Fab:2017:DipProj:PorSnimkuOpAnObr} na stránce~\pageref{CAPczm} a
+o~kapitolu z~vlastní dizertační práce autora balíčku
+\pkg{\ipotname}~\cite{Hle:2014:PhDThes:Polytropes} na
+stránce~\pageref{Chap:Uniform}.\footnote{Zatímco první tři ukázky jsou psány
+  česky, ukázka z~dizertační práce zůstává v~angličtině~-- pro účel, jemuž
+  mají ukázky sloužit, je jejich jazyk irelevantní.} Do této části je~-- bez
+nároku na úplnost~-- zahrnuta většina typických situací, se kterými se lze při
+sazbě závěrečných prací setkat. Čtenářův předpokládaný modus operandi pak
+spočívá ve vybrání požadovaného typografického efektu ve vysazené fromě práce
+% (třeba obrázku jakožto plovoucího objektu s~určitým aranžmá grafických souborů
+% a společnou popiskou, mimo text vysazených očíslovaných rovnic zarovnaných
+% podle rovnítka, tabulky s~popiskou)
+a následného vyhledání odpovídajícího místa v~hlavním zdrojovém textu
+\pgm{\thesnamecze .tex} nebo v~inkludovaných zdrojových textech
+\pgm{include/*.tex} a dalších pomocných textových souborech jako jsou
+bibliografická databáze \pgm{\refername .bib} či konfigurační soubory
+\pgm{\ipotname .cfg} a \pgm{hyperref.cfg}, kde kromě vlastního řešení tu a tam
+nalezne další informace o~žádaném efektu formou komentářů.\footnote{Hledáte-li
+  např. inspiraci pro aranžmá obrázků nebo tabulek jakožto plovoucích objektů
+  a jejich umisťování, lze doporučit ukázku z~bakalářské
+  práce~\cite{Bry:2007:BcProj:ModMedDiag}.} Ostatně lze vyjít přímo ze
+zdrojových textů této fiktivní bakalářské práce a vlastní práci začít psát
+jejich přepisováním textem novým. Tento způsob \uv{učení se podle příkladu}
+jistě nepokryje všechny požadavky, ale spolu s~uvedenou literaturou může
+poskytnout vodítka a programovací vzory pro vlastní kreativní tvorbu.
+
+Technické detaily (konfigurace, volby dokumentní třídy \pgm{\ipotname .cls},
+načítané balíčky, pokročilé způsoby kompilace pomocí \pkg{make} a jiné) jsou
+popsány v~dodatkové Části~\ref{append}.
+
+\section*{Další vývoj}\label{furtherdev}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Knihovny balíčku \pkg{\ipotname} a hlavně tento manuál budou v~budoucnu
+podléhat dalšímu vývoji. Ve svém současném stavu je manuál zatím
+minimalistický a bude doplňován o~další plánované i~neplánované kapitoly
+(konstrukce preambule, sazba matematiky, tvorba titulních stránek, vkládání
+externí grafiky, citace a reference, jazyková lokalizace) a dodatky
+(pokročilejší konfigurace, manipulace se sazebním obrazcem, hypertext,
+management kompilace pomocí \pkg{make}). Sledujte proto domovskou stránku
+odkázanou v~Kapitole~\ref{install}, na níž bude každá nová verze anoncována.
+
+Protože ani balíček \pkg{\ipotname}~-- stejně jako každý jiný software~-- není
+prost chyb, chtěl bych požádat uživatele, aby mě pomocí kontaktů uvedených na
+\authorurl{} laskavě informovali o~chybách, nedostatcích a problémech, na
+které při jeho používání narazí, za což předem děkuji.
+
+\endinput
+
+%% 
+%% End of file `c_intro.tex'.

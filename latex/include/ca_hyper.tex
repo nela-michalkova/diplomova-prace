@@ -1,0 +1,107 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toto je inkludovaný LaTeXový soubor `ca_hyper.tex'.          %%
+%% ------------------------------------------------------------ %%
+%% Verze 2022-06-03                                             %%
+%% Vyvíjí & udržuje <stanislav.hledik@physics.slu.cz>           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Konfigurace balíčku \pkg{hyperref}}\label{hyconf}%%%%%%%%%%%%%%%%%
+
+Balíček \pkg{hyperref}~\cite{LtX:LIVE:CTAN:hyperref} je načten a
+předkonfigurován již v~dokumentní třídě \pgm{\ipotname .cls} v~argumentu makra
+\pgm{\textbackslash AtEndPreamble}~\cite{Wri-Leh:LIVE:CTAN:etoolbox}, aby byl
+načten jako poslední ze všech balíčků, i~těch, jenž si uživatel vyžádá
+v~preambuli hlavního souboru (viz též Dodatek~\ref{packages} na
+stránce~\pageref{pkghyperref}).\footnote{To je z~technického hlediska žádoucí,
+  vysvětlení lze nalézt v~manuálu
+  \pkg{hyperref}~\cite{LtX:LIVE:CTAN:hyperref}.}  Načtení balíčku
+\pkg{hyperref} se zapíná volbou \opt{htext} bez ohledu na to, která z~voleb
+\opt{draft} či \opt{final} (případně i~ostatních popsaných
+v~Dodatku~\ref{options}) je aktivní. Ovladač~\cite{SE:LIVE::DriversCreatePDF}
+je autodetekován; obecně platí, že při kompilaci pomocí \pkg{pdflatex} se
+použije odpovídající ovladač automaticky, při kompilaci pomocí \pkg{latex} se
+použije ovladač \pkg{dvipdfmx} rovněž automaticky.\footnote{Toto chování lze
+  změnit v~konfiguračním souboru \pgm{hyperref.cfg}. Ovladač \pkg{dvipdfmx}
+  předpokládá následnou jím provedenou konverzi do
+  \designation{pdf}. Praktický význam to však nemá, neboť kompilace do
+  souborového formátu \designation{pdf} se téměř výhradně provádí pomocí
+  \pkg{pdflatex}.}
+
+Dodatečnou konfiguraci je možné provést pomocí specializovaného konfiguračního
+souboru \pgm{hyperref.cfg} balíčku \pkg{hyperref} a volitelného konfiguračního
+souboru \pgm{\ipotname .cfg} balíčku \pkg{\ipotname} (viz
+Dodatek~\ref{config}) umístěných v~adresáři \pgm{manual}. Důvodem přesunu
+určité malé části konfigurace do \pgm{\ipotname .cfg}~-- jmenovitě specifikace
+údajů zobrazovaných v~menu \uv{Document Properties} Adobe Acrobat
+Readeru~\cite{Adobe:LIVE::AcrobatReader} (viz obrázek~\ref{AcroReadDocProps})
+i~jiných prohlížečů~\designation{pdf},
+např.~M$\mu$PDF~\cite{Art:LIVE::MuPDF}~-- je zachování těchto údajů při
+kompilaci pomocí \pkg{pdflatex} i~při vypnuté volbě \opt{htext}, typicky pro
+tiskovou formu práce. Kdyby byly tyto údaje uvedeny pouze
+v~\pgm{hyperref.cfg}, nenačetly by se. Nezapomeňte tyto údaje v~\pgm{\ipotname
+  .cfg}, stejně jako hodnotu klíče \pgm{baseurl} v~\pgm{hyperref.cfg},
+aktualizovat podle vašich potřeb. Další informace a inspiraci pro vhodné změny
+lze najít v~Dodatku~\ref{config}.
+
+Zkrácený obsah aktuálního konfiguračního souboru \pgm{hyperref.cfg} načtený
+přímo z~něj (pomocí balíčku \pkg{fancyvrb}~\cite{Vos:LIVE:CTAN:fancyvrb})
+vypadá následovně:
+
+\VerbatimInput[frame=none,firstline=16,lastline=27,fontsize=\footnotesize]%
+{hyperref.cfg}
+\noindent$\langle$\emph{řádky vynechány}$\rangle$
+\VerbatimInput[frame=none,firstline=39,lastline=41,fontsize=\footnotesize]%
+{hyperref.cfg}
+\noindent$\langle$\emph{řádky vynechány}$\rangle$
+\VerbatimInput[frame=none,firstline=66,lastline=72,fontsize=\footnotesize]%
+{hyperref.cfg}
+\noindent$\langle$\emph{řádky vynechány}$\rangle$
+\VerbatimInput[frame=none,firstline=85,lastline=89,fontsize=\footnotesize]%
+{hyperref.cfg}
+
+Balíček \pkg{hyperref} je poměrně složitý. Pro bližší informace o~něm a jeho
+konfiguraci proto odkazujeme na rozsáhlou
+dokumentaci~\cite{LtX:LIVE:CTAN:hyperref} nebo na některou
+z~monografií~\cite{Goo-Mit-Sam:1994:Companion:,%
+  Goo-Rah:1994:WebComp:,%
+  Kop-Dal:2004:LaTeXPodrPruv:}.
+
+Za zmínku stojí možnost nastavení klíčů \pgm{backref} a \pgm{pagebackref} na
+hodnotu \pgm{true}, jež k~bibliografickým položkám přidá odkazy vedoucí zpět
+na citace, z~nichž čtenář odskočil. Dále, klíč \pgm{pdfpagelayout} je
+implicitně nastaven na hodnotu \pgm{TwoPageRight}, s~níž se v~Adobe Acrobat
+Readeru \designation{pdf} dokument zobrazuje jako otevřená kniha s~lichou
+stránkou vpravo, jak je ilustrováno na obrázku~\ref{AcroReadPgDisp}.
+
+Definice příkazu \pgm{\textbackslash href} je rozšířena tak, aby byl
+použitelný i~bez balíčku \pkg{hyperref}, tj. se zakomentovanou
+volbou~\opt{htext}.
+
+S~hypertextem souvisejí i~pole \pgm{eprint} a \pgm{doi} implementovaná
+v~bibliografickém stylu \pgm{\ipotname .bst}; jejich hodnoty budou
+hypertextovými odkazy na odpovídající bibliografickou položku
+v~\designation{arXiv} a \designation{doi}. Podrobnější informace o~jejich
+použití a tvorbě bibliografie obecně je v~Kapitole~\ref{refs}.
+
+\begin{figure}[t]
+\setlength{\fboxsep}{0sp}
+\begin{center}
+\fbox{\includegraphics[width=.99\linewidth]{AcroRead_DocProps}}
+\end{center}
+\caption[Vlastnosti dokumentu zobrazené Adobe Acrobat Readerem]%
+{\label{AcroReadDocProps}Vlastnosti dokumentu zobrazené Adobe Acrobat Readerem.}
+\end{figure}
+
+\begin{figure}[t]
+\setlength{\fboxsep}{0sp}
+\begin{center}
+\fbox{\includegraphics[width=.99\linewidth]{AcroRead_PgDisp_CZE}}
+\end{center}
+\caption[Zobrazení \uv{otevřené knihy} Adobe Acrobat Readerem]%
+{\label{AcroReadPgDisp}Zobrazení \uv{otevřené knihy} Adobe Acrobat Readerem.}
+\end{figure}
+
+\endinput
+
+%%
+%% End of file `ca_hyper.tex'.

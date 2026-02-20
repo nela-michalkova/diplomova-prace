@@ -1,0 +1,810 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toto je inkludovaný LaTeXový soubor `x_levit.tex'.           %%
+%% This is the `x_levit.tex' included LaTeX file.               %%
+%% ------------------------------------------------------------ %%
+%% Verze / Version 2022-05-23                                   %%
+%% Vyvíjí & udržuje / Developed & maintained by                 %%
+%%                           <stanislav.hledik@physics.slu.cz>  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Rotací stabilizovaná magnetická levitace}\label{SpinLev}%%%%%%%
+
+Pokud jste se někdy snažili přimět jeden permanentní magnet k~levitaci nad
+jiným permanentním magnetem (kdo toto aspoň jednou nezkoušel?), jistě jste
+zjistili, že lze snadno zajistit mezi magnety repulsivní sílu dostatečně
+silnou pro vybalancování tíhy. Stejně jste ale asi k~vaší nelibosti poznali,
+že levitátor~-- magnet, který měl levitovat, se vždy překlopil, čímž se
+magnetická repulse změnila na atrakci, levitátor spadl a \uv{přilepil} se na
+druhý magnet. Ať jste se snažili sebevíc, stabilní levitace nebylo možno
+dosáhnout. Nemožnost stabilní levitace permanentních magnetů teoreticky
+odvodil a formalizoval Reverend \designation{Samuel Earnshaw} v~roce 1842
+(tedy ještě před publikací Maxwellových rovnic klasické elektrodynamiky roku
+1861) kdy publikoval svůj slavný
+teorém~\cite{Ear:1842:TCAMPS:NatMoFoConsLumEth,%
+  Bas:2006:MECJI:EarnshawMagLev}, jemuž se budeme věnovat podrobně
+v~následující sekci~\ref{EarnshawTheorem} na
+straně~\pageref{EarnshawTheorem}.\footnote{Earnshawova motivace byla ovšem
+  jiná~-- týkala se nestability rovnováhy interagujících elektrických nábojů a
+  její aplikace na světlonosný éter. Platnost Earnshawova teorém je ovšem
+  možné snadno rozšířit na interakci libovolných elektrických či magnetických
+  multipólů.} Od té doby považovali fyzikové levitaci permanentních magnetů za
+nemožnou, analogicky jako matematici považují (oprávněně) za nemožné roztřetit
+pomocí pravítka a kružítka libovolný úhel (což bylo dokázáno rovněž
+v~19.~století).
+
+Ukazuje se, že Earnshawův teorém je sice správný, ale v~jeho
+předpokladech jsou \uv{zadní vrátka} umožňující přece jen teoreticky
+zdůvodnit a realizovat dokonce více druhů magnetické levitace. Některé z~nich
+jsme ve stručnosti představili v~předcházející kapitole. Nyní se budeme
+věnovat obzvláště fascinující magnetické levitaci, jež nevyžaduje napájení,
+kryogenní aparaturu, a ani žádné speciální prostředky. Je tak jednoduchá, že
+je komerčně k~mání jako \uv{hračka} či \uv{hlavolam} za cca USD~40 pod názvem
+\Levit{} (viz~\cite{Fas:LIVE:Levit:Levitron,%
+  Gra:LIVE:Levit:IgnMagBliss}, lze se setkat i~s~pojmenováním
+U-CAS~\cite{Gov-Sht:1999:phys9902002:HowHiUCAS}).
+
+Symetrický vlček (levitátor) obsahující permanentní magnet rotující a
+vznášející se nad bází obsahující toroidální permanentní magnet si nechal
+v~roce 1983 patentovat \designation{Roy Harrigan} z~Vermontu,
+USA~\cite{USpatent4.382.245}. Tento vynálezce měl vůči svým předchůdcům, kteří
+se před ním snažili o~levitaci permanentních magnetů (a~neuspěli), značnou
+výhodu: neznal Earnshawův teorém. Protože nevěděl, že permanentní magnety
+nelze levitovat, náhodou a usilovným snažením objevil způsob, jak toho
+dosáhnout \emph{lze}. To není protimluv~-- Harrigan nevědomky využil toho, že
+rotace levitátoru na sebe váže dva jeho stupně volnosti, které se tak nemohou
+měnit nezávisle, nýbrž změna jednoho velmi rafinovaným způsobem ovlivňuje
+druhý. Tím vytváří ostrůvek stability způsobem, který nenarušuje Earnshawův
+teorém, jenž předpokládá nezávislost všech stupňů volnosti levitátoru. Takovou
+\uv{změnu předpokladů} nikdo z~renomovaných fyziků, kteří Harrigana
+přesvědčovali o~marnosti jeho úsilí, po více než století od formulace
+Earnshawova teorému nenavrhl~\cite{Gra:LIVE:Levit:IgnMagBliss}.\footnote{Je
+  dobré si připomenout tuto historii kdykoli Vám někdo řekne, že něco
+  nejde. Nejsou-li k~tomu racionální důvody, je lepší předpokládat, že to
+  udělat jde.} Nutno ovšem podotknout, že vysvětlení fyziky levitace
+permanentních magnetů je na mnoha webových stránkách jen částečně správně,
+včetně stránky~\cite{Fas:LIVE:Levit:Levitron}.
+
+Tato práce čerpá převážně ze dvou základních článků a jedné diplomové
+práce~\cite{Sim-Hef-Rid:1997:AMEJP:SpStMagLev,%
+  Ber:1996:PRORSA:LevitAdiaTrapSp,%
+  Hab:1999:MgrDP:ProbUlFyzPrakt},
+částečně z~dalších seriózních
+zdrojů~\cite{Caz-Nem:2010:REVRS:NovConPerMagLev,%
+  Dul-Eas:1999:ZANGM1:StabOfLevit,%
+  Fla-etal:1999:PHYSD:SpiMoHovMaTop,%
+  Fre:2010:PHYSED:WondersLevit,%
+  Gan-Jon-Was:1998:JPHYSD:DynOfLevi,%
+  Gen-Del-Ron:1999:MECJI:GyStaPasMagLev,%
+  Gov-Sht-Tho:1999:PHYSD:DyStHoMagTop,%
+  Gov-Sht:1999:phys9902002:HowHiUCAS,%
+  Jon-Was-Gans:1997:JAPPPH:SimpTheoLevi}
+i~z~dalších, zejména webových
+zdrojů~\cite{Ber:LIVE:Levit:LevitronPhys,%
+  Bor:LIVE:Levit:OptRotLevi}. K~práci~\cite{Gan-Jon-Was:1998:JPHYSD:DynOfLevi}
+je na webu zdrojový soubor \pgm{dyn\_of\_lev.mws} pro Maple numerické simulace
+Hanse-Georga Koepkena.
+
+\begin{figure}[p]
+\begin{minipage}[b]{0.627\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{Levi1}
+\end{center}
+\end{minipage}\hfill%
+\begin{minipage}[b]{0.333\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{Levi2}
+\end{center}
+\end{minipage}
+\caption[Schéma Levitronu]{\label{Levi}\emph{Vlevo:} Průřezové schéma
+  Levitronu: (1)~horní kónická část levitátoru ve formě symetrického
+  setrvačníku (vlčku) určená k~uchopení a roztáčení; (2)~kruhový keramický
+  permanentní magnet; (3)~pomocná plastová zdvihací podložka; (4)~plastové
+  pouzdro bázového magnetu; (5)~toroidální keramický permanentní bázový
+  magnet. \emph{Vpravo:} Prostorové schéma Levitronu s~vyznačenými
+  inerciálními kartézskými souřadnicemi se středem v~centru bázového magnetu,
+  vektorem magnetického dipólového momentu $\vec{\mu}$, lokálním vektorem
+  magnetické indukce $\vec{B}$, normálovým vektorem $\vec{S}$ úhlové rychlosti
+  ($|\vec{S}|=\omega$) a těžištěm levitátoru~G. Převzato
+  z~\cite{Gen-Del-Ron:1999:MECJI:GyStaPasMagLev}.}
+\end{figure}
+\begin{figure}[p]
+\begin{minipage}[b]{0.61\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{Levi3}
+\end{center}
+\caption[Realizace Levitronu]{\label{Levi3}Improvizovaná realizace
+  levitátoru Levitron.}
+\end{minipage}\hfill%
+\begin{minipage}[b]{0.35\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{Earnshaw}
+\end{center}
+\caption[Samuel Earnshaw]{\label{Earnshaw}Samuel
+  Earnshaw. }
+\end{minipage}
+\end{figure}
+
+\Levit{} a jeho koncepční schéma lze vidět na
+%frontispice (obrázek převzat z~\cite{Fas:LIVE:Levit:Levitron}) a na
+obrázcích~\ref{Levi} a~\ref{Levi3}. Pokud levitátor umístíme do vhodné pozice
+nad toroidní magnet a roztočíme jej s~úhlovou rychlostí nacházející se
+v~určitých mezích, dojde k~jeho stabilní levitaci, která bude trvat do doby,
+než se levitátor vlivem tření zpomalí pod dolní mez úhlové
+rychlosti. Přivedení levitátoru do režimu levitace vyžaduje určitý
+cvik. Postup je následující: bázový magnet umístíme na stolek, přičemž dbáme
+na přesně horizontální nastavení. Položíme na něj plastovou destičku
+(dodávanou se zařízením \Levit{}), do jejíhož středu umístíme levitátor a
+prsty jej roztočíme. Následně pomalu zdvihneme destičku do výše asi
+2.5--3\,cm, až ucítíme, že levitátor v~blízkosti levitační výšky jakoby
+z~destičky \uv{vyskočil}.  Nyní můžeme již destičku odstranit a sledovat
+levitaci. V~případě, že levitátor má snahu \uv{utéci} do strany, musíme
+příslušnou stranu pomocí stavitelných nožiček stolku zdvihnout. Během zdvihání
+plexisklové destičky se levitátor stabilizuje v~horizontálním směru, což
+v~usnadňuje jeho vyzdvižení~-- důvod je vysvětlen v~poznámce pod čarou za
+rovnicí~(\ref{dUXYlt0}). Je proto dobré co nejdříve po roztočení levitátoru
+nadzvednout plexisklovou destičku do výše asi 0.5~cm, kde dochází ke
+stabilizaci a snižuje se tak precese. Při správném vyvážení stolku a vhodné
+rotaci je levitátor schopen levitovat po dobu asi 3~minut, než se
+aerodynamickým třením sníží otáčky natolik, že gyroskopická stabilizace
+přestane fungovat.
+
+Principy rotačně stabilizované levitace permanentních magnetů se ovšem úzce
+prolínají s~principy diamagnetické levitace, jak se čtenář může přesvědčit
+z~výše uvedené literatury.
+
+Uveďme zde několik odkazů na videoklipy presentující \Levit{} nebo jeho
+napodobeniny v~akci:
+\begin{itemize}
+\item\url{https://youtu.be/YpHraxs6Le4}
+\item\url{https://youtu.be/tvDRCwIS8KY}
+\item\url{https://youtu.be/GMVtlNbMwHw}
+\item\url{https://youtu.be/JOZeCTF_Ilk}
+\item\url{https://youtu.be/VylZJrep1MM}
+\item\url{https://youtu.be/9LTENE7TYew}
+\item\url{https://youtu.be/iRZfk_FvS98}
+\item\url{https://youtu.be/1yVko_ANnMc}
+\end{itemize}
+
+\section{Earnshawův teorém}\label{EarnshawTheorem}%/////////////////////
+
+Tento teorém, který roku 1842 odvodil \designation{Samuel Earnshaw} zmíněný
+v~úvo\-du kapitoly (viz obrázek~\ref{Earnshaw}), má v~problematice magnetické
+levitace zásadní význam. Uveďme nejprve několik jeho slovních formulací.
+
+\begin{quote}\itshape \label{ETorig}
+  Jakákoli rovnovážná statická konfigurace elektrických nábojů, fixních
+  dipólů, kvadrupólů nebo vyšších multipólů umístěných volně v~prostoru je
+  nestabilní.~[Formulace blízká originální]
+\end{quote}
+Totéž ovšem musí platit i~pro permanentní magnety (fixní magnetické dipóly
+nebo multipóly vyšších řádů), neboť vztahy pro interakční energii elektrických
+a magnetických multipólů jsou stejné (s~výjimkou neexistujících magnetických
+monopólů).\footnote{Známá je úloha ze středoškolské fyziky o~nalezení
+  elektrického náboje $Q$, který je třeba umístit do středu čtverce, v~jehož
+  vrcholech jsou stejné elektrické náboje $q$, tak, aby celková síla na každý
+  z~těchto pěti nábojů vymizela. Nalézt takovou rovnováhu je triviální,
+  stabilita je však nedosažitelná~-- sebemenší perturbace polohy kteréhokoli
+  z~nábojů vede ke kolapsu systému.} Dodatečné vnější gravitační pole výsledky
+nemění, neboť jeho relevantní vlastnosti jsou stejné jako
+u~elektrostatického či magnetostatického pole (viz níže).
+
+\begin{quote}\itshape \label{ETshg}
+  Neexistuje čistě elektrostatický nebo magnetostatický levitátor nebo
+  částicová past.~\cite{Sim-Hef-Gei:2001:AMEJP:DiaStMagLev}
+\end{quote}
+
+\begin{quote}\itshape \label{ETsgbg}
+  Žádná kombinace elektrostatických, magnetostatických nebo gravitačních
+  sil nemůže vytvořit 3D potenciálovou jámu nezbytnou pro stabilní levitaci ve
+  volném
+  prostoru.~\cite{Sim-Gei:2000:JAPPPH:DiaLevFlyFrog,%
+    Ber-Gei:1997:EURJP:OfFlyFrogLev}
+\end{quote}
+
+\begin{quote}\itshape \label{ETgetal}
+  Žádný stacionární objekt vyrobený z~permanentních magnetů ve fixní
+  konfiguraci nelze udržet ve stabilní rovnováze jakoukoli kombinací
+  statických magnetických a/nebo gravitačních
+  sil.~\cite{Gei-etal:1999:NATURE:MagLevFinger}
+\end{quote}
+
+Dokážeme nyní Earnshawův teorém pro libovolný systém magnetických dipólů,
+případně i~multipólů vyšších řádů, jenž se mohou v~prostoru libovolně
+přemisťovat a natáčet, a to způsobem, že všechny jejich stupně volnosti jsou
+navzájem nezávislé. Navíc předpokládejme, že magnetické multipólové momenty
+mají také hmotnost nebo analogicky momenty vyšších řádů popisující rozložení
+hmoty, takže podléhají gravitačnímu působení.\footnote{Přidání elektrických
+  multipólů je analogické, ale protože je nebudeme v~dalších úvahách
+  potřebovat, v~zájmu zjednodušení je vypustíme.} Uvažujme takový systém $N$
+vzájemně interagujících magnetických a hmotných multipólů očíslovaných
+indexem $a=1,\ldots,N$; mezi nimi předpokládáme vakuum nebo prostředí
+homogenní hustotou hmoty i~magnetickými vlastnostmi. Vybereme jeden
+multipól~-- nechť je to bez újmy na obecnosti multipól~1, jehož polohu
+symbolicky označíme symbolem $P$. Magnetickou indukci, gravitační intenzitu a
+potenciál vytvořené v~bodě $P$ všemi ostatními multipóly $a=2,\ldots,N$
+označme po řadě $\vec{B}(P)$, $\vec{g}(P)$ a $V(P)$. Bod $P$ se nachází mimo
+ostatní multipóly, takže pro gravitační potenciál platí Laplaceova
+rovnice~\cite{Gol-Poo-Saf:2002:ClassMech:3}
+\begin{equation}
+  \Delta V(P) = 0\,.                                             \label{harmonV}
+\end{equation}
+Jelikož tato rovnice platí i~v~určitém okolí bodu $P$, v~němž se nechacházejí
+ostatní členové systému, budou v~tomto okolí nulové i~parciální derivace
+gravitačního potenciálu podle kartézských souřadnic libovolného řádu, a po
+záměně pořadí parciálních derivací a s~přihlédnutím ke vztahu mezi gravitačním
+potenciálem a intenzitou $\vec{g} = -\nabla V$ dostaneme
+\begin{equation}
+  \Delta g_{i} = \Delta\pder{g_{i}}{x_{j}}
+    = \Delta\frac{\partial^{2}g_{i}}{\partial x_{j}\partial x_{k}} = \cdots
+    = 0\,,                                                       \label{harmonG}
+\end{equation}
+kde $i=1,2,3$ a $(x_{1},x_{2},x_{3})\equiv (x,y,z)$ jsou kartézské inerciální
+souřadnice a $(g_{1},g_{2},g_{3}) = (g_{x},g_{y},g_{z})$ odpovídající
+komponenty gravitační intenzity. Rovnice analogická~(\ref{harmonG}) platí
+i~pro komponenty magnetické indukce,
+\begin{equation}
+  \Delta B_{i} = \Delta\pder{B_{i}}{x_{j}}
+    = \Delta\frac{\partial^{2}B_{i}}{\partial x_{j}\partial x_{k}} = \cdots
+    = 0\,.                                                       \label{harmonB}
+\end{equation}
+Důkaz je jednoduchý a ihned plyne z~již dříve zmíněné nezřídlovosti
+($\nabla\cdot\vec{B}=0$) a nevírovosti magnetické indukce
+($\nabla\times\vec{B}=\vec{0}$)~\cite{Hab:1999:MgrDP:ProbUlFyzPrakt} pomocí
+známé identity~\cite{Pur-Mor:2013:ElectMagn:3}
+\begin{equation}
+  \Delta\vec{B}
+  =\nabla(\nabla\cdot\vec{B})-\nabla\times(\nabla\times\vec{B})\,.\label{Errgdl}
+\end{equation}
+Pole, jejichž laplacián je nulový, nazýváme harmonické. Podle
+rovnic~(\ref{harmonV}), (\ref{harmonG}) a (\ref{harmonB}) jsou gravitační
+potenciál, komponenty gravitační intenzity a magnetické indukce včetně všech
+jejich parciálních derivací harmonická pole.
+
+Potenciální energie vybraného multipólu je~dána
+vztahem~\cite{Pur-Mor:2013:ElectMagn:3}
+\begin{align}
+  U(P,Q) &= mV(P) + \left(\text{hmotový dipólový, kvadrupólový
+   a vyšší členy}\right)\notag\\
+         &- \vec{\mu}(Q)\cdot\vec{B}(P)
+   + \left(\text{magnetický kvadrupólový a vyšší členy}\right)\,,  \label{PotEn}
+\end{align}
+v~němž $m$ označuje hmotnost, $\vec{\mu}$ magnetický dipólový moment a $Q$
+symbolicky vnitřní stupně volnosti (u~dipólu jeho natočení např. pomocí
+Eulerových úhlů). Členy popisující vyšší multipóly jsou vyznačeny pouze
+symbolicky, je však jasné, že budou multiplikativním způsobem obsahovat
+parciální derivace gravitačního potenciálu a komponent $B_{i}$ podle
+prostorových souřadnic~\cite{Lan-Lif:1980:2-ClasTheField:4}. Z~těchto úvah
+a rovnic~(\ref{harmonV}), (\ref{harmonG}) a (\ref{harmonB}) dostáváme, že
+potenciální energie vybraného multipólu \uv{dědí} vlastnost harmonicity,
+\begin{equation}
+  \Delta U(P,Q)\equiv
+  \pdder{U}{x} + \pdder{U}{y} + \pdder{U}{z} = 0\,.              \label{harmonU}
+\end{equation}
+
+V~dalším textu se omezíme na magnetické dipóly popsané vektorem magnetického
+dipólového momentu $\vec{\mu}$ a hmotové monopóly $m$. Započtení multipólů
+vyšších řádů je pouze technickou záležitostí a na principu nic nemění, navíc
+vzhledem k~obvyklé homogenitě gravitačního pole je zanedbání hmotových
+multipólů vyšších řádů exaktní.  Nutná podmínka rovnováhy vybraného multipólu
+je, aby síla na něj působící v~bodě $P$ vymizela\footnote{Díky nevírovosti
+  pole $\vec{B}$ platí $\lpder{B_{i}}{x_{j}}=\lpder{B_{j}}{x_{i}}$, a tedy
+  $-\nabla(-\vec{\mu}\cdot\vec{B}) = (\vec{\mu}\cdot\nabla)\vec{B}$, jelikož
+  $\mu(Q)$ závisí pouze na vnitřních stupních volnosti.}
+\begin{equation}
+  \vec{F}(P) \equiv -\nabla U(P,Q) =
+  \underbrace{m\vec{g}}_{\text{tíha}}
+  + \underbrace{(\vec{\mu}\cdot\nabla)\vec{B}}_{\text{magnet. síla}}
+  = \vec{0}\,.                                                    \label{equlib}
+\end{equation}
+Pro dosažení stability je třeba zajistit konvexnost potenciální energie
+v~libovolném směru, nutná podmínka čehož je
+\begin{equation}
+  \Delta U(P,Q)
+  \equiv \pdder{U}{x} + \pdder{U}{y} + \pdder{U}{z} > 0\,,         \label{stabU}
+\end{equation}
+což je ve sporu s~podmínkou~(\ref{harmonU}). Díky harmonicitě potenciální
+energie nemůže být podmínka stability~(\ref{stabU}) splněna. Pokud by
+například parciální derivace $\partial^{2} U/\partial x^{2}$ a
+$\partial^{2} U/\partial y^{2}$ byly kladné, bude pro zachování nulového
+součtu v~(\ref{harmonU}) muset být $\partial^{2} U/\partial z^{2} < 0$, což
+znamená labilitu v $z$-ovém směru. Může také nastat situace, že jedna
+parciální derivace bude kladná a dvě záporné, takže nestabilní budou dva
+stupně volnosti.
+
+Tyto úvahy lze shrnout takto: potenciální energie vybraného multipólu
+v~gravitačním a magnetickém poli ostatních multipólů je harmonické pole a nemá
+tudíž prostorové lokální minimum. Může mít pouze sedlové body, v~nichž lze
+stability dosáhnout nejvýše ve dvou ortogonálních směrech, ostatní aspoň jeden
+směr musí být vždy nevyhnutelně labilní.
+
+Situaci komplikují ještě vnitřní stupně volnosti $Q$, které jsme zatím nebrali
+do úvahy, a které např. v~případě magnetického dipólu popisují jeho
+prostorovou orientaci. Jak je patrno z~vlastností skalárního součinu, že
+minimum potenciální energie $-\vec{\mu}\cdot\vec{B}$ (při zafixované pozici
+$P$) nastává při paralelní orientaci dipólového momentu vůči magnetické
+indukci, maximum při antiparalelní pozici. Na magnetický dipólový moment
+$\vec{\mu}$ totiž působí kromě magnetické síly
+\begin{equation}
+  \vec{F} = (\vec{\mu}\cdot\nabla)\vec{B}                           \label{Fdip}
+\end{equation}
+také moment síly
+\begin{equation}
+  \vec{K} = \vec{\mu}\times\vec{B}                                  \label{Kdip}
+\end{equation}
+(odvození je uvedeno např. v~\cite{Pur-Mor:2013:ElectMagn:3}). Za povšimnutí
+stojí, že pro vznik magnetické síly musí být pole magnetické indukce
+nehomogenní, silový moment však může působit i~v~homogenním magnetickém poli.
+
+V~dalším uvidíme, že právě antiparalelní orientace je nutná pro vznik
+rovnováhy, jejíž stabilita je tak ohrožena nejen výše popsanou translační
+labilitou, ale i~labilitou vůči orientaci (překlopení). Na druhé straně právě
+vazba vhodných parametrů orientace dipólu na jeho pozici v~magnetickém poli
+pomůže vymanit se z~podmínek Earnshawova teorému (vzájemná nezávislost
+všech stupňů volnosti) a způsobit nahrazení znaménka rovnosti
+v~(\ref{harmonU}) znaménkem \uv{větší než}, což v~principu umožní stabilní
+levitaci.
+
+\section{Jak dosáhnout prostorově stabilní levitace?}\label{BeyondE}%///
+
+Nezbytnou podmínkou pro stabilitu levitace je kladný laplacián potenciální
+energie~(\ref{PotEn}) v~rovnovážném bodě. První člen popisující gravitační
+interakci bude vždy harmonický, jedinou možností, jak situaci změnit, je
+ovlivnění druhého členu popisujícího magnetickou interakci.
+
+Nejprve jednoduchým výpočtem ověříme, že pro kvadrát velikosti magnetické
+indukce
+\begin{equation}
+  B^{2} \equiv \vec{B}\cdot\vec{B} = B_{x}^{2} + B_{y}^{2} + B_{z}^{2}
+\end{equation}
+platí~\cite{Ber-Gei:1997:EURJP:OfFlyFrogLev}
+\begin{equation}
+  \Delta (B^{2})
+    = 2\left(\left|\nabla B_{x}\right|^{2}
+           + \left|\nabla B_{y}\right|^{2}
+           + \left|\nabla B_{z}\right|^{2}\right) \geq 0\,.      \label{LapB2gen}
+\end{equation}
+Levitace ovšem vyžaduje nehomogenním magnetické pole, v~němž musí být gradient
+alespoň jedné z~komponent magnetické indukce nenulový, takže
+v~(\ref{LapB2gen}) nastává ostrá nerovnost
+\begin{equation}
+  \Delta (B^{2}) > 0\,.                                            \label{LapB2}
+\end{equation}
+V~důsledku rostoucí monotonicity druhé odmocniny na oboru kladných reálných
+čísel pak platí také
+\begin{equation}
+  \Delta B > 0\,.                                                  \label{LapB}
+\end{equation}
+
+Vztahy~(\ref{LapB2}) a (\ref{LapB}), dobře známé konstruktérům magnetických
+částicových pastí, jsou esenciální ingrediencí pro možnost
+levitace. Pokud totiž vezmeme místo fixního magnetického dipólu \uv{měkký}
+dipól, jehož dipólový moment je úměrný vnější magnetické indukci, ale míří
+opačným směrem,
+\begin{equation}
+  \vec{\mu} = -\kappa\vec{B}\,,                             \label{muPropMinusB}
+\end{equation}
+kde $\kappa$ je kladná konstanta (tedy přesně chování diamagnetik), bude
+potenciální energie
+\begin{equation}
+  U = mV +\kappa B^{2}\,.                                        \label{diamagU}
+\end{equation}
+Aplikujeme-li na obě strany této rovnice Laplaceův operátor, dostaneme
+podle rovnice~(\ref{LapB2}) okamžitě kýžený výsledek
+\begin{equation}
+  \Delta U > 0\,.                                               \label{LapUGt0}
+\end{equation}
+Této možnosti využívá diamagnetická levitace. Všimněme si, že odpadá nutnost
+zabývat se vnitřními stupni volnosti $Q$, protože díky diamagnetickému jevu se
+magnetizace materiálu a tím i~magnetický dipólový moment $\vec{\mu}$
+automaticky nastavuje do správného (antiparalelního) směru, jak je patrné
+z~(\ref{muPropMinusB}). Konstanta $\kappa$ je ovšem velmi malá, takže
+k~realizaci diamagnetické levitace je zapotřebí velmi silného magnetického
+pole.
+
+Druhá možnost je ponechat velikost magnetického dipólového momentu konstantní,
+ale nějak zařídit, aby se natáčel antiparalelně vektoru externí magnetické
+indukce, formálně vyjádřeno
+\begin{equation}
+  \vec{\mu} = -\kappa\,\frac{\vec{B}}{B}\,,                   \label{muPropDirB}
+\end{equation}
+což odpovídá chování permanentního magnetu. Potenciální energie potom bude
+\begin{equation}
+  U = mV +\kappa B\,.                                             \label{permaU}
+\end{equation}
+Analogicky s~předchozím případem, po aplikaci Laplaceova operátoru na obě
+strany této rovnice obdržíme podle~(\ref{LapB}) opět vztah~(\ref{LapUGt0})
+připouštějící stabilitu.
+
+Jak uvidíme v~dalším rozboru, striktní antiparalelizace magnetického dipólového
+momentu $\vec{\mu}$ vůči externí magnetické indukci $\vec{B}$ není nutný,
+stačí, když úhel mezi $\vec{\mu}$ a $-\vec{B}$ nepřekročí jistý mezní malý
+úhel. Na rozdíl od diamagnetické levitace je zde jeden zásadní problém, a~to
+jak udržet magnetický dipól v~blízkosti antiparalelní pozice, když na něj
+působí silový moment $\vec{K} = \vec{\mu}\times\vec{B}$, který se snaží dipól
+otočit do paralelní pozice. Jinými slovy řečeno: máme aspoň teoreticky vyřešen
+problém prostorové stabilizace (stupňů volnosti $P$), ale nikoli vnitřních
+stupňů volnosti $Q$.
+
+Pro možnost stabilizace levitace permanentních magnetů tedy vyvstávají
+dvě klíčové otázky:
+\begin{enumerate}
+\item Jak zařídit udržování antiparalelní vzájemné orientace magnetického
+  dipólového momentu $\vec{\mu}$ a $\vec{B}$ (nemusí být zcela striktní ve
+  smyslu poznámky výše)? Udržování antiparalelní orientace umožní vznik 3D
+  potenciálové jamky okolo rovnovážné polohy.
+\item Jak stabilizovat vnitřní stupně volnosti $Q$, tj. jak zařídit, aby se
+  dipól vlivem momentu~(\ref{Kdip}) okamžitě nepřeklopil?
+\end{enumerate}
+
+\noindent
+Jak uvidíme dále, odpovědí na obě otázky je \emph{gyroskopická stabilizace}
+pomocí rotace. Je ale dobré si uvědomit, že jsme zatím dokázali pouze, že
+levitace není vyloučena, a to rovnicí~(\ref{LapUGt0}), která stále připouští
+konkávnost $U(P)$ v~některém směru,
+\begin{equation}
+\pdder{U^{2}}{x}>0\,,\quad
+\pdder{U^{2}}{y}>0\,,\quad
+\pdder{U^{2}}{z}>0\,.                                              \label{E4re}
+\end{equation}
+Diskuse a důkaz, že pro konfiguraci použité v~zařízení \Levit{} to lze, je
+obsahem následující sekce.
+
+\section{\Levit{} a teorie jeho stability}\label{LeviStab}%//////////////////////
+
+Vyjdeme z~konfigurace typické pro \Levit{} znázorněné na
+obrázku~\ref{UkazSchemaLevitronu}. Systém je tvořen prstencovým permanentním
+magnetem (bází) a levitátorem~-- symetrickým vlčkem s~magnetickým dipólem,
+jenž je rovnoběžný s~jeho osou symetrie. Permanentní prstencový magnet má
+poloměr $a$ a jeho magnetický moment v~nepohyblivém laboratorním inerciálním
+souřadném systému $(X,Y,Z)$ má komponenty $\vec{M}=(0,0,M)=M\hat{e}_{Z}$, kde
+$M>0$. Osa prstence je shodná s~osou $Z$.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=\linewidth]{UkazSchemaLevitronu}
+\end{center}
+\caption[Schéma modelu Levitronu]{\label{UkazSchemaLevitronu}Schéma modelu
+  Levitronu použité v~pozdější numerické simulaci.}
+\end{figure}
+
+Levitátor je charakterizován Amp\`erovým magnetickým dipólovým momentem
+$\vec{\mu}$ s~komponentami $\vec{\mu}=(0,0,\mu)=\mu\hat{e}_{z}$ v~souřadném
+systému $(x,y,z)$ pevně spojeném s~levitátorem a mající počátek v~jeho hmotném
+středu\footnote{Kvůli stručnosti budeme nadále užívat termínu těžiště.} $C$ a
+osu $z$ splývající s~osou symetrie levitátoru, dále pak hmotností $m$ a
+hlavními centrálními momenty setrvačnosti $J_{\parallel}$ vzhledem k~rotační
+ose levitátoru (osa $z$) a $J_{\perp}$ vzhledem k~libovolné ose kolmé
+k~rotační ose levitátoru (např. osy $x, y$, které kvůli přehlednosti nejsou
+znázorněny) a procházející těžištěm. Levitátor je umístěn v~homogenním
+gravitačním poli s~komponentami $\vec{g}=(0,0,-g)$ v~laboratorním inerciálním
+systému souřadnic $(X,Y,Z)$, kde $g>0$, a v~magnetickém poli generovaném výše
+popsaným toroidálním bázovým magnetem. Osa $z$ svírá s~osou $Z$ nutační úhel
+$\theta$. Písmeny S a J jsou označeny \uv{severní} a \uv{jižní} pól obou
+magnetů; levitátor je zachycen v~poloze, kdy jsou k~sobě přivráceny
+stejnojmenné magnetické póly a právě v~této situaci bude tedy docházet
+k~žádoucímu odpuzování a nadnášení.
+
+Levitátor~-- jako tuhé těleso bez restrikce na polohu jakéhokoli svého bodu~--
+má šest stupňů volnosti
+$(R\equiv\sqrt{X^{2}+Y^{2}},\Phi,Z,\varphi,\theta,\psi)$, z~nichž orbitální
+úhel těžiště $\Phi$, precesní úhel $\varphi$ a úhel vlastní rotace $\psi$
+nejsou na obrázku~\ref{UkazSchemaLevitronu} kvůli přehlednosti explicitně
+vyznačeny; v~tomto směru odkazujeme na standardní učebnice analytické
+mechaniky, např. na známou knihu Goldsteina a
+spoluautorů~\cite{Gol-Poo-Saf:2002:ClassMech:3}.
+
+Při výpočtech zanedbáváme skutečnost, že magnet umístěný v~levitátoru má
+určité konečné rozměry a nahrazujeme jej bodovým dipólem, dále pak zanedbáváme
+šířku prstence bázového permanentního magnetu budicího magnetické pole, a
+nahrazujeme jej lineárním kružnicovým magnetem infinitezimální šířky a
+výšky. Tato zanedbání, jak uvidíme, nic nemění na kvalitativním způsobu pohybu
+levitátoru. Bylo by ale podnětné zkusit do budoucna složitější výpočty beroucí
+v~úvahu rozměry báze i~levitátoru. Pro zpřehlednění vzorců elektromagnetismu
+používáme místo soustavy jednotek SI soustavu
+CGS~\cite{Pur-Mor:2013:ElectMagn:3}.
+
+Za pozornost stojí, že magnetický dipól (v~praxi malý permanentní magnet) je
+umístěn mimo těžiště $C$ (avšak stále na ose symetrie levitátoru); jejich
+vzdálenost je na obrázku~\ref{UkazSchemaLevitronu} označena~$s$, přičemž ve
+znázorněné \uv{odpuzovací} poloze je těžiště pod dipólem. Tato představa je
+užitečná, protože teoreticky by se dalo dostatečnou volbou vzdálenosti~$s$
+dosáhnout kompenzace a magnetického silového momentu $\vec{\mu}\times\vec{B}$
+snažícího se překlopit levitátor gravitačním silovým momentem, kdy by
+levitátor fungoval v~podstatě jako kyvadlo s~centrem magnetické interakce
+v~dipólu a centrem gravitační interakce v~těžišti. Tento způsob stabilizace by
+však, jak zakrátko uvidíme, nefungoval, a pro rovnice numerického modelu se
+nakonec stejně klade $s=0$, což odpovídá reálnému zařízení.
+
+Z~důvodu rotační symetrie Levitronu bude rovnovážná poloha levitátoru ležet na
+ose bázového magnetu $Z$, a osa levitátoru $z$ s~ní bude antiparalelní. Pro
+určení rovnovážné polohy proto můžeme potlačit pět stupňů volnosti buď fixací
+jejich hodnot $(R=0,\theta=\pi)$, kdy jsou hodnoty $\Phi$, $\varphi$, $\psi$,
+jakož i~případná nenulová hodnota $s$, irelevantní. Potenciální
+energie~(\ref{PotEn}) se zjednoduší na tvar\footnote{Pro existenci rovnováhy
+  musí mířit magnetická indukce v~rovnovážném bodě vzhůru, odkud plyne změna
+  znaménka u~magnetického členu.}
+\begin{equation}
+  U = mgZ - \vec{\mu}\cdot\vec{B} = mgZ + \mu B_{Z}\,.              \label{r3_1}
+\end{equation}
+V~rovnováze musí síla působící ve směru $Z$ na levitátor vymizet,
+\begin{equation}
+  F_{Z}=-\pder{U}{Z}=-mg-\mu\pder{B_{Z}}{Z}=0\,.                     \label{r3_2}
+\end{equation}
+Podrobnější diskuse pomocí numerického
+modelování~\cite{Hle:2011:SpinStabMagLev:WTC2011} vede k~závěru, existují
+čtyři rovnovážné polohy, jak je vidět na obrázku~\ref{EqPoints}:
+\begin{itemize}
+\item Dvě \uv{vznášející se}, které mají $Z>0$, $\vec{\mu}$ míří dolů, báze a
+  levitátor se odpuzují. Tyto rovnovážné polohy jsou dány
+  rovnicí~(\ref{r3_2}).
+\item Dvě \uv{zavěšené}, které mají $Z<0$, $\vec{\mu}$ míří nahoru, báze a
+  levitátor se přitahují. Tyto rovnovážné polohy jsou dány modifikací rovnice
+  rovnicí~(\ref{r3_2}) pro paralelní indukci báze a $\vec{\mu}$ projevující se
+  změnou znaménka u~magnetického členu,
+\begin{equation}
+  F_{Z}=-\pder{U}{Z}=-mg+\mu\pder{B_{Z}}{Z}=0\,.                 \label{r3_2susp}
+\end{equation}
+ Těmito dvěma body se dále nebudeme zabývat, jejich vlastnosti kopírují
+ vlastnosti \uv{vznášející se} dvojice rovnovážných bodů.
+\end{itemize}
+Magnetická indukce báze je úměrná jejímu celkovému magnetickému
+dipólovému momentu $M$. Z~rovnic~(\ref{r3_2}) a~(\ref{r3_2susp}) je
+pak zřejmé, že aby vůbec existovalo řešení a rovnovážné body, musí být
+\uv{vazební koeficient} definovaný součinem
+\begin{equation}
+  \alpha \equiv \mu M                                          \label{BoundCoef}
+\end{equation}
+velikostí dipólových momentů levitátoru $\mu$ a báze $M$ větší než určité
+limitní hodnota. Není-li tato podmínka splněna, levitace nenastane.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=\linewidth]{EquilibriumPoints}
+\end{center}
+\caption[Rovnovážné body Levitronu]{\label{EqPoints}Rovnovážné body Levitronu.
+  Osa $Z$ je zde položena vodorovně, směr vzhůru je orientován
+  doprava. \uv{Vznášející se} rovnovážné body jsou označeny~3, 4,
+  \uv{zavěšené} rovnovážné body jsou označeny~1, 2. Tyto dvojice rovnovážných
+  bodů se nacházejí vždy nad a pod inflexním bodem magnetické indukce na ose
+  $Z$ (označeno \uv{infl}), a vždy v~místech, kde magnetická indukce
+  slábne. V~bodech \uv{max} a \uv{$B=0$} je magnetická indukce maximální
+  resp. nulová.  Převzato z~\cite{Hle:2011:SpinStabMagLev:WTC2011}.}
+\end{figure}
+
+Jednoduchým výpočtem (pro podrobnosti odkazujeme opět
+na~\cite{Hle:2011:SpinStabMagLev:WTC2011}) můžeme ověřit, že pro nejhořejší
+rovnovážný 4 bod je
+\begin{equation}
+  \pdder{U}{Z} > 0\,,                                             \label{dUZgt0}
+\end{equation}
+a tedy levitátor je vertikálně stabilní, zatímco pro rovnovážný bod 3 platí
+opačná nerovnost
+\begin{equation}
+  \pdder{U}{Z} < 0\,,                                             \label{dUZlt0}
+\end{equation}
+takže levitátor je vertikálně labilní. Pro realizaci levitace tak připadá do
+úvahy jedině nejhořejší rovnovážný bod~4.
+
+Vraťme se ještě k~předchozí úvaze o~možnosti stabilizace levitátoru pomocí
+posunu těžiště vůči magnetickému dipólu. Moment tíhové síly by zajišťoval
+antiparalelní orientaci dipólu levitátoru, a~při presenci vhodného tlumicího
+média (vzduch) by zajišťoval jeho exaktně nebo téměř vertikální
+pozici. Rovnice~(\ref{r3_1}) by tedy (aspoň s~přesností do členů 2.~řádu)
+platila i~při malých laterálních výchylkách, a díky harmonicitě polí $V$ a
+$B_{Z}$, a~tudíž i~pole $U$, by v~rovnovážném bodě~4 v~důsledku~(\ref{dUZgt0})
+a rotační symetrie muselo platit
+\begin{equation}
+  \pdder{U}{X} = \pdder{U}{Y} < 0\,,                             \label{dUXYlt0}
+\end{equation}
+takže poloha levitátoru by byla laterálně (horizontálně)
+labilní.\footnote{Analogicky by se dalo dokázat, že v~rovnovážném bodě~3 by
+  byl levitátor laterálně sice stabilní, ale vertikálně labilní, jak
+  ukazuje~(\ref{dUZlt0}).} Levitátor by tedy měl tendenci v~tomto směru
+\uv{sklouznout} a \uv{uletět}. Je zřejmé, že statický způsob zabránění
+překlopení levitátoru nefunguje, neboť ponechává labilitu v~horizontálním
+směru, plně v~souladu s~Earnshawovým teorémem.
+
+Nyní výše presentované úvahy zpřesníme, čímž se zároveň připravíme na
+sestavení matematického modelu levitátoru. Budeme zhruba sledovat postup
+podle~\cite{Hab:1999:MgrDP:ProbUlFyzPrakt}. Položme počátek soustavy $(X,Y,Z)$
+do místa, kde magnetická síla kompenzuje tíhu (takže levitátor levituje
+v~okolí bodu $R=0$, $Z=0$) a rozviňme magnetickou indukci charakterizovanou
+radiální a axiální komponentou $(B_{R}, B_{Z})$ v~okolí tohoto bodu do
+mocninné řady s~přesností do kvadratických členů,
+\begin{align}
+  B_{R}(R,Z)=&B_{R}(0,0)+\pder{B_{R}}{R}(0,0)R+\pder{B_{R}}{Z}(0,0)Z\notag\\
+  &+\frac{1}{2}\pdder{B_{R}}{R}(0,0)R^{2}+\frac{\partial^{2} B_{R}}
+  {\partial{R}\partial{Z}}(0,0)RZ
+  +\frac{1}{2}\pdder{B_{R}}{Z}(0,0)Z^{2}\,,                         \label{r3_11}
+\end{align}
+\begin{align}
+  B_{Z}(R,Z)=&B_{Z}(0,0)+\pder{B_{Z}}{R}(0,0)R+\pder{B_{Z}}{Z}(0,0)Z\notag\\
+  &+\frac{1}{2}\pdder{B_{Z}}{R}(0,0)R^{2}+\frac{\partial^{2} B_{Z}}
+  {\partial{R}\partial{Z}}(0,0)RZ+\frac{1}{2}
+  \pdder{B_{Z}}{Z}(0,0)Z^{2}\,.                                     \label{r3_12}
+\end{align}
+Zřejmě díky symetrii platí
+\begin{equation}
+  B_{R}(0,0)=\pder{B_{R}}{Z}(0,0)= \pdder{B_{R}}{Z}(0,0)=0         \label{axsym1}
+\end{equation}
+a také
+\begin{equation}
+  \pder{B_{Z}}{R}(0,0)=\pdderx{B_{Z}}{R}{Z}(0,0)=0\,.             \label{axsym2}
+\end{equation}
+Dále, vektorové pole $\vec{B}$ splňuje rovnice nezřídlovosti a nevírovosti
+\begin{equation}
+  \nabla\cdot\vec{B}=\pder{B_{Z}}{Z}+\frac{1}{R}\pder{}{R}(R B_{R})=0\,,\quad
+  \left(\nabla\times\vec{B}\right)_{\Phi}=\pder{B_{R}}{Z}-\pder{B_{Z}}{R}=
+  0\,,                                                             \label{r3_13}
+\end{equation}
+ostatní komponenty rotace $\nabla\times\vec{B}$ jsou identicky nulové díky
+$B_{\Phi}\equiv 0$ a axiální symetrii magnetického pole báze $\vec{B}$.
+
+Z~rovnic~(\ref{r3_11})--(\ref{r3_13}) plynou následující rozvoje s~přesností
+do kvadratických členů~\cite{Hab:1999:MgrDP:ProbUlFyzPrakt}
+\begin{align}
+  B_{R}(R,Z)&=-\tfrac{1}{2}S_{0}R-K_{0}RZ\,,                       \label{r3_14}\\
+  B_{Z}(R,Z)&=B_{0}+S_{0}Z+K_{0}Z^{2}-\tfrac{1}{2}K_{0}R^{2}\,,        \label{r3_15}
+\end{align}
+v~nichž je použito zkrácených označení
+\begin{align}
+  B_{0}&\equiv B_{Z}(0,0)\,, \notag\\
+  S_{0}&\equiv \pder{B_{Z}}{Z}(0,0)=-2\pder{B_{R}}{R}(0,0)\,,      \label{r3_16}\\
+  K_{0}&\equiv \frac{1}{2}\frac{\partial^{2}B_{Z}}{\partial{Z^{2}}}(0,0)=
+  -\frac{\partial^{2}B_{R}}{\partial{R}\partial{Z}}(0,0)=
+  -\frac{\partial^{2}B_{Z}}{\partial{R^{2}}}(0,0)\,.
+\end{align}
+Kdyby byla orientace magnetického momentu levitátoru stále svislá, jak jsme
+již diskutovali výše, potenciální energie by se dala v~okolí rovnovážného bodu
+vyjádřit s~přesností do kvadratických členů
+\begin{equation}
+  U= mgZ-\vec{\mu}\cdot\vec{B} =\mu B_{0}+(mg + \mu S_{0})Z
+    +\mu K_{0}Z^{2}-\tfrac{1}{2}\mu K_{0}R^{2}\,.                    \label{r3_17}
+\end{equation}
+Pro vykompenzování tíhy levitátoru se musí anulovat koeficient u~$Z$. Aby však
+rovnováha byla stabilní, musela by kvadratická část potenciální
+energie~(\ref{r3_17}) být pozitivně definitní, což, jak je vidět, díky
+poslednímu členu neplatí. Tento nestabilní režim je ilustrován na
+obrázku~\ref{UnstabMode}.
+
+\begin{figure}[t]
+\begin{minipage}[b]{0.63\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{InteractModelUnstab3}
+\end{center}
+\end{minipage}\hfill%
+\begin{minipage}[b]{0.33\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{InteractModelUnstab2}
+\end{center}
+\end{minipage}
+\caption[Ilustrace nestabilního režimu Levitronu]{\label{UnstabMode}Ilustrace
+  principu nestability v~nejvyšším rovnovážném bodě~4, kdy je osa levitátoru
+  při výchylkách fixována ve vertikálním směru. Průběh potenciální energie
+  v~libovolné rovině obsahující osu $Z$ v~okolí rovnovážného bodu~4 je
+  znázorněn na barevném panelu uprostřed pomocí barevné mapy (vzrůst je
+  reprezentován barvami duhy od červené po fialovou). Rovnovážná poloha je
+  reprezentována bílým bodem, v~jehož okolí je patrné zřetelně sedlový průběh
+  klesající horizontálně (laterálně) a rostoucí vertikálně. Převzato
+  z~\cite{Hle:2011:SpinStabMagLev:WTC2011}.}
+\end{figure}
+
+Je tedy zřejmé, že rotace levitátoru má kromě stabilizace vůči překlopení
+magnetického momentu levitátoru $\vec{\mu}$ do směru $\vec{B}$ ještě jiný,
+velmi delikátní úkol~-- musí zajistit pozitivní definitnost kvadratické části
+potenciální energie~(\ref{r3_17}) a tím i~prostorovou stabilitu
+levitátoru. Jak toho lze dosáhnout? Na základě úvah sekce~\ref{BeyondE} na
+straně~\pageref{BeyondE} zřejmě levitátor a jeho magnetický dipól $\vec{\mu}$
+nemůže zůstat vertikální, ale musí se natáčet do směru lokálního magnetického
+pole. Přesněji řečeno, magnetický moment $\vec{\mu}$ bude konat precesní pohyb
+okolo směru lokální magnetické siločáry.  Pak místo výrazu
+$\vec{\mu}\cdot\vec{B}=-\mu B_{Z}$ nastoupí (alespoň s~přibližnou platností)
+výraz $\vec{\mu}\cdot\vec{B}\cong -\mu B$, kde $B$ označuje velikost
+magnetické indukce $\left(B_{R}^{2}+B_{Z}^{2}\right)^{1/2}$. V~takovém případě
+dostaneme (s~přesností do kvadratických členů) výraz~(\ref{r3_17})
+modifikovaný na tvar~\cite{Hab:1999:MgrDP:ProbUlFyzPrakt}
+\begin{align}
+  U = \mu B_{0}&+(\mu S_{0} +mg)Z\notag\\
+    &+\mu K_{0} \left(\frac{S^{2}_{0}}{2B_{0}K_{0}}+1\right)Z^{2}
+    +\frac{1}{2}\mu K_{0}\left(\frac{S^{2}_{0}}{4B_{0}K_{0}}
+      -1\right)R^{2}\,.                                            \label{r3_18}
+\end{align}
+Magnetická indukce na ose $Z$ (nyní vrátíme počátek soustavy $(X,Y,Z)$ opět do
+středu bázového permanentního magnetu) je
+\begin{equation}
+  B_{Z}(0,Z)=\int
+  \limits_{\Phi'=0}^{2\pi}\left[\frac{3MZ^{2}}{(Z^{2}+a^{2})^{\frac{5}{2}}}-
+  \frac{M}{(Z^{2}+a^{2})^{\frac{3}{2}}}\right]\frac{\dif{\Phi'}}{2\pi}=
+  M\frac{2Z^{2}-a^{2}}{(a^{2}+Z^{2})^{\frac{5}{2}}}\,,                  \label{r3_19}
+\end{equation}
+a její parciální derivace podle $Z$
+\begin{equation}
+  S = \pder{B_{Z}}{Z}
+    = 3MZ\frac{3a^{2}-2Z^{2}}{(a^{2}+Z^{2})^{\frac{7}{2}}}\,.           \label{r3_20}
+\end{equation}
+Podmínka anulování koeficientu $\mu S+mg$ a tedy rovnováhy je
+\begin{equation}
+  3\mu M Z~\frac{2Z^{2}-3a^{2}}{(a^{2}+Z^{2})^{\frac{7}{2}}}=mg\,,      \label{r3_21}
+\end{equation}
+z~níž pro zadané hodnoty $\mu$, $M$, $m$ a $g$ numericky vypočteme levitační
+výšku $Z_{0}$.  Potenciální energie je tedy (nepodstatný konstantní člen
+$\mu B_{0}$ vynecháme)
+\begin{equation}
+  U = \mu K_{0} \left(\frac{S^{2}_{0}}{2B_{0}K_{0}}+1\right)(Z-Z_{0})^{2}
+  +\frac{1}{2}\mu K_{0}
+  \left( \frac{S^{2}_{0}}{4B_{0}K_{0}}-1\right)R^{2}\,,               \label{r3_22}
+\end{equation}
+nebo ekvivalentně
+\begin{equation}
+  U = \mu K_{0}
+  \left(\frac{m^{2}g^{2}}{2B_{0}K_{0}\mu^{2}}+1\right)(Z-Z_{0})^{2}+
+  \frac{1}{2}\mu K_{0}
+    \left(\frac{m^{2}g^{2}}{4B_{0}K_{0}\mu^{2}}-1\right)R^{2}\,.      \label{r3_23}
+\end{equation}
+přičemž $K_{0}=\partial^{2}B_{Z}/\partial Z^{2}$ a $B_{0}$ se bere v~bodě
+$R=0$, $Z=Z_{0}$, kde $Z_{0}$ je řešením
+rovnice~(\ref{r3_21}). Rovnice~(\ref{r3_21}) může mít v~oblasti $Z>0$ dvě
+řešení~-- je nutno vybrat to z~nich, pro které jsou koeficienty
+u~kvadratických členů v~(\ref{r3_22}) nebo~(\ref{r3_23}) kladné. Parametry
+levitátoru tedy musí být voleny tak, aby
+\begin{equation}
+  K_{0}>0\,,\quad \frac{m^{2}g^{2}}{4B_{0}K_{0}\mu^{2}}>1\,.           \label{r3_24}
+\end{equation}
+\begin{figure}[t]
+\begin{minipage}[b]{0.63\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{InteractModelStab3}
+\end{center}
+\end{minipage}\hfill%
+\begin{minipage}[b]{0.33\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{InteractModelStab2}
+\end{center}
+\end{minipage}
+\caption[Ilustrace stabilního režimu Levitronu]{\label{StabMode}Ilustrace
+  princip stabilního režimu v~nejvyšším rovnovážném bodě~4, kdy osa levitátoru
+  při výchylkách sleduje směr siločar pole $\vec{B}$. Průběh potenciální
+  energie v~libovolné rovině obsahující osu $Z$ v~okolí rovnovážného bodu~4 je
+  znázorněn na barevném panelu uprostřed pomocí barevné mapy (vzrůst je
+  reprezentován barvami duhy od červené po fialovou). Rovnovážná poloha je
+  reprezentována bílým bodem, v~jehož okolí je patrné prostorové lokální
+  minimum zajišťující stabilitu. Převzato
+  z~\cite{Hle:2011:SpinStabMagLev:WTC2011}.}
+\end{figure}
+V~tom případě je levitátor polapen v~prostorové potenciálové jámě a jeho
+těžiště osciluje v~horizontální rovině s~periodou
+\begin{equation}
+  T_{\mathrm{R}}\sim 2\pi\sqrt{\frac{m}{2\gamma\,_{\mathrm{R}}}}\,,    \label{r3_25}
+\end{equation}
+kde $\gamma\,_{\mathrm{R}}$ je koeficient u~$R^2$ v~rovnici~(\ref{r3_22})
+nebo~(\ref{r3_23}), analogicky ve vertikálním směru těžiště osciluje
+s~periodou
+\begin{equation}
+  T_{\mathrm{Z}}\sim 2\pi\sqrt{\frac{m}{2\gamma\,_{\mathrm{Z}}}}\,,    \label{r3_26}
+\end{equation}
+kde $\gamma\,_{\mathrm{Z}}$ je koeficient u~$Z^2$ v~(\ref{r3_22})
+nebo~(\ref{r3_23}). Dále, předpokládáme-li, že rotace levitátoru je dostatečně
+rychlá, koná levitátor precesní pohyb kolem lokální siločáry s~periodou
+\begin{equation}
+  T_{\mathrm{prec}} \sim 2\pi\frac{J_\parallel\,\Omega_0}{\mu B_0} \ll
+  T_{\mathrm{rot}}= \frac{2\pi}{\Omega_{0}}                           \label{r3_27}
+\end{equation}
+(viz~\cite{Gol-Poo-Saf:2002:ClassMech:3}), kde $\Omega_0\equiv\loder{\psi}{t}$
+je úhlová rychlost rotace levitátoru. Jestliže platí adiabatická podmínka
+\begin{equation}
+  T_{\mathrm{prec}} \ll T_{\mathrm{R}}\,,                                \label{r3_28}
+\end{equation}
+stačí při výchylkách, při nichž levitátor prochází oblastmi s~různým sklonem
+magnetických siločar, precesní osa sledovat změnu jejich směru, a tak vytvářet
+v~horizontálním směru potenciálovou jámu. Odtud plyne zajímavý závěr: rotace
+levitátoru nesmí být příliš rychlá, neboť pak je precesní perioda dlouhá a
+stane se srovnatelnou nebo dokonce větší než $T_{\mathrm{R}}$, což vede ke
+ztrátě stability. Rotace levitátoru má samozřejmě i~dolní mez: při poklesu
+otáček pod ni přestane rotace účinně bránit překlopení $\vec{\mu}$ do směru
+souhlasně s~$\vec{B}$. Fungování stabilního režimu je ilustrováno na
+obrázku~\ref{StabMode}.
+
+\endinput
+
+%%
+%% End of file `x_levit.tex'.

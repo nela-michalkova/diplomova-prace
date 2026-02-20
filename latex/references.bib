@@ -1,0 +1,2146 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is the `references.bib' BibTeX file.                    %%
+%% dummy<field> is used to place <field> on standby             %%
+%% ------------------------------------------------------------ %%
+%% Version 2022-07-02                 Developed & maintained by %%
+%% <stanislav.hledik (at) physics.slu.cz>                       %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@PREAMBLE{
+    "\newcommand*{\bblaccy}[1]{#1} "
+  # "\newcommand*{\bblaccym}[2]{#1\discretionary{-}{-}{-}#2} "
+  # "\newcommand*{\bblaccymd}[3]{#1\discretionary{-}{-}{-}#2\discretionary{-}{-}{-}#3} "
+}
+
+@STRING{and = " and "}
+@STRING{PREACCESS = "online (\bblaccess{} "}
+@STRING{POSTACCESS = ")"}
+@STRING{UNIACCESS = PREACCESS # "\bblaccym{2022}{05}" # POSTACCESS}
+
+@STRING{ACTPS2 = "Acta Phys. Slovaca"}
+@STRING{AMEJP = "Amer. J. Phys."}
+@STRING{ASTRA = "Astronom. and Astrophys."}
+@STRING{CZEJPA = "Čs. čas. fyz.~A"}
+@STRING{EURJP = "European J. Phys."}
+@STRING{GENRG2 = "Gen. Relativity Gravitation"}
+@STRING{JAPPPH = "J. Appl. Phys."}
+@STRING{JPHYSD = "J. Phys. D: Appl. Phys."}
+@STRING{MECJI = "Meccanica"}
+@STRING{NATURE = "Nature"}
+@STRING{PHYSD = "Phys. D"}
+@STRING{PHYSED = "Physics Education"}
+@STRING{PHYSR4 = "Phys. Rev. D"}
+@STRING{PHYST1 = "Phys. Today"}
+@STRING{POKMF = "Pokroky Mat. Fyz. Astronom."}
+@STRING{PRORSA = "Proc. Roy. Soc. Ser. A"}
+@STRING{REVRS = "Rev. Roumaine Sci. Tech. S{\'e}r. {\'E}lectrotech. {\'E}nerg{\'e}t."}
+@STRING{TCAMPS = "Trans. Cambridge Philos. Soc."}
+@STRING{ZANGM1 = "Z. Angew. Math. Mech."}
+
+@STRING{Hladik = "Hladík, Jan"}
+@STRING{Hledik = "Hledík, Stanislav"}
+@STRING{hle0002 = "https://is.slu.cz/www/hle0002/vyuka/aid/"}
+@STRING{Soltes = "Šoltés, Jiří"}
+@STRING{Stuchlik = "Stuchlík, Zdeněk"}
+@STRING{Torok = "Török, Gabriel"}
+@STRING{Urbanec = "Urbanec, Martin"}
+
+@MANUAL{LaTeXNet:LIVE:TheLaTeXNetwork:,
+  author =	 "{{\LaTeX}.net, {\LaTeX}.org and {\LaTeX}-Community.org}",
+  title =	 "{The {\LaTeX} Network}",
+  year =	 PREACCESS # "\bblaccymd{2022}{04}{25}" # POSTACCESS,
+  url =		 "https://latex.net/",
+  note =	 "{On La\-TeX-Com\-munity.org, founded January 2007, many
+                  authors published articles about LaTeX and related tools
+                  (the site has been renamed to \url{https://LaTeX.net})}",
+  key =		 "LaTeXNet",
+  language =	 "english",
+}
+
+@MANUAL{CTAN:LIVE:CompTeXArNet:,
+  author =	 "{CTAN}",
+  title =	 "{Comprehensive {\TeX} Archive Network}",
+  year =	 UNIACCESS,
+  url =		 "https://ctan.org/",
+  key =		 "CTAN",
+  language =	 "english",
+}
+
+@MANUAL{LtX:LIVE:CTAN:AMSmath,
+  author =	 "{The {\LaTeX} team}",
+  title =	 "{amsmath~-- AMS mathematical facilities for {\LaTeX}}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as amsmath}",
+  url =		 "https://ctan.org/pkg/amsmath",
+  language =	 "english",
+}
+
+@MANUAL{AMS:LIVE:CTAN:AMSfonts,
+  author =	 "{The American Mathematical Society}",
+  title =	 "{amsfonts~-- {\TeX} fonts from the American Mathematical Society}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as amsfonts}",
+  url =		 "https://ctan.org/pkg/amsfonts",
+  language =	 "english",
+}
+
+@MANUAL{AMS:LIVE:CTAN:AMSthm,
+  author =	 "{The American Mathematical Society}",
+  title =	 "{amsthm~-- Typesetting theorems (AMS style)}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as amscls}",
+  url =		 "https://ctan.org/pkg/amsthm",
+  language =	 "english",
+}
+
+@MANUAL{Car:LIVE:CTAN:Graphics,
+  author =	 "Carlisle, David" #and# "Rahtz, Sebastian" #and# "{{\LaTeX}3 Project}",
+  title =	 "{graphicx~-- Enhanced support for graphics}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as graphics}",
+  url =		 "https://ctan.org/pkg/graphicx",
+  language =	 "english",
+}
+
+@MANUAL{LtX:LIVE:CTAN:hyperref,
+  author =	 "{The {\LaTeX} Team}" #and# "Oberdiek, Heiko" #and# "Rahtz, Sebastian",
+  title =	 "{hyperref~-- Extensive support for hypertext in {\LaTeX}}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as hyperref}",
+  url =		 "https://ctan.org/pkg/hyperref",
+  language =	 "english",
+}
+
+@MANUAL{Jac:LIVE:CTAN:lm,
+  author =	 "Jackowski, Bogus{\l}aw" #and# "Nowacki, Janusz Marian",
+  title =	 "{lm~-- Latin modern fonts in outline formats}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as lm}",
+  url =		 "https://ctan.org/pkg/lm",
+  language =	 "english",
+}
+
+@MANUAL{LtX:LIVE:CTAN:fontenc,
+  author =	 "{The {\LaTeX} Team}",
+  title =	 "{fontenc~-- Standard package for selecting font encodings}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} as latex, in \distroMiKTeX{}
+                  as ltxbase}",
+  url =		 "https://ctan.org/pkg/fontenc",
+  language =	 "english",
+}
+
+@MANUAL{LtX:LIVE:CTAN:inputenc,
+  author =	 "{The {\LaTeX} Team}" #and# "Mittelbach, Frank" #and# "Jeffrey, Alan",
+  title =	 "{inputenc~-- Accept different input encodings}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} as latex, in \distroMiKTeX{}
+                  as ltxbase}",
+  url =		 "https://ctan.org/pkg/inputenc",
+  language =	 "english",
+}
+
+@MANUAL{Hob:LIVE:CTAN:METAPOST,
+  author =	 "{The {\themetapost} Team}" #and# "Hobby, John",
+  title =	 "{metapost~-- A development of METAFONT for creating graphics}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} as metapost, in \distroMiKTeX{}
+                  as /miktex-metapost-bin-*.*}",
+  url =		 "https://ctan.org/pkg/metapost",
+  language =	 "english",
+}
+
+@MANUAL{Rah:LIVE:CTAN:times,
+  author =	 "Rahtz, Sebastian",
+  title =	 "{times~-- Select Adobe Times Roman (or equivalent) as
+                  default font}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as
+                  psnfss~\cite{Har:LIVE:CTAN:psnfss}; the package is now
+                  obsolete, replaced by the
+                  mathptmx~\cite{Vie:LIVE:CTAN:mathptmx} package, which
+                  supports Times Roman text and (mostly) matching
+                  mathematics}",
+  url =		 "https://ctan.org/pkg/times",
+  language =	 "english",
+}
+
+@MANUAL{Vie:LIVE:CTAN:mathptmx,
+  author =	 "{The {\LaTeX} Team}" #and# "Vieth, Ulrik" #and# "Jeffrey,
+                  Alan" #and# "Rahtz, Sebastian" #and# "Schmidt, Walter A.",
+  title =	 "{mathptmx~-- Use Times as default text font, and provide
+                  maths support}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as
+                  psnfss~\cite{Har:LIVE:CTAN:psnfss}}",
+  url =		 "https://ctan.org/pkg/mathptmx",
+  language =	 "english",
+}
+
+@MANUAL{Har:LIVE:CTAN:psnfss,
+  author =	 "Harcombe, Keiran" #and# "{The {\LaTeX} Team}" #and# "Rahtz,
+                  Sebastian" #and# "Schmidt, Walter A.",
+  title =	 "{psnfss~-- Font support for common PostScript fonts}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as
+                  psnfss}",
+  url =		 "https://ctan.org/pkg/psnfss",
+  language =	 "english",
+}
+
+@MANUAL{Ryu:LIVE:CTAN:txfonts,
+  author =	 "Ryu, Young",
+  title =	 "{txfonts~-- Times-like fonts in support of mathematics}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as
+                  txfonts}",
+  url =		 "https://ctan.org/pkg/txfonts",
+  language =	 "english",
+}
+
+@MANUAL{Mit-Car:LIVE:CTAN:MathTime,
+  author =	 "D. Carlisle" #and# "F. Mittelbach",
+  title =	 "{mathtime-ltx~-- {\LaTeX} macros for using MathTime and
+                  MathTime Plus}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroMiKTeX{} as mathtime}",
+  url =		 "https://ctan.org/pkg/mathtime-ltx",
+  language =	 "english",
+}
+
+@MANUAL{Bra:LIVE:CTAN:Babel,
+  author =	 "Bezos López, Javier" #and# "Braams, Johannes L.",
+  title =	 "{babel~-- Multilingual support for {\LaTeX}}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as babel}",
+  url =		 "https://ctan.org/pkg/babel",
+  language =	 "english",
+}
+
+@MANUAL{Pat:LIVE:CTAN:BibTeX,
+  author =	 "Patashnik, Oren",
+  title =	 "{{\BibTeX}~-- Process bibliographies for {\LaTeX}, etc}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} as bibtex, in \distroMiKTeX{}
+                  as miktex-bibtex-bin-*.*}",
+  url =		 "https://ctan.org/pkg/bibtex",
+  language =	 "english",
+}
+
+@MANUAL{Dal:LIVE:CTAN:CustBibStyFil,
+  author =	 "P. W. Daly",
+  title =	 "{custom-bib~-- Customised {\BibTeX} styles}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as
+                  custom-bib}",
+  url =		 "https://ctan.org/pkg/custom-bib",
+  language =	 "english",
+}
+
+@MANUAL{Rad:LIVE:CTAN:pdfscreen,
+  author =	 "C. V. Radhakrishnan",
+  title =	 "{pdfscreen~-- Support screen-based document design}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as
+                  pdfscreen}",
+  url =          "https://ctan.org/pkg/pdfscreen",
+  language =	 "english",
+}
+
+@MANUAL{LtX:LIVE:CTAN:makeidx,
+  author =	 "{The {\LaTeX} Team}",
+  title =	 "{makeidx~-- Standard {\LaTeX} package for creating indexes}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} as latex, in \distroMiKTeX{}
+                  as ltxbase}",
+  url =		 "https://ctan.org/pkg/makeidx",
+  language =	 "english",
+}
+
+@MANUAL{Bee:LIVE:CTAN:MakeIndex,
+  author =	 "Beebe, Nelson H. F." #and# "Chen, Pehong",
+  title =	 "{makeindex~–- Process index output to produce typesettable
+                  code}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} as makeindex, in
+                  \distroMiKTeX{} as miktex-makeindex-bin-*.*}",
+  url =		 "https://ctan.org/pkg/makeindex",
+  language =	 "english",
+}
+
+@MANUAL{Ars:LIVE:CTAN:url,
+  author =	 "Arseneau, Donald",
+  title =	 "{url~-- Verbatim with URL-sensitive line breaks}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as url}",
+  url =		 "https://ctan.org/pkg/url",
+  language =	 "english",
+}
+
+@MANUAL{Dal:LIVE:CTAN:natbib,
+  author =	 "Daly, Patrick W." #and# "Ogawa, Arthur",
+  title =	 "{natbib~-- Flexible bibliography support}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as
+                  natbib}",
+  url =		 "https://ctan.org/pkg/natbib",
+  language =	 "english",
+}
+
+@MANUAL{samc:LIVE:CTAN:beamer,
+  author =	 "{samcarter}" #and# "Wright, Joseph" #and# "Mileti{\'c},
+                  Vedran" #and# "Stuart, Louis" #and# "Tantau, Till",
+  title =	 "{beamer~-- A {\LaTeX} class for producing presentations and
+                  slides}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as
+                  beamer}",
+  url =		 "https://ctan.org/pkg/beamer",
+  language =	 "english",
+}
+
+@MANUAL{Hir:LIVE:CTAN:dvipdfmx,
+  author =	 "Hirata, Shunsaku" #and# "{The {\TeX}~Live Team}" #and# "Cho,
+                  Jin-Hwan" #and# "Franz, Matthias" #and# "Hosny, Khaled"
+                  #and# "Wicks, Mark A." #and# "Breitenlohner, Peter",
+  title =	 "{dvipdfmx~-- An extended version of dvipdfm}",
+  year =	 UNIACCESS,
+  note =	 "{Dvipdfmx (formerly dvipdfm-cjk) is a development of
+                  dvipdfm~\cite{Wic:LIVE:CTAN:dvipdfm} created to support
+                  multi-byte character encodings and large character sets for
+                  East Asian languages. Contained in \distroTeXLive{} and
+                  \distroMiKTeX{} as dvipdfmx}",
+  url =		 "https://ctan.org/pkg/dvipdfmx",
+  language =	 "english",
+}
+
+@MANUAL{Wic:LIVE:CTAN:dvipdfm,
+  author =	 "Wicks, Mark A.",
+  title =	 "{dvipdfm~-- A DVI driver to produce PDF directly}",
+  year =	 UNIACCESS,
+  note =	 "{Note that the extended version
+                  dvipdfmx~\cite{Hir:LIVE:CTAN:dvipdfmx} will operate ``as
+                  dvipdfm'' if necessary}",
+  url =		 "https://ctan.org/pkg/dvipdfm",
+  language =	 "english",
+}
+
+@MANUAL{Vos:LIVE:CTAN:fancyvrb,
+  author =	 "Vo{\ss}, Herbert" #and# "Girou, Denis" #and# "Mansfield,
+                  Niall" #and# "Van Zandt, Timothy" #and# "Rahtz, Sebastian",
+  title =	 "{fancyvrb~-- Sophisticated verbatim text}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as
+                  fancyvrb}",
+  url =		 "https://ctan.org/pkg/fancyvrb",
+  language =	 "english",
+}
+
+@MANUAL{biditex:LIVE:CTAN:subfig,
+  author =	 "{bidi-tex GitHub Organisation}" #and# "Khalighi, Vafa" #and#
+                  "Cochran, Steven Douglas",
+  title =	 "{subfig~-- Figures broken into subfigures}",
+  year =	 UNIACCESS,
+  note =	 "{Contained in \distroTeXLive{} and \distroMiKTeX{} as
+                  subfig}",
+  url =		 "https://ctan.org/pkg/subfig",
+  language =	 "english",
+}
+
+@MANUAL{Wri-Leh:LIVE:CTAN:etoolbox,
+  author =	 "Wright, Joseph" #and# "Lehman, Philipp",
+  title =	 "{etoolbox~-- e-{\TeX} tools for {\LaTeX}}",
+  year =	 UNIACCESS,
+  note =	 "{The etoolbox package is a toolbox of programming tools
+                  geared primarily towards {\LaTeX} class and package
+                  authors. It provides {\LaTeX} frontends to some of the new
+                  primitives provided by e-{\TeX} as well as some generic
+                  tools which are not related to e-{\TeX} but match the
+                  profile of this package. Contained in \distroTeXLive{} and
+                  \distroMiKTeX{} as etoolbox}",
+  url =		 "https://ctan.org/pkg/etoolbox",
+  language =	 "english",
+}
+
+@BOOK{Ryb:2005:LaTeX:3,
+  author =	 "Rybička, Jiří",
+  title =	 "{{\LaTeX} pro začátečníky}",
+  publisher =	 "Konvoj",
+  year =	 "2005",
+  address =	 "Brno",
+  edition =	 "\bblthirdo{}",
+  pages =	 "248",
+  isbn =	 "80-7302-049-1",
+  url =		 "https://www.cbdb.cz/kniha-100243-latex-pro-zacatecniky",
+  note =	 "Viz též učební text k~semináři dostupný na
+                  \url{https://akela.mendelu.cz/~rybicka/zaklady.pdf}",
+  annote =	 "Za podpory CSTUG vzniklo již třetí přepracované a doplněné
+                  vydání knihy {\LaTeX} pro začátečníky. Je koncipováno jako
+                  učebnice, která má za úkol nejen seznámit začínající
+                  uživatele s~typografickým systémem {\TeX} a jeho velmi
+                  rozšířenou nadstavbou {\LaTeX}, ale také se základy
+                  typografie a tvorby dokumentů na počítači. Dodatkem knihy
+                  jsou zejména dva slovníčky příkazů~-- abecední a tématický,
+                  obsahující všechny příkazy popsané v~knize (včetně
+                  stránkových odkazů) i~další příkazy převzaté z~literatury.
+                  U~čtenáře se nepředpokládají žádné počáteční znalosti
+                  systému {\TeX} ani {\LaTeX}, avšak předpokládá se povědomost
+                  o~základních obecných pojmech pro práci s~počítačem, jako je
+                  soubor, adresář, program, příkaz, editor a podobně.
+                  Zvládnutí obsahu této knihy umožňuje vyřešení většiny
+                  praktických potřeb při kvalitní sazbě obvyklých tiskovin,
+                  jako jsou knihy, časopisy, učební texty, příručky,
+                  informační brožury a podobně.",
+  language =	 "czech",
+}
+
+@BOOK{Knu:1986:TeXbook:,
+  author =	 "Knuth, Donald E.",
+  title =	 "{The {\TeX book}}",
+  series =	 "Computers and Typesetting",
+  volume =	 "A",
+  publisher =	 "Addison-Wesley Publishing Company",
+  year =	 "1986",
+  address =	 "Reading, Massachusetts",
+  language =	 "english",
+}
+
+@BOOK{Lam:1994:LaTeX:,
+  author =	 "L. Lamport",
+  illustrator =	 "D. Bibby",
+  title =	 "{{\LaTeX}: A Document Preparation System User's Guide and
+                  Reference Manual. Updated for {\LaTeXe}}",
+  publisher =	 "Addison-Wesley",
+  year =	 "1994",
+  edition =	 "\bblsecondo{}",
+  address =	 "Reading, MA",
+  pages =	 "288",
+  isbn =	 "0-201-52983-1",
+  annote =	 "This authoritative user's guide and reference manual for the
+                  {\LaTeX} computer typesetting system has been revised to
+                  document features now available in the new standard software
+                  release~-- {\LaTeX2e}. The new edition features additional
+                  styles and functions, improved font handling, and enhanced
+                  graphics capabilities. Other parts of the book have been
+                  revised to reflect user comments and suggestions. Selected
+                  sections have been rewritten to explain challenging concepts
+                  or functions, and the descriptions of both MakeIndex and
+                  Bib{\TeX} have been updated.",
+  language =	 "english",
+}
+
+@BOOK{Kop-Dal:2004:LaTeXPodrPruv:,
+  author =	 "H. Kopka" #and# "P.~W. Daly",
+  title =	 "{{\LaTeX}. Podrobný průvodce}",
+  publisher =	 "Computer Press",
+  year =	 "2004",
+  address =	 "Brno",
+  edition =	 "\bblfirsto{}",
+  pages =	 "584",
+  isbn =	 "80-722-6973-9",
+  annote =	 "Pokud potřebujete profesionálně zpracovat text pro tiskový
+                  výstup, s~touto knihou, která je překladem světově
+                  proslulého titulu \uv{A Guide to {\LaTeX}}, zvládnete i~ty
+                  nejsložitější operace s~textem. Sázení textu pomocí programu
+                  {\LaTeX} je specifické především přímým využíváním
+                  značkovacího jazyka, kterým se vyřazují nepřesnosti editorů
+                  založených na technice WYSIWYG.  {\LaTeX} je programem,
+                  který se pro své mimořádné schopnosti v~technice zalamování,
+                  speciálních znaků nebo matematických vzorců prosadil
+                  především v~akademické sféře. Kniha nejenže přináší
+                  podrobný, názorný a srozumitelný výklad, ale také pečlivě
+                  zohledňuje rozdíly mezi verzemi {\LaTeX} verze
+                  $2_{\varepsilon}$ a $2.09$. Příklady jsou vždy výrazně
+                  odděleny a označeny rozdíly ve verzích. Kniha je rozdělena
+                  do přehledných kapitol s praktickými příklady",
+  language =	 "czech",
+}
+
+@BOOK{Kot:2021:LaTeXBeginnersGuide:,
+  author =	 "Kottwitz, Stefan",
+  title =	 "{{\LaTeX} Beginner's Guide: Create visually appealing texts,
+                  articles, and books for business and science using
+                  {\LaTeX}}",
+  publisher =	 "Packt Publishing",
+  year =	 "2021",
+  address =	 "Birmingham, Mumbai",
+  edition =	 "\bblsecondo{}",
+  pages =	 "354",
+  isbn =	 "978-1801078658",
+  annote =	 "Harness the power of {\LaTeX} and its wide range of features
+                  to create professional-looking text, articles, and books
+                  with both online and offline capabilities of {\LaTeX}",
+  language =	 "english",
+}
+
+@BOOK{Goo-Mit-Sam:1994:Companion:,
+  author =	 "M. Goossens" #and# "F. Mittelbach" #and# "A. Samarin",
+  title =	 "{The {\LaTeX{}} Companion}",
+  publisher =	 "Addison-Wesley",
+  year =	 "1994",
+  address =	 "Reading, Massachusetts",
+  isbn =	 "0-201-54199-8",
+  language =	 "english",
+}
+
+@BOOK{Goo-Rah-Mit:1994:GraComp:,
+  author =	 "M. Goossens" #and# "S. Rahtz" #and# "F. Mittelbach",
+  title =	 "{The {\LaTeX{}} Graphics Companion. Illustrating documents
+                  with {\TeX} and PostScript}",
+  publisher =	 "Addison Wesley Longman Inc.",
+  year =	 "1997",
+  address =	 "Reading, Massachusetts",
+  isbn =	 "0-201-85469-4",
+  language =	 "english",
+}
+
+@BOOK{Goo-Rah:1994:WebComp:,
+  author =	 "M. Goossens" #and# "S. Rahtz",
+  title =	 "{The {\LaTeX{}} Web Companion. Integrating {\TeX}, HTML, and
+                  XML}",
+  publisher =	 "Addison Wesley Longman Inc.",
+  year =	 "1999",
+  address =	 "Reading, Massachusetts",
+  isbn =	 "0-201-43311-7",
+  language =	 "english",
+}
+
+@MANUAL{Oet-etal:LIVE::lshort,
+  author =	 "T. Oetiker" #and# "H. Partl" #and# "I. Hyna" #and#
+                  "E. Schlegl",
+  title =	 "{The Not So Short Introduction to {\LaTeXe} (Or {\LaTeXe} in
+                  $<150$~minutes)}",
+  year =	 UNIACCESS,
+  url =		 "https://tobi.oetiker.ch/lshort/lshort.pdf",
+  language =	 "english",
+
+}
+
+@MANUAL{Hle:LIVE::Bazak,
+  author =	 "Hledík, Stanislav",
+  title =	 "{Bažákův průvodce publikačním systémem {\LaTeX}}",
+  organization = "Slezská univerzita v~Opavě, Filozoficko-přírodovědecká
+                  fakulta",
+  address =	 "Opava",
+  year =	 UNIACCESS,
+  note =	 "Výukový materiál",
+  url =		 hle0002,
+  language =	 "czech",
+}
+
+@BOOK{Pol:1998:PravidlaSazbyDP:,
+  author =	 "Polách, Eduard",
+  title =	 "{Pravidla sazby diplomových prací}",
+  publisher =	 "Jihočeská univerzita v~Českých Budějovicích, Pedagogická
+                  fakulta",
+  address =	 "České Budějovice",
+  year =	 "1998",
+  url =		 "http://home.pf.jcu.cz/~edpo/pravidla/pravidla.pdf",
+  language =	 "czech",
+}
+
+@MANUAL{Ryb:2006:ZpracZP:,
+  author =	 "Rybička, Jiří",
+  title =	 "{Doporučení pro úpravu závěrečných prací}",
+  address =	 "Brno",
+  year =	 "2006",
+  url =		 "https://akela.mendelu.cz/~rybicka/dahlia/zpract/dipp.pdf",
+  language =	 "czech",
+}
+
+@PHDTHESIS{Bry:2007:BcProj:ModMedDiag,
+  author =	 "Bryjová, Iveta",
+  title =	 "{Principy a metody moderní medicínské diagnostiky}",
+  school =	 "{Slezská univerzita v~Opavě, Filozoficko-přírodovědecká
+                  fakulta v~Opavě}",
+  year =	 2007,
+  type =	 "Bakalářská práce",
+  address =	 "Opava",
+  note =	 "studijní obor: Počítačová technika a její aplikace",
+  language =	 "czech",
+}
+
+@PHDTHESIS{Val:2015:BcProj:NumMagLev,
+  author =	 "Válek, Viktor",
+  title =	 "{Numerická simulace rotací stabilizované magnetické
+                  levitace}",
+  school =	 "{Slezská univerzita v~Opavě, Filozoficko-přírodovědecká
+                  fakulta v~Opavě}",
+  year =	 "2015",
+  type =	 "Bakalářská práce",
+  address =	 "Opava",
+  note =	 "studijní obor: Astrofyzika",
+  language =	 "czech",
+}
+
+@PHDTHESIS{Fab:2017:DipProj:PorSnimkuOpAnObr,
+  author =	 "Fabiánová, Petra",
+  title =	 "{Porovnání historických a soudobých snímků Opavy metodami
+                  analýzy obrazu}",
+  school =	 "{Slezská univerzita v~Opavě, Filozoficko-přírodovědecká
+                  fakulta v~Opavě}",
+  year =	 "2017",
+  type =	 "Diplomová práce",
+  address =	 "Opava",
+  note =	 "studijní obor: Počítačová fyzika",
+  language =	 "czech",
+}
+
+@PHDTHESIS{Hle:2014:PhDThes:Polytropes,
+  author =	 "Hledík, Stanislav",
+  title =	 "{General relativistic polytropes and repulsive cosmological
+                  constant}",
+  school =	 "{Silesian University in~Opava, Faculty of Philosophy and
+                  Science in~Opava}",
+  year =	 2014,
+  type =	 "{Dissertation Thesis}",
+  address =	 "Opava",
+  note =	 "branch of study: Theoretical Physics and Astrophysics",
+  language =	 "english",
+}
+
+@ARTICLE{Ear:1842:TCAMPS:NatMoFoConsLumEth,
+  author =	 "Earnshaw, S.",
+  title =	 "{On the Nature of the Molecular Forces which regulate the
+                  Constitution of the Luminiferous Ether}",
+  year =	 "1842",
+  journal =	 TCAMPS,
+  volume =	 "VII",
+  pages =	 "97--112",
+  url =          "http://www.mit.edu/~kardar/research/seminars/Casimir2010/pdf/EarnshawPaper.pdf",
+  note =	 "Read March~18, 1839 at the Cambridge Philosophical Society",
+  language =	 "english",
+}
+
+@ARTICLE{Bas:2006:MECJI:EarnshawMagLev,
+  author =	 "Bassani, R.",
+  title =	 "{Earnshaw (1805--1888) and Passive Magnetic Levitation}",
+  year =	 "2006",
+  journal =	 MECJI,
+  volume =	 "41",
+  number =	 "4",
+  pages =	 "375--389",
+  issn =	 "0025-6455 (print), 1572-9648 (online)",
+  doi =		 "10.1007/s11012-005-4503-x",
+  annote =	 "S. Earnshaw, a mathematical physicist born in England two
+                  centuries ago, was the author of studies on the transmission
+                  of sound and light. His theory on the transmission of light
+                  by ``detached particles'' has also influenced some studies on
+                  the stability of bodies in potential fields, particularly
+                  studies on the levitation of permanent magnets, i.e. on
+                  passive magnetic levitation. This theorem was so well known
+                  that even Maxwell mentioned it, and is today cited almost as
+                  an axiom in the ambit of passive magnetization. However,
+                  what is less well known is that the theory actually only
+                  relates to magnetostatics. In this paper, the mathematic
+                  model of the theory that refers to stability is outlined,
+                  along with some works that refer to it, in particular those
+                  on passive magnetic levitation. It is then pointed out that
+                  spaces of low instability exist in magnetostatics, and that
+                  stability may exist in the magneto-stationary and in
+                  magneto-dynamic ambit.",
+  language =	 "english",
+}
+
+@MANUAL{Fas:LIVE:Levit:Levitron,
+  author =	 "{Levitation Arts}",
+  title =	 "{Levitron Central}",
+  year =	 UNIACCESS,
+  note =	 "See also the Czech web on Levitron \url{http://www.levitron.cz/}",
+  url =		 "https://levitationarts.com/",
+  language =	 "english",
+}
+
+@MANUAL{Gra:LIVE:Levit:IgnMagBliss,
+  author =	 "Gray, Theodore",
+  title =	 "{Ignorance = Maglev = Bliss}",
+  year =	 UNIACCESS,
+  note =	 "For 150 years scientists believed that stable magnetic
+                  levitation was impossible. Then Roy Harrigan came along",
+  url =          "http://www.popsci.com/diy/article/2004-02/ignorance-maglev-bliss",
+  language =	 "english",
+}
+
+@MANUAL{Gov-Sht:1999:phys9902002:HowHiUCAS,
+  author =	 "Gov, S." #and# "Shtrikman, S.",
+  title =	 "{How High Can The U-CAS Fly?}",
+  year =	 "1999",
+  month =	 jan,
+  pages =	 "20",
+  annote =	 "The U-CAS is a spinning magnetized top that is levitated in
+                  a static magnetic field. The field is produced by a
+                  permanent magnet base, positioned below the hovering top. In
+                  this paper we derive upper and lower bounds for
+                  $h_{\mathrm{m}}$~-- the maximum hovering height of this
+                  top. We show that the bounds are of the form $al_{0}$ where
+                  $a$ is a dimensionless number ranging from about~1 to~12,
+                  depending on the constraints on the shape of the base and on
+                  stability considerations, and $l_{0}$ is a characteristic
+                  length for the problem. For modern permanent magnets we find
+                  that $l_{0} = 1$~meter, thus limiting h to about few
+                  meters.",
+  eprint =	 "physics/9902002v1",
+  language =	 "english",
+}
+
+@MISC{USpatent4.382.245,
+  author =	 "Harrigan, Roy M.",
+  title =	 "{US patent 4.382.245}",
+  year =	 1983,
+  language =	 "english",
+}
+
+@ARTICLE{Sim-Hef-Rid:1997:AMEJP:SpStMagLev,
+  author =	 "Simon, M.~D." #and# "Heflinger, L.~O." #and# "Ridgway,
+                  S.~L.",
+  title =	 "{Spin stabilized magnetic levitation}",
+  year =	 "1997",
+  month =	 apr,
+  journal =	 AMEJP,
+  volume =	 "65",
+  number =	 "4",
+  pages =	 "286--292",
+  issn =	 "0002-9505",
+  doi =		 "10.1119/1.18488",
+  url =		 "http://www.physics.ucla.edu/marty/levitron/spinstab.pdf",
+  annote =	 "The stability of the Levitron cannot be explained if the
+                  top's axis has a fixed direction in space. Stability against
+                  flipping is not enough. Gyroscopic precession around the
+                  local magnetic field direction is necessary. An analysis and
+                  numerical integration of the equations of motion for an
+                  experimental stemless top that includes gyroscopic
+                  precession around the local magnetic field lines predict
+                  that the top will be supported stably up to spin speeds of
+                  about 3065~rpm. An upper spin limit of 2779~rpm for this top
+                  is observed experimentally and explained as an adiabatic
+                  condition. Spin stabilized magnetic levitation is a
+                  macroscopic analog of magnetic gradient traps used to
+                  confine particles with a quantum magnetic moment.",
+  note =	 "Copyright AAPT~1997",
+  language =	 "english",
+}
+
+@ARTICLE{Ber:1996:PRORSA:LevitAdiaTrapSp,
+  author =	 "Berry, M.~V.",
+  title =	 "{The {Levitron\textsuperscript{\texttrademark}}: an
+                  adiabatic trap for spins}",
+  year =	 "1996",
+  month =	 may,
+  journal =	 PRORSA,
+  volume =	 "452",
+  number =	 "1948",
+  pages =	 "1207--1220",
+  issn =	 "1471-2946 (online)",
+  doi =		 "10.1098/rspa.1996.0062",
+  url =          "https://wolfr.am/13PVzFoPd",
+  dummyurl =     "https://research-information.bris.ac.uk/en/publications/the-levitronsuptsupsupmsup-an-adiabatic-trap-for-spins",
+  annote =	 "A magnet in the form of a spinning-top can float stably
+                  above a repelling magnetic base. The principal mechanism of
+                  stability is static equilibrium in a potential energy
+                  field~$E$, arising dynamically from the adiabatic coupling
+                  of the spin with the magnetic field~$\vec{B}$ of the base
+                  and involving the magnitude~$B$ of this field. $E$ is close
+                  to a harmonic potential, that is, one whose Laplacian is
+                  zero, for which Earnshaw's theorem would forbid stable
+                  equilibrium. Therefore its minimum is very shallow, and
+                  requires the mass of the top to be adjusted delicately so
+                  that it hangs within a small interval of height. The
+                  stability interval is increased by a post-adiabatic dynamic
+                  coupling of the velocity of the top to~$\vec{B}$, through an
+                  effective `geometric magnetic field' constructed from the
+                  spatial derivatives of~$\vec{B}$; this effect gets stronger
+                  as the top is spun faster. The device is analogous to
+                  several traps for microscopic particles.",
+  language =	 "english",
+}
+
+@PHDTHESIS{Hab:1999:MgrDP:ProbUlFyzPrakt,
+  author =	 "Ladislav Habala",
+  title =	 "{Problémové úlohy pro fyzikální praktikum}",
+  school =	 "Slezská univerzita v~Opavě, Filozoficko-přírodovědecká
+                  fakulta",
+  year =	 1999,
+  type =	 "Diplomová práce",
+  address =	 "Opava",
+  note =	 "obor Učiteství F-M",
+  language =	 "czech",
+}
+
+@ARTICLE{Caz-Nem:2010:REVRS:NovConPerMagLev,
+  author =	 "Cazacu, E." #and# "Nemoianu, I.~V.",
+  title =	 "{A novel configuration for static permanent magnet
+                  levitation}",
+  year =	 "2010",
+  journal =	 REVRS,
+  volume =	 "55",
+  number =	 "2",
+  pages =	 "153--160",
+  url =		 "http://revue.elth.pub.ro/viewpdf.php?id=224",
+  annote =	 "The paper presents a novel horizontal configuration of a
+                  permanent magnet static levitation stabilized by the
+                  presence of diamagnetic materials. The magnetomechanical
+                  interaction between the levitated magnet and the diamagnetic
+                  pieces was evaluated in order to investigate the restoring
+                  forces exerted on the floater when shifted from its
+                  equilibrium state. Thus, the equilibrium point coordinates
+                  of the suspended permanent magnet, and their stability areas
+                  are accurately established using both analytical and
+                  numerical procedures.",
+  language =	 "english",
+}
+
+@ARTICLE{Dul-Eas:1999:ZANGM1:StabOfLevit,
+  author =	 "Dullin, H.~R." #and# "Easton, R.~W.",
+  title =	 "{Stability of Levitrons}",
+  year =	 "1999",
+  journal =	 ZANGM1,
+  volume =	 "79",
+  number =	 "S1",
+  pages =	 "167-170",
+  issn =	 "1521-4001 (online)",
+  doi =		 "10.1002/zamm.19990791344",
+  url =          "http://www.maths.usyd.edu.au/u/dullin/preprints/Levitron.pdf",
+  annote =	 "The Levitron is a magnetic spinning top which can levitate
+                  in the constant field of a repelling base magnet. The
+                  present work develops an exact theory of the Levitron with
+                  six degrees of freedom. The stability of the symmetric
+                  relative equilibrium is calculated. The main result is a
+                  complete classification of possible Levitrons that allow for
+                  an interval of stable spin rates. Stability of the relative
+                  equilibrium is lost in Hamiltonian Hopf bifurcations if
+                  either the span rate is too large or too small.",
+  language =	 "english",
+}
+
+@ARTICLE{Fla-etal:1999:PHYSD:SpiMoHovMaTop,
+  author =	 "Flanders, P." #and# "Gov, S." #and# "Shtrikman, S." #and#
+                  "Thomas, H.",
+  title =	 "{On the spinning motion of the hovering magnetic top}",
+  year =	 "1999",
+  month =	 feb,
+  journal =	 PHYSD,
+  volume =	 "126",
+  number =	 "3-4",
+  pages =	 "225--235",
+  issn =	 "0167-2789",
+  doi =		 "10.1016/S0167-2789(98)00283-8",
+  dummyurl =     "http://www.sciencedirect.com/science/article/pii/S0167278998002838",
+  annote =	 "In this paper we analyze the spinning motion of the hovering
+                  magnetic top. We have observed that its motion looks
+                  different from that of a classical top. A classical top
+                  rotates about its own axis which precesses around a vertical
+                  fixed external axis. The hovering magnetic top, on the other
+                  hand, has its axis slightly tilted and moves \emph{rigidly}
+                  as a whole about the vertical axis. We call this motion
+                  synchronous, because in a stroboscopic experiment, we see
+                  that a point at the rim of the top moves synchronously with
+                  the top axis.  We show that the synchronous motion may be
+                  attributed to a small deviation of the magnetic moment from
+                  the symmetry axis of the top. We show that as a consequence,
+                  the minimum angular velocity required for stability is given
+                  by $\sqrt{4\mu HI_{1}/I_{3}^{2}}$ for $I_{3}>I_{1}$ and by
+                  $\sqrt{\mu H/(I_{3}-I_{1})}$ for $I_{3}<I_{1}$. Here,
+                  $I_{3}$ and $I_{1}$ are the principal and secondary moments
+                  of inertia, $\mu$ is the magnetic moment, and $H$ is the
+                  magnetic field. For comparison, the minimum angular velocity
+                  for a classical top is given by $\sqrt{4\mu
+                  HI_{1}/I_{3}^{2}}$ both for $I_{3}<I_{1}$ and for
+                  $I_{3}>I_{1}$.  We also give experimental results that were
+                  taken with a top whose moment of inertia $I_{1}$ can be
+                  changed. These results show very good agreement with our
+                  calculations.",
+  eprint =	 "physics/9803044v1",
+  language =	 "english",
+}
+
+@ARTICLE{Fre:2010:PHYSED:WondersLevit,
+  author =	 "French, M.~M.~J.",
+  title =	 "{The wonders of levitation}",
+  year =	 "2010",
+  month =	 jan,
+  journal =	 PHYSED,
+  volume =	 "45",
+  number =	 "1",
+  pages =	 "37",
+  issn =	 "0031-9120 (print), 1361-6552 (online)",
+  doi =		 "10.1088/0031-9120/45/1/003",
+  dummyurl =     "http://iopscience.iop.org/0031-9120/45/1/003/",
+  annote =	 "I discuss some interesting classroom demonstrations of
+                  diamagnetism and how this effect can produce levitation. The
+                  possibilities for hands-on demonstrations of diamagnetic and
+                  superconducting levitation are discussed. To conclude I
+                  discuss some practical uses for levitation in daily life.",
+  eprint =	 "1010.5761v1",
+  language =	 "english",
+}
+
+@ARTICLE{Gan-Jon-Was:1998:JPHYSD:DynOfLevi,
+  author =	 "Gans, R.~F." #and# "Jones, T.~B." #and# "Washizu, M.",
+  title =	 "{Dynamics of the
+                  {Levitron\textsuperscript{\texttrademark}}}",
+  year =	 "1998",
+  month =	 mar,
+  journal =	 JPHYSD,
+  volume =	 "31",
+  number =	 "6",
+  pages =	 "671--679",
+  issn =	 "0022-3727 (print), 1361-6463 (online)",
+  doi =		 "10.1088/0022-3727/31/6/015",
+  dummyurl =     "http://iopscience.iop.org/0022-3727/31/6/015",
+  annote =	 "The {Levitron\textsuperscript{\texttrademark}} is an
+                  axisymmetric top magnetized parallel to its symmetry
+                  axis. It can levitate above a specially constructed magnetic
+                  base if spun rapidly enough (and, as we found, not too
+                  rapidly). We have written a complete, coupled,
+                  nondissipative Hamiltonian system that describes the
+                  dynamics of the top. The system is twelfth order and is too
+                  complicated for general analysis. We have integrated the
+                  equations of motion numerically and found a region of a
+                  two-dimensional manifold of initial conditions for which
+                  levitation persists. We find that the amplitude of the
+                  dynamic variables in the region of persistent levitation
+                  scales linearly with the initial tilt of the axis with
+                  respect to gravity. We have identified three distinct modes
+                  of failure that correspond roughly to insufficient initial
+                  spin, too large an initial tilt and too great an initial
+                  spin. Our results are in general agreement with published
+                  observations and theoretical estimates.",
+  language =	 "english",
+}
+
+@ARTICLE{Gen-Del-Ron:1999:MECJI:GyStaPasMagLev,
+  author =	 "Genta, G." #and# "Delprete, C." #and# "Rondano, D.",
+  title =	 "{Gyroscopic Stabilization of Passive Magnetic Levitation}",
+  year =	 "1999",
+  journal =	 MECJI,
+  volume =	 "34",
+  number =	 "6",
+  pages =	 "411-424",
+  issn =	 "0025-6455 (print), 1572-9648 (online)",
+  doi =		 "10.1023/A:1004704428634",
+  annote =	 "A nonlinear mathematical model able to describe the motion
+                  of a passive magnetic levitation device, known as Levitron,
+                  is presented in this paper. Using the standard approach
+                  usually applied in rotordynamics and without introducing any
+                  preliminary assumptions, the equations of motion for all six
+                  degrees of freedom of the magnetic spinning top are
+                  obtained. By computing the four natural frequencies
+                  characterizing the horizontal translational vibrations of
+                  the rotor and the whirling motion of its axis, the
+                  conditions for stable levitation in terms of the spin speed
+                  are obtained. Some results coming from the numerical
+                  integration of the equations of motion are also presented
+                  and compared with those obtained using the simplified model
+                  based upon the fast top assumption.",
+  language =	 "english",
+}
+
+@ARTICLE{Gov-Sht-Tho:1999:PHYSD:DyStHoMagTop,
+  author =	 "Gov, S." #and# "Shtrikman, S." #and# "Thomas, H.",
+  title =	 "{On the dynamical stability of the hovering magnetic top}",
+  year =	 "1999",
+  month =	 feb,
+  journal =	 PHYSD,
+  volume =	 "126",
+  number =	 "3--4",
+  pages =	 "214--224",
+  issn =	 "0167-2789",
+  doi =		 "10.1016/S0167-2789(98)00282-6",
+  dummyurl =     "http://www.sciencedirect.com/science/article/pii/S0167278998002826",
+  annote =	 "In this paper we analyze the dynamic stability of the
+                  hovering magnetic top from first principles without using
+                  any preliminary assumptions. We write down the equations of
+                  motion for all six degrees of freedom and solve them
+                  analytically around the equilibrium solution. Using this
+                  solution we then find conditions which the height of the
+                  hovering top above the base, its total mass, and its
+                  spinning speed have to satisfy for stable hovering.  The
+                  calculations presented in this paper can be used as a guide
+                  to the analysis and synthesis of magnetic traps for neutral
+                  particles.",
+  eprint =	 "physics/9803020v1",
+  language =	 "english",
+}
+
+@ARTICLE{Jon-Was-Gans:1997:JAPPPH:SimpTheoLevi,
+  author =	 "Jones, T.~B." #and# "Washizu, M." #and# "Gans, R.~F.",
+  title =	 "{Simple theory for the
+                  {Levitron\textsuperscript{\textregistered}}}",
+  year =	 "1997",
+  month =	 jul,
+  journal =	 JAPPPH,
+  volume =	 "82",
+  number =	 "2",
+  pages =	 "883--888",
+  issn =	 "0021-8979 (print), 1089-7550 (online)",
+  doi =		 "10.1063/1.365856",
+  url =          "http://physik.uibk.ac.at/hephy/maturanten/levitron/Jones/jones.pdf",
+  annote =	 "The {Levitron\textsuperscript{\textregistered}} is a popular
+                  toy that provides a unique and interesting demonstration of
+                  levitation using permanent magnets. It consists of a small,
+                  spinning magnetic top and a magnetic base plate. Stable
+                  levitation is possible because of a unique coupling of the
+                  magnetic forces and torques with the gyroscopic action of
+                  the top. A simple theory of its operation, using a general
+                  axisymmetric form for the magnetic field of the base, is
+                  based on the dipole force model. With this model, the stable
+                  behavior of the spinning, levitated top may be investigated
+                  by testing various assumptions for its
+                  orientation. Stability is not possible if the top remains
+                  rigidly parallel to the axis of the base. On the other hand,
+                  if one assumes that the top remains aligned parallel to the
+                  local magnetic field during radial excursions, then
+                  stability is possible. This simple model, combined with
+                  measurements of the magnetic field along the axis, permits
+                  fairly accurate prediction of the upper and lower limits of
+                  the locus of stable equilibria.",
+  language =	 "english",
+}
+
+@MANUAL{Ber:LIVE:Levit:LevitronPhys,
+  author =	 "Berry, M.~V.",
+  title =	 "{Levitron Physics. Some Frequently Asked Questions About
+                  Levitron Physics}",
+  year =	 UNIACCESS,
+  url =		 "https://michaelberryphysics.files.wordpress.com/2013/07/berry272.pdf",
+  language =	 "english",
+}
+
+@MANUAL{Bor:LIVE:Levit:OptRotLevi,
+  author =	 "Bornhauser, Nicki",
+  title =	 "{Optics Rotation: Levitron\textsuperscript{\texttrademark}}",
+  year =	 UNIACCESS,
+  note =	 "{PDF presentation}",
+  url =          "http://ultracold.physics.sunysb.edu/Courses/PHY582-08.Fall/talks/Bornhauser%202007-II.pdf",
+  language =	 "english",
+}
+
+@ARTICLE{Sim-Hef-Gei:2001:AMEJP:DiaStMagLev,
+  author =	 "Simon, M.~D." #and# "Heflinger, L.~O." #and# "Geim, A.~K.",
+  title =	 "{Diamagnetically stabilized magnet levitation}",
+  year =	 "2001",
+  month =	 jun,
+  journal =	 AMEJP,
+  volume =	 "69",
+  number =	 "6",
+  pages =	 "702--713",
+  issn =	 "0002-9505 (print)",
+  doi =		 "10.1119/1.1375157",
+  url =		 "http://www.physics.ucla.edu/marty/diamag/ajp601.pdf",
+  annote =	 "Stable levitation of one magnet by another with no energy
+                  input is usually prohibited by Earnshaw's theorem. However,
+                  the introduction of diamagnetic material at special
+                  locations can stabilize such levitation. A magnet can even
+                  be stably suspended between (diamagnetic) fingertips. A very
+                  simple, surprisingly stable room temperature magnet
+                  levitation device is described that works without
+                  superconductors and requires absolutely no energy input. Our
+                  theory derives the magnetic field conditions necessary for
+                  stable levitation in these cases and predicts experimental
+                  measurements of the forces remarkably well. New levitation
+                  configurations are described which can be stabilized with
+                  hollow cylinders of diamagnetic material. Measurements are
+                  presented of the diamagnetic properties of several samples
+                  of bismuth and graphite.",
+  language =	 "english",
+}
+
+@ARTICLE{Sim-Gei:2000:JAPPPH:DiaLevFlyFrog,
+  author =	 "Simon, M.~D." #and# "Geim, A.~K.",
+  title =	 "{Diamagnetic levitation: Flying frogs and floating magnets
+                  (invited)}",
+  year =	 "2000",
+  month =	 may,
+  journal =	 JAPPPH,
+  volume =	 "87",
+  number =	 "9",
+  pages =	 "6200--6204",
+  issn =	 "0021-8979 (print), 1089-7550 (online)",
+  doi =		 "10.1063/1.372654",
+  url =		 "http://www.physics.ucla.edu/marty/diamag/diajap00.pdf",
+  annote =	 "Contrary to our intuition, apparently nonmagnetic substances
+                  can be levitated in a magnetic field and can stabilize free
+                  levitation of a permanent magnet. Most substances are weakly
+                  diamagnetic and the tiny forces associated with this
+                  property make the two types of levitation possible. Living
+                  things mostly consist of diamagnetic molecules (such as
+                  water and proteins) and components (such as bones) and
+                  therefore can be levitated and can experience low
+                  gravity. In this way, frogs have been able to fly in the
+                  throat of a high field magnet. Stable levitation of one
+                  magnet by another with no energy input is usually prohibited
+                  by Earnshaw's Theorem. However, the introduction of
+                  diamagnetic material at special locations can stabilize such
+                  levitation. A magnet can even be stably suspended between
+                  (diamagnetic) fingertips.",
+  language =	 "english",
+}
+
+@ARTICLE{Ber-Gei:1997:EURJP:OfFlyFrogLev,
+  author =	 "Berry, M.~V." #and# "Geim, A.~K.",
+  title =	 "{Of flying frogs and levitrons}",
+  year =	 "1997",
+  month =	 jul,
+  journal =	 EURJP,
+  volume =	 "18",
+  number =	 "4",
+  pages =	 "307--313",
+  issn =	 "0143-0807 (print), 1361-6404 (online)",
+  doi =		 "10.1088/0143-0807/18/4/012",
+  url =          "https://wolfr.am/13PVS5Od5",
+  dummyurl =	 "https://research-information.bris.ac.uk/en/publications/of-flying-frogs-and-levitrons",
+  annote =	 "Diamagnetic objects are repelled by magnetic fields. If the
+                  fields are strong enough, this repulsion can balance
+                  gravity, and objects levitated in this way can be held in
+                  stable equilibrium, apparently violating Earnshaw's
+                  theorem. In fact Earnshaw's theorem does not apply to
+                  induced magnetism, and it is possible for the total energy
+                  (gravitational $+$ magnetic) to possess a minimum. General
+                  stability conditions are derived, and it is shown that
+                  stable zones always exist on the axis of a field with
+                  rotational symmetry, and include the inflection point of the
+                  magnitude of the field. For the field inside a solenoid, the
+                  zone is calculated in detail; if the solenoid is long, the
+                  zone is centred on the top end, and its vertical extent is
+                  about half the radius of the solenoid. The theory explains
+                  recent experiments by \emph{Geim et al}, in which a variety
+                  of objects (one of which was a living frog) was levitated in
+                  a field of about 16~T. Similar ideas explain the stability
+                  of a spinning magnet
+                  {(Levitron\textsuperscript{\texttrademark})} above a
+                  magnetized base plate. Stable levitation of paramagnets is
+                  impossible.",
+  language =	 "english",
+}
+
+@ARTICLE{Gei-etal:1999:NATURE:MagLevFinger,
+  author =	 "Geim, A.~K." #and# "Simon, M.~D." #and# "Boamfa, M.~I."
+                  #and# "Heflinger, L.~O.",
+  title =	 "{Magnet levitation at your fingertips}",
+  year =	 "1999",
+  month =	 jul,
+  journal =	 NATURE,
+  volume =	 "400",
+  pages =	 "323--324",
+  issn =	 "0028-0836 (print), 1476-4687 (online)",
+  doi =		 "10.1038/22444",
+  url =		 "http://www.physics.ucla.edu/marty/diamag/magnet.pdf",
+  annote =	 "The stable levitation of magnets is forbidden by Earnshaw's
+                  theorem, which states that no stationary object made of
+                  magnets in a fixed configuration can be held in stable
+                  equilibrium by any combination of static magnetic or
+                  gravitational forces. Earnshaw's theorem can be viewed as a
+                  consequence of the Maxwell equations, which do not allow the
+                  magnitude of a magnetic field in a free space to possess a
+                  maximum, as required for stable equilibrium. Diamagnets
+                  (which respond to magnetic fields with mild repulsion) are
+                  known to flout the theorem, as their negative susceptibility
+                  results in the requirement of a minimum rather than a
+                  maximum in the field's magnitude. Nevertheless, levitation
+                  of a magnet without using superconductors is widely thought
+                  to be impossible. We find that the stable levitation of a
+                  magnet can be achieved using the feeble diamagnetism of
+                  materials that are normally perceived as being non-magnetic,
+                  so that even human fingers can keep a magnet hovering in
+                  mid-air without touching it.",
+  note =	 "Scientific correspondence",
+  language =	 "english",
+}
+
+@BOOK{Gol-Poo-Saf:2002:ClassMech:3,
+  author =	 "Goldstein, H." #and# "Poole, C." #and# "Safko, J.",
+  title =	 "{Classical Mechanics}",
+  year =	 "2002",
+  edition =	 "\bblthirdo{}",
+  publisher =	 "Ad\-di\-son-Wesley",
+  address =	 "San Francisco",
+  pages =	 "xviii+638",
+  isbn =	 "0-321-18897-7",
+  annote =	 "Classical Mechanics has been the standard in advanced
+                  classical mechanics courses for thirty years. It emphasizes
+                  formulations important for the study of modern physics which
+                  prepare students to apply the principles and mathematical
+                  techniques of classical mechanics in later study. By
+                  deepening and building student understanding of classical
+                  mechanics, the text helps students make the connection
+                  between classical and modern physics. In the new edition,
+                  Beams Medal winner Charles Poole and John Safko have updated
+                  the text to include the latest topics, applications, and
+                  notation, to reflect changes in today's physics
+                  curriculum. They introduce students to the increasingly
+                  important role that nonlinearity play in contemporary
+                  applications of classical mechanics. New numerical exercises
+                  help students to develop skill using computer applications
+                  to solve problems in physics. Mathematical techniques are
+                  presented in detail so that the text remains fully
+                  accessible to students who have not had an intermediate
+                  course in classical mechanics.",
+  note =	 "Copyright 2002 Pearson Education",
+  language =	 "english",
+}
+
+@BOOK{Pur-Mor:2013:ElectMagn:3,
+  author =	 "Purcell, Edward M." #and# "Morin, David J.",
+  title =	 "{Electricity and Magnetism}",
+  year =	 "2013",
+  month =	 mar,
+  edition =	 "\bblthirdo{}",
+  publisher =	 "Cambridge University Press",
+  address =	 "New York",
+  pages =	 "xxii, 839",
+  isbn =	 "9781107014022",
+  annote =	 "For 50 years, Edward M. Purcell's classic textbook has
+                  introduced students to the world of electricity and
+                  magnetism. The third edition has been brought up to date and
+                  is now in SI units. It features hundreds of new examples,
+                  problems, and figures, and contains discussions of real-life
+                  applications. The textbook covers all the standard
+                  introductory topics, such as electrostatics, magnetism,
+                  circuits, electromagnetic waves, and electric and magnetic
+                  fields in matter. Taking a nontraditional approach,
+                  magnetism is derived as a relativistic effect. Mathematical
+                  concepts are introduced in parallel with the physics topics
+                  at hand, making the motivations clear. Macroscopic phenomena
+                  are derived rigorously from the underlying microscopic
+                  physics. With worked examples, hundreds of illustrations,
+                  and nearly 600 end-of-chapter problems and exercises, this
+                  textbook is ideal for electricity and magnetism
+                  courses. Solutions to the exercises are available for
+                  instructors at www.cambridge.org/Purcell-Morin.",
+  language =	 "english",
+}
+
+@BOOK{Lan-Lif:1980:2-ClasTheField:4,
+  author =	 "Landau, L.~D." #and# "Lifshitz, E.~M.",
+  title =	 "{The Classical Theory of Fields}",
+  year =	 "1980",
+  month =	 jan,
+  edition =	 "\bblfourtho{}",
+  series =	 "Course of Theoretical Physics Series, Volume~2",
+  publisher =	 "Butterworth-Heinemann",
+  address =	 "Oxford",
+  pages =	 "402",
+  isbn =	 "978-0750627689",
+  annote =	 "The fourth edition contains seven new sections with chapters
+                  on General Relativity, Gravitational Waves and Relativistic
+                  Cosmology. The text has been thoroughly revised and
+                  additional problems inserted.",
+  language =	 "english",
+}
+
+@MANUAL{Hle:2011:SpinStabMagLev:WTC2011,
+  title =	 "{Interactive Model of Spin-Stabilized Magnetic Levitation}",
+  author =	 "Hledík, Stanislav",
+  note =	 "Presentation at the Wolfram Technology Conference 2011,
+                  October 19--21, Champaign, IL, USA",
+  url =		 "https://www.wolfram.com/events/technology-conference/2011/science-and-engineering.html",
+  year =	 2011,
+  language =     "english",
+}
+
+@BOOK{Pra:2007:DigImageProc:4,
+  author =	 "Pratt, William K.",
+  title =	 "{Digital Image Processing: PIKS Scientific In\-si\-de}",
+  year =	 "2007",
+  month =	 feb,
+  edition =	 "\bblfourtho{}",
+  publisher =	 "Wiley-Interscience Publishing",
+  address =	 "Hoboken, NJ",
+  pages =	 "812",
+  isbn =	 "978-0471767770",
+  doi =		 "10.1002/0470097434",
+  note =	 "A newly updated and revised edition of the classic
+                  introduction to digital image processing",
+  annote =	 "A newly updated and revised edition of the classic
+                  introduction to digital image processing. The Fourth Edition
+                  of Digital Image Processing provides a complete introduction
+                  to the field and includes new information that updates the
+                  state of the art. The text offers coverage of new topics and
+                  includes interactive computer display imaging examples and
+                  computer programming exercises that illustrate the
+                  theoretical content of the book. These exercises can be
+                  implemented using the Programmer's Imaging Kernel System
+                  (PIKS) application program interface included on the
+                  accompanying CD.",
+  language =	 "english",
+}
+
+@BOOK{Soj-Gau-Kru:2011:MatZaDiZpraSig:2,
+  author =	 "Sojka, E." #and# "Gaura, J." #and# "Krumnikl, M.",
+  title =	 "{Matematické základy digitálního zpracování obrazu}",
+  year =	 "2011",
+  month =	 sep,
+  edition =	 "\bblsecondo{}",
+  publisher =	 "VŠB-TU Ostrava (Fakulta elektrotechniky a informatiky),
+                  Západočeská univerzita v~Plzni",
+  address =	 "Ostrava, Plzeň",
+  pages =	 "vi+133",
+  url =		 "http://mrl.cs.vsb.cz/people/sojka/dzo_course.html",
+  annote =	 "Digitální zpracování a analýza obrazů jsou moderní a rychle
+                  se rozvíjející disciplíny. Jejich výsledky jsou dnes již
+                  běžně používány při úpravách a kompresi obrazů a
+                  videosekvencí, při rozpoznávání textů, v~kontrolních a
+                  střežicích systémech, v~průmyslových robotech, ve
+                  fotogrammetrii i~jinde. Dostatečný výkon a technologická
+                  úroveň současných výpočetních systémů umožnila pronikání
+                  digitálního zpracování obrazu dokonce i~do spotřební
+                  elektroniky. Příkladem je digitální fotografie, digitální
+                  video a digitální televize.",
+  language =	 "czech",
+}
+
+@BOOK{Gon-Woo:2007:DigImageProc:3,
+  author =	 "Gonzalez, Rafael C." #and# "Woods, Richard E.",
+  title =	 "{Digital Image Processing}",
+  year =	 "2007",
+  month =	 aug,
+  edition =	 "\bblthirdo{}",
+  publisher =	 "Prentice Hall",
+  address =	 "Upper Saddle River, N.~J.",
+  pages =	 "976",
+  isbn =	 "013168728X",
+  annote =	 "The leader in the field for more than twenty years, this
+                  introduction to basic concepts and methodologies for digital
+                  image processing continues its cutting-edge focus
+                  oncontemporarydevelopments inallmainstream areas of image
+                  processing. Completely self-contained, heavily illustrated,
+                  and mathematically accessible, it has a scope of application
+                  that is not limited to the solution of specialized
+                  problems.Digital Image Fundamentals. Image Enhancement in
+                  the Spatial Domain. Image Enhancement in the Frequency
+                  Domain. Image Restoration. Color Image Processing. Wavelets
+                  and Multiresolution Processing. Image
+                  Compression. Morphological Image Processing. Image
+                  Segmentation. Representation and Description. Object
+                  Recognition.For technicians interested in the fundamentals
+                  and contemporary applications of digital imaging
+                  processing.",
+  language =	 "english",
+}
+
+@BOOK{AGo:2012:ImageReg:2012,
+  author =	 "{Ardeshir Goshtasby}, A.",
+  title =	 "{Image Registration: Principles, Tools and Methods}",
+  year =	 "2012",
+  month =	 jan,
+  edition =	 "2012",
+  series =	 "Advances in Computer Vision and Pattern Recognition",
+  publisher =	 "Springer",
+  address =	 "London",
+  pages =	 "442",
+  isbn =	 "978-1447124573",
+  doi =		 "10.1007/978-1-4471-2458-0",
+  annote =	 "This book presents a thorough and detailed guide to image
+                  registration, outlining the principles and reviewing
+                  state-of-the-art tools and methods. The book begins by
+                  identifying the components of a general image registration
+                  system, and then describes the design of each component
+                  using various image analysis tools. The text reviews a vast
+                  array of tools and methods, not only describing the
+                  principles behind each tool and method, but also measuring
+                  and comparing their performances using synthetic and real
+                  data. Features: discusses similarity/dissimilarity measures,
+                  point detectors, feature extraction/selection and
+                  homogeneous/heterogeneous descriptors; examines robust
+                  estimators, point pattern matching algorithms,
+                  transformation functions, and image resampling and blending;
+                  covers principal axes methods, hierarchical methods,
+                  optimization-based methods, edge-based methods, model-based
+                  methods, and adaptive methods; includes a glossary, an
+                  extensive list of references, and an appendix on PCA.",
+  language =	 "english",
+}
+
+@BOOK{Son-Hla-Boy:2007:ImPrAnMachVi:3,
+  author =	 "Šonka, M." #and# "Hlaváč, V." #and# "Boyle, R.",
+  title =	 "{Image Processing, Anal\-ys\-is, and Machine Vision}",
+  year =	 "2007",
+  month =	 apr,
+  edition =	 "\bblthirdo{}",
+  publisher =	 "Thomson Learning",
+  address =	 "Toronto",
+  pages =	 "821",
+  isbn =	 "049508252X",
+  annote =	 "This robust text provides deep and wide coverage of the full
+                  range of topics encountered in the field of image processing
+                  and machine vision. As a result, it can serve
+                  undergraduates, graduates, researchers, and professionals
+                  looking for a readable reference. The book's encyclopedic
+                  coverage of topics is wide, and it can be used in more than
+                  one course (both image processing and machine vision
+                  classes). In addition, while advanced mathematics is not
+                  needed to understand basic concepts (making this a good
+                  choice for undergraduates), rigorous mathematical coverage
+                  is included for more advanced readers. It is also
+                  distinguished by its easy-to-understand algorithm
+                  descriptions of difficult concepts, and a wealth of
+                  carefully selected problems and examples.",
+  language =	 "english",
+}
+
+@BOOK{Pre-etal:2007:NumReCpp:CD-ROM,
+  author =	 "W. H. Press" #and# "S. A. Teukolsky" #and#
+                  "W. T. Vetterling" #and# "B. P. Flannery",
+  title =	 "{Numerical Recipes with Source Code CD-ROM. The Art
+                  of Scientific Computing}",
+  edition =	 "\bblthirdo{}",
+  publisher =	 "Cambridge University Press",
+  year =	 UNIACCESS,
+  address =	 "Cambridge",
+  pages =	 "1256",
+  isbn =	 "9780521884075",
+  url =		 "http://numerical.recipes/",
+  annote =	 "This book/CD bundle of the greatly expanded third
+                  edition of Numerical Recipes now has wider coverage
+                  than ever before, many new, expanded and updated
+                  sections, and two completely new
+                  chapters. Co-authored by four leading scientists
+                  from academia and industry, Numerical Recipes starts
+                  with basic mathematics and computer science and
+                  proceeds to complete, working routines. The
+                  informal, easy-to-read style that made earlier
+                  editions so popular is kept throughout. Highlights
+                  of the new material include: a new chapter on
+                  classification and inference, Gaussian mixture
+                  models, HMMs, hierarchical clustering, and SVMs;
+                  a new chapter on computational geometry, covering KD
+                  trees, quad- and octrees, Delaunay triangulation,
+                  and algorithms for lines, polygons, triangles, and
+                  spheres; interior point methods for linear
+                  programming; MCMC; an expanded treatment of ODEs
+                  with completely new routines; and many new
+                  statistical distributions.",
+  language =      "english",
+}
+
+@Article{Stu:2008:0803.2530:SpSyStCoUniDens,
+  crossref =	 "Stu:2000:ACTPS2:",
+}
+@ARTICLE{Stu:2000:ACTPS2:,
+  author =	 Stuchlik,
+  title =	 "Spherically symmetric static configurations of uniform
+                  density in spacetimes with a non-zero cosmological constant",
+  year =	 2000,
+  month =	 mar,
+  journal =	 ACTPS2,
+  volume =	 "50",
+  number =	 "2",
+  keywords =	 "General Relativity and Quantum Cosmology",
+  eprint =	 "0803.2530",
+  annote =	 "Interior solutions of Einstein's equations with a non- zero
+                  cosmological constant are given for static and spherically
+                  symmetric configurations of uniform density.",
+  pacs =	 "98.80.-k, 95.30.Sf, 04.70.-s, 04.20.Jb",
+  pages =	 "219--228",
+  issn =	 "0323-0465/00",
+  url =		 "http://adsabs.harvard.edu/abs/2008arXiv0803.2530S",
+  support =	 "GA{\v C}R grant No.~202/99/0261; grant J10/98: 192400004",
+  language =	 "english",
+}
+
+@BOOK{Mis-Tho-Whe:1973:Gra:,
+  author =	 "C. W. Misner" #and# "K. S. Thorne" #and# "J. A. Wheeler",
+  title =	 "Gravitation",
+  publisher =	 "W. H. Freeman and Co",
+  year =	 "1973",
+  address =	 "New York, San Francisco",
+  language =	 "english",
+}
+
+@ARTICLE{Boh:2004:GENRG2:11Solutions,
+  author =	 "B{\"o}hmer, C.~G.",
+  title =	 "{Eleven Spherically Symmetric Constant Density Solutions
+                  with Cosmological Constant}",
+  journal =	 GENRG2,
+  eprint =	 "gr-qc/0312027",
+  year =	 "2004",
+  month =	 may,
+  volume =	 "36",
+  pages =	 "1039--1054",
+  doi =		 "10.1023/B:GERG.0000018088.69051.3b",
+  url =		 "http://adsabs.harvard.edu/abs/2004GReGr..36.1039B",
+  language =     "english",
+}
+
+@ARTICLE{Boh-Fod:2008:PHYSR4:PerFluidCC,
+  author =	 "B{\"o}hmer, C.~G." #and# "Fodor, G.",
+  title =	 "{Perfect fluid spheres with cosmological constant}",
+  journal =	 PHYSR4,
+  archivePrefix ="arXiv",
+  eprint =	 "0711.1450",
+  primaryClass = "gr-qc",
+  keywords =	 "Exact solutions, Relativistic stars: structure stability and
+                  oscillations",
+  year =	 "2008",
+  month =	 mar,
+  volume =	 "77",
+  number =	 "6",
+  eid =		 "064008",
+  pages =	 "064008",
+  doi =		 "10.1103/PhysRevD.77.064008",
+  url =		 "http://adsabs.harvard.edu/abs/2008PhRvD..77f4008B",
+  language =     "english",
+}
+
+@ARTICLE{Stu-etal:2001:PHYSR4:,
+  author =	 Stuchlik #and# Hledik #and# Soltes #and# "{\O}stgaard,
+                  Erlend",
+  title =	 "{Null geodesics and embedding diagrams of the interior
+                  Schwarz\-schild--de~Sitter spacetimes with uniform density}",
+  year =	 "2001",
+  month =	 jul,
+  journal =	 PHYSR4,
+  publisher =	 "American Physical Society",
+  volume =	 "64",
+  number =	 "4",
+  pages =	 "044004 (17~pages)",
+  doi =		 "10.1103/PhysRevD.64.044004",
+  accessnumber = "WOS:000170467600033",
+  issn =	 "0556-2821",
+  annote =	 "Null geodesics and embedding diagrams of central planes in
+                  the ordinary space geometry and the optical reference
+                  geometry of the interior Schwarzschild--de~Sitter spacetimes
+                  with uniform density are studied. For completeness, both
+                  positive and negative values of the cosmological constant
+                  are considered. The null geodesics are restricted to the
+                  central planes of these spacetimes, and their properties can
+                  be reflected by an ``effective potential.{''} If the
+                  interior spacetime is extremely compact, the effective
+                  potential has a local maximum corresponding to a stable
+                  circular null geodesic around which bound null geodesics are
+                  concentrated. The upper limit on the size of the interior
+                  spacetimes containing bound null geodesics is $R = 3M$,
+                  independently of the value of the cosmological constant. The
+                  embedding diagrams of the central planes of the ordinary
+                  geometry into three-dimensional Euclidean space are well
+                  defined for the complete interior of all spacetimes with a
+                  repulsive cosmological constant, but the planes cannot be
+                  embedded into the Euclidean space in the case of spacetimes
+                  with subcritical values of an attractive cosmological
+                  constant. On the other hand, the embedding diagrams of the
+                  optical geometry are well defined for all of the spacetimes,
+                  and the turning points of these diagrams correspond to the
+                  radii of the circular null geodesics. All the embedding
+                  diagrams, for both the ordinary and optical geometry, are
+                  smoothly matched to the corresponding embedding diagrams of
+                  the external vacuum Schwarzschild--de~Sitter spacetimes.",
+  language =	 "english",
+}
+
+@ARTICLE{Stu-etal:2012:GENRG2:NeutrinoTrap,
+  author =	 Stuchlik #and# Hladik #and# Urbanec #and# Torok,
+  title =	 "{Neutrino trapping in extremely compact objects described by
+                  the internal Schwarzschild--(anti-)de~Sitter spacetimes}",
+  year =	 "2012",
+  journal =	 GENRG2,
+  volume =	 "44",
+  number =	 "6",
+  pages =	 "1393--1417",
+  doi =		 "10.1007/s10714-012-1346-3",
+  language =	 "english",
+}
+
+@BOOK{Dow-Ken-Joh:2006:PhysDiagImag:,
+  author =	 "D. J. Dowsett" #and# "P. A. Kenny" #and#
+                  "R. E. Johnston",
+  title =	 "{The Physics of Diagnostic Imaging}",
+  publisher =	 "Hodder Arnold",
+  edition =	 "\bblsecondo{}",
+  year =	 "2006",
+  month =	 jul,
+  isbn =	 "0-340-80891-8",
+  url =		 "http://www.hoddereducation.com",
+  language =     "english",
+}
+
+@BOOK{Roz:2006:ElePristLekar:,
+  author =	 "J. Rozman" #and# "others",
+  title =	 "{Elektronické přístroje v~lékařství}",
+  edition =	 "\bblfirsto{}",
+  publisher =	 "Academia",
+  year =	 "2006",
+  address =	 "Praha",
+  isbn =	 "80-200-1308-3",
+  url =		 "http://www.academiaknihy.cz/",
+  pages =	 "408",
+  language =	 "czech",
+}
+
+@BOOK{Nav-etal:2005:MedBiofyz:,
+  author =	 "L. Navrátil" #and# "J. Rosina" #and# "others",
+  title =	 "{Medicínská biofyzika}",
+  publisher =	 "Grada Publishing, a.s.",
+  year =	 "2005",
+  edition =	 "\bblfirsto{}",
+  address =	 "Praha",
+  isbn =	 "80-247-1152-4",
+  language =	 "czech",
+}
+
+@MISC{Zaz:2007::NaziKost,
+  title =	 "{Zázračná planeta: Nazí až na kost}",
+  year =	 "2007",
+  note =	 "Televizní dokument USA, Česká televize, pátek 23. 3. 2007,
+                  20:00--21:00",
+  language =     "czech",
+}
+
+@BOOK{Brd-Sam-Sop:2005:MechKont:3,
+  author =	 "M. Brdička" #and# "L. Samek" #and# "B. Sopko",
+  title =	 "Mechanika kontinua",
+  publisher =	 "Academia",
+  series =	 "Česká matice technická",
+  edition =	 "\bblthirdo{}",
+  year =	 "2005",
+  address =	 "Praha",
+  pages =	 "800",
+  isbn =	 "80-200-1344-X",
+  annote =	 "Kniha je rozdělena do 18~kapitol, uspořádaných do tří částí;
+                  první část je obecná, v~druhé je podána klasická teorie
+                  pružnosti a třetí část je věnována hydromechanice a
+                  aeromechanice. ke každé kapitole je zadáno i~více různě
+                  rozsáhlých fyzikálních úloh praktického významu, jejichž
+                  úplné řešení je vypracováno v~závěru knihy. Kromě těchto
+                  aplikací je v~textu knihy její téma často rozvíjeno řešením
+                  fyzikálních problémů, nebo je aplikace teorie ukázána
+                  řešením příkladů. Zdůrazňují se tak společné principy
+                  jednotlivých oborů mechaniky kontinua a posiluje se
+                  trénovanost čtenáře při aplikaci teorie, např. základních
+                  zákonů, bilančních rovnic, a matematického aparátu,
+                  např. tenzorového počtu.",
+  language =	 "czech",
+}
+
+@BOOK{Chm-etal:2006:USGRadAsist:,
+  author =	 "J. Chmelová" #and# "H. Glacová" #and# "T. Janszta" #and#
+                  "J. Chmela",
+  title =	 "{Základy ultrasonografie pro radiologické asistenty}",
+  publisher =	 "{Ústav zobrazovacích metod Zdravotně sociální fakulty,
+                  Ostravská univerzita}",
+  year =	 "2006",
+  address =	 "Ostrava",
+  isbn =	 "80-7368-221-6",
+  url =		 "http://uzm.osu.cz/",
+  language =	 "czech",
+}
+
+@ARTICLE{CaE:2007:PHYST1:,
+  author =	 "Carr Everbach, E.",
+  title =	 "{Medical diagnostic ultrasound}",
+  year =	 "2007",
+  month =	 mar,
+  journal =	 PHYST1,
+  volume =	 "60",
+  number =	 "3",
+  pages =	 "44--48",
+  url =		 "http://www.physicstoday.org/",
+  issn =	 "0031-9228",
+  language =     "english",
+}
+
+@MANUAL{Hor:LIVE:BasicsMRI:,
+  author =	 "{J. P. Hornak}",
+  title =	 "{The Basics of MRI}",
+  year =	 UNIACCESS,
+  url =		 "http://www.cis.rit.edu/htbooks/mri/",
+  key =		 "BasicsMRI",
+  language =     "english",
+}
+
+@MANUAL{Ulm:LIVE:AplIonZarJRM:,
+  author =	 "V. Ullmann",
+  title =	 "{Aplikace ionizujícího záření~-- jaderné a radiační
+                  metody}",
+  year =	 UNIACCESS,
+  url =		 "http://astronuklfyzika.cz/JadRadMetody.htm",
+  key =		 "AplIonZarJRM",
+  language =	 "czech",
+}
+
+@ARTICLE{Hau:1990:CZEJPA:,
+  author =	 "K. H. Hausser",
+  title =	 "{Jaderná magnetická rezonance v biologii a lékařství}",
+  year =	 "1990",
+  journal =	 CZEJPA,
+  volume =	 "40",
+  number =	 "2",
+  pages =	 "101--121",
+  issn =	 "0009-0700",
+  language =	 "czech",
+}
+
+@ARTICLE{Cer:2004:POKMF:NMRImag,
+  author =	 "J. Černá",
+  title =	 "{NMR Imaging (Nobelova cena za lékařství a fyziologii
+                  2003)}",
+  year =	 "2004",
+  journal =	 POKMF,
+  volume =	 "49",
+  number =	 "1",
+  pages =	 "15--23",
+  issn =	 "0032-2423",
+  url =		 "http://www.jcmf.cz/",
+  language =	 "czech",
+}
+
+@ARTICLE{Eng:1995:POKMF:,
+  author =	 "J. Englich",
+  title =	 "{Pulzní metoda jaderné magnetické rezonance a její užití
+                  v MR tomografii}",
+  year =	 "1995",
+  journal =	 POKMF,
+  volume =	 "40",
+  number =	 "4",
+  pages =	 "198--207",
+  language =	 "czech",
+}
+
+@ARTICLE{Lau:1973:NATURE:,
+  author =	 "P. C. Lauterbur",
+  title =	 "{Image formation by induced local interactions: examples
+                  employing nuclear magnetic resonance.}",
+  year =	 "1973",
+  journal =	 NATURE,
+  volume =	 "242",
+  pages =	 "190--191",
+  language =     "english",
+}
+
+@MISC{Mad:2007:SiemensMRI:OralCom,
+  author =	 "R. Maděřič",
+  title =	 "{Ústní sdělení}",
+  year =	 "2007",
+  month =	 jun,
+  note =	 "{Fakultní nemocnice s~poliklinikou Ostrava}",
+  key =		 "SiemensMRI",
+  language =	 "czech",
+}
+
+@BOOK{Zar-etal:2004:ModPocGraf:,
+  author =	 "J. Žára" #and# "B. Beneš" #and# "J. Sochor" #and#
+                  "P. Felkel",
+  title =	 "Moderní počítačová grafika",
+  publisher =	 "Computer Press",
+  year =	 "2004",
+  address =	 "Brno",
+  edition =	 "\bblsecondo{}",
+  isbn =	 "80-251-0454-0",
+  language =	 "czech",
+}
+
+@MISC{Cve:2007:Price:OralCom,
+  author =	 "M. Cvek",
+  title =	 "{Ústní sdělení}",
+  year =	 "2007",
+  month =	 feb,
+  note =	 "{Slezská nemocnice Opava}",
+  key =		 "Price",
+  language =	 "czech",
+}
+
+@INPROCEEDINGS{Edd-McN:2004:HandbkComputStats:fMRI,
+  crossref =	 "Gen-Har-Mor:2004:HandbkComputStats:",
+  author =	 "W.~F. Eddy" #and# "R.~L. McNamee",
+  title =	 "{Functional Magnetic Resonance Imaging}",
+  chapter =	 "IV-4.",
+  language =     "english",
+}
+
+@PROCEEDINGS{Gen-Har-Mor:2004:HandbkComputStats:,
+  title =	 "{Handbook of Computational Statistics}",
+  year =	 "2004",
+  month =	 dec,
+  editor =	 "J.~E. Gentle" #and# "W. Härdle" #and# "Y. Mori",
+  address =	 "Berlin--Heidelberg--New York",
+  publisher =	 "Springer",
+  booktitle =	 "{Handbook of Computational Statistics}",
+  isbn =	 "978-3-540-40464-4",
+  url =		 "http://www.quantlet.org/mdstat/scripts/csa/html/",
+  language =     "english",
+}
+
+@MANUAL{Chl-etal:LIVE:FunMagRezUvod:,
+  author =	 "P. Chlebus" #and# "M. Mikl" #and# "M. Brázdil" #and#
+                  "P. Rupa",
+  title =	 "{Funkční magnetická rezonance~-- úvod do problematiky}",
+  year =	 UNIACCESS,
+  url =		 "http://www.neurologiepropraxi.cz/",
+  key =		 "FunMagRezUvod",
+  language =	 "czech",
+}
+
+@MANUAL{Dal:LIVE::Natbib,
+  author =	 "P. W. Daly",
+  title =	 "{Natural Sciences Citations and References. (Author-Year and
+                  Numerical Schemes)}",
+  year =	 UNIACCESS,
+  note =	 "This paper describes package \texttt{natbib} version 8.1a
+                  from 2007/10/30",
+  url =		 "https://www.coursehero.com/file/101180032/natbib2pdf/",
+  language =	 "english",
+}
+
+@MANUAL{Adobe:LIVE::EPS,
+  author =	 "{Adobe Inc.}",
+  title =	 "{EPS files. Manage vector graphics and prep your images for
+                  high-resolution prints with the EPS (Encapsulated
+                  PostScript) file format}",
+  year =	 UNIACCESS,
+  url =		 "https://www.adobe.com/creativecloud/file-types/image/vector/eps-file.html",
+  language =	 "english",
+}
+
+@BOOK{Pop-Fle-Pop:1984:SazbaI:,
+  author =	 "P. Pop" #and# "J. Fléger" #and# "V. Pop",
+  title =	 "{Sazba I. Ruční sazba}",
+  publisher =	 "Státní pedagogické nakladatelství",
+  year =	 "1984",
+  address =	 "Praha",
+  language =	 "czech",
+}
+
+@BOOK{Ber:1999:TypoMan:,
+  author =	 "V. Beran",
+  title =	 "{Typografický manuál~-- učebnice počítačové typografie}",
+  publisher =	 "Kafka design",
+  year =	 "1999",
+  address =	 "Praha",
+  edition =	 "\bblsecondo{}",
+  language =	 "czech",
+}
+
+@ARTICLE{Ter-Stu:2005:ASTRA:,
+  author =	 Torok #and# Stuchlik,
+  title =	 "{Radial and vertical epicyclic frequencies of Keplerian
+                  motion in the field of Kerr naked singularities. Comparison
+                  with the black hole case and possible instability of naked
+                  singularity accretion discs}",
+  year =	 "2005",
+  journal =	 ASTRA,
+  volume =	 "437",
+  number =	 "3",
+  pages =	 "775--788",
+  eprint =	 "astro-ph/0502127",
+  language =	 "english",
+}
+
+@BOOK{Sie:1999:LinuxNutshell:,
+  author =	 "E. Siever",
+  title =	 "{Linux in a Nutshell}",
+  publisher =	 "O'Reilly \& Associates, Inc.",
+  year =	 "1999",
+  month =	 feb,
+  address =	 "Sebastopol",
+  edition =	 "\bblsecondo{}",
+  isbn =	 "1-56592-585-8",
+  url =		 "http://www.oreilly.com/",
+  language =	 "english",
+}
+
+@MANUAL{Adobe:LIVE::PostScriptLR,
+  author =	 "{Adobe Inc.}",
+  title =	 "{PostScript Language Reference Manual}",
+  year =	 UNIACCESS,
+  url =          "https://www.adobe.com/jp/print/postscript/pdfs/PLRM.pdf",
+  language =	 "english",
+}
+
+@MANUAL{Wil-etal:LIVE:PlottingProgram:Gnuplot,
+  author =	 "Williams, Thomas" #and# "Kelley, Colin" #and# "Lang,
+                  Russell" #and# "Kotz, Dave" #and# "Campbell, John" #and#
+                  "Elber, Gershon" #and# "Woo, Alexander" #and# "others",
+  title =	 "{Gnuplot}",
+  url =		 "http://www.gnuplot.info/",
+  year =	 UNIACCESS,
+  note =	 "Computer plotting program",
+  language =     "english",
+}
+
+@MANUAL{Kap-etal:LIVE:PlottingProgram:Sodipodi,
+  author =	 "Kaplinski, Lauris" #and# "others",
+  title =	 "{Sodipodi}",
+  url =		 "https://sourceforge.net/projects/sodipodi/",
+  year =	 UNIACCESS,
+  note =	 "Computer plotting program",
+  language =     "english",
+}
+
+@MANUAL{OLC:LIVE:PlottingProgram:Origin,
+  author =	 "{OriginLab Corporation}",
+  title =	 "{Origin}",
+  address =	 "Northampton, MA~01060, USA",
+  url =		 "https://www.originlab.com/",
+  year =	 UNIACCESS,
+  note =	 "Scientific graphing and analysis software",
+  language =     "english",
+}
+
+@MANUAL{Wol:LIVE::Mathematica,
+  author =	 "{Wolfram Research, Inc.}",
+  title =	 "{Mathematica}",
+  url =		 "https://www.wolfram.com/mathematica/",
+  year =	 UNIACCESS,
+  note =	 "The world's definitive system for modern technical computing",
+  language =     "english",
+}
+
+@MANUAL{MathWorks:LIVE::MATLAB,
+  author =	 "{The MathWorks, Inc.}",
+  title =	 "{MATLAB}",
+  url =		 "https://www.mathworks.com/",
+  year =	 UNIACCESS,
+  note =	 "Accelerating the pace of engineering and science",
+  language =     "english",
+}
+
+@MANUAL{Maplesoft:LIVE::Maple,
+  author =	 "{Maplesoft, a division of Waterloo Maple Inc.}",
+  title =	 "{Maple}",
+  url =		 "https://www.maplesoft.com/",
+  year =	 UNIACCESS,
+  note =	 "Mathematics-based software \&\ services for education,
+                  engineering, and research",
+  language =     "english",
+}
+
+@MANUAL{Noo:LIVE::xpdf,
+  author =	 "Noonburg, Derek",
+  title =	 "{XpdfReader}",
+  url =		 "http://www.xpdfreader.com/",
+  year =	 UNIACCESS,
+  note =	 "Computer plotting program",
+  language =     "english",
+}
+
+@MANUAL{Sch:LIVE::MiKTeX,
+  author =	 "Schenk, Christian",
+  title =	 "{MiKTeX~-- a modern {\TeX} distribution for Windows, Linux and macOS}",
+  url =		 "https://miktex.org/",
+  year =	 UNIACCESS,
+  language =     "english",
+}
+
+@MANUAL{Sch:LIVE::TDS,
+  author =	 "Schenk, Christian",
+  title =	 "{{\TeX} Directory Structure}",
+  url =		 "https://miktex.org/kb/tds",
+  year =	 UNIACCESS,
+  language =	 "english",
+}
+
+@MANUAL{TUG:LIVE::TeXLive,
+  author =	 "{{\TeX} Users Group}",
+  title =	 "{{\TeX} Live is a cross-platform, free software distribution
+                  for the {\TeX} typesetting system that includes major
+                  {\TeX}-related programs, macro packages, and fonts}",
+  url =		 "https://www.tug.org/texlive/",
+  year =	 UNIACCESS,
+  language =	 "english",
+}
+
+@MANUAL{Ovr:LIVE::Overleaf,
+  author =       "{Overleaf}",
+  title =	 "{The easy to use, online, collaborative {\LaTeX} editor}",
+  url =		 "https://www.overleaf.com/",
+  year =	 UNIACCESS,
+  language =     "english",
+}
+
+@MANUAL{Gimp:LIVE::Gimp,
+  author =	 "{The GIMP Team}",
+  title =	 "{Gimp}",
+  url =		 "https://www.gimp.org/",
+  year =	 UNIACCESS,
+  note =	 "{GNU image manipulation program}",
+  language =     "english",
+}
+
+@MANUAL{Che:LIVE::Ipe,
+  author =	 "Cheong, Otfried",
+  title =	 "{The Ipe extensible drawing editor}",
+  url =		 "https://ipe.otfried.org/",
+  year =	 UNIACCESS,
+  note =	 "{Ipe is a drawing editor for creating figures in PDF
+                  format}",
+  language =     "english",
+}
+
+@MISC{ImM:LIVE::ImageMagick,
+  title =	 "{ImageMagick: a free software delivered as a ready-to-run
+                  binary distribution or as source code that you may use,
+                  copy, modify, and distribute in both open and proprietary
+                  applications}",
+  url =		 "https://imagemagick.org/",
+  year =	 UNIACCESS,
+  note =	 "Use ImageMagick to create, edit, compose, or convert digital
+                  images. It can read and write images in a variety of formats",
+  language =     "english",
+}
+
+@MANUAL{Ink:LIVE::Inkscape,
+  author =	 "{The Inkscape team}",
+  title =	 "{Inkscape}",
+  url =		 "https://inkscape.org/",
+  year =	 UNIACCESS,
+  note =	 "Inkscape is a Free and open source vector graphics editor
+                  for GNU/Linux, Windows and MacOS~X",
+  language =     "english",
+}
+
+@MANUAL{Hen:LIVE::Netpbm,
+  author =	 "Henderson, Bryan",
+  title =	 "{Netpbm}",
+  url =		 "http://netpbm.sourceforge.net/",
+  year =	 UNIACCESS,
+  note =	 "{Netpbm} is a toolkit for manipulation of graphic images,
+                  including conversion of images between a variety of
+                  different formats",
+  language =     "english",
+}
+
+@MANUAL{Lan:LIVE::GSview,
+  author =	 "Lang, Russell",
+  title =	 "{GSview~-- a graphical interface for Ghostscript under MS~Win\-dows}",
+  year =	 UNIACCESS,
+  url =		 "http://www.ghostgum.com.au/software/gsview.htm",
+  note =         "{requires Ghostscript}",
+  language =	 "english",
+}
+
+@MANUAL{Art:LIVE::Ghostscript,
+  author =	 "{Artifex Software, Inc.}",
+  title =	 "{Ghostscript~-- an interpreter for the PostScript language
+                  and PDF files}",
+  year =	 UNIACCESS,
+  url =		 "https://www.ghostscript.com/",
+  note =         "{written entirely in~C, Ghostscript runs on various embedded
+                  operating systems and platforms including Windows, macOS,
+                  the wide variety of Unix and Unix-like platforms, and VMS
+                  systems}",
+  language =	 "english",
+}
+
+@BOOK{Wic:1966:PravMatSaz:,
+  author =	 "Wick, Karel",
+  title =	 "{Pravidla matematické sazby}",
+  publisher =	 "Academia",
+  year =	 "1966",
+  address =	 "Praha",
+  edition =	 "\bblsecondo{}",
+  url =		 "https://vufind.mzk.cz/Record/MZK01-000238413",
+  language =	 "czech",
+}
+
+@ARTICLE{Hor:2001:ZprCSTUG:MathTypeset,
+  author =	 "Hor{\'a}k, Karel",
+  title =	 "{Math typesetting in Czech texts (in Czech)}",
+  journal =	 "Zpravodaj \v{C}eskoslovensk\'{e}ho sdru\v{z}en\'{\i}
+                  u\v{z}ivatel\r{u} \TeX{u}",
+  volume =	 "11",
+  number =	 "1--3",
+  pages =	 "136--148",
+  year =	 "2001",
+  doi =		 "10.5300/2001-1-3/136",
+  ISSN =	 "1211-6661",
+  eISSN =	 "1213-8185",
+  address =	 "Prague, the Czech Republic",
+  publisher =	 "\CSTUG{}",
+  language =	 "czech",
+}
+
+@MANUAL{Nec:2003::YetiTypoBest,
+  author =	 "D. Nečas",
+  title =	 "{Yetiho typografický bestiář}",
+  year =	 "2003",
+  url =		 "http://monoceros.physics.muni.cz/~yeti/tex/bestiary.pdf",
+  language =	 "czech",
+}
+
+@MANUAL{Ste:LIVE::PDFtk,
+  author =	 "Steward, Sid",
+  title =	 "{PDFtk~-- the pdf toolkit}",
+  year =	 UNIACCESS,
+  url =		 "https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/",
+  note =	 "{PDFtk is a simple tool for doing everyday things with PDF
+                  documents}",
+  language =	 "english",
+}
+
+@MANUAL{SSMGT:LIVE::FormatyPapiru,
+  author =	 "{Střední škola mediální grafiky a tisku}",
+  title =	 "{Formáty papíru}",
+  year =	 UNIACCESS,
+  url =		 "http://www.sspp.cz/praxe/zrcadlo.pdf",
+  language =	 "czech",
+}
+
+@MANUAL{PaperSizes:LIVE::IntPaperSizes,
+  author =	 "{PaperSizes.org}",
+  title =	 "{International Paper Sizes \&\ Formats With Dimensions}",
+  year =	 UNIACCESS,
+  url =		 "https://www.papersizes.org/",
+  language =	 "english",
+}
+
+@MANUAL{Ros-Hud:LIVE::MathTypesetting,
+  author =	 "Mills, Ross" #and# "Hudson, John",
+  title =	 "{Mathematical Typesetting}",
+  year =	 UNIACCESS,
+  url =		 "http://tiro.com/Articles/mathematical_typesetting.pdf",
+  note =	 "{Mathematical and Scientific Typesetting Solutions from
+                  Microsoft}",
+  language =	 "english",
+}
+
+@MANUAL{Adobe:LIVE::AcrobatReader,
+  author =	 "{Adobe Inc.}",
+  title =	 "{Adobe Acrobat Reader DC}",
+  year =	 UNIACCESS,
+  url =		 "https://get.adobe.com/reader/",
+  language =	 "english",
+}
+
+@MANUAL{Art:LIVE::MuPDF,
+  author =	 "{Artifex Software, Inc.}",
+  title =	 "{M$\mu$PDF}",
+  year =	 UNIACCESS,
+  url =		 "https://mupdf.com/",
+  note =	 "{MuPDF is a lightweight PDF, XPS, and E-book viewer}",
+  language =	 "english",
+}
+
+@MANUAL{Wri-Fai-etal:LIVE::TeXFAQ,
+  author =	 "Wright, Joseph" #and# "Fairbairns, Robin" #and# "others",
+  title =	 "{Frequently Asked Question List for {\TeX}}",
+  year =	 UNIACCESS,
+  url =		 "https://texfaq.org/",
+  note =	 "{The questions answered here cover a wide range of topics,
+                  but typesetting issues are mostly covered from the viewpoint
+                  of a {\LaTeX} user}",
+  language =	 "english",
+}
+
+@MANUAL{Fir:LIVE::ISO690,
+  author =	 "Firstová, Zdeňka",
+  title =	 "{Nová citační norma ČSN ISO 690:2011}",
+  year =	 UNIACCESS,
+  note =	 "Bibliografické citace~-- podrobný návod, jak citovat
+                  literaturu a prameny, s českými příklady",
+  language =	 "czech",
+}
+
+@MANUAL{SE:LIVE::DriversCreatePDF,
+  author =	 "{StackExchange}",
+  title =	 "{All possible (La)TeX implementations and drivers to create
+                  PDF}",
+  year =	 UNIACCESS,
+  url =		 "https://wolfr.am/14wNOgoLo",
+  dummyurl =     "https://tex.stackexchange.com/questions/380345/all-possible-latex-implementations-and-drivers-to-create-pdf",
+  note =	 "{TeX-LaTeX Stack Exchange is a question and answer site for
+                  users of {\TeX}, {\LaTeX}, Con{\TeX}t, and related
+                  typesetting systems}",
+  language =	 "english",
+}
+
+%%
+%% End of file `references.bib'.

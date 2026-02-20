@@ -1,0 +1,1209 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toto je inkludovaný LaTeXový soubor `x_diag.tex'.            %%
+%% This is the `x_diag.tex' included LaTeX file.                %%
+%% ------------------------------------------------------------ %%
+%% Verze / Version 2022-05-23                                   %%
+%% Vyvíjí & udržuje / Developed & maintained by                 %%
+%%                           <stanislav.hledik@physics.slu.cz>  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Diagnostika s~obrazovým výstupem}\label{princtwo}%################
+
+V~oblasti lékařské diagnostiky\INDEX{diagnostika!lékařská} se v~posledních
+letech uplatňují nové metody zobrazování, jež by nemohly vzniknout bez
+počítačové podpory při transformaci primárních dat produkovaných fyzikálními
+detektory na diagnosticky upotřebitelné obrazové výstupy. Jedná se
+ultrazvukovou sonografii (US), počítačovou tomografii (CT), magnetickou
+rezonanci (MRI, fMRI), radioizotopové scintigrafické metody (planární
+scintigrafie, SPECT, PET).  Všechny uvedené metody jsou v~současné medicínské
+praxi úspěšně používány díky expandujícímu rozvoji, který v~poslední době
+nastal hlavně v~oblasti detektorů záření a informačních technologií při
+zpracování velkých objemů dat. V~oblasti diagnostiky je proto nutná úzká
+spolupráce mezi medicínou, fyzikou a informatikou.
+
+Z~pochopitelných důvodů je zde prostor pouze pro fyzikální a informatické
+základy uvedených metod. Další poučení může čtenář získat např.
+z~monografií~\cite{Dow-Ken-Joh:2006:PhysDiagImag:,%
+  Roz:2006:ElePristLekar:,%
+  Nav-etal:2005:MedBiofyz:}. V~této kapitole se soustředíme na popis
+ultrazvukové sonografie a zobrazování pomocí (jaderné) magnetické rezonance.
+
+\section{Ultrazvuková sonografie}\label{sono}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Zvukové vlny vysoké frekvence ($2.5$--$40\,\hz[M]$)\footnote{Pro srovnání,
+  horní mez slyšitelnosti je pro lidské ucho okolo $20\,\hz[k]$, u~dětí až
+  $40\,\hz[k]$.} mohou poskytovat 2D obrazové informace o~tkáních \emph{in
+  vivo}. Dají se využít také pro funkční zobrazování v~živých tkáních, např.
+na základě Dopplerova jevu. Zobrazování pomocí ultrazvuku (\emph{sonografie})
+je podobné nejběžnější zobrazovací metodě pomocí X-záření\INDEX{záření!X}
+v~tom, že využívá fyzikálního agens schopného prostupovat (pokud možno bez
+poškození) tkáněmi, liší se však v~několika základních aspektech:
+\begin{itemize}
+\item Ultrazvuk, jakožto mechanické vlnění, potřebuje látkové prostředí,
+  ve kterém se může šířit.
+\item Na rozdíl od X-záření,\INDEX{záření!X} jež je zářením
+  elektromagnetickým,\INDEX{záření!elektromagnetické} je ultrazvuk podélným
+  vlněním, a~jeho vlnová délka je podstatně větší. Pro frekvenci $2\,\hz[M]$
+  je vlnová délka v~měkké tkáni $0.75\,\mathrm{mm}$, pro frekvenci
+  $10\,\hz[M]$ je vlnová délka $0.15\,\mathrm{mm}$. Pro srovnání,
+  charakteristické vlnové délky X-záření\INDEX{záření!X} při urychlovacím
+  napětí okolo $100\,\mathrm{kV}$ jsou $10^{7}\times$ větší.
+\item Pro zobrazování se namísto prošlého vlnění jako u~rentgenového
+  zobrazování využívá odraženého vlnění.
+\end{itemize}
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=.6\linewidth]{echoloc}
+\end{center}
+\caption[K~echolokačnímu principu ultrazvukové sonografie]%
+{\label{echoloc}K~echolokačnímu principu ultrazvukové sonografie. Ultrazvukový
+  puls odražený od vzdálenějšího rozhraní potřebuje delší dobu pro návrat echa
+  a vyvolání odezvy v~detektoru. Z~časové prodlevy mezi vysláním pulsu a
+  detekcí echa lze lokalizovat rozhraní. Převzato
+  z~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}.}
+\end{figure}
+
+Ultrazvukový signál je vytvářen elektrickou stimulací krystalického materiálu.
+Jeho mechanické oscilace se přes vrstvu kontaktního gelu přenášejí do tkáně.
+Vzduch a různé druhy tkání (měkké tkáně, tuk, krev, mozek, svaly, kosti,
+apod.) se liší mechanickými vlastnostmi ovlivňujícími šíření ultrazvukových
+vln. Na rozhraní dvou různých tkání dochází k~více či méně silnému odrazu
+ultrazvukové vlny. Zdroj ultrazvukového vlnění (transducer) vysílá posloupnost
+krátkých ultrazvukových pulsů a po vyslání každého pulsu se přepne do
+\uv{naslouchacícho} režimu, v~němž zaznamenává odražené pulsy (echa)
+přicházející z~nitra vyšetřovaného organismu. Na základě časové prodlevy mezi
+vysláním pulsu a detekcí echa, intenzity echa a směrů, z~nichž echa
+přicházejí, se konstruuje obraz. Tento echolokační princip je schematicky
+zachycen na obrázku~\ref{echoloc}.\footnote{Princip ultrazvukové echolokace
+  není v~přírodě neznámý~-- ultrazvukových vln o~frekvencích
+  $50$--$200\,\hz[k]$ používají k~echolokaci netopýři. Vlastní medicínská
+  aplikace ultrazvuku se vyvinula z~vojenské technologie~-- sonaru (\uv{sound
+    navigation and ranging}) pro lokalizaci nepřátelských
+  ponorek~\cite{Zaz:2007::NaziKost}. Maximální frekvence zvuku leží okolo
+  $600\,\hz[M]$~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}.}
+
+\subsection{Základní pojmy ultrazvukové akustiky}\label{accoustic}%////////
+
+V~této sekci připomeneme základní pojmy z~akustiky, jež jsou nezbytné pro
+pochopení ultrazvukové sonografie.
+
+V~plynném či kapalném prostředí se zvuk šíří ve formě \emph{podélných}
+(longitudálních) vln, v~pevném skupenství je možná i~forma \emph{příčných}
+(transverzálních) vln. Vzhledem k~oblasti aplikací ultrazvuku v~medicíně~--
+vyšetření měkkých tkání, jež se svými vlastnostmi blíží spíše kapalině než
+pevnému skupenství~-- nás zde zajímají jen podélné vlny. Podélné vlny si
+můžeme představit takto: zařídíme-li nějakými vhodnými okrajovými podmínkami
+mechanické oscilace na povrchu tkáně, energie těchto oscilací se šíří do tkání
+postupným přenášením pohybu na sousedící molekuly tak, že výchylka molekul je
+rovnoběžná se směrem šíření rozruchu.\footnote{Molekuly kmitají podél směru
+  šíření, odtud název podélné vlnění.} Ačkoli samotné molekuly konají v~daném,
+zafixovaném místě jen malý oscilační pohyb okolo rovnovážné polohy, samotný
+oscilační rozruch, zahrnující kromě změny polohy molekul také malou změnu
+rychlosti, hustoty a tlaku, se šíří \emph{fázovou rychlostí} $c$ zavisející na
+mechanických vlastnostech tkáně~-- takový pohyb nazýváme vlnovým. Kinematicky
+je vlnový pohyb popsán \emph{frekvencí} $f$ (počet cyklů detekovaných
+pozorovatelem na fixním místě za jednu sekundu), případně periodou $T=1/f$,
+vlnovou délkou
+\begin{equation}
+  \lambda = \frac{c}{f}                                     \label{sonwlen}
+\end{equation}
+a amplitudou $A$.  Názorná představa podélné zvukové vlny je znázorněna na
+obrázku~\ref{longwav}. Rychlosti šíření pro některá medicínsky důležitá
+prostředí jsou uvedeny v~tabulce~\ref{tabsndspeed}.
+
+\begin{table}[t]
+\newcommand{\tc}[1]{\textit{#1}}
+\newcommand{\Z}{\hphantom{0}}
+\caption[Rychlosti zvuku, hustoty, akustické impedance a absorpce]%
+{\label{tabsndspeed}Rychlost šíření zvuku, hustota hmotnosti,
+  akustická impedance a absorpce pro některá medicínsky důležitá prostředí.
+  Hodnoty jsou pouze orientační a platí pro teplotu lidského organismu.
+  Zpracováno podle~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}.}
+\begin{center}
+\footnotesize
+\begin{tabular}{lcccc}
+\hline
+\rule{0pt}{2.75ex}%
+\tc{Prostředí}&\tc{Rychl. zvuku}&\tc{Hustota}&\tc{Akustická impedance}
+&\tc{Absorpce} ($1\,\hz[M]$)\\
+\rule[-1.75ex]{0pt}{0pt}%
+              &$c\,\mathrm{[m\us s^{-1}]}$&$\rho\,\mathrm{[kg\us m^{-3}]}$
+              &$Z\,\mathrm{[10^{6}\,kg\us m^{-2}\us s^{-1}]}$
+  &$\alpha\,\mathrm{[dB\us cm^{-1}]}\,$\\\hline
+Vzduch        & \Z330  & \Z\Z\Z\Z\hphantom{$.$}1.3 & \Z\Z\Z0.00043 & -- \\
+Tuk           &  1470  & \Z970     &        1.42   & 0.6\Z  \\
+Ricin. olej   &  1500  & \Z933     &        1.40   & --   \\
+Voda          &  1492  &  1000     &        1.48   & -- \\
+Měkká tkáň    &  1500  & \llap{$<{}$}1000 &   \llap{$\sim{}$}1.45 & 1.0\Z \\
+Mozek         &  1530  &  1020     &        1.56   & 0.85 \\
+Krev          &  1570  &  1020     &        1.60   & 0.18 \\
+Ledviny       &  1561  &  1030     &        1.61   & -- \\
+Játra         &  1549  &  1060     &        1.64   & 0.9\Z \\
+Svaly         &  1568  &  1040     &        1.63   & 1.2 (3.3)$^{\ast}$ \\
+Oční čočka    &  1620  &  1130     &        1.83   & 2.0\Z \\
+Kost          &  4080  &  1700     &        6.12   & 20.0\Z\Z \\
+\hline
+\end{tabular}
+\end{center}
+{\footnotesize\mbox{}\enspace$^{\ast}$Podél (napříč) svalových vláken.}
+\end{table}
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=.72\linewidth]{longwav}
+\end{center}
+\caption[Ilustrace podélného vlnění]%
+{\label{longwav}Místa zhuštění a zředění (a~jim odpovídající malé změny
+  výchylek a rychlostí molekul ve směru šíření) se šíří zleva doprava (nebo
+  obráceně) fázovou rychlostí $c$ jako podélná vlna. Ačkoli samy molekuly
+  prostředí konají pouze malý oscilační pohyb okolo rovnovážné polohy, vlna
+  sama přenáší energii a hybnost. Levý (pravý) panel reprezentuje vlnu
+  s~vysokou (nízkou) amplitudou a intenzitou. Převzato
+  z~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}.}
+\end{figure}
+
+Prostředí, v~němž se vlna šíří, není bezztrátové; energie nesená vlnou je
+disipována na teplo a intenzita, amplituda a další veličiny spojené s~energií
+vlny (tlakové a hustotní změny, oscilační rychlost) klesají.
+Obrázek~\ref{longwav} zobrazuje rovinnou vlnu, jejíž plochy konstantní
+amplitudy (vlnoplochy) jsou roviny kolmé na směr šíření; v~případě sférické
+vlny šířící se z~určitého bodu mají vlnoplochy sférický tvar a jejich povrch
+se zvětšuje s~druhou mocninou vzdálenosti. Intenzita vlny proto v~důsledku
+zákona zachování energie musí klesat jako převrácená hodnota kvadrátu
+vzdálenosti, amplituda a akustický tlak musí klesat nepřímo úměrně vzdálenosti
+(viz dále).
+
+Libovolný průběh akustické výchylky lze lineárně rozložit pomocí
+\emph{Fourierovy transformace} do harmonických složek popsaných funkcemi sinus
+a kosinus; stačí proto zabývat se vlnou s~harmonickým průběhem šířící se ve
+směru osy $x$
+\begin{equation}
+  u(x,t) = u_{\mathrm{max}}
+    \cos 2\pi f\left(t-\frac{x}{c}\right)\,,                   \label{accu}
+\end{equation}
+kde $u_{\mathrm{max}}$ je amplituda výchylky z~rovnovážné polohy.  Okamžitá
+\emph{akustická rychlost} kmitající částice prostředí podléhá zákonitosti
+podobné~(\ref{accu}), ovšem s~amplitudou rychlosti $v_{\mathrm{max}}$, pro niž
+derivací~(\ref{accu}) podle času dostaneme
+\begin{gather}
+  v_{\mathrm{max}} = 2\pi f u_{\mathrm{max}}\,.               \label{vampl}
+\end{gather}
+Typická velikost je řádově několik desítek milimetrů za sekundu.  Akustická
+vlna je provázena, kromě výchylek částic prostředí~(\ref{accu}) a oscilací
+rychlosti s~amplitudou~(\ref{vampl}), také oscilací tlaku kolem střední
+hodnoty s~amplitudou~\cite{Brd-Sam-Sop:2005:MechKont:3}
+\begin{equation}
+  p_{\mathrm{max}} = \rho c v_{\mathrm{max}}\,,               \label{pampl}
+\end{equation}
+kde $\rho$ je hustota hmotnosti a $c$ rychlost zvuku v~prostředí.\footnote{Ve
+  skutečnosti ve vlně osciluje také tlak s~amplitudou
+  $\rho_{\mathrm{max}}\ll\rho$ okolo rovnovážné hodnoty $\rho$. Součin
+  amplitud $\rho_{\mathrm{max}}v_{\mathrm{max}}$ je malá veličina druhého
+  řádu, kterou zanedbáme vzhledem k~veličině prvního řádu $\rho
+  v_{\mathrm{max}}$.}  Oscilační změny tlaku s~amplitudou~(\ref{pampl})
+nazýváme \emph{akustickým tlakem}. Typická hodnota je několik
+setin~$\mathrm{MPa}$.
+
+Okamžitá intenzita zvuku je zvuková energie prošlá za jednotku času
+jednotkovou plochou kolmou ke směru šíření ve fixním místě se souřadnicí $x$,
+$I(t) = \rho c v^{2}(t)$.  Taková intenzita však není příliš užitečná; její
+hodnota kolísá mezi nulou a maximální hodnotou odpovídající kladným i~záporným
+extrémům rychlosti $\pm v_{\mathrm{max}}$. Místo ní se zavádí intenzita $I$
+vystředovaná přes jednu periodu $T=1/f$; protože střední hodnota z~kvadrátu
+sinu či kosinu je rovna $1/2$, je taková vystředovaná intenzita rovna
+\begin{equation}
+  I = \tfrac{1}{2} \rho c v_{\mathrm{max}}^{2}
+    = \tfrac{1}{2} p_{\mathrm{max}} v_{\mathrm{max}}\,.      \label{aveint}
+\end{equation}
+Zavedeme-li \emph{efektivní hodnoty} akustické rychlosti a tlaku
+\begin{equation}
+  v_{\mathrm{ef}} \equiv \frac{v_{\mathrm{max}}}{\sqrt{2}}\,,\qquad
+  p_{\mathrm{ef}} \equiv \frac{p_{\mathrm{max}}}{\sqrt{2}}\,,\label{efaccu}
+\end{equation}
+můžeme vztah pro střední intenzitu~(\ref{aveint}) napsat ve tvaru
+\begin{equation}
+    I = \rho c v_{\mathrm{ef}}^{2}
+      = \frac{p_{\mathrm{ef}}^{2}}{\rho c}
+      = p_{\mathrm{ef}} v_{\mathrm{ef}}\,.                  \label{accuint}
+\end{equation}
+Jednotkou intenzity je v~soustavě SI $\mathrm{W\us m^{-2}}$, avšak praktickou
+jednotkou pro ultrazvukovou sonografii je $\mathrm{mW\us mm^{-2}}$. Typické
+intenzity pro medicínský ultrazvuk jsou mezi $0.01\,\mathrm{mW\us mm^{-2}}$ a
+$1\,\mathrm{mW\us mm^{-2}}$~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}. Akustická
+intenzita není na průřezu ultrazvukovým polem konstantní, nýbrž má maximum
+uprostřed (SP${}={}$spatial peak) a průměrnou intenzitu označovanou jako
+SA${}={}$spatial average intensity.
+
+Pro porovnání dvou intenzit $I_{1}$, $I_{2}$ se obvykle používá logaritmické
+škály v~\emph{decibelech} definované pomocí dekadických logaritmů jako
+\begin{equation}
+  L = 10\log\frac{I_{2}}{I_{1}}\,.                          \label{decibel}
+\end{equation}
+Označuje-li například $I_{2}$ intenzitu odražené vlny rovnou $0.0001$ násobku
+intenzity dopadající vlny $I_{1}$, je $L=-40\,\mathrm{dB}$.
+\emph{Polotloušťka} materiálu je tloušťka, na které intenzita klesne na
+polovinu; a protože $\log0.5\approx0.3$, říkáme, že klesne
+o~$3\,\mathrm{dB}$. Další užitečné hodnoty pro logaritmickou míru
+v~$\mathrm{dB}$ jsou v~tabulce~\ref{tabdecibel}.
+
+\begin{table}[t]
+\caption[Tabulka často užívaných hodnot decibelů]%
+{\label{tabdecibel}Tabulka často užívaných přibližných hodnot decibelů.
+  Například změna
+  o~$+3\,\mathrm{dB}$ znamená násobení faktorem${}\sim\!2$, změna
+  o~$-3\,\mathrm{dB}$ znamená násobení faktorem ${}\sim\!1/2$. Jiné
+  hodnoty než jsou
+  uvedeny v~tabulce vhodně rozložíme, např. změna o $15\,\mathrm{dB}$
+  rozložíme do změn o $10\,\mathrm{dB}$ a $5\,\mathrm{dB}$ a vynásobíme
+  odpovídající faktory $10\times3=30$.}
+\newcommand{\tc}[1]{\textit{#1}}
+\newcommand{\Z}{\hphantom{0}}
+\begin{center}
+\small
+\begin{tabular}{cc@{\hspace{4em}}cc}
+\hline
+\rule{0pt}{2.75ex}%
+dB       & faktor & dB        & faktor  \\\hline
+$\pm3$   &  $2$   & \Z$\pm7$  &  $\Z5$  \\
+$\pm5$   &  $3$   & \Z$\pm9$  &  $\Z8$  \\
+$\pm6$   &  $4$   &  $\pm10$  &  $10$   \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Na \emph{útlumu ultrazvuku} se podílejí dva procesy: \emph{absorpce} v~tkáni,
+jež tvoří hlavní mechanismus ($80\,\%$), a \emph{divergence ultrazvukového
+  pole} způsobená odrazem a rozptylem. Frekvenční závislost absorpce je dána
+viskozitou média, relaxačním časem a frekvencí ultrazvuku, a má typickou
+závislost znázorněnou na obrázku~\ref{usabs} vlevo. Závislost intenzity na
+dráze $s$ uražené v~homogenní tkáni je analogická exponenciálnímu zákonu pro
+X-záření\INDEX{záření!X}
+\begin{equation}
+  I(s) = I_{0}\,\eto{-\beta s}\,,                            \label{usgabs}
+\end{equation}
+kde $I_{0}$ je počáteční intenzita ($s=0$), $\beta$ je \emph{absorpční
+  koeficient}.  Místo absorpčního koeficientu $\beta$ se často udává
+\emph{koeficient zeslabení} $\alpha$ definovaný jako
+\begin{equation}
+  \alpha
+    =10\log\left.\frac{I_{0}}{I(s)}\right|_{s=1\,\mathrm{cm}}\,,\label{usatt}
+\end{equation}
+a udávaný v $\mathrm{dB\us cm^{-1}}$. Absorpční koeficient $\beta$ a
+koeficient zeslabení $\alpha$ jsou frekvenčně závislé; pro některá běžná
+medicínská prostředí při frekvenci $1\,\hz[M]$ jsou uvedeny
+v~tabulce~\ref{tabsndspeed}.  Důležitým experimentálním faktem je, že mezi
+koeficientem absorpce $\alpha$ a frekvencí je v~medicínsky relevantním rozsahu
+ultrazvukových frekvencí přibližně lineární závislost; jinými slovy poměr
+$\alpha/f$ je ve frekvenčním rozsahu $2.5$--$40\,\hz[M]$ přibližně konstantní.
+Jednotlivé tkáně jsou proto charakterizovány hodnotou poměru $\alpha/f$
+udávaného v~$\mathrm{dB\us cm^{-1}\us\hz[M]^{-1}}$, jejíž typická hodnota pro
+měkké tkáně je zhruba $\sim\!1\mathrm{dB\us cm^{-1}\us\hz[M]^{-1}}$ (viz
+obrázek~\ref{usabs} vpravo).
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=.8\linewidth]{usabs}
+\end{center}
+\caption[Frekvenční závislost absorpce ultrazvuku v~tkáni]%
+{\label{usabs} \emph{Vlevo:} Frek\-ve\-n\-č\-ní závislost absorpce ultrazvuku
+  pro tkáň s~relaxační frekvencí $\omega$. \emph{Vpravo:} Závislost
+  polotloušťky tkáně způsobující $50\,\%$ ztrátu intenzity na frekvenci pro
+  typickou hodnotu $\alpha/f\sim1\mathrm{dB\us cm^{-1}\us\hz[M]^{-1}}$.
+  \mbox{Převzato z~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}}.}
+\end{figure}
+
+Je-li útlum ultrazvuku v~tkáni pro zobrazování nežádoucí jev, pak odraz
+(reflexe) je naopak jev, jenž je podstatou ultrazvukového zobrazování.
+V~akustice se pro popis reflexe používá \emph{akustické impedance $Z$},
+veličiny definované jako
+\begin{equation}
+  Z = \frac{p_{\mathrm{ef}}}{v_{\mathrm{ef}}}
+    = \rho c = \sqrt{K\rho}\,,                            \label{acuuimped}
+\end{equation}
+kde $K$ je modul pružnosti prostředí~\cite{Brd-Sam-Sop:2005:MechKont:3}.  Je
+zkonstruována z~akustického tlaku a akustické rychlosti analogickým způsobem
+jako elektrický odpor z~napětí a proudu v~Ohmově zákonu. Typické hodnoty pro
+některé medicínsky relevantní tkáně jsou v~tabulce~\ref{tabsndspeed}.
+Akustická impedance hraje důležitou roli při popisu chování ultrazvuku na
+rozhraní dvou různých tkání.
+
+Rozlišujeme \emph{zrcadlový odraz} na hladkém rozhraní\footnote{Hladkým
+  rozhraním rozumíme rozhraní, jehož nepravidelnosti jsou velmi malé ve
+  srovnání s~vlnovou délkou $\lambda$ ultrazvukového svazku; např. pro
+  frekvenci $2\,\hz[M]$ je v~měkké tkáni $\lambda=0.75\,\mathrm{mm}$.} mezi
+dvěma tkáněmi s~různou akustickou impedancí. Pro kolmý dopad je zrcadlový
+odraz znázorněn na obrázku~\ref{usreflex} vlevo. Vztah pro \emph{reflexivitu}
+a \emph{transmisivitu} lze pomocí akustické impedance psát ve tvaru (viz
+obrázek~\ref{usreflex} pro význam veličin)
+\begin{gather}
+  R\equiv \frac{I_{\mathrm{r}}}{I_{\mathrm{i}}}
+    = \left(\frac{Z_{1}-Z_{2}}{Z_{1}+Z_{2}}\right)^{2}\,,    \label{usiref}\\
+  T\equiv \frac{I_{\mathrm{t}}}{I_{\mathrm{i}}}
+    = \frac{4Z_{1}Z_{2}}{(Z_{1}+Z_{2})^{2}}\,.             \label{usitrans}
+\end{gather}
+Snadno se ověří, že $R+T=1$, jak vyžaduje splnění zákona zachování energie.
+Při průchodu rozhraním vzduch-tuk s~podstatně odlišnými akustickými
+impedancemi se podle údajů v~tabulce~\ref{tabsndspeed} a vztahů (\ref{usiref})
+a (\ref{usitrans}) odrazí $R = 99.9\,\%$ intenzity (jedná se o~\emph{echogenní
+  strukturu}), zatímco při průchodu rozhraním játra-ledviny s~velmi podobnými
+akustickými impedancemi se odrazí pouze $R = 0.0085\,\%$ intenzity a $T =
+99.9915\,\%$ intenzity prochází.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=\linewidth]{usreflex}
+\end{center}
+\caption[Odraz ultrazvukového vlnění]%
+{\label{usreflex} \emph{Vlevo:} Odraz ultrazvukového svazku dopadajícího kolmo
+  na hladké rozhraní mezi dvěma tkáněmi o~akustických impedancích $Z_{1}$ a
+  $Z_{2}$. Intenzita dopadajícího svazku $I_{\mathrm{i}}$ se rozdělí mezi
+  prošlý svazek $I_{\mathrm{t}}$ a odražený svazek $I_{\mathrm{r}}$. Rozdělení
+  intenzit závisí na akustických impedancích tkání $Z_{1}$ a $Z_{2}$ podle
+  vztahů~(\ref{usiref}) a~(\ref{usitrans}). \emph{Vpravo:} Při dopadu pod
+  nenulovým úhlem $\theta_{\mathrm{i}}$ dochází ke změně směru šíření prošlého
+  svazku. Pro úhly lomu $\theta_{\mathrm{t}}$ a odrazu $\theta_{\mathrm{r}}$
+  platí analogické zákony jako v~optice, zákon odrazu~(\ref{usrelaw}) a zákon
+  lomu~(\ref{usisnell}).  Převzato z~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}.}
+\end{figure}
+
+Při průchodu rozhraním s~nepravidelnostmi nebo strukturou o~velikosti
+srovnatelné s~vlnovou délkou ultrazvuku, nebo při průchodu granulózním
+prostředím (krevní částice), dochází k~\emph{difrakčnímu jevu}~--
+\emph{rozptylu}.  Rozptýlené ultrazvukové vlnění formuje kužel, jehož
+vrcholový úhel závisí nepřímo úměrně na vlnové délce $\lambda$ a přímo úměrně
+na charakteristické velikostní škále nepravidelností rozhraní.  Rozptyl se
+také zvětšuje s~rostoucím úhlem dopadu a jeho intenzita je úměrná $f^{4}$.
+Rozptyl nemusí být nutně jen parazitním jevem; charakteristické interferenční
+obrazce nazývané \emph{speckle} totiž svým tvarem odpovídají určité morfologii
+rozhraní a mohou tak detekovat patologii projevující se právě změnou
+morfologie rozhraní~-- příkladem je diagnostika\INDEX{diagnostika!onemocnění
+  jater} onemocnění jater.  Difrakce se také projevuje obrazovými artefakty
+velikosti řádově vlnové délky použitého ultrazvuku při průchodu svazku kolem
+náhlých akustických stínění jako například~kosti.
+
+Kromě kolmého odrazu se při průchodu rozhraním pod nenulovým úhlem dopadu
+$\theta_{\mathrm{i}}$ uplatňují zákony analogické zákonům geometrické optiky
+(viz obrázek~\ref{usreflex} vpravo), konkrétně známý \emph{zákon odrazu}
+\begin{equation}
+  \theta_{\mathrm{r}} = \theta_{\mathrm{i}}                 \label{usrelaw}
+\end{equation}
+a \emph{Snellův zákon lomu}
+\begin{equation}
+  \frac{\sin\theta_{\mathrm{i}}}{v_{\mathrm{i}}}
+    = \frac{\sin\theta_{\mathrm{t}}}{v_{\mathrm{t}}}\,,    \label{usisnell}
+\end{equation}
+kde $v_{\mathrm{i}}$ ($v_{\mathrm{t}}$) je fázová rychlost ultrazvuku
+v~prostředí dopadajícího (prošlého) svazku.
+
+\subsection{Ultrazvuková sonda}\label{sontransd}%//////////////////////////
+
+Ultrazvuková sonda (též ultrazvukový transducer) přeměňuje energii
+elektrických pulsů přiváděných z~generátoru do sondy na energii ultrazvukových
+vln vysílaných do vyšetřovaného objektu, a~opačně, dokáže přeměňovat energii
+ultrazvukových odrazů přicházejících z~nitra vyšetřovaného objektu na dále
+zpracovatelný elektrický signál. Je obvykle založena na \emph{piezoelektrickém
+  jevu}, jenž umožňuje uvedený \uv{oboustranný} převod. Základní konstrukční
+schéma piezoelektrické ultrazvukové sondy je na obrázku~\ref{ustransd}.
+
+\begin{figure}[t]
+\begin{minipage}{.39\linewidth}
+\centering
+\includegraphics[width=0.8\linewidth]{ustransda}\par
+\includegraphics[width=\linewidth]{ustransdb}
+\end{minipage}\hfill%
+\begin{minipage}{.57\linewidth}
+\caption[Základní konstrukce ultrazvukové sondy]%
+{\label{ustransd}Schéma konstrukce ul\-tra\-zvu\-ko\-vé sondy.
+  \emph{Nahoře:} Základem je piezoelektrický krystal (obvykle
+  $\mathrm{Pb\,Zr\,Ti\,O_{4}}$) o~tloušťce optimálně $\lambda/2$, pokrytý
+  přizpůsobovací vrstvou (Matching plastic layer). Pro optimální přenos
+  ultrazvuku z~piezokrystalu by akustická impedance $Z_{\mathrm{M}}$ této
+  vrstvy měla být geometrickým průměrem
+  $Z_{\mathrm{M}}=\sqrt{Z_{\mathrm{T}}Z_{\mathrm{L}}}$ akustické impedance
+  piezokrystalu $Z_{\mathrm{T}}$ a tkáně $Z_{\mathrm{L}}$, a~její tloušťka by
+  měla být rovna čtvrtině vlnové délky. Za piezokrystalem se nachází tlumicí
+  blok (Backing block) z~jemných wolframových částeček suspendovaných
+  v~epoxidové pryskyřici (wolframové částečky rozptylují ultrazvuk, jenž je
+  pak v~pryskyřici pohlcován). \emph{Dole:} Mezi sondu a pokožku či jiný
+  povrch vyšetřovaného pacienta se nanáší tenká vrstva kontaktního gelu.
+  Převzato z~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}.}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=\linewidth]{uspulse}
+\end{center}
+\caption[Geometrie ultrazvukových pulsů]%
+{\label{uspulse}Geometrie ultrazvukových pulsů. \emph{Vlevo:} Ultrazvukový
+  puls obsahující tři cykly o~vlnové délce $\lambda$ s~vhodně tvarovanou
+  obálkou. Zkratka SPL značí \emph{Spatial Pulse Length} (prostorovou délku
+  pulsu), typická hodnota je $0.45\,\mathrm{mm}$ až $2.25\,\mathrm{mm}$.
+  \emph{Vpravo:} Podobně PD značí \emph{Pulse Duration} neboli trvání pulsu,
+  které bývá v~rozmezí $0.5\,\micro\mathrm{s}$ až $3\,\micro\mathrm{s}$, PRP
+  značí \emph{Pulse Repetition Period} neboli opakovací periodu pulsů, která
+  bývá v~řádu $\mathrm{ms}$, případně $\mathrm{PRF}=1/\mathrm{PRP}$
+  \emph{Pulse Repetition Frequency} značí opakovací frekvenci pulsů.  Převzato
+  z~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}.}
+\end{figure}
+
+Ultrazvukové pulsy vytvářené sondou jsou velmi krátké~-- obvykle obsahují jen
+dvě až tři vlny. Typický tvar pulsu je na obrázku~\ref{uspulse}.  Z~teorie
+Fourierovy transformace plyne, že čím více zkrátíme trvání pulsu (PD), tím je
+spektrum širší. Záleží také na obálce (tvaru) pulsu~-- tvar by se měl alespoň
+přibližovat Gaussově křivce, aby byly potlačeny oscilační laloky vzdálené od
+základní frekvence. Opakovací frekvence pulsů (PRP) je řádově tisíc krát větší
+než trvání pulsu (PD), protože po vyslání každého pulsu se sonda přepne do
+\uv{naslouchacího} režimu, v~němž registruje ultrazvuková echa přicházející
+z~nitra vyšetřovaného pacienta, než opět vyšle krátký puls. Tento cyklus se
+neustále opakuje. Vzhledem k~proporcím mezi PD a PRP je sonda zhruba
+$99.9\,\%$ času v~naslouchacím režimu.
+
+Opakovací frekvence PRF jednoduše souvisí s~maximální hloubkou obrazu $D$: čas
+potřebný na proniknutí ultrazvuku do hloubky $D$ a na návrat zpět do sondy je
+$2D/c$. Aby sonda byla ještě schopna detekovat příslušnost echa k~vyslanému
+pulsu, musí být opakovací perioda PRP delší než $2D/c$. Z~této úvahy dostáváme
+\begin{equation}
+  \mathrm{PRF} < \frac{c}{2D}\,.                            \label{usimdep}
+\end{equation}
+Pro hloubku penetrace $150\,\mathrm{mm}$ a
+$c\approx1500\,\mathrm{m\us s^{-1}}$ máme $\mathrm{PRF}\approx
+5\,\hz[k]$. Typické hodnoty pro ultrazvukovou sonografii jsou
+$\mathrm{PRF}\approx 2$--$10\,\hz[k]$. Opakovací frekvence musí být adekvátní
+hloubce obrazu, příliš krátká PRP může způsobit detekci echa z~předchozích
+pulsů a působit falešná zobrazení.
+
+Frekvenční spektrum ultrazvukových pulsů má tvar Gaussovy křivky; faktor
+kvality piezokrystalu $Q$ je dán poměrem rezonanční frekvence
+$f_{\mathrm{R}}$, na níž má tato křivka maximum, a~šířky křivky $\Delta f$
+(rozdílu frekvencí, pro něž spektrální křivka poklesne na
+$1/\sqrt{2}\approx0.707$ maxima $f_{\mathrm{R}}$, viz obrázek~\ref{uslobes}
+vlevo):
+\begin{equation}
+  Q = \frac{f_{\mathrm{R}}}{\Delta f}\,.                    \label{usqualf}
+\end{equation}
+Sondy s~nižším $Q$ (tj. širším spektrem a krátkými pulsy) se používají pro
+ultrazvukové zobrazování, kde potřebujeme pro dobré rozlišení co nejkratší SPL
+pro co nejvyšší \emph{axiální rozlišovací schopnost} (ta se obvykle definuje
+jako $\mathrm{SPL}/2$, je tedy typicky $0.2\,\mathrm{mm}$ až
+$1.2\,\mathrm{mm}$) a nezáleží příliš na přesné frekvenci. Naopak sondy
+s~vyšším $Q$ se používají v~dopplerovské sonografii (viz níže), kde záleží na
+přesné frekvenci a délka trvání pulsu může být velká (nebo kontinuální).
+
+\begin{figure}[p]
+\begin{center}
+\includegraphics[width=.86\linewidth]{uslobes}
+\end{center}
+\caption[Faktor kvality a potlačení postranních laloků]%
+{\label{uslobes}\emph{Vlevo:} Rozdíl $\Delta f$ frekvencí, pro něž spektrální
+  křivka poklesne na $1/\sqrt{2}\,f_{\mathrm{R}}\approx0.707f_{\mathrm{R}}$.
+  Spektrum sondy s~vysokým $Q$ (malým $\Delta f = B$) je vyznačeno černě,
+  spektrum sondy s~nízkým $Q$ (vysokým $\Delta f = A$) je vyznačeno šedě.
+  \emph{Vpravo:} Potlačení postranních laloků pomocí apodizace.  Převzato
+  z~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}.}
+\end{figure}
+\begin{figure}[p]
+\begin{center}
+\includegraphics[width=.86\linewidth]{uszones}
+\end{center}
+\caption[Ilustrace Fresnelovy a Fraunhoferovy zóny]%
+{\label{uszones}Ilustrace změny Fresnelovy a Fraunhoferovy zóny v~závislosti
+  na rozměru ultrazvuk produkujícího elementu sondy a na frekvenci. Převzato
+  z~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}.}
+\end{figure}
+\begin{figure}[p]
+\begin{center}
+\includegraphics[width=\linewidth]{usfocus}
+\end{center}
+\caption[Vliv fokusace sondy na tvar ultrazvukového pole]%
+{\label{usfocus}Vliv fokusace sondy na tvar ultrazvukového pole.  Zleva
+  doprava: plochá sonda, slabě fokusovaná ($\ell_{\mathrm{near}}/R<2$) a silně
+  fokusovaná ($\ell_{\mathrm{near}}/R\approx3$--$4$). Veličina $\alpha$ na
+  obrázku odpovídá poloměru sondy $a$. Převzato
+  z~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}.}
+\end{figure}
+
+Tvar akustické apertury (profil ultrazvukového pole) je vhodné upravit tak,
+aby víceméně kopíroval Gaussovu křivku. Při obdélníkovém profilu bychom totiž
+dostali, jak už to u~zdrojů vlnění bývá, kromě hlavního laloku navíc
+\emph{postranní laloky}, které by způsobovaly degradaci kontrastu a rozlišení.
+Přizpůsobení akustické apertury se nazývá \emph{apodizace} a její výsledek je
+na obrázku~\ref{uslobes} vpravo. Apodizace se dosahuje tvarovanými akustickými
+čočkami a dynamickou fokusací (viz níže a obrázek~\ref{usfocus}).
+
+Na závěr si všimneme chování ultrazvukového pole podél směru šíření, jež má
+vliv na \emph{stranovou (laterální) rozlišovací schopnost}. Pole lze
+rozdělit do dvou oblastí: na \emph{blízkou (Fresnelovu) zónu} a na
+\emph{vzdálenou (Fraunhoferovu) zónu} (viz obrázek~\ref{uszones}). Zatímco
+ve Fresnelově zóně o~délce
+\begin{equation}
+  \ell_{\mathrm{near}} = \frac{a^{2}}{\lambda}\,,         \label{usfresnel}
+\end{equation}
+kde $a$ je poloměr sondy, zachovává pole šířku sondy, ve vzdálené zóně se
+stává divergentním s~úhlem divergence
+\begin{equation}
+  \theta_{\mathrm{d}}
+    = \arcsin\left(\frac{0.61\lambda}{a}\right)\,.         \label{usdivang}
+\end{equation}
+Pro lepší laterální rozlišení ve velkých hloubkách potřebujeme širší sondu a
+vysokou frekvenci, aby blízká zóna byla co nejdelší. V~praxi je však nutné
+volit kompromisní hodnoty a přihlížet k~dalším aspektům šíření ultrazvuku
+v~tkáni, zejména k~faktu, že s~rostoucí frekvencí roste útlum. Například
+v~oftalmologii stačí jen velmi mělká hloubka a sonda má rovněž malý rozměr,
+takže se používá ve srovnání s~ostatními aplikacemi ultrazvukového zobrazování
+vyšších frekvencí.
+
+Laterální rozlišení lze ovlivnit vhodným tvarováním (fokusací) sondy, jak je
+vidět z~obrázku~\ref{usfocus}.
+
+\section{Nukleární magnetická rezonance (NMR/MRI)}\label{nmr}%%%%%%%%%%%%%%
+
+Nukleární magnetická rezonance (NMR) je fyzikálně-chemická metoda založená na
+analýze magnetických momentů atomových jader. Tato původně analytická metoda
+objevená \designation{F. Blochem} a \designation{E. Purcellem} v~roce~1946
+byla pod názvem MRI (Magnetic Resonance Imaging) rozvinuta jako zobrazovací
+technika používaná k~tomografickému zobrazování vnitřních orgánů lidského
+těla. Obrazy vznikají na základě odezvy dočasných změn magnetických poměrů
+v~tkáních. Hned zkraje poznamenejme, že v~metodě MRI nefiguruje ionizující
+záření\INDEX{záření!ionizující} jako v~klasické či digitální rentgenologii
+nebo v~počítačové tomografii; využívá se radiofrekvenčního elektromagnetického
+záření\INDEX{záření!radiofrekvenční}. Při zpracování této sekce byly převážně
+využity zdroje~\cite{Hor:LIVE:BasicsMRI:,%
+  Ulm:LIVE:AplIonZarJRM:,%
+  Dow-Ken-Joh:2006:PhysDiagImag:,%
+  Hau:1990:CZEJPA:,%
+  Cer:2004:POKMF:NMRImag}.
+
+\subsection{Stručný nástin principu MRI}\label{mribrief}%//////////////////
+
+Atomové jádro se skládá z~protonů a neutronů, jež souhrnně nazýváme nukleony.
+Každý nukleon má vlastní moment hybnosti~-- spin. V~jádrech s~lichým počtem
+nukleonů se spiny jednotlivých nukleonů nekompenzují a určitý spin nese celé
+jádro. Pro lékařské účely je důležité především jádro vodíku, tedy
+proton.\footnote{Z~toho důvodu se MRI užíval i~název \emph{vodíkové
+    topografické zobrazení}~\cite{Ulm:LIVE:AplIonZarJRM:}.} Spin je kvantovaná
+veličina, může být vzhledem k~určitému směru kvantování orientována buď
+\uv{paralelně} nebo \uv{antiparalelně}.
+
+Mějme soubor jader vodíku. Pokud nejsou vložená do vnějšího magnetického pole,
+bude polovina protonů orientovaná nahoru a polovina dolů a jejich energie bude
+stejná. Přiložíme-li vnější magnetické pole, bude energie \uv{elementárních
+  magnetů}, jaké protony představují, různá pro protony orientované ve směru a
+proti směru pole. Dopadne-li nyní na tento vzorek vysokofrekvenční
+elektromagnetické záření\INDEX{záření!elektromagnetické} obsahující fotony
+s~energií rovné rozdílu potenciální energie protonů s~antiparalelní a
+paralelní orientací, dojde k~rezonančnímu jevu: foton může být absorbován a
+jeho energie excituje proton v~nižším energetickém stavu do vyššího
+energetického stavu. Pokud záření dále nepůsobí, dojde k~relaxaci, proton se
+opět \uv{přepne} do nižšího energetického stavu a přitom se uvolní foton. Při
+rezonanční frekvenci dochází ke zvýšené absorpci elektromagnetického vlnění
+v~látce, která je registrována prostřednictvím fotonů uvolňovaných
+při~relaxaci.
+
+\begin{figure}[t]
+\begin{minipage}{.19\linewidth}
+\centering
+\includegraphics[width=\linewidth]{ive1}
+\end{minipage}\hfill%
+\begin{minipage}{.19\linewidth}
+\centering
+\includegraphics[width=\linewidth]{ive2}
+\end{minipage}\hfill%
+\begin{minipage}{.19\linewidth}
+\centering
+\includegraphics[width=\linewidth]{joe3}
+\end{minipage}\hfill%
+\begin{minipage}{.19\linewidth}
+\centering
+\includegraphics[width=\linewidth]{joe4}
+\end{minipage}\hfill%
+\begin{minipage}{.19\linewidth}
+\centering
+\includegraphics[width=\linewidth]{joe5}
+\end{minipage}
+\caption[Lokalizace MRI řezu pomocí gradientního pole]%
+{\label{mriloc}Silné magnetické pole používané k~MRI zobrazování má
+  \emph{lineární gradient}, tj. mění se rovnoměrně v~určitém směru (na obrázku
+  ve směru rovnoběžném se hřbetem vazby).  K~rezonanci dochází pro frekvenci
+  odpovídající vybranému typu jader jen při určité intenzitě magnetického
+  pole, jež leží v~tenké rovinné vrstvě (řezu) o~tloušťce Thk kolmé ke směru
+  gradientu. Pomocí gradientu magnetického pole se tak dá vybírat řez
+  pacientem, aniž by bylo nutné s~pacientem fyzicky manipulovat.  Zobrazovaná
+  vrstva je složena z~objemových \emph{voxelů} (trojrozměrný analogon pixelu,
+  obvyklý objem voxelu je${}\sim\!3\,\mathrm{mm^{3}}$). Zcela vpravo je
+  dvourozměrné zobrazení vybraného řezu adresovaného odpovídajícím gradientem
+  magnetického pole.  Upraveno podle~\cite{Hor:LIVE:BasicsMRI:}.}
+\end{figure}
+
+\begin{figure}[t]
+\begin{minipage}{.16\linewidth}
+\centering
+\includegraphics[width=\linewidth]{intro_3i}
+\end{minipage}\hfill%
+\begin{minipage}{.16\linewidth}
+\centering
+\includegraphics[width=\linewidth]{intro_3j}
+\end{minipage}\hfill%
+\begin{minipage}{.16\linewidth}
+\centering
+\includegraphics[width=\linewidth]{intro_3l}
+\end{minipage}\hfill%
+\begin{minipage}{.16\linewidth}
+\centering
+\includegraphics[width=\linewidth]{intro_3m}
+\end{minipage}\hfill%
+\begin{minipage}{.16\linewidth}
+\centering
+\includegraphics[width=\linewidth]{intro_3n}
+\end{minipage}\hfill%
+\begin{minipage}{.16\linewidth}
+\centering
+\includegraphics[width=\linewidth]{intro_3o}
+\end{minipage}
+\caption[Ilustrace obsahu vodíkových jader v~tkáni]%
+{\label{mricell}Lidské tělo obsahuje mnoho vody a lipidů. Voda i~lipidy
+  obsahují mnoho vodíkových atomů (v $1\,\mathrm{cm^{3}}$ vody je řádově
+  $10^{22}$ vodíkových atomů), takže lidské tělo obsahuje asi $63\,\%$ vodíku.
+  Protože vodíkové atomy jsou schopné dávat NMR signál, používá se pro
+  zobrazování právě jich.  Každý voxel obsahuje jednu nebo více tkání se
+  specifickým zastoupením vodíku (zcela vlevo). Zoom voxelu odhalí buňky
+  (druhý panel zleva).  Uvnitř každé buňky jsou vodní molekuly (třetí a čtvrtý
+  panel zleva). Každá molekula vody obsahuje jeden kyslíkový a dva vodíkové
+  atomy (druhý panel zprava).  Jádro vodíkového atomu je tvořeno protonem~--
+  miniaturním \uv{magnetem}, jenž se využívá v~metodě NMR, potažmo
+  k~medicínskému zobrazování. Právě různý obsah vodíkových atomů a různý
+  chemismus obklopujícího prostředí v~různých tkáních umožňuje jejich
+  rozlišení.  Převzato z~\cite{Hor:LIVE:BasicsMRI:}.}
+\end{figure}
+
+V~praktické aplikaci se vzorek umístí do silného magnetického pole, které
+způsobí částečnou polarizaci protonů. Rezonanční frekvence závisí na intenzitě
+magnetického pole. Jeli vzorek umístěn do nehomogenního pole, tedy pole, které
+má určitý gradient, k~rezonanci dochází v~různých místech při různých
+frekvencích, čímž je možno hledanou strukturu lokalizovat~(viz
+obrázek~\ref{mriloc}). Prakticky všechny tkáně obsahují značné množství vody,
+tedy vodíkových jader (viz obrázek~\ref{mricell}). Rozložení molekul vody
+v~příslušné tkáni tedy může být zobrazeno popsaným způsobem. Pro použitelnost
+metody je podstatné, že pomocí gradientu magnetického pole je možno přesně
+lokalizovat polohu zdroje relaxačního signálu. V~praktickém provedení je
+samozřejmě tento signál dále zesilován a zpravidla analyzován pomocí
+Fourierovy transformace. Vhodným měněním gradientu přiloženého magnetického
+pole je možné získávat tomografický obraz.
+
+\subsection{Fyzika jaderného spinu}\label{nuclespin}%//////////////////////
+
+Jak již bylo výše řečeno, každý nukleon (proton nebo neutron), z~nichž se
+skládají atomová jádra, má \emph{spin}.\footnote{Spin je kvantovaná veličina a
+  u~fermionů, mezi něž proton a neutron patří, nabývá poločíselného násobku
+  redukované Planckovy konstanty $\hbar$. Proton i~neutron mají v~jednotkách
+  $\hbar$ spin~$1/2$.}  Se spinem je svázán i~vlastní (spinový)
+\emph{magnetický moment}. Spin a magnetický moment mají však pouze atomová
+jádra s~lichým nukleonovým číslem $A$, neboť spiny a magnetické momenty
+spárovaných protonů a neutronů se vzájemně ruší.  Magnetický moment jádra
+vytváří nespárovaný nukleon. Magnetickou rezonanci lze tedy pozorovat jen
+u~jader s~lichým nukleonovým číslem. Pro potřeby medicínského zobrazování je
+ještě zapotřebí tuto podmínku doplnit o~podmínku dostatečného zastoupení
+v~tkáních. Zdaleka největší význam má vodík ${}^{1}\mathrm{H}$, jehož průměrné
+zastoupení v~tkáních je kolem $63\,\%$.  Další atomy, jejichž jádra přicházejí
+pro medicínské zobrazování v~úvahu, jsou například izotop uhlíku
+${}^{13}\mathrm{C}$, fosfor ${}^{31}\mathrm{P}$, izotop dusíku
+${}^{15}\mathrm{N}$, fluor ${}^{19}\mathrm{F}$ a sodík ${}^{23}\mathrm{Na}$
+(viz tabulka~\ref{tablarm}).
+
+\begin{table}[p]
+  \caption[Parametry izotopů pro medicínské zobrazování]%
+  {\label{tablarm}Parametry izotopů pro medicínské zobrazování.
+    Podle~\cite{Hor:LIVE:BasicsMRI:,Dow-Ken-Joh:2006:PhysDiagImag:}.}
+\begin{center}
+\small
+\newcommand{\pad}{\hphantom{0}}
+\begin{tabular}{lccc}
+\hline
+Izotop & Gyromagnetický & Abundance & Relativní inten- \\
+       & poměr $\gamma$ [$\hz[M]\us\mathrm{T^{-1}}$] & [\%] &zita na proton\\\hline
+${}^{1}\mathrm{H}$ (proton) & $42.58$ & \hphantom{0}99.98\hphantom{0}&1.0000 \\
+${}^{19}\mathrm{F}$         & $40.05$ & 100\hphantom{.000} & 0.8300 \\
+${}^{23}\mathrm{Na}$        & $11.26$ & 100\hphantom{.000} & 0.0930 \\
+${}^{31}\mathrm{P}$         & $17.24$ & 100\hphantom{.000} & 0.0660 \\
+${}^{17}\mathrm{O}$      & $\pad5.77$ & \hphantom{00}0.037  & 0.0290 \\
+${}^{13}\mathrm{C}$         & $10.71$ & \hphantom{00}1.11\hphantom{0}&0.0160 \\
+${}^{15}\mathrm{N}$      & $\pad4.30$ & \hphantom{00}0.37\hphantom{0}&0.0010 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{figure}[p]
+\begin{center}
+\includegraphics[width=0.9\linewidth]{nucspin}
+\end{center}
+\caption[Chování jaderných spinů ve vnějším magnetickém poli]%
+{\label{mrispin}Názorná (i~když z~hlediska kvantové mechaniky nepřesná)
+  představa chování jaderných spinů ve vnějším magnetickém poli. \emph{Vlevo:}
+  Spiny jsou bez vnějšího magnetického pole orientovány chaoticky a jejich
+  celkový magnetický moment je nulový.  \emph{Uprostřed:} Zapneme-li vnější
+  magnetické pole, např. vpuštěním elektrického proudu do cívky obklopující
+  vzorek tkáně, budou se jaderné spiny snažit \uv{srovnávat} souhlasně
+  s~magnetickým polem a začnou vytvářet makroskopický magnetický moment~--
+  tkáň je \uv{zmagnetovaná}. \emph{Vpravo:} Aplikací elektromagnetického
+  záření o~Larmorově frekvenci~(\ref{larmor}) dochází k~rezonanci a jaderné
+  spiny s~nižší energií jsou excitovány do vyšší energetické hladiny, což
+  ovlivňuje hodnotu celkové makroskopické magnetizace.  Převzato
+  z~\cite{Ulm:LIVE:AplIonZarJRM:}.}
+\end{figure}
+
+\begin{figure}[p]
+\begin{minipage}{.32\linewidth}
+\centering
+\includegraphics[width=\linewidth]{t1}
+\end{minipage}\hfill%
+\begin{minipage}{.32\linewidth}
+\centering
+\includegraphics[width=\linewidth]{mzt}
+\end{minipage}\hfill%
+\begin{minipage}{.32\linewidth}
+\centering
+\includegraphics[width=\linewidth]{mxyt}
+\end{minipage}
+\caption[Ilustrace ke spinové relaxaci]%
+{\label{longrelax}Ke spin-mřížkové a spin-spinové relaxaci. \emph{Vlevo:}
+  V~rovnováze leží vektor magnetizace $M_{0}$ podél vektoru vnějšího
+  magnetického pole $B_{0}$. \emph{Uprostřed:} $T_{1}$ je čas, za který se
+  podélná magnetizace vrátí z~nulové hodnoty na $1-\eto{-1}\approx 63\,\%$
+  rovnovážné hodnoty $M_{0}$. \emph{Vpravo:} $T_{2}$ je čas, za který příčná
+  magnetizace klesne z~vychýlené hodnoty $M_{\perp0}$ na
+  $\eto{-1}\approx 37\,\%$ této hodnoty.  Převzato
+  z~\cite{Hor:LIVE:BasicsMRI:}.}
+\end{figure}
+
+Bez vnějšího magnetického pole bude polovina protonů orientována jedním směrem
+a polovina opačným, takže v~makroskopickém měřítku se jejich magnetické
+momenty vyruší a makroskopický magnetický moment tkáně bude nulový.
+Zapneme-li vnější magnetické pole o~indukci řádově několik Tesla,\footnote{To
+  je velmi silné magnetické pole, řádově $10^{4}\times$ silnější než přirozené
+  geomagnetické pole Země. Pro vytvoření takto silných magnetických polí se
+  obvykle používají supravodivé cívky využívající chlazení kapalným héliem.}
+každý spin se srovná do směru pole v~jedné ze dvou možných orientací,
+paralelní s~nižší energií nebo antiparalelní s~vyšší energií.  Tkáň rychle
+přejde do rovnovážného stavu, v~němž počet jader $N^{+}$ orientovaných
+paralelně (s~nižší energií) bude mírně převyšovat počet jader $N^{-}$
+orientovaných antiparalelně.\footnote{Statistická fyzika umožňuje spočítat
+  jejich poměr, $N^{+}/N^{-} = \eto{\Delta E/kT}>1$, kde
+  $\Delta E = h\gamma B_{0}$ je rozdíl energie antiparalelně a paralelně
+  orientovaných spinů, $k$ je Boltzmannova konstanta a $T$ je absolutní
+  teplota. Nadbytek paralelně orientovaných spinů je malý; rozdíl
+  $N^{+}-N^{-}$ je při běžné teplotě lidského těla a magnetické indukci
+  $1\,\mathrm{T}$ veličina řádu $10^{16}$ spinů na $1\,\mathrm{cm^{3}}$ látky,
+  dostačuje však k~vytvoření měřitelné makroskopické magnetizace.} Součet
+jaderných spinů v~určité oblasti se stejnou hodnotou vnějšího magnetického
+pole $B_{0}$ bude nenulový a bude vytvářet makroskopickou \emph{magnetizaci}
+tkáně $M_{0}$.  Velikost této magnetizace bude úměrná rozdílu $N^{+}-N^{-}$.
+Tento proces \uv{zmagnetování} tkáně je názorně ilustrován na
+obrázku~\ref{mrispin} vlevo a uprostřed. Proces nastavení tepelné rovnováhy
+mezi spinovým systémem a zcela obecným okolím označovaným jako \emph{mřížka}
+(i~v~případě kapalin) se nazývá \emph{spin-mřížková} nebo také \emph{podélná}
+relaxace.
+
+Nyní pomocí další cívky napájené vysokofrekvenčním elektrickým signálem
+vyšleme do vzorku tkáně elektromagnetické
+záření\INDEX{záření!elektromagnetické} obsahující fotony s~takovou frekvencí
+$f$, aby se jejich energie $E$ podle Planckova vztahu $E=hf$ (kde $h$ je
+Planckova konstanta) rovnala rozdílu mezi energií antiparalelně a paralelně
+orientovaného spinu. Tehdy dochází k~jevu \emph{jaderné magnetické rezonance}:
+foton může být absorbován a jeho energie excituje proton z~nižšího
+(paralelního) do vyššího (antiparalelního) energetického stavu. Frekvence $f$
+splňující rezonanční podmínku se nazývá \emph{Larmorovou frekvencí} a
+s~indukcí vnějšího magnetického pole $B_{0}$ souvisí vztahem
+\begin{equation}
+  f = \gamma B_{0}\,,                                        \label{larmor}
+\end{equation}
+kde $\gamma=42.58\,\hz[M]\us\mathrm{T^{-1}}$ se nazývá \emph{gyromagnetický
+  poměr} protonu. Další prvky, resp. jejich izotopy použitelné pro potřeby
+medicínského zobrazování, shrnuje tabulka~\ref{tablarm}.
+
+Je zřejmé, že popsaná excitace jaderných spinů v~režimu rezonance ovlivní
+rovnovážnou magnetizaci tkáně $M_{0}$. V~rovnováze leží vektor magnetizace
+$M_{0}$ podél vektoru vnějšího magnetického pole $B_{0}$ a je proto nazýván
+rovnovážnou magnetizací (obrázek~\ref{longrelax} vlevo). Položíme-li osu $z$
+kartézského souřadnicového systému do tohoto směru, pak v~rovnováze je podélná
+komponenta magnetizace $M_{z}=M_{0}$ a příčná složka $M_{\perp}$ sestávající
+z~komponent do os $x$, $y$ kolmých k~ose $z$ je rovna nule, $M_{\perp} = M_{x}
+= M_{y} = 0$.  Dodáváme-li larmorovské elektromagnetické
+záření,\INDEX{záření!elektromagnetické} jež excituje jaderné spiny, ve formě
+vhodně dlouhého a tvarovaného pulsu\footnote{Nazývaného též RF puls,
+  radiofrekvenční puls, jehož základní frekvence je např. pro magnetické pole
+  $B_{0}=1\,\mathrm{T}$ rovna $42.58\,\hz[M]$, pro magnetické pole
+  $B_{0}=1.5\,\mathrm{T}$ rovna $63.87\,\hz[M]$, podle vztahu~(\ref{larmor}).}
+můžeme dosáhnout anulování podélné magnetizace, tj.  $M_{z}=0$. Po odeznění RF
+pulsu se ovšem jaderné spiny vracejí zpět do původní rovnováhy~-- říkáme, že
+\emph{relaxují}~-- a časový vývoj podélné magnetizace se chová podle rovnice
+\begin{equation}
+  M_{z}(t) = M_{0}\left(1-\eto{-\frac{t}{T_{1}}}\right)\,, \label{spinlat}
+\end{equation}
+kde $T_{1}$ se nazývá \emph{spin-mřížkový relaxační čas}. Jeho hodnota
+charakterizuje rychlost návratu magnetizace zpět do rovnovážné hodnoty. Tento
+jev se nazývá \emph{$T_{1}$-proces}.
+
+Místo RF pulsu larmorovského elektromagnetického
+záření,\INDEX{záření!elektromagnetické} jenž anuluje podélnou magnetizaci,
+můžeme použít delšího pulsu, jenž dokonce obrátí magnetizaci do opačného
+směru, na $M_{z} = -M_{0}$, takže relaxace bude delší, ale charakteristický
+čas $T_{1}$ bude stejný,
+\begin{equation}
+  M_{z}(t)=M_{0}\left(1-2\eto{-\frac{t}{T_{1}}}\right)\,. \label{spinlatb}
+\end{equation}
+Podélnou relaxaci ilustruje obrázek~\ref{longrelax} uprostřed.
+
+Aplikujeme-li naopak kratší RF puls, jenž \uv{sklopí} magnetizaci jen do
+roviny $xy$, bude vektor magnetizace konat precesi okolo osy $z$ s~Larmorovou
+frekvencí. Jelikož pole $B_{0}$ nemůže být zcela exaktně homogenní, budou se
+v~různých místech velmi mírně lišit i~odpovídající Larmorova
+frekvence~(\ref{larmor}). Následkem toho dojde k~rozfázování jednotlivých
+objemových elementů vytvářejících příčnou komponentu
+$M_{\perp}$,\footnote{Názorně si lze tento proces představit jako rozevírání
+  vějíře. Jednotlivá pera vějíře představují příspěvky do magnetizace
+  objemového elementu. Původně zcela složený vějíř odpovídá příčné magnetizaci
+  $M_{\perp0}$, po úplném rozevření do kruhu pak zcela relaxované, nulové
+  příčné magnetizaci.} a postupnému zmenšování příčné komponenty podle rovnice
+\begin{equation}
+  M_{\perp}(t) = M_{\perp0}\,\eto{-\frac{t}{T_{2}}}\,,    \label{spinspin}
+\end{equation}
+kde $M_{\perp0}$ je počáteční hodnota příčné magnetizace a $T_{2}$ je
+\emph{spin-spinový relaxační čas}, jenž je vždy menší nebo rovný $T_{1}$, tj.
+příčná relaxace je rychlejší než podélná. Tento jev se nazývá
+\emph{$T_{2}$-proces} a jeho časový průběh je ilustrován na
+obrázku~\ref{longrelax} vpravo.  Vztahy (\ref{spinlat}) až (\ref{spinspin}) se
+dají odvodit řešením \emph{Blochových rovnic}~\cite{Hor:LIVE:BasicsMRI:}.
+
+Podrobný popis mechanismu \uv{sklápění} magnetizace pomocí
+ra\-dio\-fre\-k\-venč\-ních pulsů poněkud vybočuje z~rámce této práce. Uveďme
+pouze, že jej lze vysvětlit zavedením soustavy souřadnic $x'y'z'$ rotující
+kolem osy $z'\equiv z$, jež je společná s~\uv{laboratorní} soustavou souřadnic
+$xyz$, larmorovskou úhlovou rychlostí $\omega = 2\pi
+f$~\cite{Eng:1995:POKMF:}.  Na tomto místě doporučujeme navštívit
+stránku~\cite{Hor:LIVE:BasicsMRI:}, kde jsou velmi názorné animace ilustrující
+relaxaci jaderných spinů, včetně popisu mechanismu \uv{sklápění} magnetizace.
+
+Ve skutečnosti jsou oba procesy spojené a probíhají současně. Úhel otočení
+vektoru magnetizace je úměrný energii RF pulsu. RF puls, jenž \uv{sklopí}
+magnetizaci do roviny $xy$, se nazývá (ze zřejmých důvodů) $90^{\circ}$-puls,
+a puls, jenž otočí magnetizaci do opačného směru, se nazývá
+$180^{\circ}$-puls. Po odeznění pulsu, jenž provedl otočení nebo sklopení
+magnetizace, dochází k~relaxaci zahrnující $T_{1}$-proces i $T_{2}$-proces.
+Nedojde-li po aplikaci RF pulsu k~čerpání energie do spinů pomocí následného
+RF pulsu, nazýváme volnou relaxaci \emph{FID (free induction decay)}.
+
+Tvar RF pulsu je rovněž kritický a má vliv na přesnost výběru obrazového řezu.
+Nejčastěji se používá zvonovitě tvarovaný puls obsahující 3 až 4 vlnové délky
+$\lambda$ odpovídající Larmorově frekvenci~(\ref{larmor}), nebo puls tvarovaný
+jako funkce $\sinc$ (sinus cardinalis). Takto tvarovaný RF puls má optimální
+vlastnosti ve frekvenční doméně.  Tvar RF pulsu, jeho Fourierovo spektrum a
+FID jsou zobrazeny na obrázku~\ref{mrifid}.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=.42\linewidth]{mrifid}
+\end{center}
+\caption[Ilustrace signálu FID]%
+{\label{mrifid}Tvar $90^{\circ}$ RF pulsu, jeho PSD (výkonové Fourierovo
+  spektrum) a volné doznívání příčné magnetizace (FID). Převzato
+  z~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}.}
+\end{figure}
+
+\begin{table}[b]
+\caption[Relaxační doby pro různé tkáně]%
+{\label{mrireltime}Relaxační doby $T_{1}$, $T_{2}$ pro různé tkáně. Relaxační
+  doba $T_{1}$ závisí na magnetické indukci $B_{0}$ zhruba jako $B_{0}^{0.3}$
+  a je zde zastoupena hodnotami pro tři typické používané intenzity
+  $0.5\,\mathrm{T}$, $1.0\,\mathrm{T}$ a $1.5\,\mathrm{T}$.
+Podle~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}.}
+\begin{center}
+\small
+\newcommand{\pad}{\hphantom{0}}
+\begin{tabular}{lcccc}
+\hline
+Tkáň & \multicolumn{3}{c}{$T_{1}\,[\mathrm{ms}]$}
+     & $T_{2}\,[\mathrm{ms}]$ \\ %\cline{2-4}
+     & $0.5\,\mathrm{T}$ & $1.0\,\mathrm{T}$ & $1.5\,\mathrm{T}$ & \\\hline
+Tuk  & 210 & 240 & 260 & 80 \\
+Játra  & 350 & 420 & 500 & 40 \\
+Ledviny  & 430 & 590 & 690 & 58 \\
+Svaly  & 550 & 730 & 870 & 45 \\
+Srdce  & 570 & 750 & 880 & 57 \\
+Bílá hmota mozk. & 500 & 680 & 780 & 90 \\
+Šedá hmota mozk. & 650 & 810 & 900 & 100\pad \\
+Mozkomíšní mok  & 1800\pad & 2160\pad & 2400\pad & 160\pad \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{figure}[t]
+\begin{minipage}{.48\linewidth}
+\centering
+\includegraphics[width=\linewidth]{ses}
+\end{minipage}\hfill%
+\begin{minipage}{.48\linewidth}
+\centering
+\includegraphics[width=\linewidth]{irs}
+\end{minipage}
+\caption[Sekvence RF pulsů \uv{spin-echo} a \uv{inversion-recovery}]%
+{\label{mripseq}\emph{Vlevo:} Spin-echo sekvence.  Nejprve se aplikuje
+  $90^{\circ}$ puls, jímž se magnetizace sklopí do roviny $xy$, dochází
+  k~defázování a vysílání FID signálu. V~okamžiku, kdy je \uv{vějíř}
+  magnetizací rozevřen právě do půlkruhu, se aplikuje $180^{\circ}$ puls, jímž
+  se \uv{vějíř} překlopí okolo své hrany na opačnou stranu. Stejným
+  mechanismem jako dochází k~defázování, nastává nyní sfázování (skládání
+  \uv{vějíře}), jež vzápětí přejde opět k~defázování (rozkládání \uv{vějíře}),
+  a~k~vyslání nejprve sílícího a poté slábnoucího echa. Časová odlehlost FID
+  signálu a echa se označuje $T_{\mathrm{E}}$, a~celý proces se opakuje
+  s~periodou $T_{\mathrm{R}}$. \emph{Vpravo:} Inversion recovery sekvence
+  sestává z $180^{\circ}$ pulsu, jenž otočí magnetizaci do opačného směru,
+  následovaného sekvencí spin-echo. Perioda $T_{\mathrm{I}}$ mezi
+  $180^{\circ}$ pulsem a $90^{\circ}$ pulsem se nazývá \emph{inverzní čas}.
+  Převzato z~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}.}
+\end{figure}
+
+Podstatné je, že relaxační časy $T_{1}$ a $T_{2}$ jsou výsledkem vzájemného
+působení rezonujících jader a jejich okolí a charakterizují chemické
+vlastnosti a strukturu vyšetřované tkáně. Relaxační doby jsou proto často
+výrazně odlišné pro různé typy tkáně a také pro zdravou a nádorovou tkáň.
+Relaxační časy pro různé typy tkání sumarizuje tabulka~\ref{mrireltime}.
+
+Při relaxaci dochází podle zákonů elektrodynamiky k~emisi elektromagnetického
+záření,\INDEX{záření!elektromagnetické} jehož intenzita závisí na koncentraci
+daného druhu rezonujících jader (v~našem případě protonů), na chemických
+vlastnostech a struktuře tkáně.  Jsou-li RF pulsy při FID opakovány s~periodou
+$T_{\mathrm{R}}$ dostatečně velikou, aby bylo zachováno volné doznívání, je
+intenzita signálu emitovaného relaxujícími spiny úměrná jejich hustotě $\rho$
+a v~čase doznívá jako $1-\eto{-T_{\mathrm{R}}/T_{1}}$.
+
+V~praxi se používají pro zlepšení odstupu signálu od šumu jiné posloupnosti RF
+pulsů. Nejběžnější jsou \emph{spin-echo} sekvence a \emph{inversion recovery}
+sekvence, jež jsou vysvětleny na obrázku~\ref{mripseq}. Intenzity signálu
+relaxujících spinů doznívají jako $(1-\eto{-T_{\mathrm{R}}/T_{1}})
+\eto{-T_{\mathrm{E}}/T_{2}}$ pro sekvenci spin-echo a
+$1-2\eto{-T_{\mathrm{I}}/T_{1}} +\eto{-T_{\mathrm{R}}/T_{1}}$ pro sekvenci
+inversion recovery.  Významy časů $T_{\mathrm{E}}$, $T_{\mathrm{I}}$ a
+$T_{\mathrm{R}}$ jsou vysvětleny v~popisce obrázku~\ref{mripseq}.
+
+Záření emitované\INDEX{záření!emitované} relaxujícími spiny se zachycuje
+v~přijímací cívce a analýzou získaného signálu lze rekonstruovat hustotu
+rezonujících spinů uvnitř tkáně.  Jak se toho dosáhne je předmětem následující
+sekce.
+
+\subsection{Podstata MRI zobrazování}\label{mrimagbase}%///////////////////
+
+V~medicínském MRI nás zajímá NMR hlavně signál z~vody a lipidů, komponentami
+lidského těla obsahujícími nejvíce vodíku. Základním principem je rezonanční
+vztah~(\ref{larmor}).  Pro názornost uvažujme na obrázku~\ref{mrihead}
+znázorněnou lidskou hlavu obsahující tři oddělené malé oblasti s~vysokou
+hustotou vodíkových atomů; jinde předpokládejme jejich výskyt nulový (ve
+skutečnosti je vodík obsažen s~různou hustotou v~celém těle).
+
+Pokud by naše fiktivní hlava byla vložena do homogenního magnetického pole
+$B_{0}$, všechny tři oblasti by měly stejnou Larmorovu frekvenci a na NMR
+spektru získaném Fourierovou analýzou NMR signálu relaxujících spinů by se
+jejich rezonanční pík objevil při téže (Larmorově) frekvenci, jak je
+znázorněno na obrázku~\ref{mrihead}. Situace se změní, jakmile homogenní
+magnetické pole zaměníme \emph{gradientním magnetickým polem}, které na
+obrázku roste zleva doprava.\footnote{Aplikovaný gradient magnetického pole by
+  měl být tak velký, aby změna magnetické indukce $\Delta B$ v~rozsahu
+  zobrazované oblasti odpovídala šířce pásma RF pulsů, která je okolo $\Delta
+  f \sim 400\,\hz[k]$~\cite{Dow-Ken-Joh:2006:PhysDiagImag:}. Kdyby měl RF puls
+  menší šířku pásma, bodům blíže k~okraji oblasti by se \uv{nedostávalo}
+  záření o~rezonanční frekvenci. Zároveň je opět vidět, jak je důležitá
+  znalost frekvenčního spektra RF pulsů, která určuje relativní citlivost při
+  různých indukcích v~gradientním magnetickém poli.} Protože některé ze tří
+oblasti s~vysokou hustotou vodíku leží v~magnetickém poli s~různou intenzitou,
+dostaneme z~nich podle~(\ref{larmor}) NMR signál na různých frekvencích,
+přičemž amplituda signálu je úměrná počtu vodíkových atomů. Tomuto postupu se
+říká \emph{frekvenční kódování}. K~zobrazování to však pořád ještě nestačí,
+protože dvě ze tří oblastí leží v~oblasti se stejnou magnetickou indukcí a ve
+spektru je proto nelze rozlišit.
+
+\begin{figure}[t]
+\begin{minipage}{.48\linewidth}
+\centering
+\includegraphics[width=\linewidth]{headhomo}
+\end{minipage}\hfill%
+\begin{minipage}{.48\linewidth}
+\centering
+\includegraphics[width=\linewidth]{headgrad}
+\end{minipage}
+\caption[Frekvenční kódování NMR signálu]%
+{\label{mrihead}Podstata frekvenčního kódování NMR signálu. \emph{Vlevo:}
+  Fiktivní hlava se třemi oblastmi vysoké hustoty vodíkových atomů. Hlava se
+  nachází v~homogenním magnetickém poli a ve všech třech oblastech je tedy
+  stejná Larmorova frekvence. Frekvenční spektrum bude proto mít pík na jediné
+  Larmorově frekvenci $B_{0}/\gamma$. \emph{Vlevo:} Přiložíme-li gradient
+  magnetického pole, některé (ne nutně všechny) oblasti vysoké hustoty vodíku
+  se ocitnou v~magnetickém poli s~různou indukcí a jejich Larmorova frekvence
+  se liší. Spektrum již má více píků, jejichž amplituda je úměrná počtu
+  vodíkových atomů. Upraveno podle~\cite{Hor:LIVE:BasicsMRI:}.}
+\end{figure}
+
+Naznačený problém řeší metoda \emph{zpětné projekce (backprojection imaging)},
+historicky první MRI metoda zavedená
+Lauterburem~\cite{Lau:1973:NATURE:}. Metoda zpětné projekce je rozšířením
+frekvenčního kódování v~tom smyslu, že směr gradientu magnetického pole se
+postupně natáčí s~určitým krokem, a~pro každý krok se změří spektrum NMR
+signálu.
+
+Rovinu řezu zafixujeme dalším, silnějším gradientním magnetickým
+polem.\footnote{Silnějším proto, aby se oblast rezonance $\Delta B = \Delta
+  f/\gamma$ zúžila na pokud možno tenkou rovinu.}  Jestliže na
+obrázku~\ref{mrihead} leží souřadná rovina $xy$ v~rovině kresby a osa $z$ je
+k~ní kolmá, a jestliže má gradientní magnetické pole nenulovou pouze
+$z$-složku, můžeme ji zapsat ve tvaru $B_{z} = B_{0} + z G_{z}$, kde $B_{0}$
+je indukce v~určitém referenčním bodě, \emph{isocentru} magnetu, a konstantní
+veličina $G_{z}$ reprezentuje rychlost změny (gradient) magnetického pole.
+Rezonance nastává podle~(\ref{larmor}) tam, kde je velikost $B_{z}$ magnetické
+indukce rovna Larmorově frekvenci protonu dělené gyromagnetickým poměrem
+$\gamma$, takže pro geometrický útvar $B_{z}=f/\gamma = \mathrm{const}$,
+v~němž dochází k~rezonanci, máme
+\begin{equation}
+  zG_{z} = \frac{f}{\gamma} - B_{0}
+    = \mathrm{const}\,.                                   \label{gradfield}
+\end{equation}
+To je rovnice roviny kolmé k~ose $z$, tj. sagitálního řezu hlavou. Gradientní
+pole $\vec{G}$ se dá obecně nastavovat složitějším způsobem, než jsme právě
+popsali, a tím měnit sklon a polohu roviny řezu.\footnote{Není principiálního
+  důvodu k~tomu, aby geometrickým útvarem byla nerovinná
+  plocha~\cite{Mad:2007:SiemensMRI:OralCom}. Autorce se nepodařilo zjistit,
+  zda se nerovinných řezů v~praxi užívá.} Ve skutečnosti dochází k~rezonanci
+v~tenké rovinné vrstvě vlivem tepelného pohybu molekul a vlivem rozšíření
+spektrální čáry RF pulsů.
+
+\begin{figure}[t]
+\begin{minipage}{.48\linewidth}
+\centering
+\includegraphics[width=\linewidth]{bkproja}
+\end{minipage}\hfill%
+\begin{minipage}{.48\linewidth}
+\centering
+\includegraphics[width=\linewidth]{bkprojb}
+\end{minipage}
+\caption[Rekonstrukce obrazu pomocí techniky zpětné projekce]%
+{\label{mribkproj}Podstata rekonstrukce obrazu pomocí techniky zpětné
+  projekce. \emph{Vlevo:} Pomocí gradientního pole (\ref{gradfield}) ve směru
+  kolmém k~rovině obrázku se zafixuje rovina řezu (zde sagitální), a pomocí
+  gradientů v~rovině obrázku natáčených s~určitým krokem (zde pro názornost
+  $45^{\circ}$) od $0^{\circ}$ do $360^{\circ}$ se v~každém kroku sejme NMR
+  spektrum.  \emph{Vpravo:} Ze znalosti všech spekter lze pomocí počítačově
+  implementované Radonovy transformace zrekonstruovat mapu sagitálního řezu
+  vybraného pomocí gradientu kolmého k~rovině obrázku.  Upraveno
+  podle~\cite{Hor:LIVE:BasicsMRI:}.}
+\end{figure}
+
+Odtud mimochodem plyne důležitost tvarování RF pulsů. Kdybychom tyto pulsy
+vytvarovali s~obdélníkovou obálkou, jejich frekvenční spektrum by mělo tvar
+funkce $\sinc$ se známými oscilačními laloky. Frekvence by měla velký rozptyl
+a v~důsledku toho by byl velký rozptyl i~lokalizaci míst, kde dochází
+k~rezonanci; jinými slovy, rovina řezu by měla větší tloušťku, což by mohlo
+vést ke ztrátě ostrosti a detailu. Jestliže však RF pulsy příhodně
+vytvarujeme, například tak, aby jejich obálka měla tvar funkce $\sinc$, bude
+mít naopak frekvenční spektrum pulsů obdélníkový tvar a rovina zobrazení bude
+dobře lokalizovaná. RF pulsy s~gaussovským profilem poskytnou opět gaussovské
+frekvenční spektrum, tedy dobře lokalizovanou rovinu řezu. Tvarování RF pulsů
+tak lze využít k~regulaci síly řezu.
+
+Ze znalosti NMR spekter při všech krocích pak lze numericky implementovanou
+inverzní Radonovou transformací (zpětná projekce), podobně jako u~počítačové
+tomografie, pomocí počítače zrekonstruovat vybraný řez, jak je znázorněno na
+obrázcích~\ref{mribkproj} a~\ref{mriloc}.
+
+Ačkoli je technika frekvenčního kódování a zpětné projekce poměrně jednoduchá
+a názorná, v~současných MRI modalitách se nepoužívá. Místo ní se aplikuje
+další kategorie zobrazování nazývaná \emph{dvourozměrné fourierovské
+  zobrazování} objevené \designation{R. Ernstem} a založené na Fourierově
+transformaci. Podrobný výklad této poměrně složité techniky se vymyká rozsahu
+bakalářské práce a odkazujeme proto např.  na~\cite{Hor:LIVE:BasicsMRI:}. Zde
+uvedeme jen základní ideu~\cite{Hau:1990:CZEJPA:}.
+
+\begin{figure}[t]
+\begin{minipage}{.48\linewidth}
+\centering
+\includegraphics[width=\linewidth]{axhead1}
+\end{minipage}\hfill%
+\begin{minipage}{.48\linewidth}
+\centering
+\includegraphics[width=\linewidth]{axhead2}
+\end{minipage}
+\caption[MRI axiální zobrazení lidského mozku s~patologií]%
+{\label{mriaxhead}Axiální (N)MRI zobrazení lidského mozku s~patologií.
+  \emph{Vlevo:} $T_{\mathrm{R}}/T_{\mathrm{E}} = 5500/105\,\mathrm{ms}$, 2~Nex
+  (počet zprůměrovaných obrazů), matice $512\times256$. \emph{Vpravo:}
+  $T_{\mathrm{R}}/T_{\mathrm{E}} = 450/14\,\mathrm{ms}$, 1~Nex, matice
+  $256\times192$.  Převzato z~\cite{Hor:LIVE:BasicsMRI:}.}
+\end{figure}
+
+Představme si, že na obrázku~\ref{mriloc} je osa $z$ orientována vertikálně
+(rovnoběžně se hřbetem vazby), osa $y$ leží v~rovině obrázku a osa $x$ kolmo
+k~obrázku. \uv{Výšku} transverzálního řezu, tj. $z$-ovou polohu řezu,
+regulujeme stálým gradientem $G_{z}$. Do hry nyní vstupují přechodné gradienty
+ve zbývajících osách $x$ a $y$. Nejprve je aplikován gradient $G_{x}$ ve směru
+osy $x$ po dobu $t_{x}$, potom gradient $G_{y}$ ve směru osy $y$ po dobu
+$t_{y}$. Označme hustotu vodíkových jader ve vybraném řezu (pomocí gradientu
+$G_{z}$) $\rho(x,y)$. Jsou-li časy $t_{x,y}$ přikládání gradientů $G_{x,y}$
+malé ve srovnání s~relaxačními časy, pak je časový průběh signálu NMR
+obrazového elementu $\dif x\dif y$ v~bodě $x,y$ úměrný
+\begin{equation}
+  \rho\,\eto{\iu\gamma Bt}\,\dif x\dif y\,.            \label{mrisigtevol}
+\end{equation}
+V~časovém intervalu $t_{x}$ je magnetická indukce $B=B_{0}+xG_{x}$,
+v~následující době $t_{y}$ platí $B=B_{0}+yG_{y}$, kde $B_{0}$ označuje
+hodnotu v~místě $x=y=0$. Dosadíme-li oba poslední výrazy do
+vztahu~(\ref{mrisigtevol}) a členy obsahující na souřadnicích nezávislý
+konstantní člen $B_{0}$ zahrneme do konstanty úměrnosti, dostaneme pro
+velikost signálu NMR hodnotu úměrnou $\rho\,\eto{\iu\gamma
+  (xG_{x}t_{x}+yG_{y}t_{y})}\,\dif x\dif y$, a pro celý řez
+\begin{equation}
+  s(t_{x},t_{y})
+    = \iint\rho(x,y)\,\eto{\iu\gamma (xG_{x}t_{x}+yG_{y}t_{y})}\,
+    \dif x\dif y\,.                                     \label{mrisigslice}
+\end{equation}
+Zavedeme-li substituce $\omega_{x}=\gamma xG_{x}$, $\omega_{y}=\gamma yG_{y}$
+a $A=1/\gamma^{2}G_{x}G_{y}$, můžeme vztah~(\ref{mrisigslice}) přepsat jako
+\begin{equation}
+  s(t_{x},t_{y})
+    = A\iint\rho(\omega_{x},\omega_{y})\,
+    \eto{\iu(\omega_{x}t_{x}+\omega_{y}t_{y})}\,
+    \dif\omega_{x}\dif\omega_{y}\,.                           \label{mrift}
+\end{equation}
+Ale to je dvourozměrná Fourierova transformace mezi měřitelnou veličinou
+$s(t_{x},t_{y})$ a hledaným rozložením vodíkových jader v~řezu
+$\rho(\omega_{x},\omega_{y})$, potažmo $\rho(x,y)$.\footnote{Frekvence spínání
+  gradientních cívek, jež leží ve slyšitelné akustické oblasti, zapříčiňuje
+  \uv{kulometnou palbu}, obvyklý zvukový doprovod MRI vyšetření.} Tato metoda
+ukazuje, že Fourierova transformace nevystupuje vždy jen v~roli \uv{pomocného}
+nebo dodatečného zpracování, jako jsou filtrace a různé úpravy signálu, ale
+může být nativní, neoddělitelnou součástí převodu primárního signálu
+$s(t_{x},t_{y})$ na obrazový výstup $\rho(x,y)$.
+
+Obraz získaný metodou MRI je mapou protonové hustoty ve vybraném řezu.
+Přesněji, na MRI zobrazeních jsou zachyceny dvě základní informace:
+\begin{itemize}
+\item Distribuce hustoty jader vytvářejících NMR (obvykle vodíkových jader).
+\item Distribuce relaxačních časů souvisejících s~chemickým složením
+  a strukturním stavem tkáně v~jednotlivých místech.
+\end{itemize}
+Numerickou analýzou relaxačních časů NMR signálu lze vytvářet mapy
+v~relaxačních časech $T_{1}$ a $T_{2}$ (označovaných jako $T_{1}$ či
+$T_{2}$-vážené obrazy).  Soustava obrazů různých rovnoběžných řezů pak vytváří
+3D~obraz vyšetřované oblasti, z~něhož lze pomocí metod počítačové
+grafiky~\cite{Zar-etal:2004:ModPocGraf:} vytvářet obrazy libovolných řezů.
+Oba výše uvedené faktory jsou jiné nejen pro různé druhy tkání (viz
+tabulka~\ref{mrireltime}), ale liší se i~v~závislosti na fyziologickém či
+patologickém stavu téže tkáně. To vše spolu se skutečností absence
+ionizujícího záření\INDEX{záření!ionizující} činí z~MRI významnou
+diagnostickou metodu. Na obrázku~\ref{mriaxhead} je příklad axiálního řezu
+lidskou hlavou s~patologií v~mozku; tloušťka řezu $5\,\mathrm{mm}$
+$\mathrm{FOV}=22\,\mathrm{cm}$ (field of view~\cite{Hor:LIVE:BasicsMRI:}).
+
+\endinput
+
+%% 
+%% End of file `x_diag.tex'.

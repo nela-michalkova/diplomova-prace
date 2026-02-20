@@ -1,0 +1,27 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is the `ipot-cze.ldf' file: Czech language definitions. %%
+%% ------------------------------------------------------------ %%
+%% Version 2022-04-30                                           %%
+%% Developed & maintained by <stanislav.hledik@physics.slu.cz>  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\appendixname{Dodatek}
+\def\@annotationname{Abstrakt}
+\def\@keywordsname{Kl\'{\i}\v{c}ov\'a slova}
+\def\@acknowledgementname{Pod\v{e}kov\'an\'{\i}}
+\def\@declarationname{Prohl\'a\v{s}en\'{\i}}
+\def\@dedicationname{V\v{e}nov\'an\'{\i}}
+\def\@thesiskind{bakal\'a\v{r}sk\'a pr\'ace}
+\def\@institution{Slezsk\'a univerzita v Opav\v{e}\enspace
+  $\boldsymbol\vert$\enspace Fyzik\'aln\'{\i} \'ustav v Opav\v{e}}
+\def\@programname{Program}
+\def\@specializationname{Specializace}
+\def\@supervisorname{Vedouc\'{\i}}
+\def\@advisorname{Konzultant}
+\def\@refereename{Oponent}
+\def\@seat{Opava}
+
+\endinput
+
+%%
+%% End of file `ipot-cze.ldf'.

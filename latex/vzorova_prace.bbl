@@ -1,0 +1,699 @@
+\newcommand*{\bblaccy}[1]{#1}
+  \newcommand*{\bblaccym}[2]{#1\discretionary{-}{-}{-}#2}
+  \newcommand*{\bblaccymd}[3]{#1\discretionary{-}{-}{-}#2\discretionary{-}{-}{-}#3}
+\begin{thebibliography}{100}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\input{babelbst.tex}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{Lam:1994:LaTeX:}
+\textsc{Lamport, L.}: {\selectlanguage{english}\emph{{{\LaTeX}: A Document
+  Preparation System User's Guide and Reference Manual. Updated for
+  {\LaTeXe}}}}. Addison-Wesley, Reading, MA, \bblsecondo{} \bbledition{}, 1994,
+  ISBN 0-201-52983-1.
+
+\bibitem{Goo-Mit-Sam:1994:Companion:}
+\textsc{Goossens, M.; Mittelbach, F. \& Samarin, A.}:
+  {\selectlanguage{english}\emph{{The {\LaTeX{}} Companion}}}. Addison-Wesley,
+  Reading, Massachusetts, 1994, ISBN 0-201-54199-8.
+
+\bibitem{LaTeXNet:LIVE:TheLaTeXNetwork:}
+\textsc{{{\LaTeX}.net, {\LaTeX}.org and {\LaTeX}-Community.org}}:
+  {\selectlanguage{english}\emph{{The {\LaTeX} Network}}}, online (\bblaccess{}
+  \bblaccymd{2022}{04}{25}). {On La\-TeX-Com\-munity.org, founded January 2007,
+  many authors published articles about LaTeX and related tools (the site has
+  been renamed to \url{https://LaTeX.net})},
+  \urlprefix\url{https://latex.net/}.
+
+\bibitem{CTAN:LIVE:CompTeXArNet:}
+\textsc{{CTAN}}: {\selectlanguage{english}\emph{{Comprehensive {\TeX} Archive
+  Network}}}, online (\bblaccess{} \bblaccym{2022}{05}).
+  \urlprefix\url{https://ctan.org/}.
+
+\bibitem{Ovr:LIVE::Overleaf}
+\textsc{{Overleaf}}: {\selectlanguage{english}\emph{{The easy to use, online,
+  collaborative {\LaTeX} editor}}}, online (\bblaccess{} \bblaccym{2022}{05}).
+  \urlprefix\url{https://www.overleaf.com/}.
+
+\bibitem{Pat:LIVE:CTAN:BibTeX}
+\textsc{Patashnik, O.}: {\selectlanguage{english}\emph{{{\BibTeX}~-- Process
+  bibliographies for {\LaTeX}, etc}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}). {Contained in \distroTeXLive{} as bibtex, in
+  \distroMiKTeX{} as miktex-bibtex-bin-*.*},
+  \urlprefix\url{https://ctan.org/pkg/bibtex}.
+
+\bibitem{Bee:LIVE:CTAN:MakeIndex}
+\textsc{Beebe, N. H.~F. \& Chen, P.}:
+  {\selectlanguage{english}\emph{{makeindex~–- Process index output to
+  produce typesettable code}}}, online (\bblaccess{} \bblaccym{2022}{05}).
+  {Contained in \distroTeXLive{} as makeindex, in \distroMiKTeX{} as
+  miktex-makeindex-bin-*.*}, \urlprefix\url{https://ctan.org/pkg/makeindex}.
+
+\bibitem{LtX:LIVE:CTAN:makeidx}
+\textsc{{The {\LaTeX} Team}}: {\selectlanguage{english}\emph{{makeidx~--
+  Standard {\LaTeX} package for creating indexes}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}). {Contained in \distroTeXLive{} as latex, in
+  \distroMiKTeX{} as ltxbase}, \urlprefix\url{https://ctan.org/pkg/makeidx}.
+
+\bibitem{Ryb:2005:LaTeX:3}
+\textsc{Rybička, J.}: {\selectlanguage{czech}\emph{{{\LaTeX} pro
+  začátečníky}}}. Konvoj, Brno, \bblthirdo{} \bbledition{}, 2005, ISBN
+  80-7302-049-1. Viz též učební text k~semináři dostupný na
+  \url{https://akela.mendelu.cz/~rybicka/zaklady.pdf},
+  \urlprefix\url{https://www.cbdb.cz/kniha-100243-latex-pro-zacatecniky}.
+
+\bibitem{Goo-Rah-Mit:1994:GraComp:}
+\textsc{Goossens, M.; Rahtz, S. \& Mittelbach, F.}:
+  {\selectlanguage{english}\emph{{The {\LaTeX{}} Graphics Companion.
+  Illustrating documents with {\TeX} and PostScript}}}. Addison Wesley Longman
+  Inc., Reading, Massachusetts, 1997, ISBN 0-201-85469-4.
+
+\bibitem{Goo-Rah:1994:WebComp:}
+\textsc{Goossens, M. \& Rahtz, S.}: {\selectlanguage{english}\emph{{The
+  {\LaTeX{}} Web Companion. Integrating {\TeX}, HTML, and XML}}}. Addison
+  Wesley Longman Inc., Reading, Massachusetts, 1999, ISBN 0-201-43311-7.
+
+\bibitem{Kop-Dal:2004:LaTeXPodrPruv:}
+\textsc{Kopka, H. \& Daly, P.~W.}: {\selectlanguage{czech}\emph{{{\LaTeX}.
+  Podrobný průvodce}}}. Computer Press, Brno, \bblfirsto{} \bbledition{},
+  2004, ISBN 80-722-6973-9.
+
+\bibitem{Wri-Fai-etal:LIVE::TeXFAQ}
+\textsc{Wright, J.; Fairbairns, R. \bbletal{}}:
+  {\selectlanguage{english}\emph{{Frequently Asked Question List for {\TeX}}}},
+  online (\bblaccess{} \bblaccym{2022}{05}). {The questions answered here cover
+  a wide range of topics, but typesetting issues are mostly covered from the
+  viewpoint of a {\LaTeX} user}, \urlprefix\url{https://texfaq.org/}.
+
+\bibitem{Oet-etal:LIVE::lshort}
+\textsc{Oetiker, T.; Partl, H.; Hyna, I. \& Schlegl, E.}:
+  {\selectlanguage{english}\emph{{The Not So Short Introduction to {\LaTeXe}
+  (Or {\LaTeXe} in $<150$~minutes)}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}).
+  \urlprefix\url{https://tobi.oetiker.ch/lshort/lshort.pdf}.
+
+\bibitem{Hle:LIVE::Bazak}
+\textsc{Hledík, S.}: {\selectlanguage{czech}\emph{{Bažákův průvodce
+  publikačním systémem {\LaTeX}}}}. Slezská univerzita v~Opavě,
+  Filozoficko-přírodovědecká fakulta, Opava, online (\bblaccess{}
+  \bblaccym{2022}{05}). Výukový materiál,
+  \urlprefix\url{https://is.slu.cz/www/hle0002/vyuka/aid/}.
+
+\bibitem{Pol:1998:PravidlaSazbyDP:}
+\textsc{Polách, E.}: {\selectlanguage{czech}\emph{{Pravidla sazby diplomových
+  prací}}}. Jihočeská univerzita v~Českých Budějovicích, Pedagogická
+  fakulta, České Budějovice, 1998.
+  \urlprefix\url{http://home.pf.jcu.cz/~edpo/pravidla/pravidla.pdf}.
+
+\bibitem{Ryb:2006:ZpracZP:}
+\textsc{Rybička, J.}: {\selectlanguage{czech}\emph{{Doporučení pro úpravu
+  závěrečných prací}}}. Brno, 2006.
+  \urlprefix\url{https://akela.mendelu.cz/~rybicka/dahlia/zpract/dipp.pdf}.
+
+\bibitem{Val:2015:BcProj:NumMagLev}
+\textsc{Válek, V.}: {\selectlanguage{czech}\emph{{Numerická simulace rotací
+  stabilizované magnetické levitace}}}. Bakalářská práce, {Slezská
+  univerzita v~Opavě, Filozoficko-přírodovědecká fakulta v~Opavě}, Opava,
+  2015. Studijní obor: Astrofyzika.
+
+\bibitem{Bry:2007:BcProj:ModMedDiag}
+\textsc{Bryjová, I.}: {\selectlanguage{czech}\emph{{Principy a metody moderní
+  medicínské diagnostiky}}}. Bakalářská práce, {Slezská univerzita
+  v~Opavě, Filozoficko-přírodovědecká fakulta v~Opavě}, Opava, 2007.
+  Studijní obor: Počítačová technika a její aplikace.
+
+\bibitem{Fab:2017:DipProj:PorSnimkuOpAnObr}
+\textsc{Fabiánová, P.}: {\selectlanguage{czech}\emph{{Porovnání
+  historických a soudobých snímků Opavy metodami analýzy obrazu}}}.
+  Diplomová práce, {Slezská univerzita v~Opavě,
+  Filozoficko-přírodovědecká fakulta v~Opavě}, Opava, 2017. Studijní
+  obor: Počítačová fyzika.
+
+\bibitem{Hle:2014:PhDThes:Polytropes}
+\textsc{Hledík, S.}: {\selectlanguage{english}\emph{{General relativistic
+  polytropes and repulsive cosmological constant}}}. {Dissertation Thesis},
+  {Silesian University in~Opava, Faculty of Philosophy and Science in~Opava},
+  Opava, 2014. Branch of study: Theoretical Physics and Astrophysics.
+
+\bibitem{Sch:LIVE::TDS}
+\textsc{Schenk, C.}: {\selectlanguage{english}\emph{{{\TeX} Directory
+  Structure}}}, online (\bblaccess{} \bblaccym{2022}{05}).
+  \urlprefix\url{https://miktex.org/kb/tds}.
+
+\bibitem{Sch:LIVE::MiKTeX}
+\textsc{Schenk, C.}: {\selectlanguage{english}\emph{{MiKTeX~-- a modern {\TeX}
+  distribution for Windows, Linux and macOS}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}). \urlprefix\url{https://miktex.org/}.
+
+\bibitem{TUG:LIVE::TeXLive}
+\textsc{{{\TeX} Users Group}}: {\selectlanguage{english}\emph{{{\TeX} Live is a
+  cross-platform, free software distribution for the {\TeX} typesetting system
+  that includes major {\TeX}-related programs, macro packages, and fonts}}},
+  online (\bblaccess{} \bblaccym{2022}{05}).
+  \urlprefix\url{https://www.tug.org/texlive/}.
+
+\bibitem{Sie:1999:LinuxNutshell:}
+\textsc{Siever, E.}: {\selectlanguage{english}\emph{{Linux in a Nutshell}}}.
+  O'Reilly \& Associates, Inc., Sebastopol, \bblsecondo{} \bbledition{},
+  \bblfeb{} 1999, ISBN 1-56592-585-8. \urlprefix\url{http://www.oreilly.com/}.
+
+\bibitem{Wri-Leh:LIVE:CTAN:etoolbox}
+\textsc{Wright, J. \& Lehman, P.}: {\selectlanguage{english}\emph{{etoolbox~--
+  e-{\TeX} tools for {\LaTeX}}}}, online (\bblaccess{} \bblaccym{2022}{05}).
+  {The etoolbox package is a toolbox of programming tools geared primarily
+  towards {\LaTeX} class and package authors. It provides {\LaTeX} frontends to
+  some of the new primitives provided by e-{\TeX} as well as some generic tools
+  which are not related to e-{\TeX} but match the profile of this package.
+  Contained in \distroTeXLive{} and \distroMiKTeX{} as etoolbox},
+  \urlprefix\url{https://ctan.org/pkg/etoolbox}.
+
+\bibitem{Vos:LIVE:CTAN:fancyvrb}
+\textsc{Vo{\ss}, H.; Girou, D.; Mansfield, N.; Van~Zandt, T. \& Rahtz, S.}:
+  {\selectlanguage{english}\emph{{fancyvrb~-- Sophisticated verbatim text}}},
+  online (\bblaccess{} \bblaccym{2022}{05}). {Contained in \distroTeXLive{} and
+  \distroMiKTeX{} as fancyvrb}, \urlprefix\url{https://ctan.org/pkg/fancyvrb}.
+
+\bibitem{Jac:LIVE:CTAN:lm}
+\textsc{Jackowski, B. \& Nowacki, J.~M.}: {\selectlanguage{english}\emph{{lm~--
+  Latin modern fonts in outline formats}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}). {Contained in \distroTeXLive{} and \distroMiKTeX{} as
+  lm}, \urlprefix\url{https://ctan.org/pkg/lm}.
+
+\bibitem{LtX:LIVE:CTAN:fontenc}
+\textsc{{The {\LaTeX} Team}}: {\selectlanguage{english}\emph{{fontenc~--
+  Standard package for selecting font encodings}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}). {Contained in \distroTeXLive{} as latex, in
+  \distroMiKTeX{} as ltxbase}, \urlprefix\url{https://ctan.org/pkg/fontenc}.
+
+\bibitem{LtX:LIVE:CTAN:inputenc}
+\textsc{{The {\LaTeX} Team}; Mittelbach, F. \& Jeffrey, A.}:
+  {\selectlanguage{english}\emph{{inputenc~-- Accept different input
+  encodings}}}, online (\bblaccess{} \bblaccym{2022}{05}). {Contained in
+  \distroTeXLive{} as latex, in \distroMiKTeX{} as ltxbase},
+  \urlprefix\url{https://ctan.org/pkg/inputenc}.
+
+\bibitem{Bra:LIVE:CTAN:Babel}
+\textsc{Bezos~López, J. \& Braams, J.~L.}:
+  {\selectlanguage{english}\emph{{babel~-- Multilingual support for
+  {\LaTeX}}}}, online (\bblaccess{} \bblaccym{2022}{05}). {Contained in
+  \distroTeXLive{} and \distroMiKTeX{} as babel},
+  \urlprefix\url{https://ctan.org/pkg/babel}.
+
+\bibitem{Rah:LIVE:CTAN:times}
+\textsc{Rahtz, S.}: {\selectlanguage{english}\emph{{times~-- Select Adobe Times
+  Roman (or equivalent) as default font}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}). {Contained in \distroTeXLive{} and \distroMiKTeX{} as
+  psnfss~\cite{Har:LIVE:CTAN:psnfss}; the package is now obsolete, replaced by
+  the mathptmx~\cite{Vie:LIVE:CTAN:mathptmx} package, which supports Times
+  Roman text and (mostly) matching mathematics},
+  \urlprefix\url{https://ctan.org/pkg/times}.
+
+\bibitem{Vie:LIVE:CTAN:mathptmx}
+\textsc{{The {\LaTeX} Team}; Vieth, U.; Jeffrey, A.; Rahtz, S. \& Schmidt,
+  W.~A.}: {\selectlanguage{english}\emph{{mathptmx~-- Use Times as default text
+  font, and provide maths support}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}). {Contained in \distroTeXLive{} and \distroMiKTeX{} as
+  psnfss~\cite{Har:LIVE:CTAN:psnfss}},
+  \urlprefix\url{https://ctan.org/pkg/mathptmx}.
+
+\bibitem{Har:LIVE:CTAN:psnfss}
+\textsc{Harcombe, K.; {The {\LaTeX} Team}; Rahtz, S. \& Schmidt, W.~A.}:
+  {\selectlanguage{english}\emph{{psnfss~-- Font support for common PostScript
+  fonts}}}, online (\bblaccess{} \bblaccym{2022}{05}). {Contained in
+  \distroTeXLive{} and \distroMiKTeX{} as psnfss},
+  \urlprefix\url{https://ctan.org/pkg/psnfss}.
+
+\bibitem{Ryu:LIVE:CTAN:txfonts}
+\textsc{Ryu, Y.}: {\selectlanguage{english}\emph{{txfonts~-- Times-like fonts
+  in support of mathematics}}}, online (\bblaccess{} \bblaccym{2022}{05}).
+  {Contained in \distroTeXLive{} and \distroMiKTeX{} as txfonts},
+  \urlprefix\url{https://ctan.org/pkg/txfonts}.
+
+\bibitem{biditex:LIVE:CTAN:subfig}
+\textsc{{bidi-tex GitHub Organisation}; Khalighi, V. \& Cochran, S.~D.}:
+  {\selectlanguage{english}\emph{{subfig~-- Figures broken into subfigures}}},
+  online (\bblaccess{} \bblaccym{2022}{05}). {Contained in \distroTeXLive{} and
+  \distroMiKTeX{} as subfig}, \urlprefix\url{https://ctan.org/pkg/subfig}.
+
+\bibitem{Ear:1842:TCAMPS:NatMoFoConsLumEth}
+\textsc{Earnshaw, S.}: {\selectlanguage{english}{On the Nature of the Molecular
+  Forces which regulate the Constitution of the Luminiferous Ether}}.
+  \emph{Trans. Cambridge Philos. Soc.}, \textbf{VII}, \bblpp{} 97--112, 1842.
+  Read March~18, 1839 at the Cambridge Philosophical Society,
+  \urlprefix\url{http://www.mit.edu/~kardar/research/seminars/Casimir2010/pdf/EarnshawPaper.pdf}.
+
+\bibitem{Bas:2006:MECJI:EarnshawMagLev}
+\textsc{Bassani, R.}: {\selectlanguage{english}{Earnshaw (1805--1888) and
+  Passive Magnetic Levitation}}. \emph{Meccanica}, \textbf{41}(4), \bblpp{}
+  375--389, 2006, ISSN 0025-6455 (print), 1572-9648 (online),
+  \doi{10.1007/s11012-005-4503-x}.
+
+\bibitem{Fas:LIVE:Levit:Levitron}
+\textsc{{Levitation Arts}}: {\selectlanguage{english}\emph{{Levitron
+  Central}}}, online (\bblaccess{} \bblaccym{2022}{05}). See also the Czech web
+  on Levitron \url{http://www.levitron.cz/},
+  \urlprefix\url{https://levitationarts.com/}.
+
+\bibitem{Gra:LIVE:Levit:IgnMagBliss}
+\textsc{Gray, T.}: {\selectlanguage{english}\emph{{Ignorance = Maglev =
+  Bliss}}}, online (\bblaccess{} \bblaccym{2022}{05}). For 150 years scientists
+  believed that stable magnetic levitation was impossible. Then Roy Harrigan
+  came along,
+  \urlprefix\url{http://www.popsci.com/diy/article/2004-02/ignorance-maglev-bliss}.
+
+\bibitem{Gov-Sht:1999:phys9902002:HowHiUCAS}
+\textsc{Gov, S. \& Shtrikman, S.}: {\selectlanguage{english}\emph{{How High Can
+  The U-CAS Fly?}}}, \bbljan{} 1999. \eprint{physics/9902002v1}.
+
+\bibitem{USpatent4.382.245}
+\textsc{Harrigan, R.~M.}: {\selectlanguage{english}{US patent 4.382.245}},
+  1983.
+
+\bibitem{Sim-Hef-Rid:1997:AMEJP:SpStMagLev}
+\textsc{Simon, M.~D.; Heflinger, L.~O. \& Ridgway, S.~L.}:
+  {\selectlanguage{english}{Spin stabilized magnetic levitation}}. \emph{Amer.
+  J. Phys.}, \textbf{65}(4), \bblpp{} 286--292, \bblapr{} 1997, ISSN 0002-9505,
+  \doi{10.1119/1.18488}. Copyright AAPT~1997,
+  \urlprefix\url{http://www.physics.ucla.edu/marty/levitron/spinstab.pdf}.
+
+\bibitem{Ber:1996:PRORSA:LevitAdiaTrapSp}
+\textsc{Berry, M.~V.}: {\selectlanguage{english}{The
+  {Levitron\textsuperscript{\texttrademark}}: an adiabatic trap for spins}}.
+  \emph{Proc. Roy. Soc. Ser. A}, \textbf{452}(1948), \bblpp{} 1207--1220,
+  \bblmay{} 1996, ISSN 1471-2946 (online), \doi{10.1098/rspa.1996.0062}.
+  \urlprefix\url{https://wolfr.am/13PVzFoPd}.
+
+\bibitem{Hab:1999:MgrDP:ProbUlFyzPrakt}
+\textsc{Habala, L.}: {\selectlanguage{czech}\emph{{Problémové úlohy pro
+  fyzikální praktikum}}}. Diplomová práce, Slezská univerzita v~Opavě,
+  Filozoficko-přírodovědecká fakulta, Opava, 1999. Obor Učiteství F-M.
+
+\bibitem{Caz-Nem:2010:REVRS:NovConPerMagLev}
+\textsc{Cazacu, E. \& Nemoianu, I.~V.}: {\selectlanguage{english}{A novel
+  configuration for static permanent magnet levitation}}. \emph{Rev. Roumaine
+  Sci. Tech. S{\'e}r. {\'E}lectrotech. {\'E}nerg{\'e}t.}, \textbf{55}(2),
+  \bblpp{} 153--160, 2010.
+  \urlprefix\url{http://revue.elth.pub.ro/viewpdf.php?id=224}.
+
+\bibitem{Dul-Eas:1999:ZANGM1:StabOfLevit}
+\textsc{Dullin, H.~R. \& Easton, R.~W.}: {\selectlanguage{english}{Stability of
+  Levitrons}}. \emph{Z. Angew. Math. Mech.}, \textbf{79}(S1), \bblpp{}
+  167--170, 1999, ISSN 1521-4001 (online), \doi{10.1002/zamm.19990791344}.
+  \urlprefix\url{http://www.maths.usyd.edu.au/u/dullin/preprints/Levitron.pdf}.
+
+\bibitem{Fla-etal:1999:PHYSD:SpiMoHovMaTop}
+\textsc{Flanders, P.; Gov, S.; Shtrikman, S. \& Thomas, H.}:
+  {\selectlanguage{english}{On the spinning motion of the hovering magnetic
+  top}}. \emph{Phys. D}, \textbf{126}(3-4), \bblpp{} 225--235, \bblfeb{} 1999,
+  ISSN 0167-2789, \doi{10.1016/S0167-2789(98)00283-8}.
+  \eprint{physics/9803044v1}.
+
+\bibitem{Fre:2010:PHYSED:WondersLevit}
+\textsc{French, M.~M.~J.}: {\selectlanguage{english}{The wonders of
+  levitation}}. \emph{Physics Education}, \textbf{45}(1), \bblp{}~37, \bbljan{}
+  2010, ISSN 0031-9120 (print), 1361-6552 (online),
+  \doi{10.1088/0031-9120/45/1/003}. \eprint{1010.5761v1}.
+
+\bibitem{Gan-Jon-Was:1998:JPHYSD:DynOfLevi}
+\textsc{Gans, R.~F.; Jones, T.~B. \& Washizu, M.}:
+  {\selectlanguage{english}{Dynamics of the
+  {Levitron\textsuperscript{\texttrademark}}}}. \emph{J. Phys. D: Appl. Phys.},
+  \textbf{31}(6), \bblpp{} 671--679, \bblmar{} 1998, ISSN 0022-3727 (print),
+  1361-6463 (online), \doi{10.1088/0022-3727/31/6/015}.
+
+\bibitem{Gen-Del-Ron:1999:MECJI:GyStaPasMagLev}
+\textsc{Genta, G.; Delprete, C. \& Rondano, D.}:
+  {\selectlanguage{english}{Gyroscopic Stabilization of Passive Magnetic
+  Levitation}}. \emph{Meccanica}, \textbf{34}(6), \bblpp{} 411--424, 1999, ISSN
+  0025-6455 (print), 1572-9648 (online), \doi{10.1023/A:1004704428634}.
+
+\bibitem{Gov-Sht-Tho:1999:PHYSD:DyStHoMagTop}
+\textsc{Gov, S.; Shtrikman, S. \& Thomas, H.}: {\selectlanguage{english}{On the
+  dynamical stability of the hovering magnetic top}}. \emph{Phys. D},
+  \textbf{126}(3--4), \bblpp{} 214--224, \bblfeb{} 1999, ISSN 0167-2789,
+  \doi{10.1016/S0167-2789(98)00282-6}. \eprint{physics/9803020v1}.
+
+\bibitem{Jon-Was-Gans:1997:JAPPPH:SimpTheoLevi}
+\textsc{Jones, T.~B.; Washizu, M. \& Gans, R.~F.}:
+  {\selectlanguage{english}{Simple theory for the
+  {Levitron\textsuperscript{\textregistered}}}}. \emph{J. Appl. Phys.},
+  \textbf{82}(2), \bblpp{} 883--888, \bbljul{} 1997, ISSN 0021-8979 (print),
+  1089-7550 (online), \doi{10.1063/1.365856}.
+  \urlprefix\url{http://physik.uibk.ac.at/hephy/maturanten/levitron/Jones/jones.pdf}.
+
+\bibitem{Ber:LIVE:Levit:LevitronPhys}
+\textsc{Berry, M.~V.}: {\selectlanguage{english}\emph{{Levitron Physics. Some
+  Frequently Asked Questions About Levitron Physics}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}).
+  \urlprefix\url{https://michaelberryphysics.files.wordpress.com/2013/07/berry272.pdf}.
+
+\bibitem{Bor:LIVE:Levit:OptRotLevi}
+\textsc{Bornhauser, N.}: {\selectlanguage{english}\emph{{Optics Rotation:
+  Levitron\textsuperscript{\texttrademark}}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}). {PDF presentation},
+  \urlprefix\url{http://ultracold.physics.sunysb.edu/Courses/PHY582-08.Fall/talks/Bornhauser%202007-II.pdf}.
+
+\bibitem{Sim-Hef-Gei:2001:AMEJP:DiaStMagLev}
+\textsc{Simon, M.~D.; Heflinger, L.~O. \& Geim, A.~K.}:
+  {\selectlanguage{english}{Diamagnetically stabilized magnet levitation}}.
+  \emph{Amer. J. Phys.}, \textbf{69}(6), \bblpp{} 702--713, \bbljun{} 2001,
+  ISSN 0002-9505 (print), \doi{10.1119/1.1375157}.
+  \urlprefix\url{http://www.physics.ucla.edu/marty/diamag/ajp601.pdf}.
+
+\bibitem{Sim-Gei:2000:JAPPPH:DiaLevFlyFrog}
+\textsc{Simon, M.~D. \& Geim, A.~K.}: {\selectlanguage{english}{Diamagnetic
+  levitation: Flying frogs and floating magnets (invited)}}. \emph{J. Appl.
+  Phys.}, \textbf{87}(9), \bblpp{} 6200--6204, \bblmay{} 2000, ISSN 0021-8979
+  (print), 1089-7550 (online), \doi{10.1063/1.372654}.
+  \urlprefix\url{http://www.physics.ucla.edu/marty/diamag/diajap00.pdf}.
+
+\bibitem{Ber-Gei:1997:EURJP:OfFlyFrogLev}
+\textsc{Berry, M.~V. \& Geim, A.~K.}: {\selectlanguage{english}{Of flying frogs
+  and levitrons}}. \emph{European J. Phys.}, \textbf{18}(4), \bblpp{} 307--313,
+  \bbljul{} 1997, ISSN 0143-0807 (print), 1361-6404 (online),
+  \doi{10.1088/0143-0807/18/4/012}. \urlprefix\url{https://wolfr.am/13PVS5Od5}.
+
+\bibitem{Gei-etal:1999:NATURE:MagLevFinger}
+\textsc{Geim, A.~K.; Simon, M.~D.; Boamfa, M.~I. \& Heflinger, L.~O.}:
+  {\selectlanguage{english}{Magnet levitation at your fingertips}}.
+  \emph{Nature}, \textbf{400}, \bblpp{} 323--324, \bbljul{} 1999, ISSN
+  0028-0836 (print), 1476-4687 (online), \doi{10.1038/22444}. Scientific
+  correspondence,
+  \urlprefix\url{http://www.physics.ucla.edu/marty/diamag/magnet.pdf}.
+
+\bibitem{Gol-Poo-Saf:2002:ClassMech:3}
+\textsc{Goldstein, H.; Poole, C. \& Safko, J.}:
+  {\selectlanguage{english}\emph{{Classical Mechanics}}}. Ad\-di\-son-Wesley,
+  San Francisco, \bblthirdo{} \bbledition{}, 2002, ISBN 0-321-18897-7.
+  Copyright 2002 Pearson Education.
+
+\bibitem{Pur-Mor:2013:ElectMagn:3}
+\textsc{Purcell, E.~M. \& Morin, D.~J.}:
+  {\selectlanguage{english}\emph{{Electricity and Magnetism}}}. Cambridge
+  University Press, New York, \bblthirdo{} \bbledition{}, \bblmar{} 2013, ISBN
+  9781107014022.
+
+\bibitem{Lan-Lif:1980:2-ClasTheField:4}
+\textsc{Landau, L.~D. \& Lifshitz, E.~M.}: {\selectlanguage{english}\emph{{The
+  Classical Theory of Fields}}}. Course of Theoretical Physics Series,
+  Volume~2, Butterworth-Heinemann, Oxford, \bblfourtho{} \bbledition{},
+  \bbljan{} 1980, ISBN 978-0750627689.
+
+\bibitem{Hle:2011:SpinStabMagLev:WTC2011}
+\textsc{Hledík, S.}: {\selectlanguage{english}\emph{{Interactive Model of
+  Spin-Stabilized Magnetic Levitation}}}, 2011. Presentation at the Wolfram
+  Technology Conference 2011, October 19--21, Champaign, IL, USA,
+  \urlprefix\url{https://www.wolfram.com/events/technology-conference/2011/science-and-engineering.html}.
+
+\bibitem{Dow-Ken-Joh:2006:PhysDiagImag:}
+\textsc{Dowsett, D.~J.; Kenny, P.~A. \& Johnston, R.~E.}:
+  {\selectlanguage{english}\emph{{The Physics of Diagnostic Imaging}}}. Hodder
+  Arnold, \bblsecondo{} \bbledition{}, \bbljul{} 2006, ISBN 0-340-80891-8.
+  \urlprefix\url{http://www.hoddereducation.com}.
+
+\bibitem{Roz:2006:ElePristLekar:}
+\textsc{Rozman, J. \bbletal{}}: {\selectlanguage{czech}\emph{{Elektronické
+  přístroje v~lékařství}}}. Academia, Praha, \bblfirsto{} \bbledition{},
+  2006, ISBN 80-200-1308-3. \urlprefix\url{http://www.academiaknihy.cz/}.
+
+\bibitem{Nav-etal:2005:MedBiofyz:}
+\textsc{Navrátil, L.; Rosina, J. \bbletal{}}:
+  {\selectlanguage{czech}\emph{{Medicínská biofyzika}}}. Grada Publishing,
+  a.s., Praha, \bblfirsto{} \bbledition{}, 2005, ISBN 80-247-1152-4.
+
+\bibitem{Zaz:2007::NaziKost}
+{\selectlanguage{czech}{Zázračná planeta: Nazí až na kost}}, 2007.
+  Televizní dokument USA, Česká televize, pátek 23. 3. 2007, 20:00--21:00.
+
+\bibitem{Brd-Sam-Sop:2005:MechKont:3}
+\textsc{Brdička, M.; Samek, L. \& Sopko, B.}:
+  {\selectlanguage{czech}\emph{Mechanika kontinua}}. Česká matice technická,
+  Academia, Praha, \bblthirdo{} \bbledition{}, 2005, ISBN 80-200-1344-X.
+
+\bibitem{Hor:LIVE:BasicsMRI:}
+\textsc{{J. P. Hornak}}: {\selectlanguage{english}\emph{{The Basics of MRI}}},
+  online (\bblaccess{} \bblaccym{2022}{05}).
+  \urlprefix\url{http://www.cis.rit.edu/htbooks/mri/}.
+
+\bibitem{Ulm:LIVE:AplIonZarJRM:}
+\textsc{Ullmann, V.}: {\selectlanguage{czech}\emph{{Aplikace ionizujícího
+  záření~-- jaderné a radiační metody}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}).
+  \urlprefix\url{http://astronuklfyzika.cz/JadRadMetody.htm}.
+
+\bibitem{Hau:1990:CZEJPA:}
+\textsc{Hausser, K.~H.}: {\selectlanguage{czech}{Jaderná magnetická rezonance
+  v biologii a lékařství}}. \emph{Čs. čas. fyz.~A}, \textbf{40}(2),
+  \bblpp{} 101--121, 1990, ISSN 0009-0700.
+
+\bibitem{Cer:2004:POKMF:NMRImag}
+\textsc{Černá, J.}: {\selectlanguage{czech}{NMR Imaging (Nobelova cena za
+  lékařství a fyziologii 2003)}}. \emph{Pokroky Mat. Fyz. Astronom.},
+  \textbf{49}(1), \bblpp{} 15--23, 2004, ISSN 0032-2423.
+  \urlprefix\url{http://www.jcmf.cz/}.
+
+\bibitem{Eng:1995:POKMF:}
+\textsc{Englich, J.}: {\selectlanguage{czech}{Pulzní metoda jaderné
+  magnetické rezonance a její užití v MR tomografii}}. \emph{Pokroky Mat.
+  Fyz. Astronom.}, \textbf{40}(4), \bblpp{} 198--207, 1995.
+
+\bibitem{Lau:1973:NATURE:}
+\textsc{Lauterbur, P.~C.}: {\selectlanguage{english}{Image formation by induced
+  local interactions: examples employing nuclear magnetic resonance.}}
+  \emph{Nature}, \textbf{242}, \bblpp{} 190--191, 1973.
+
+\bibitem{Mad:2007:SiemensMRI:OralCom}
+\textsc{Maděřič, R.}: {\selectlanguage{czech}{Ústní sdělení}}, \bbljun{}
+  2007. {Fakultní nemocnice s~poliklinikou Ostrava}.
+
+\bibitem{Zar-etal:2004:ModPocGraf:}
+\textsc{Žára, J.; Beneš, B.; Sochor, J. \& Felkel, P.}:
+  {\selectlanguage{czech}\emph{Moderní počítačová grafika}}. Computer
+  Press, Brno, \bblsecondo{} \bbledition{}, 2004, ISBN 80-251-0454-0.
+
+\bibitem{Pra:2007:DigImageProc:4}
+\textsc{Pratt, W.~K.}: {\selectlanguage{english}\emph{{Digital Image
+  Processing: PIKS Scientific In\-si\-de}}}. Wiley-Interscience Publishing,
+  Hoboken, NJ, \bblfourtho{} \bbledition{}, \bblfeb{} 2007, ISBN
+  978-0471767770, \doi{10.1002/0470097434}. A newly updated and revised edition
+  of the classic introduction to digital image processing.
+
+\bibitem{Soj-Gau-Kru:2011:MatZaDiZpraSig:2}
+\textsc{Sojka, E.; Gaura, J. \& Krumnikl, M.}:
+  {\selectlanguage{czech}\emph{{Matematické základy digitálního
+  zpracování obrazu}}}. VŠB-TU Ostrava (Fakulta elektrotechniky a
+  informatiky), Západočeská univerzita v~Plzni, Ostrava, Plzeň,
+  \bblsecondo{} \bbledition{}, \bblsep{} 2011.
+  \urlprefix\url{http://mrl.cs.vsb.cz/people/sojka/dzo_course.html}.
+
+\bibitem{Gon-Woo:2007:DigImageProc:3}
+\textsc{Gonzalez, R.~C. \& Woods, R.~E.}:
+  {\selectlanguage{english}\emph{{Digital Image Processing}}}. Prentice Hall,
+  Upper Saddle River, N.~J., \bblthirdo{} \bbledition{}, \bblaug{} 2007, ISBN
+  013168728X.
+
+\bibitem{AGo:2012:ImageReg:2012}
+\textsc{{Ardeshir Goshtasby}, A.}: {\selectlanguage{english}\emph{{Image
+  Registration: Principles, Tools and Methods}}}. Advances in Computer Vision
+  and Pattern Recognition, Springer, London, 2012 \bbledition{}, \bbljan{}
+  2012, ISBN 978-1447124573, \doi{10.1007/978-1-4471-2458-0}.
+
+\bibitem{Son-Hla-Boy:2007:ImPrAnMachVi:3}
+\textsc{Šonka, M.; Hlaváč, V. \& Boyle, R.}:
+  {\selectlanguage{english}\emph{{Image Processing, Anal\-ys\-is, and Machine
+  Vision}}}. Thomson Learning, Toronto, \bblthirdo{} \bbledition{}, \bblapr{}
+  2007, ISBN 049508252X.
+
+\bibitem{Pre-etal:2007:NumReCpp:CD-ROM}
+\textsc{Press, W.~H.; Teukolsky, S.~A.; Vetterling, W.~T. \& Flannery, B.~P.}:
+  {\selectlanguage{english}\emph{{Numerical Recipes with Source Code CD-ROM.
+  The Art of Scientific Computing}}}. Cambridge University Press, Cambridge,
+  \bblthirdo{} \bbledition{}, online (\bblaccess{} \bblaccym{2022}{05}), ISBN
+  9780521884075. \urlprefix\url{http://numerical.recipes/}.
+
+\bibitem{Stu:2000:ACTPS2:}
+\textsc{Stuchlík, Z.}: {\selectlanguage{english}Spherically symmetric static
+  configurations of uniform density in spacetimes with a non-zero cosmological
+  constant}. \emph{Acta Phys. Slovaca}, \textbf{50}(2), \bblpp{} 219--228,
+  \bblmar{} 2000, ISSN 0323-0465/00. \eprint{0803.2530},
+  \urlprefix\url{http://adsabs.harvard.edu/abs/2008arXiv0803.2530S}.
+
+\bibitem{Mis-Tho-Whe:1973:Gra:}
+\textsc{Misner, C.~W.; Thorne, K.~S. \& Wheeler, J.~A.}:
+  {\selectlanguage{english}\emph{Gravitation}}. W. H. Freeman and Co, New York,
+  San Francisco, 1973.
+
+\bibitem{Boh:2004:GENRG2:11Solutions}
+\textsc{B{\"o}hmer, C.~G.}: {\selectlanguage{english}{Eleven Spherically
+  Symmetric Constant Density Solutions with Cosmological Constant}}. \emph{Gen.
+  Relativity Gravitation}, \textbf{36}, \bblpp{} 1039--1054, \bblmay{} 2004,
+  \doi{10.1023/B:GERG.0000018088.69051.3b}. \eprint{gr-qc/0312027},
+  \urlprefix\url{http://adsabs.harvard.edu/abs/2004GReGr..36.1039B}.
+
+\bibitem{Boh-Fod:2008:PHYSR4:PerFluidCC}
+\textsc{B{\"o}hmer, C.~G. \& Fodor, G.}: {\selectlanguage{english}{Perfect
+  fluid spheres with cosmological constant}}. \emph{Phys. Rev. D},
+  \textbf{77}(6), 064008, \bblmar{} 2008, \doi{10.1103/PhysRevD.77.064008}.
+  \eprint{0711.1450},
+  \urlprefix\url{http://adsabs.harvard.edu/abs/2008PhRvD..77f4008B}.
+
+\bibitem{Stu-etal:2001:PHYSR4:}
+\textsc{Stuchlík, Z.; Hledík, S.; Šoltés, J. \& {\O}stgaard, E.}:
+  {\selectlanguage{english}{Null geodesics and embedding diagrams of the
+  interior Schwarz\-schild--de~Sitter spacetimes with uniform density}}.
+  \emph{Phys. Rev. D}, \textbf{64}(4), \bblp{} 044004 (17~pages), \bbljul{}
+  2001, ISSN 0556-2821, \doi{10.1103/PhysRevD.64.044004}.
+
+\bibitem{Stu:2008:0803.2530:SpSyStCoUniDens}
+\textsc{Stuchlík, Z.}: {\selectlanguage{english}Spherically symmetric static
+  configurations of uniform density in spacetimes with a non-zero cosmological
+  constant}. \capitalize\bblin{} \emph{Acta Phys. Slovaca}
+  \cite{Stu:2000:ACTPS2:}, \bblpp{} 219--228, ISSN 0323-0465/00.
+  \eprint{0803.2530},
+  \urlprefix\url{http://adsabs.harvard.edu/abs/2008arXiv0803.2530S}.
+
+\bibitem{Stu-etal:2012:GENRG2:NeutrinoTrap}
+\textsc{Stuchlík, Z.; Hladík, J.; Urbanec, M. \& Török, G.}:
+  {\selectlanguage{english}{Neutrino trapping in extremely compact objects
+  described by the internal Schwarzschild--(anti-)de~Sitter spacetimes}}.
+  \emph{Gen. Relativity Gravitation}, \textbf{44}(6), \bblpp{} 1393--1417,
+  2012, \doi{10.1007/s10714-012-1346-3}.
+
+\bibitem{Car:LIVE:CTAN:Graphics}
+\textsc{Carlisle, D.; Rahtz, S. \& {{\LaTeX}3 Project}}:
+  {\selectlanguage{english}\emph{{graphicx~-- Enhanced support for graphics}}},
+  online (\bblaccess{} \bblaccym{2022}{05}). {Contained in \distroTeXLive{} and
+  \distroMiKTeX{} as graphics}, \urlprefix\url{https://ctan.org/pkg/graphicx}.
+
+\bibitem{Hir:LIVE:CTAN:dvipdfmx}
+\textsc{Hirata, S.; {The {\TeX}~Live Team}; Cho, J.-H.; Franz, M.; Hosny, K.;
+  Wicks, M.~A. \& Breitenlohner, P.}:
+  {\selectlanguage{english}\emph{{dvipdfmx~-- An extended version of
+  dvipdfm}}}, online (\bblaccess{} \bblaccym{2022}{05}). {Dvipdfmx (formerly
+  dvipdfm-cjk) is a development of dvipdfm~\cite{Wic:LIVE:CTAN:dvipdfm} created
+  to support multi-byte character encodings and large character sets for East
+  Asian languages. Contained in \distroTeXLive{} and \distroMiKTeX{} as
+  dvipdfmx}, \urlprefix\url{https://ctan.org/pkg/dvipdfmx}.
+
+\bibitem{Dal:LIVE:CTAN:natbib}
+\textsc{Daly, P.~W. \& Ogawa, A.}: {\selectlanguage{english}\emph{{natbib~--
+  Flexible bibliography support}}}, online (\bblaccess{} \bblaccym{2022}{05}).
+  {Contained in \distroTeXLive{} and \distroMiKTeX{} as natbib},
+  \urlprefix\url{https://ctan.org/pkg/natbib}.
+
+\bibitem{Dal:LIVE::Natbib}
+\textsc{Daly, P.~W.}: {\selectlanguage{english}\emph{{Natural Sciences
+  Citations and References. (Author-Year and Numerical Schemes)}}}, online
+  (\bblaccess{} \bblaccym{2022}{05}). This paper describes package
+  \texttt{natbib} version 8.1a from 2007/10/30,
+  \urlprefix\url{https://www.coursehero.com/file/101180032/natbib2pdf/}.
+
+\bibitem{LtX:LIVE:CTAN:AMSmath}
+\textsc{{The {\LaTeX} team}}: {\selectlanguage{english}\emph{{amsmath~-- AMS
+  mathematical facilities for {\LaTeX}}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}). {Contained in \distroTeXLive{} and \distroMiKTeX{} as
+  amsmath}, \urlprefix\url{https://ctan.org/pkg/amsmath}.
+
+\bibitem{AMS:LIVE:CTAN:AMSfonts}
+\textsc{{The American Mathematical Society}}:
+  {\selectlanguage{english}\emph{{amsfonts~-- {\TeX} fonts from the American
+  Mathematical Society}}}, online (\bblaccess{} \bblaccym{2022}{05}).
+  {Contained in \distroTeXLive{} and \distroMiKTeX{} as amsfonts},
+  \urlprefix\url{https://ctan.org/pkg/amsfonts}.
+
+\bibitem{LtX:LIVE:CTAN:hyperref}
+\textsc{{The {\LaTeX} Team}; Oberdiek, H. \& Rahtz, S.}:
+  {\selectlanguage{english}\emph{{hyperref~-- Extensive support for hypertext
+  in {\LaTeX}}}}, online (\bblaccess{} \bblaccym{2022}{05}). {Contained in
+  \distroTeXLive{} and \distroMiKTeX{} as hyperref},
+  \urlprefix\url{https://ctan.org/pkg/hyperref}.
+
+\bibitem{Ars:LIVE:CTAN:url}
+\textsc{Arseneau, D.}: {\selectlanguage{english}\emph{{url~-- Verbatim with
+  URL-sensitive line breaks}}}, online (\bblaccess{} \bblaccym{2022}{05}).
+  {Contained in \distroTeXLive{} and \distroMiKTeX{} as url},
+  \urlprefix\url{https://ctan.org/pkg/url}.
+
+\bibitem{AMS:LIVE:CTAN:AMSthm}
+\textsc{{The American Mathematical Society}}:
+  {\selectlanguage{english}\emph{{amsthm~-- Typesetting theorems (AMS
+  style)}}}, online (\bblaccess{} \bblaccym{2022}{05}). {Contained in
+  \distroTeXLive{} and \distroMiKTeX{} as amscls},
+  \urlprefix\url{https://ctan.org/pkg/amsthm}.
+
+\bibitem{SSMGT:LIVE::FormatyPapiru}
+\textsc{{Střední škola mediální grafiky a tisku}}:
+  {\selectlanguage{czech}\emph{{Formáty papíru}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}). \urlprefix\url{http://www.sspp.cz/praxe/zrcadlo.pdf}.
+
+\bibitem{Pop-Fle-Pop:1984:SazbaI:}
+\textsc{Pop, P.; Fléger, J. \& Pop, V.}: {\selectlanguage{czech}\emph{{Sazba
+  I. Ruční sazba}}}. Státní pedagogické nakladatelství, Praha, 1984.
+
+\bibitem{Adobe:LIVE::AcrobatReader}
+\textsc{{Adobe Inc.}}: {\selectlanguage{english}\emph{{Adobe Acrobat Reader
+  DC}}}, online (\bblaccess{} \bblaccym{2022}{05}).
+  \urlprefix\url{https://get.adobe.com/reader/}.
+
+\bibitem{Art:LIVE::MuPDF}
+\textsc{{Artifex Software, Inc.}}:
+  {\selectlanguage{english}\emph{{M$\mu$PDF}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}). {MuPDF is a lightweight PDF, XPS, and E-book viewer},
+  \urlprefix\url{https://mupdf.com/}.
+
+\bibitem{SE:LIVE::DriversCreatePDF}
+\textsc{{StackExchange}}: {\selectlanguage{english}\emph{{All possible (La)TeX
+  implementations and drivers to create PDF}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}). {TeX-LaTeX Stack Exchange is a question and answer site
+  for users of {\TeX}, {\LaTeX}, Con{\TeX}t, and related typesetting systems},
+  \urlprefix\url{https://wolfr.am/14wNOgoLo}.
+
+\bibitem{Rad:LIVE:CTAN:pdfscreen}
+\textsc{Radhakrishnan, C.~V.}: {\selectlanguage{english}\emph{{pdfscreen~--
+  Support screen-based document design}}}, online (\bblaccess{}
+  \bblaccym{2022}{05}). {Contained in \distroTeXLive{} and \distroMiKTeX{} as
+  pdfscreen}, \urlprefix\url{https://ctan.org/pkg/pdfscreen}.
+
+\bibitem{samc:LIVE:CTAN:beamer}
+\textsc{{samcarter}; Wright, J.; Mileti{\'c}, V.; Stuart, L. \& Tantau, T.}:
+  {\selectlanguage{english}\emph{{beamer~-- A {\LaTeX} class for producing
+  presentations and slides}}}, online (\bblaccess{} \bblaccym{2022}{05}).
+  {Contained in \distroTeXLive{} and \distroMiKTeX{} as beamer},
+  \urlprefix\url{https://ctan.org/pkg/beamer}.
+
+\bibitem{Wic:1966:PravMatSaz:}
+\textsc{Wick, K.}: {\selectlanguage{czech}\emph{{Pravidla matematické
+  sazby}}}. Academia, Praha, \bblsecondo{} \bbledition{}, 1966.
+  \urlprefix\url{https://vufind.mzk.cz/Record/MZK01-000238413}.
+
+\bibitem{Hor:2001:ZprCSTUG:MathTypeset}
+\textsc{Hor{\'a}k, K.}: {\selectlanguage{czech}{Math typesetting in Czech texts
+  (in Czech)}}. \emph{Zpravodaj \v{C}eskoslovensk\'{e}ho sdru\v{z}en\'{\i}
+  u\v{z}ivatel\r{u} \TeX{u}}, \textbf{11}(1--3), \bblpp{} 136--148, 2001, ISSN
+  1211-6661, \doi{10.5300/2001-1-3/136}.
+
+\bibitem{Nec:2003::YetiTypoBest}
+\textsc{Nečas, D.}: {\selectlanguage{czech}\emph{{Yetiho typografický
+  bestiář}}}, 2003.
+  \urlprefix\url{http://monoceros.physics.muni.cz/~yeti/tex/bestiary.pdf}.
+
+\bibitem{Ber:1999:TypoMan:}
+\textsc{Beran, V.}: {\selectlanguage{czech}\emph{{Typografický manuál~--
+  učebnice počítačové typografie}}}. Kafka design, Praha, \bblsecondo{}
+  \bbledition{}, 1999.
+
+\bibitem{Wic:LIVE:CTAN:dvipdfm}
+\textsc{Wicks, M.~A.}: {\selectlanguage{english}\emph{{dvipdfm~-- A DVI driver
+  to produce PDF directly}}}, online (\bblaccess{} \bblaccym{2022}{05}). {Note
+  that the extended version dvipdfmx~\cite{Hir:LIVE:CTAN:dvipdfmx} will operate
+  ``as dvipdfm'' if necessary}, \urlprefix\url{https://ctan.org/pkg/dvipdfm}.
+
+\end{thebibliography}

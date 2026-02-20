@@ -1,0 +1,73 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toto je inkludovaný LaTeXový soubor `c_conc.tex'.            %%
+%% ------------------------------------------------------------ %%
+%% Verze 2022-05-31                                             %%
+%% Vyvíjí & udržuje <stanislav.hledik@physics.slu.cz>           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Pár doporučení na závěr \ldots}\label{conclus}%##################
+
+\ldots zejména pro studenty bakalářského studia.
+
+Pro obhajobu závěrečné práce byste si měli vytvořit a dataprojektorem promítat
+presentaci o~trvání cca 15 až 25~minut~-- to závisí na typu práce~-- a
+rozhodně byste se o~délce trvání presentace měli pobavit s~vedoucím vaší
+práce. Rozhodně při obhajobě nepromítejte stránky ze závěrečné práce vysázené
+pomocí \pkg{\ipotname} (mějte je však pro potřeby případné diskuse
+připraveny). Jednak díky portrétové orientaci špatně využívá promítací plochu
+a má pro tyto účely příliš malý, obtížně čitelný stupeň písma, jednak by
+presentace měla být pouze heslovitá, bez ucelených vět a odstavců. To, co je
+vhodné k~tisku na papír, není vhodné pro presentaci a obráceně. Pro vytvoření
+presentace použijte buď PowerPoint nebo některé z~\LaTeX
+ových\INDEX{publikační systém!\LaTeX{}} řešení
+\pkg{pdfscreen}~\cite{Rad:LIVE:CTAN:pdfscreen},
+\pkg{Beamer}~\cite{samc:LIVE:CTAN:beamer}.
+
+Při přípravě závěrečné práce pomocí \pkg{\ipotname} doporučuji vypnout volbu
+\opt{htext} popsanou v~Dodatku~\ref{options} na stránce~\pageref{opthtext},
+kompilace se tím urychlí. Kromě toho byste měli mít tuto volbu vypnutou
+u~kompilace pro tištěnou formu práce, neboť zapnutá volba \opt{htext} barevně
+odlišuje různé typy odkazů, a tato barva se bude tisknout\footnote{Na rozdíl
+  od implicitních rámečků, které jsou vidět při prohlížení na monitoru, ale ne
+  v~tisku.}  (v~případě černobílého tisku jako odpovídající stupeň
+šedi). Naopak u~kompilace pro elektronickou verzi práce je vhodné mít volbu
+\opt{htext} zapnutou; hypertextové odkazy urychlují prohlížení dokumentu.
+
+V~názvech \LaTeX ových\INDEX{publikační systém!\LaTeX{}} zdrojových souborů a
+souborů s~obrázky nepoužívejte akcentovaná písmena a mezery.  \TeX{} systém by
+s~tím mohl mít potíže. Místo \verb!Třetění úhlu.tex! použijte
+\verb!Treteni_uhlu.tex! a podobně.
+
+Rozsáhlejší práce rozdělte na \emph{kořenový (mateřský) soubor} obsahující
+standardní strukturu \LaTeX ového\INDEX{publikační systém!\LaTeX{}} dokumentu
+(u~tohoto manuálu se jedná o~soubor \pgm{\thesnamecze .tex}), a~vlastní text
+přesuňte (nejlépe po kapitolách) do separátních souborů, jenž vložíte do
+kořenového souboru pomocí příkazů \verb!\include!. Podrobné instrukce
+naleznete např.  v~\cite{Kop-Dal:2004:LaTeXPodrPruv:}. V~případě zdrojových
+souborů tohoto manuálu jsou tyto inkludované soubory umístěny v~adresáři
+\pgm{include}.\footnote{Dokumentní třída \pgm{\ipotname .cls} je v~něm najde.}
+
+% Obsahuje-li závěr dokumentu jeden zcela prázdný list, je to v~pořádku.  Na
+% konci práce by se totiž měla objevit vakát\INDEX{vakát} (prázdná stránka),
+% takže končí-li práce sudou (levou) stránkou, musíme vložit \emph{dva}
+% vakáty,\INDEX{vakát} tj.  prázdný list, ne jen jeden vakát.\INDEX{vakát}
+% Dokumentní třída\INDEX{dokumentní třída} \file{\ipotname .cls}\INDEX{dokumentní
+%   třída!\ipotname} to bez volby \opt{draft} při výstupu do \designation{dvi} dělá
+% automaticky a není třeba se o~to starat (viz též Dodatek~\ref{necess},
+% stránka~\pageref{necess}).
+
+Máte-li v~práci enormní množství matematiky, stojí ze to podívat se do Wickovy
+knihy~\cite{Wic:1966:PravMatSaz:} nebo do
+článku~\cite{Hor:2001:ZprCSTUG:MathTypeset} a nastudovat základní pravidla
+matematické sazby. Jako příručka matematické sazby může posloužit
+i~text~\cite{Nec:2003::YetiTypoBest}. Obecné pravidlo zní: nevíte-li si se
+sazbou nějakého prvku rady, napište si
+makro~\cite{Kop-Dal:2004:LaTeXPodrPruv:} s~prozatímní definicí, kterou můžete
+po konzultaci nebo nastudování literatury dodatečně změnit. Pro obecné poučení
+o~estetické sazbě stoji za to nahlédnout do~\cite{Pop-Fle-Pop:1984:SazbaI:}
+nebo do Beranova \emph{Typografického manuálu}~\cite{Ber:1999:TypoMan:}.
+
+\endinput
+
+%%
+%% End of file `c_conc.tex'.

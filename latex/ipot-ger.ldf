@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is the `ipot-ger.ldf' file: German lang. definitions.   %%
+%% ------------------------------------------------------------ %%
+%% Version 2022-04-30                                           %%
+%% Developed & maintained by <stanislav.hledik@physics.slu.cz>  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\appendixname{Anhang}
+\def\@annotationname{Abstrakt}
+\def\@keywordsname{Schl\^^b{u}sselw\^^b{o}rter}
+\def\@acknowledgementname{Anerkennung}
+\def\@declarationname{Deklaration}
+\def\@dedicationname{Dedikation}
+\def\@thesiskind{Bachelorarbeit}
+\if@narrowmargin
+  \def\@institution{Schlesische Universit\^^b{a}t in Opava\enspace
+    $\boldsymbol\vert$\enspace Institut f\^^b{u}r Physik in Opava}
+\else
+  \def\@institution{Schlesische Universit\^^b{a}t in Opava\\
+    Institut f\^^b{u}r Physik in Opava}
+\fi
+\def\@programname{Programm}
+\def\@specializationname{Spezialisierung}
+\def\@supervisorname{Betreuer der Abschlussarbeit}
+\def\@advisorname{Berater}
+\def\@refereename{Gegner}
+\def\@seat{Opava}
+
+\endinput
+
+%%
+%% End of file `ipot-ger.ldf'.

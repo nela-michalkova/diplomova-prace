@@ -1,0 +1,139 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toto je inkludovaný LaTeXový soubor `ca_lisen.tex'.          %%
+%% ------------------------------------------------------------ %%
+%% Verze 2022-06-05                                             %%
+%% Vyvíjí & udržuje <stanislav.hledik@physics.slu.cz>           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Výčtová prostředí}\label{lisen}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Stejně jako standardní \LaTeX ové\INDEX{publikační systém!\LaTeX{}} třídy,
+poskytuje i~dokumentní třída balíčku \pkg{\ipotname} výčtová prostředí
+\pgm{itemize} (nečíslovaný výčet), \pgm{enumerate} (číslovaný výčet) a
+\pgm{description} (slovníkový výčet)~\cite{Ryb:2005:LaTeX:3,%
+  Kop-Dal:2004:LaTeXPodrPruv:}. Navíc poskytuje jejich \uv{hvězdičkové
+  varianty} \pgm{itemize*}, \pgm{enumerate*} a \pgm{description*}.
+
+Obyčejná (nehvězdičková) varianta nečíslovaného a číslovaného výčtu a obě
+varianty slovníkového výčtu používají \emph{zavěšenou indentaci}, kdy symbol
+položky u~nečíslovaného výčtu, číslo položky u~číslovaného výčtu nebo heslo
+slovníkového výčtu vyčnívá doleva a další řádky textu položky jsou zarovnány
+na začátek prvního řádku textu nečíslované nebo číslované položky resp. na
+odstavcovou zarážku u~slovníkového výčtu.
+
+Výčtová prostředí lze do sebe vnořovat. Následující příklad demonstruje takové
+vnoření a zároveň odkazuje na příklady různých typů výčtových prostředí
+roztroušených v tomto manuálu:
+
+\begin{description}
+\item[Nečíslovaný výčet:]\label{edesciitem} \mbox{}\par
+  \begin{itemize}
+  \item\label{iitema} Příklad nečíslovaného výčtu najdete v Sekci~\ref{sono}
+    na stránce~\pageref{sono}.
+  \item\label{iitemb} Další příklad nečíslovaného výčtu najdete na konci
+    Kapitoly~\ref{princtwo} za rovnicí~(\ref{mrift}).
+  \item\label{iitemc} Tento nečíslovaný výčet byl vytvořen pomocí prostředí
+    \pgm{itemize} vnořeného do vnějšího slovníkového výčtu vytvořeného pomocí
+    prostředí \pgm{description}.
+  \end{itemize}
+\item[Číslovaný výčet:]\label{edescienum} \mbox{}\par
+  \begin{enumerate}
+  \item\label{ienuma} Příklad číslovaného výčtu najdete v~Úvodu na
+    stránce~\pageref{easyuse}.
+  \item\label{ienumb} Další příklad číslovaného výčtu najdete
+    v~Sekci~\ref{instsepar} na stránce~\pageref{instsepar}.
+  \item\label{ienumc} A ještě další příklady číslovaného výčtu najdete
+    v~Kapitole~\ref{CAPczm} před začátkem Sekce~\ref{SECpafpo} a za
+    rovnicí~(\ref{HOMmtxM}), v~Kapitole~\ref{SpinLev} před začátkem
+    Sekce~\ref{LeviStab}.
+  \item\label{ienumd} Tento číslovaný výčet byl vytvořen pomocí prostředí
+    \pgm{enumerate} vnořeného do vnějšího slovníkového výčtu vytvořeného
+    pomocí prostředí \pgm{description}.
+  \end{enumerate}
+\item[Slovníkový výčet:]\label{edescidesc} \mbox{}\par
+  \begin{description}
+  \item[Příklady slovníkového výčtu:]\label{idesca} najdete je
+    v~Dodatku~\ref{options} na stránce~\pageref{options} a
+    v~Dodatku~\ref{packages} stránce~\pageref{packages} (ačkoli v těchto
+    případech je kvůli speciálnímu pořadavku na font hesla použita upravená
+    forma příkazu \pgm{\textbackslash item}).
+  \item[Tento výčet:]\label{idescb} byl vytvořen pomocí prostředí
+    \pgm{description} vnořeného do vnějšího slovníkového výčtu vytvořeného
+    rovněž pomocí prostředí \pgm{description}.
+  \end{description}
+\item[Tento vnější slovníkový výčet:]\label{edesc} vytvořen prostředím
+  \pgm{description}.
+\end{description}
+
+\noindent
+Hvězdičková varianta nečíslovaného a číslovaného výčtu používá indentaci
+stejnou jako u normálního odstavce, zatímco u slovníkového výčtu ponechá
+původní indentaci a místo toho změní tučný font hesla na kurzívu (italiku):
+
+\begin{description*}
+\item[Nečíslovaný výčet:]\label{staredesciitem} \mbox{}\par
+  \begin{itemize*}
+  \item\label{stariitema} Příklad nečíslovaného výčtu najdete v
+    Sekci~\ref{sono} na stránce~\pageref{sono}.
+  \item\label{stariitemb} Další příklad nečíslovaného výčtu najdete na konci
+    Kapitoly~\ref{princtwo} za rovnicí~(\ref{mrift}).
+  \item\label{stariitemc} Tento nečíslovaný výčet byl vytvořen pomocí
+    prostředí \pgm{itemize} vnořeného do vnějšího slovníkového výčtu
+    vytvořeného pomocí prostředí \pgm{description}.
+  \end{itemize*}
+\item[Číslovaný výčet:]\label{staredescienum} \mbox{}\par
+  \begin{enumerate*}
+  \item\label{starienuma} Příklad číslovaného výčtu najdete v~Úvodu na
+    stránce~\pageref{easyuse}.
+  \item\label{starienumb} Další příklad číslovaného výčtu najdete
+    v~Sekci~\ref{instsepar} na stránce~\pageref{instsepar}.
+  \item\label{starienumc} A ještě další příklady číslovaného výčtu najdete
+    v~Kapitole~\ref{CAPczm} před začátkem Sekce~\ref{SECpafpo} a za
+    rovnicí~(\ref{HOMmtxM}), v~Kapitole~\ref{SpinLev} před začátkem
+    Sekce~\ref{LeviStab}.
+  \item\label{starienumd} Tento číslovaný výčet byl vytvořen pomocí prostředí
+    \pgm{enumerate} vnořeného do vnějšího slovníkového výčtu vytvořeného
+    pomocí prostředí \pgm{description}.
+  \end{enumerate*}
+\item[Slovníkový výčet:]\label{staredescidesc} \mbox{}\par
+  \begin{description*}
+  \item[Příklady slovníkového výčtu:]\label{staridesca} najdete je
+    v~Dodatku~\ref{options} na stránce~\pageref{options} a
+    v~Dodatku~\ref{packages} stránce~\pageref{packages} (ačkoli v těchto
+    případech je kvůli speciálnímu pořadavku na font hesla použita upravená
+    forma příkazu \pgm{\textbackslash item}).
+  \item[Tento výčet:]\label{staridescb} byl vytvořen pomocí prostředí
+    \pgm{description} vnořeného do vnějšího slovníkového výčtu vytvořeného
+    rovněž pomocí prostředí \pgm{description}.
+  \end{description*}
+\item[Tento vnější slovníkový výčet:]\label{staredesc} vytvořen prostředím
+  \pgm{description}.
+\end{description*}
+
+Číslovaný výčet je vhodný pro kratší seznamy (do 9~položek), neboť pro
+dvojciferná pořadová čísla dojde k~nehezkému posunu začátku prvního řádku
+položky.
+
+\endinput
+
+Hvězdičkové varianty výčtů \pgm{itemize*}, \pgm{enumerate*} používají
+indentaci podobnou jako u~obyčejných odstavců, tj. symbol položky
+u~nečíslovaného výčtu a pořadové číslo u~číslovaného výčtu jsou odsazeny
+o~odstavcovou zarážku doprava a text na ně plynule navazuje, přičemž další
+řádky položky začínají od původního levého okraje. Vnořené výčty jsou celkově
+posouvány o~odstavcovou zarážku doprava. Jako příklad uveďme výčet
+v~Dodatku~\ref{szzk} na stránce~\pageref{szzk}. Tento způsob je vhodný pro
+delší seznamy (více než 9~položek) s~rozsáhlejšími položkami.  Obě varianty
+není vhodné ve vnořených seznamech kombinovat.
+
+Hvězdičková varianta slovníkového výčtu \pgm{description*} se co do indentace
+chová stejně jako obyčejná, liší se kurzivním zdůrazněním hesla místo tučného.
+
+\endinput
+
+%%
+%% End of file `ca_lisen.tex'.
+
+
+Vnořené výčty jsou celkově posouvány o~odstavcovou
+zarážku doprava.

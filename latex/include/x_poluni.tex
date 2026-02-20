@@ -1,0 +1,341 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is the `x_poluni.tex' included LaTeX file.              %%
+%% Toto je inkludovaný LaTeXový soubor `x_poluni.tex'.          %%
+%% ------------------------------------------------------------ %%
+%% Verze / Version 2022-04-30                                   %%
+%% Developed & maintained by / Vyvíjí & udr¾uje                 %%
+%%                           <stanislav.hledik@physics.slu.cz>  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%###############################################################################
+\chapter{Configurations of uniform density}\label{Chap:Uniform}
+
+It is interesting that there is a special class of general relativistic
+polytropes of the index $n = 0$ where the structure equations can be
+integrated in terms of elementary functions. We shall discuss these polytropes
+in detail because they can give an intuitive insight into the role of the
+cosmological constant and can serve as a test bed for the general case of
+polytropes with $n>0$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Structure of the polytropes}\label{Sec:UniStr}
+
+The $n=0$ polytropes correspond to the special class of the internal \SaodS{}
+spacetimes~\cite{Stu:2000:ACTPS2:} where the distribution of density $\rho$ is
+uniform although the pressure grows monotonically from its zero value on the
+surface of the configuration to a maximum value at its center. Recall that in
+the configurations with $\rho = \mathrm {const}$, it is not necessary to use
+the unrealistic notion of an incompressible fluid~-- one can consider fluids
+with pressure growing as radius decreases, being ``hand
+tailored''~\cite{Mis-Tho-Whe:1973:Gra:}.  Assuming $n=0$, equations of
+structure can be integrated yielding
+\begin{equation}
+    v(\xi) = \frac{1}{3}\,\xi^{3}\,,                       \label{Eq:grp87}
+\end{equation}
+and
+\begin{equation}
+  \left[3-2\sigma(1+\lambda)\xi^{2}\right]\,\oder{\theta}{\xi}
+  + (1-2\lambda+3\sigma\theta)(1+\sigma\theta) = 0         \label{Eq:grp88}
+\end{equation}
+and can be integrated directly after separation of variables. Using the
+boundary condition $\theta(0)=1$, we obtain
+\begin{equation}
+  \sigma\theta = \frac%
+    {(1-2\lambda+3\sigma)%
+      \left[1-\frac{2}{3}\,\sigma(1+\lambda)\xi^{2}\right]^{1/2}
+      -(1-2\lambda)(1+\sigma)}%
+    {3(1+\sigma)-(1-2\lambda+3\sigma)
+      \left[1-\frac{2}{3}\,
+      \sigma(1+\lambda)\xi^{2}\right]^{1/2}}\,.            \label{Eq:grp89}
+\end{equation}
+This solution determines the dependence of pressure on the radial coordinate,
+since for $n=0$ there is $\theta = p(r)/\pcent$. The dependence is
+given in units of the energy density since $\sigma =
+\pcent/\rhocent$. From the condition $\theta(\xi_{1})= 0$, we find the
+radius of the configuration to be determined by
+\begin{equation}
+  \xi_{1}^{2} = \frac{6[1+2\sigma-\lambda(2+\sigma)]}%
+                 {(1-2\lambda+3\sigma)^{2}}\,.             \label{Eq:grp90}
+\end{equation}
+It is convenient to express the pressure profile in terms of $r, R$, instead
+of $\xi, \xi_{1}$, and $\sigma$ obtaining thus the form of expression of the
+$n=0$ polytrope as was discussed in~\cite{Stu:2000:ACTPS2:}. Introducing a new
+parameter $a$, having dimension of length, by the relation
+\begin{equation}
+  \frac{1}{a^{2}}
+    = \frac{8\pi}{3}\,(\rhocent + \rhovac)     \label{Eq:grp91}
+\end{equation}
+we find the relation of $R$, $\sigma$, and $\lambda$ to be given by
+\begin{equation}
+  \left(1-\frac{R^{2}}{a^{2}}\right)^{\!\!1/2}
+  = \frac{(1-2\lambda)(1+\sigma)}{1-2\lambda+3\sigma}\,.      \label{Eq:grp93}
+\end{equation}
+Then the central pressure $\pcent$ and the pressure profile $p(r)$ can
+be expressed in the known
+form~\cite{Stu:2000:ACTPS2:,%
+  Boh:2004:GENRG2:11Solutions,%
+  Boh-Fod:2008:PHYSR4:PerFluidCC}
+\begin{align}
+  \pcent &= \rhocent\,\frac%
+    {(1-2\lambda)\left[1-\left(1-\ffrac{R^{2}}{a^{2}}\right)^{1/2}\right]}%
+    {3\left(1-\ffrac{R^{2}}{a^{2}}\right)^{1/2}
+      -(1-2\lambda)}\,,                                    \label{Eq:grp94}\\
+  p(r) &= \rhocent\,\frac%
+    {(1-2\lambda)
+      \left[
+        \left(1-\ffrac{r^{2}}{a^{2}}\right)^{1/2}
+        -\left(1-\ffrac{R^{2}}{a^{2}}\right)^{1/2}
+      \right]}%
+    {3\left(1-\ffrac{R^{2}}{a^{2}}\right)^{1/2}
+      -(1-2\lambda)
+      \left(1-\ffrac{r^{2}}{a^{2}}\right)^{1/2}}\,.        \label{Eq:grp95}
+\end{align}
+The radial metric coefficient is given by the relation
+\begin{equation}
+  \eto{2\Psi(r)}
+    = \left(1-\frac{r^{2}}{a^{2}}\right)^{-1}\,,           \label{Eq:grp96}
+\end{equation}
+and the total mass reads 
+\begin{equation}
+  M = \frac{1}{3}\,\Lngt\sigma\xi_{1}^{3}
+    = \frac{4\pi}{3}\,\rhocent r^{3}\,. \label{Eq:grp97}
+\end{equation}
+The temporal metric coefficient is determined by the relations  
+\begin{equation}
+  \eto{\Phi(r)} = \frac{[1 - \frac{2}{3}\,\sigma(1+\lambda)\xi^{2}]^{1/2}}%
+                  {1 + \sigma\theta}                       \label{Eq:grp99}
+\end{equation}
+and
+\begin{equation}
+  \eto{\Phi(r)} = \frac%
+    {3\left(1-\ffrac{R^{2}}{a^{2}}\right)^{1/2}
+      -(1-2\lambda)\left(1-\ffrac{r^{2}}{a^{2}}\right)^{1/2}}%
+    {2(1+\lambda)}\,.                                      \label{Eq:grp98}
+\end{equation}
+
+The special case of $\lambda = -1$ has to be treated separately as
+$1/a^{2}=0$. Now, Eq.\,(\ref{Eq:grp88}) reduces to
+\begin{equation}
+  \frac{\dif\theta}{(1+\sigma\theta)^{2}}
+    = -\xi\,\dif\xi\,,                                    \label{Eq:grp100}
+\end{equation}
+which leads, after integration with the boundary condition $\theta(0)=1$, to
+the formula
+\begin{equation}
+  \theta = \frac%
+    {1-\frac{1}{2}(1+\sigma)\xi^{2}}%
+    {1+\frac{1}{2}(1+\sigma)\xi^{2}}\,.                   \label{Eq:grp101}
+\end{equation}
+The boundary of the configuration is at
+\begin{equation}
+  \xi_{1}^{2} = \frac{2}{1+\sigma}\,.                     \label{Eq:grp102}
+\end{equation}
+The central pressure and the pressure profile can be expressed in terms of the
+radial coordinates $r$, $R$ in the form
+\begin{align}
+  \pcent &=
+    \frac{\rhocent}{\ffrac{2R}{3M}-1}\,,                  \label{Eq:grp103}\\
+  p(r) &=
+     \pcent\,\frac{1-\ffrac{r^{2}}{R^{2}}}%
+     {1+\frac{1}{\ffrac{2R}{3M}-1}\frac{r^{2}}{R^{2}}}\,.  \label{Eq:grp104}
+\end{align}
+The metric coefficients have a special form, too. The radial $g_{rr}$
+component corresponds to the flat $t = \mathrm{const}$ sections
+\begin{equation}
+  \eto{2\Psi(r)} = 1\,,                                   \label{Eq:grp105}
+\end{equation}
+while the temporal $g_{tt}$ component takes the form~\cite{Stu:2000:ACTPS2:}
+\begin{equation}
+  \eto{\Phi(r)} = 1
+    + \frac{3M}{2R}\left(\frac{r^{2}}{R^{2}}-1\right)\,.  \label{Eq:grp107}
+\end{equation}
+Properties of the $n=0$ general relativistic polytropes were discussed
+in~\cite{Stu:2000:ACTPS2:,%
+  Stu-etal:2001:PHYSR4:}. Here we concentrate on the
+existence of these polytropes in dependence on the cosmological constant.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section[Existence conditions of the $n=0$ polytropes]%
+{Existence conditions and compactness of \mbox{n\,=\,0}
+  polytropes}\label{Sec:UniCond}
+
+The reality conditions on the general solution, given by Eqs~(\ref{Eq:grp95}),
+(\ref{Eq:grp96}), and (\ref{Eq:grp98}), must guarantee that the pressure is
+positive and nondivergent, and the metric coefficients have to be regular at
+$r \leq R$.  Therefore, two conditions have to be satisfied:
+\begin{equation}
+  1-2\lambda > 0                                          \label{Eq:grp108}
+\end{equation}
+and
+\begin{equation}
+  3\left(1-\frac{R^{2}}{a^{2}}\right)^{\!\!1/2}
+   - (1-2\lambda) > 0\,.                                  \label{Eq:grp109}
+\end{equation}
+Considering the case of $\lambda = 1/2$, we find
+\begin{equation}
+  \theta(\xi) = \frac{(1-\sigma\xi^{2})^{1/2}}%
+                {1+\sigma + \sigma(1-\sigma\xi)^{1/2}}\,. \label{Eq:grp110}
+\end{equation}
+The boundary of such a polytrope configuration is at
+\begin{equation}
+  \xi_{1}^{2} = \frac{1}{\sigma}\,,                       \label{Eq:grp111}
+\end{equation}
+and it can be shown that
+\begin{equation}
+  R^{2} = a^{2}\,.                                        \label{Eq:grp112}
+\end{equation}
+Therefore, the metric coefficients are singular because there is
+\begin{equation}
+  \eto{-2\Psi(R)} = \eto{2\Phi(R)} = \eto{2\Phi(r)}
+                 = 1-\frac{R^{2}}{a^{2}}\,.               \label{Eq:grp113}
+\end{equation}
+For polytrope configurations of a given $M$ and $\Lambda$, condition
+(\ref{Eq:grp108}) gives an upper limit on admissible values of the external
+radius $R$. Configurations with \mbox{$\lambda \sim 1/2$} can be considered as
+nearly ``geodetical'' since the pressure gradient almost vanishes on the
+surface, which is close to the static radius of the external geometry. (For
+$\lambda = 1/2$, the surface of the static configuration has to be located at
+the horizon of the external spacetime, with $R=\ffrac{3r_{\mathrm{g}}}{2}$;
+however, no static configuration can have its boundary at a \mbox{black-hole}
+horizon, and such configurations are forbidden.)
+
+The lower limit on the external radius of the $n=0$ polytropes is determined
+by the condition (\ref{Eq:grp109}) that can be transformed into the relations
+\begin{equation}
+  \frac{R^{2}}{a^{2}} < \frac{4(1+\lambda)(2-\lambda)}{9} \label{Eq:grp114}
+\end{equation}
+and
+\begin{equation}
+  R > 2M\frac{9}{4(2-\lambda)}\,.                         \label{Eq:grp115}
+\end{equation}
+For $\lambda = 0$, we obtain the well known limit $R>
+(\ffrac{9G}{4c^{2}})M$. The restrictions on physically realistic $n=0$
+polytropes can also be transformed into a form containing dimensionless
+quantities $x \equiv R/M$, $y \equiv \Lambda M^{2}/3$ (see
+Refs~\cite{Stu:2000:ACTPS2:,%
+  Stu-etal:2001:PHYSR4:}).
+
+Compactness of the polytropic spheres of the uniform density is given by the
+relation
+\begin{equation}
+  \mathcal{C}(\sigma, \lambda)= \frac{2 \sigma [1- 2 \lambda + \sigma
+    (2- \lambda)]}{(1- 2 \lambda + 3 \sigma)^{2}}         \label{Eq:grp-c1}
+\end{equation}
+that is reduced for $\lambda = 0$ to the formula
+\begin{equation}
+  \mathcal{C}(\sigma)
+    = \frac{2 \sigma (1+ 2 \sigma)}{(1+ 3 \sigma)^{2}}\,. \label{Eq:grp-c2}
+\end{equation}
+The extremely compact configurations with $\mathcal{C} > 1/3$ can exist, if
+the central parameter satisfies the relation
+\begin{equation}
+  \sigma^{2} \geq \sigma^{2}_{\mathrm{ext}} \equiv
+    \frac{2}{3}\lambda\,.                                 \label{Eq:grp-c3}
+\end{equation}
+As an extremely compact spherical configurations are denoted those having
+their surface located under the photon circular orbit of the external
+spacetime~\cite{Stu:2008:0803.2530:SpSyStCoUniDens}. It can be
+shown~\cite{Stu-etal:2001:PHYSR4:} that in extremely compact configurations
+(with $R < 3M$), a stable circular null geodesic exists around which null
+geodesics captured by the strong gravitational field are concentrated.
+Neutrinos, moving along these bound null geodesics, can influence cooling of
+extremely compact neutron stars.  The potential well of the captured geodesics
+becomes deeper with the repulsive cosmological constant increasing, while it
+gets flatter with the attractive cosmological constant
+decreasing~\cite{Stu-etal:2012:GENRG2:NeutrinoTrap}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section[Gravitational binding of $n=0$ polytropes]%
+{Gravitational binding of \mbox{n\,=\,0} polytropes}%
+\label{Sec:UniGraB}
+
+Finally, we give the gravitational energy of the $n=0$ polytropes and their
+gravitational binding factor $g$. The total energy
+\begin{equation}
+  E = M = \frac{4\pi}{3}\,\rhocent r^{3}\,.               \label{Eq:grp116}
+\end{equation}
+The formula for the total proper energy reads
+\begin{equation}
+  E_{0} = 4\pi\rhocent\int_{0}^R
+    \left(1-\frac{r^{2}}{a^{2}}\right)^{-1/2}\,
+     r^{2}\,\dif r\,,                                     \label{Eq:grp117}
+\end{equation}
+and after integration we obtain 
+\begin{equation}
+  E_{0} = \frac{3}{2}\,M\left(\frac{a}{R}\right)^{3}
+    \left[
+      \arcsin\left(\frac{R}{a}\right)
+      -\frac{R}{a}\left(1-\frac{R^{2}}{a^{2}}\right)^{1/2}
+    \right]\,,                                            \label{Eq:grp118}
+\end{equation}
+where
+\begin{equation}
+  \frac{R}{a} = \frac{2(1+\lambda)^{1/2}}{1-2\lambda+3\sigma}
+    \left\{\sigma[1+2\sigma
+    -\lambda(2+\sigma)]\right\}^{1/2}\,.                  \label{Eq:grp119}
+\end{equation}
+The gravitational potential energy
+\begin{equation}
+  \mathcal{G} = M
+    \left\{
+      1 - \frac{3}{2}\left(\frac{a}{R}\right)^{3}
+      \left[
+        \arcsin\left(\frac{R}{a}\right)
+        -\frac{R}{a}\left(1-\frac{R^{2}}{a^{2}}\right)^{1/2}
+      \right]
+    \right\}                                              \label{Eq:grp120}
+\end{equation}
+is naturally negative and the gravitational binding factor $g=\mathcal{G}/E$
+is given by
+\begin{equation}
+  g \equiv \frac{\mathcal{G}}{v} = - \frac{3}{2}\left(\frac{a}{R}\right)^{3}
+      \left[
+        \arcsin\left(\frac{R}{a}\right)
+        -\frac{R}{a}\left(1-\frac{R^{2}}{a^{2}}\right)^{1/2}
+      \right]\,.                                          \label{Eq:grp121}
+\end{equation}
+%
+\begin{figure}[p]
+\begin{center}
+\includegraphics[width=\linewidth]{UniSigGBEn}
+\par\vspace{0.8\baselineskip}\par
+\includegraphics[width=\linewidth]{UniSigGBEnZ}
+\end{center}
+\caption[Dependence of binding factor on $\sigma$ for uniform density]%
+{\label{UniSigGBEn}Dependence of the gravitational binding
+  factor~(\ref{Eq:grp121}) for configurations of uniform density on relativity
+  parameter $\sigma$ for cosmological parameter
+  $\lambda = 0, 10^{-2}, 5\times10^{-2}, 10^{-1}$, respectively. The ``1''
+  index emphasizes the energies are related to the whole
+  configuration. \emph{Top:}~Wide range of relativity
+  parameter. \emph{Bottom:}~Zoom of the shaded region in the top plot.}
+\end{figure}
+
+The gravitational potential energy of the $n=0$ polytropes is represented in
+Fig.\,\ref{UniSigGBEn}. The role of the cosmological constant is illustrated
+by the sequence of lines constructed for appropriately chosen values of the
+cosmological parameter~$\lambda$.
+
+%
+It expresses the gravitational binding in a ``pure'' form as there in no
+internal energy in ``incompressible'' configurations. On the other hand, we
+can directly conclude that the relation of the binding energy of gas
+$\mathcal{B}$, and the gravitational energy are given by
+\begin{equation}
+  \frac{\mathcal{B}}{\mathcal{G}} = -1\,.              \label{Eq:grp122}
+\end{equation}
+The gravitational potential energy of the $n=0$ polytropes is represented in
+Fig.\,\ref{UniSigGBEn}. The role of the cosmological constant is illustrated
+by the sequence of lines constructed for appropriately chosen values of the
+cosmological parameter~$\lambda$.
+
+In polytropes with $n>0$, the binding energy $\mathcal{B}$ differs from the
+gravitational binding energy $(-\mathcal{G})$, as some of the work of the
+gravitational field is converted into the kinetic energy of microscopic motion
+in these polytropes. The role of the cosmological parameter $\lambda \neq 0$
+in the effect of gravitational binding will be discussed in the next section.
+
+\endinput
+
+%%
+%% End of file `x_poluni.tex'.

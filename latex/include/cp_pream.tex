@@ -1,0 +1,166 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toto je inkludovaný LaTeXový soubor `cp_pream.tex'.          %%
+%% ------------------------------------------------------------ %%
+%% Verze 2022-06-03                                             %%
+%% Vyvíjí & udržuje <stanislav.hledik@physics.slu.cz>           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Preambule}\label{preamble}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Úvodní část \LaTeX ového hlavního zdrojového souboru nacházející se mezi
+specifikací dokumentní třídy v~\pgm{\textbackslash
+  documentclass[}$\langle$\emph{volby}$\rangle$\pgm{]\{\ipotname\}} a začátkem
+prostředí \verb!\begin{document}! se nazývá
+  \emph{preambule}~\cite{Ryb:2005:LaTeX:3}. Umisťují se do ní příkazy pro
+  načítání balíčků pomocí příkazu \pgm{\textbackslash usepackage} a
+  uživatelská nastavení, definice či redefinice. Po \verb!\begin{document}!
+    následuje \emph{tělo dokumentu}, kam se zapisuje zejména vlastní text
+s~potřebným kontextovým značkováním.
+
+U~dokumentní třídy \pgm{\ipotname .cls} je doporučeno umisťovat do preambule
+pouze načítání balíčků, avšak uživatelská nastavení, definice a redefinice
+raději přesunout do konfiguračního souboru \pgm{\ipotname .cfg} popsaného
+v~Dodatku~\ref{config}. Primárním důvodem tohoto doporučení je, že
+konfigurační soubor \pgm{\ipotname .cfg} je načítán v~argumentu makra
+\pgm{\textbackslash AtEndPreamble}~\cite{Wri-Leh:LIVE:CTAN:etoolbox} až po
+balíčku \pkg{hyperref}, jenž sám redefinuje některé příkazy (viz
+Dodatek~\ref{packages}). Sekundární důvod je víceméně estetický~-- sleduje
+oddělení souboru s~konfigurací a souboru s~textem. Jinak ale lze vaše definice
+a redefinice v~preambuli uvést, pokud si je otestujete.
+
+Celý hlavní zdrojový soubor \pgm{\thesnamecze .tex} tohoto manuálu jakožto
+česky psané fiktivní závěrečné práce je včetně preambule bohatě komentován.
+Doporučujeme čtenáři tyto komentáře projít; ostatně vezme-li soubor
+\pgm{\thesnamecze .tex} jako základ pro psaní vlastní práce, je četba
+komentářů zcela dostačující. Níže uvedené fragmenty preambule jsou načteny
+přímo z~\pgm{\thesnamecze .tex} pomocí balíčku
+\pkg{fancyvrb}~\cite{Vos:LIVE:CTAN:fancyvrb}.
+
+\section{Specifikace dokumentní třídy}\label{docclass}%%%%%%%%%%%%%%%%%%%%%
+
+Preambuli samotné předchází zavedení dokumentní třídy \pgm{\ipotname .cls} a
+nastavení jejích voleb, jež jsou popsány v~Dodatku~\ref{options}. Právě jedna
+z~voleb \pgm{draft} nebo \pgm{final} musí zůstat odkomentovaná (nenechávajte
+je obě zakomentované nebo odkomentované); ostatní voleb lze použít podle
+vašich vlastních požadavků (implicitní chování při zakomentovaní volbě je
+uvedeno v~závorce komentáře):
+
+\VerbatimInput[frame=none,firstline=16,lastline=24,fontsize=\small]%
+{vzorova_prace.tex}
+
+\section{Fonty a jazyková lokalizace}\label{fontslang}%%%%%%%%%%%%%%%%%%%%%
+
+Nyní začíná vlastní preambule. Pro zajištění vyšší flexibility nejsou
+příslušné balíčky načítány v~dokumentní třídě (viz Dodatek~\ref{packages}),
+ale až zde v~preambuli.
+
+Balíčky načtené v~následujícím kódu způsobí globální použití nadrodiny fontů
+Latin Modern (\pkg{lm}~\cite{Jac:LIVE:CTAN:lm}) místo nadrodiny fontů Computer
+Modern (\pkg{cm}). Je nutné uvést kódování fontu volbou \opt{T1} balíčku
+\pkg{fontenc}~\cite{LtX:LIVE:CTAN:fontenc} a kódování zdrojových textů volbou
+\opt{utf8} balíčku \pkg{inputenc}~\cite{LtX:LIVE:CTAN:inputenc}, jež je dnes
+standardem na všech dnešních hlavních operačních systémech:\footnote{Nebylo
+  tomu tak vždy. Případná jiná kódování, která připadají v~úvahu, jsou
+  \opt{cp1250} na Windows nebo \opt{latin2} na Linuxu, ale byla by nutná
+  konverze.}
+
+\VerbatimInput[frame=none,firstline=31,lastline=33,fontsize=\small]%
+{vzorova_prace.tex}
+
+Následuje blok jazykové lokalizace. Závěrečná práce v~češtině \emph{musí} mít
+nastavenu češtinu jako hlavní jazyk volbou \opt{czech} uvedenou na
+\emph{posledním místě} v~seznamu volitelných argumentů balíčku
+\pkg{babel}. Jako další jazyk \emph{musí} být volbou \opt{english} zavedena
+angličtina. Kromě těchto dvou povinných jazyků lze zavést i~další jazyky;
+aktuálně jsou v~\pkg{\ipotname} podporovány: \opt{slovak}, \opt{french},
+\opt{german} (viz též dokumentaci balíčku
+\pkg{babel}~\cite{Bra:LIVE:CTAN:Babel}):
+
+\VerbatimInput[frame=none,firstline=42,lastline=42,fontsize=\small]%
+{vzorova_prace.tex}
+
+Preferujete-li Times jako textový i~matematický font\footnote{Font Times je
+  prostorově úspornější. Nepoužívejte balíček
+  \pkg{times}~\cite{Rah:LIVE:CTAN:times}, který změní jen textový, nikoli však
+  matematický font, ani balíčky \pkg{mathptmx} nebo
+  \pkg{psnfss}~\cite{Vie:LIVE:CTAN:mathptmx,%
+    Har:LIVE:CTAN:psnfss}.}, stačí odkomentovat následující řádek pro načtení
+balíčku \pkg{txfonts}~\cite{Ryu:LIVE:CTAN:txfonts}. Necháte-li jej
+zakomentovaný, bude použit Latin Modern, jehož zavedení je popsáno výše.
+
+\VerbatimInput[frame=none,firstline=46,lastline=46,fontsize=\small]%
+{vzorova_prace.tex}
+
+\noindent
+Použijete-li výše uvedený balíček \pkg{txfonts}~\cite{Ryu:LIVE:CTAN:txfonts},
+bezpatkový (sans serif) font a strojopisný (monospace) font budou změněny po
+řadě na fonty Helvetica a Courier. Pro zachování bezpatkového a strojopisného
+fontu z~nadrodiny \pkg{lm}~\cite{Jac:LIVE:CTAN:lm}, což podle názoru autora
+dává lepší estetický výsledek, stačí odkomentovat tyto čtyři řádky (nechejte
+je zakomentované, je-li zakomentováno přecházející načtení balíčku
+\pkg{txfonts}):
+
+\VerbatimInput[frame=none,firstline=53,lastline=56,fontsize=\small]%
+{vzorova_prace.tex}
+
+\section{Podpora tvorby rejstříku}\label{indexsupp}%%%%%%%%%%%%%%%%%%%%%%%%
+
+Následující kód odkomentují a balíček
+\pkg{makeidx}~\cite{LtX:LIVE:CTAN:makeidx,%
+  Bee:LIVE:CTAN:MakeIndex} nechají načíst pouze ti, kdo chtějí vytvářet
+rejstřík. Jelikož v~tomto manuálu rejstřík není, odkazujeme na další informace
+např. v~monografiích~\cite{Ryb:2005:LaTeX:3,%
+  Kop-Dal:2004:LaTeXPodrPruv:} a dokumentaci~\cite{LtX:LIVE:CTAN:makeidx,%
+  Bee:LIVE:CTAN:MakeIndex}:
+
+\VerbatimInput[frame=none,firstline=59,lastline=59,fontsize=\small]%
+{vzorova_prace.tex}
+
+\section{Další balíčky}\label{otherpack}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Dále můžete podle potřeby načíst další balíčky kompatibilní s~dokumentní
+třídou \pkg{\ipotname}. Doporučuje se načítat jen balíčky, které jsou opravdu
+nezbytné. Balíčky uvedené v~Dodatku~\ref{packages} a jejich závislosti se
+načítají v~dokumentní třídě a je tedy zbytečné a škodlivé je zde načítat. Pro
+tento manuál potřebujeme balíček \pkg{fancyvrb}~\cite{Vos:LIVE:CTAN:fancyvrb}
+umožňující načítání fragmentů kódu přímo ze zdrojových souborů jako v~této
+kapitole; další balíček \pkg{subfig}~\cite{biditex:LIVE:CTAN:subfig} je
+připraven k~použití:
+
+\VerbatimInput[frame=none,firstline=66,lastline=67,fontsize=\small]%
+{vzorova_prace.tex}
+
+\section{Nastavení, definice a redefinice}\label{settdefredef}%%%%%%%%%%%%%
+
+Odsud až po \verb!\begin{document}! lze umístit vaše privátní nastavení,
+  definice a redefinice. Je však výhodnější umístit je do konfiguračního
+  souboru \pgm{\ipotname .cfg} popsaného v~Dodatku~\ref{config}, jenž bude
+  automaticky (je-li přítomen) nalezen a načten~-- důvody jsou vysvětleny
+  v~úvodu této kapitoly. Některá nastavení však budou fungovat jen když jsou
+  v~konfiguračním souboru, např. nastavení \pgm{\textbackslash
+    pdfcompresslevel}.  Z~toho důvodu se doporučuje upřednostnit konfigurační
+  soubor. Některá nastavení budou fungovat i~odtud (aktivní jsou však
+  v~\pgm{\ipotname .cfg}), jako například:
+
+\VerbatimInput[frame=none,firstline=79,lastline=81,fontsize=\small]%
+{vzorova_prace.tex}
+
+\section{Vzory dělení slov}\label{userhyph}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Uživatelské vzory dělení slov musí být umístěny zde v~preambuli, nikoli
+v~konfiguračním souboru \pgm{\ipotname .cfg}:
+
+\VerbatimInput[frame=none,firstline=85,lastline=91,fontsize=\small]%
+{vzorova_prace.tex}
+
+\section{Konec preambule}\label{preambend}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Začátkem prostředí \pgm{document} končí preambule:
+
+\VerbatimInput[frame=none,firstline=97,lastline=97,fontsize=\small]%
+{vzorova_prace.tex}
+
+\endinput
+
+%% 
+%% End of file `cp_pream.tex'.

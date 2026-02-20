@@ -1,0 +1,461 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%% Toto je hlavní LaTeXový soubor `vzorova_prace.tex'.  Slouží  %%
+%% jako anotovaná fiktivní závěrečná práce usnadňující přípravu %%
+%% vaší vlastní závěrečné práce na Fyzikálním ústavu v Opavě    %%
+%% pomocí publikačního systému LaTeX.                           %%
+%% ------------------------------------------------------------ %%
+%% Verze 2022-06-05                                             %%
+%% Vyvíjí & udržuje <stanislav.hledik@physics.slu.cz>           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Načti LaTeXovou dokumentní třídu `ipothes'.  Ta akceptuje jisté
+%% volby.  Musíte odkomentovat právě jednu z voleb `draft' nebo
+%% `final'; nenechávajte je obě zakomentované nebo odkomentované.
+%% Ostatních voleb lze použít podle vašich požadavků (implicitní
+%% chování při zakomentovaní volbě je uvedeno v závorce):
+\documentclass[%
+%draft%         zobrazí přeplněné \hbox, \note, klamné obrázky atd.
+final%         kompiluj finální verzi
+%,narrowmargin% velká šířka a výška textu v celé práci (střední)
+,htext%        externí i interní odkazy jsou hypertextové (nejsou)
+%,indentfirst%  1. odst. po nadpisu má odstavcovou zarážku  (nemá)
+%,fllastline%   poslední řádek popisek ap. necentrovat (centrovat)
+%,headfootsans% bezpatkový font v záhlaví a zápatí (patkový)
+]{ipothes}
+
+%% Místo nadrodiny fontů Computer Modern (`cm') použijte nadrodinu
+%% fontů Latin Modern (`lmodern'), kódování fontu `T1', a kódování
+%% zdrojových textů `utf8' fungující dnes na všech OS. (Případná
+%% jiná kódování, která připadají v úvahu: `cp1250' na Windows
+%% nebo `latin2' na Linuxu, ale byla by nutná konverze):
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+%% Závěrečná práce v češtině MUSÍ mít nastavenu češtinu jako hlavní
+%% jazyk argumentem `czech' uvedeným na posledním místě v seznamu
+%% volitelných argumentů balíčku `babel'. Jako další jazyk MUSÍ být
+%% volbou `english' zavedena angličtina. Kromě těchto dvou povinných
+%% jazyků lze zavést i další jazyky; aktuálně jsou podporovány:
+%% `slovak', `french', `german' (viz též dokumentaci balíčku
+%% `babel'):
+\usepackage[english,czech]{babel}
+
+%% Preferujete-li Times jako textový i matematický font, stačí
+%% odkomentovat následující řádek:
+%\usepackage{txfonts}
+
+%% Použijete-li balíček `txfonts' výše, bezpatkové (sans serif) a
+%% strojopisné (monospace) fonty budou změněny po řadě na Helvetica
+%% a Courier. Pro zachování `lmodern' bezpatkového a strojopisného
+%% fontu (což dává lepší estetický výsledek), stačí odkomentovat
+%% tyto dva řádky:
+%\DeclareTextFontCommand{\textsf}{\sffamily}
+%  \renewcommand*{\sfdefault}{lmss}
+%\DeclareTextFontCommand{\texttt}{\ttfamily}
+%  \renewcommand*{\ttdefault}{lmtt}
+
+%% Odkomentují pouze ti, kdo chtějí vytvářet rejstřík:
+%\usepackage{makeidx} \makeindex
+
+%% Zde můžete načíst další balíčky kompatibilní s dokumentní třídou
+%% `ipothes'. Doporučuje se načítat jen balíčky, které opravdu
+%% potřebujete. Balíčky `natbib', `amsmath', `amssymb', `graphicx',
+%% `hyperref', `url' a jejich závislosti se načítají v dokumentní
+%% třídě a je tedy zbytečné a škodlivé je zde načítat:
+\usepackage{fancyvrb} % doslovné načítání LaTeX kódů ze souborů
+%\usepackage{subfig}
+
+%% Zde, mezi tímto komentářem a \begin{document} (tzv. preambule),
+%% lze umístit vaše privátní nastavení, definice a makra. Je však
+%% výhodnější umístit je do konfiguračního souboru `ipothes.cfg',
+%% jenž bude automaticky (je-li přítomen) nalezen a načten. Můžete
+%% jej modifikovat bez zásahu do tohoto hlavního souboru. Otázka
+%% umístění (preambule vs. konfigurační soubor) je samozřejmě věcí
+%% vkusu. Některá nastavení však budou fungovat jen když jsou
+%% v konfiguračním souboru, např. nastavení \pdfcompresslevel.
+%% Z toho důvodu se doporučuje upřednostnit konfigurační soubor.
+%% Příklady (převzato z `ipothes.cfg'):
+%\setcounter{tocdepth}{3}
+%\setcounter{secnumdepth}{3}
+%\newcommand*{\epow}[1]{\ensuremath{\euler^{#1}}}
+
+%% Vzory dělení slov musí být umístěny zde v preambuli, nikoli
+%% v konfiguračním souboru `ipothes.cfg':
+\hyphenation{svě-to-vé ov-šem úh-lem pa-t-ří ne-jsou sek-ci
+  tří-du oh-le-du ar-X-iv tom-to ad-re-sá-ře pod-ad-re-sá-ři
+  ne-pře-hléd-nu-tel-né fi-lo-zo-fic-ko pří-ro-do-vě-dec-ká
+  pří-ro-do-vě-dec-ké wiz-arda do-bě tu-to včet-ně po-le
+  ar-ti-cles dis-tri-bu-tion cos-mo-log-i-cal for-mu me-to-dy
+  prin-ci-py mo-der-ní di-a-gnos-ti-ky ba-ka-lář-ská vněj-ší-ho
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Zde je místo, kde vaše závěrečná práce začíná.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document} % NEMAŽTE ANI NEZAKOMENTOVÁVEJTE TENTO ŘÁDEK!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Předně je třeba vytvořit titulní stránky: to jsou úvodní
+%% stránky s titulem a dalšími předepsanými náležitostmi. Jak je
+%% vidět, je to velmi snadné.
+%% Celkem je 5 nebo 6 (podle studijního programu) mandatorních
+%% položek M1, ..., M5 (, M6), které je třeba specifikovat:
+
+%% (M1) Titul závěrečné práce. Užijte \\, ~ apod. pro vhodné lámání
+%%      řádků, aby přítulná slova držela pospolu. Makro \ipotname
+%%      je definováno v třídě a expanduje na jméno balíčku:
+\title{Fiktivní práce jako uživatelský manuál \LaTeX ového balíčku
+  \uv{\ipotname}}
+
+%% (M2) Vaše jméno včetně akademických titulů, máte-li je:
+\author{Stanislav Hledík}
+
+%% (M3) Jméno vedoucího vaší práce včetně akademických titulů:
+\supervisor{doc. RNDr. Petr Slaný, Ph.D.}
+
+%% (M4) Plný rok předložení vaší závěrečné práce k obhajobě. Pouze
+%%      číslice, ne makra jako \year nebo \today:
+\yearofsubmission{2022}
+
+%% (M5-6) Váš studijní program a specializace (má-li ji). Pro
+%%        pohodlí studentů Fyzikálního ústavu jsou níže vypsány
+%%        všechny relevantní a případné specializace. Jednoduše
+%%        si vyberte příslušný \program a je-li k dispozici také
+%%        \specialization jejich odkomentováním.
+%%        Ačkoli jsou \program (a příp. \specialization) povinné,
+%%        lze je vynechat bez chybové či varovné hlášky. V takovém
+%%        případě jednoduše nebudou vysazeny.
+
+%% (M5-6a) Bakalářské studijní programy:
+\program{B0533A110018 Fyzika}
+%  \specialization{Astrofyzika}
+  \specialization{Astronomie a popularizace}
+%\program{B0533P110001 Aplikovaná fyzika}
+%  \specialization{Monitorování životního prostředí}
+%  \specialization{Fyzikální diagnostické metody}
+%\program{B0211P310003 Multimediální techniky} % pod FPF a bez specializace!
+%%
+%% (M5-6b) Navazující magisterské studijní programy:
+%\program{N0533A110045 Teoretická fyzika}
+%  \specialization{Částicová fyzika}
+%  \specialization{Relativistická astrofyzika}
+%  \specialization{Počítačová fyzika}
+%\program{N0533A110050 Observační astrofyzika vysokých energií} % bez spec.!
+%\program{N0211P310007 Multimediální techniky} % bez spec.!
+%%
+%% (M5-6c) Rigorosní program (státní rigorosní zkouška):
+%\program{N0533A110045 Teoretická fyzika} % bez spec.!
+%%
+%% (M5-6d) Doktorský studijní program:
+%\program{P0533D110046 Teoretická fyzika a astrofyzika}
+%  \specialization{Teoretická fyzika a astrofyzika (presenční)}
+%  \specialization{Teoretická fyzika a astrofyzika (kombinovaná)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Dále máme následujících 7 volitelných položek O1, ..., O7.
+
+%% (O1-3a) Nejste-li studentem jiné instituce, není explicitně
+%%         třeba specifikovat následující tři položky a stačí
+%%         ponechat je zakomentované (pozor, nenechávejte je
+%%         odkomentované a prázdným argumentem). Správný název
+%%         Fyzikálního ústavu, jeho znak a sídlo budou automaticky
+%%         doplněny:
+%\institution{}
+%\emblem{}
+%\seat{}
+
+%% (O1-3b) Jste-li studentem dobíhajícího studia na Ústavu fyziky
+%%         Filozoficko-přírodovědecké fakulty, můžete modifikovat
+%%         instituci a znak odkomentováním následujícího příkladu
+%%         (pro vaše pohodlí je znak FPF přiložen):
+%\institution{Slezská univerzita v Opavě\\
+%  Filozoficko-přírodovědecká fakulta v Opavě\\ Ústav fyziky}
+%\emblem{emblemfps}
+
+%% (O1-3c) Jste-li studentem MÚ SU, můžete modifikovat instituci
+%%         a znak odkomentováním následujícího příkladu (pro vaše
+%%         pohodlí je znak MÚ přiložen):
+%\institution{Slezská univerzita v Opavě\enspace
+%  $\boldsymbol\vert$\enspace Matematický ústav v Opavě}
+%\emblem{emblemiom}
+
+%% (O1-3d) Jste-li např. studentem Obchodně podnikatelské fakulty
+%%         SU v Karviné, můžete modifikovat instituci, znak, sídlo
+%%         odkomentováním následujícího příkladu (soubor se znakem
+%%         OPF však není součástí balíčku a musíte si jej opatřit
+%%         sami a umístit pod názvy emblemsba.eps a emblemsba.pdf
+%%         do adresáře `images'):
+%\institution{Slezská univerzita v~Opavě\\
+%  Obchodně podnikatelská fakulta v~Karviné}
+%\emblem{emblemsba}
+%\seat{Karviná}
+
+%% (O4) Specifikujte podtitul vaší práce. Ačkoli tato položka je
+%%      volitelná, často se používá pro titul práce v sekundárním
+%%      jazyce, obvykle v angličtině. Všimněte si použití \\, ~
+%%      a podobně pro vhodné nalámání řádků, aby přítulná slova
+%%      hezky držela pospolu. (Makro \ipotname je definováno
+%%      v dokumentní třídě a expanduje na jméno balíčku.):
+\subtitle{A fictitious Thesis as a user manual for\\ the~``\ipotname''
+  \LaTeX{} package}
+
+%% (O5) Typ vaší závěrečné práce. Ti, kdo píší bakalářskou práci,
+%%      mohou nechat následující příkaz zakomentovaný; "Bakalářská
+%%      práce" bude vysázeno automaticky. Typické další typy jsou
+%%      "Diplomová práce", "Rigorózní práce" a "Dizertační práce"
+%%      (či "Rigorosní práce" a "Disertační práce", jste-li
+%%      konservativně založeni), případně cokoli potřebujete:
+%\thesiskind{}
+
+%% (O6) Jméno vašeho konzultanta včetně akademických titulů. Tato
+%%      položka se obvykle vynechává zakomentováním, avšak občas
+%%      se může hodit:
+\advisor{Hana Černínová}
+
+%% (O7) Frontispice (protititul) se nachází na stránce sousedící
+%%      vlevo se stránkou titulní. Obvykle se nechává prázdný, ale
+%%      někdy je vhodné na ni umístit vhodný obrázek či grafiku.
+%%      K tomu slouží následující příkaz v němž první argument
+%%      udává šířku grafiky a druhý specifikuje základní jméno
+%%      souboru s grafikou. Preferujete-li prázný protititul,
+%%      nechejte následující příkaz zakomentovaný:
+\frontispiceimage{4in}{typesetting}
+%%      Vertikální odstup grafiku od horní hrany textu lze zadat
+%%      volitelným argumentem (jeho implicitní hodnota je 18mm)
+%%      jako v následujícím příkladu, kde je šířka grafiky dána
+%%      relativně vůči šířce textu:
+%\frontispiceimage[36mm]{0.5\linewidth}{typesetting}
+%%      Potřebujete-li vložit obecnější objekt než je grafika,
+%%      použijte složitější, ale universální kód podle tohoto
+%%      příkladu:
+%\frontispice{%
+%  \begin{center} \vspace*{62.5mm}
+%    {\Huge\rmfamily Frontispice\par}
+%  \end{center}}
+
+\maketitle % LZE DOČASNĚ ZAKOMENTOVAT PRO POTLAČENÍ SAZBY TITULNÍCH STRAN
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Anotace a klíčová slova jsou povinná. Závěrečná práce v češtině
+%% obsahuje tyto údaje v prostředích `annotation' a `keywords' vždy
+%% nejprve česky, potom anglicky (jazyk určen nepovinným argumentem).
+%% Anotace uvedená jako první MUSÍ být bez ohledu na jazyk (kvůli
+%% stránkovému zlomu a vertikálnímu odstupu) v "hvězdičkové" formě:
+
+\begin{annotation*}
+  Tento manuál seznamuje JUpÍ s~použitím balíčku \uv{\ipotname} rozšiřujícího
+  publikační systém \LaTeX{} o~dokumentní třídu a \BibTeX ový bibliografický
+  styl optimalizované k~sazbě bakalářských, diplomových, rigorózních nebo
+  dizertačních prací, případně jiných typů závěrečných prací (ročníkových,
+  semestrálních, seminárních) na Fyzikálním ústavu v~Opavě. Manuál sám je
+  vysázen pomocí popisovaného balíčku ve formě fiktivní bakalářské práce.
+\end{annotation*}
+\begin{annotation}[english]
+  This manual introduces the use of the ``\ipotname'' package extending the
+  \LaTeX{} publishing system by document class and \BibTeX{} bibliographic
+  style optimized for typesetting of Bachelor, Master, Rigorous and Doctoral
+  Theses, possibly other kinds of Final Theses (year, semester, seminar) at
+  The Institute of Physics in Opava.  The manual itself is typeset using the
+  tools of the package described by this manual in the form of a fictitious
+  Bachelor~Project.
+\end{annotation}
+\begin{keywords}
+  Sazba~| publikační systém \LaTeX{}~| dokumentní třída~| \BibTeX{}~|
+  bibliografický styl~| PDF~| hypertext~| bakalářská práce~| diplomová práce~|
+  rigorózní práce~| dizertační práce
+\end{keywords}
+\begin{keywords}[english]
+  Typesetting~| \LaTeX{} publishing system~| document class~| \BibTeX{}~|
+  bibliographic style~| PDF~| hypertext~| Bachelor Thesis~| Master Thesis~|
+  Rigorous Thesis~| Dissertation
+\end{keywords}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Vložení zadání závěrečné práce je povinné. Zadání ve formátu pdf
+%% podepsané elektronicky vedoucím nebo pdf sken podepsaného zadání
+%% nakopírujte do souboru `manual/assign.pdf' (pozor, nikoli do
+%% `manual/images/assign.pdf'), jenž bude nalezen a použit místo
+%% souboru s maketou zadání v knihovnách balíčku `ipothes' (ten se
+%% načítá pouze v případě absence souboru `manual/assign.pdf').
+%% Jelikož finální podobu práce stejně budete kompilovat pdflatexem
+%% (a nikoli latexem), konverze do eps je zbytečná a pro potřeby
+%% rychlé vývojové kompilace latexem stačí použít maket assign1.eps
+%% a assign2.eps z knihoven balíčku `ipothes'. Bounding Box zadání
+%% (bb=llx lly urx ury) je optimalizován pro zadání generované
+%% Informačním systémem SU; v případě jiného zadání je třeba jej
+%% upravit.
+%% Nemá-li vaše práce zadání, níže uvedené kódy pro inkluzi zadání
+%% smažte nebo zakomentujte.
+%%
+%% Zadání vaší závěrečné práce vložíte takto:
+
+\cleardoublepage % NEMAŽTE ANI NEZAKOMENTOVÁVEJTE TENTO ŘÁDEK!!
+\thispagestyle{empty}
+\noindent
+\ifcase\pdfoutput % DVI
+  \includegraphics[width=\linewidth]{assign1}
+\else % PDF
+  \includegraphics[width=\linewidth,bb=42 99 553 814,clip=false,page=1]{assign}
+\fi
+
+%% Odkomentujete a použijte následující řádek kódu právě tehdy,
+%% když zadání vaší závěrečné práce má jednu stránku:
+
+%\newpage \thispagestyle{empty} \mbox{}
+
+%% Odkomentujete a použijte následující kód právě tehdy, když
+%% zadání vaší závěrečné práce má dvě stránky:
+
+\newpage \thispagestyle{empty} \noindent
+\ifcase\pdfoutput % DVI
+  \includegraphics[width=\linewidth]{assign2}
+\else % PDF
+  \includegraphics[width=\linewidth,bb=42 99 553 814,clip=false,page=2]{assign}
+\fi
+
+%% V papírovém výtisku závěrečné práce pak odstraňte tento list
+%% s elektronicky vloženým zadáním a nahraďte jej listem papíru
+%% s vytištěným a podepsaným originálem zadání.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Prohlášení je povinné. Použijte následující předpřipravené, jež
+%% je v souladu se studijními předpisy; modifikujte jen datum (příp.
+%% místo) a správné české rodové přípony. Jazyk prohlášení lze
+%% modifikovat nepovinným argumentem \begin{declaration}[lang]{...}
+%% (asi zřídkakdy bude použito):
+
+\begin{declaration}{V~Opavě dne 22. dubna 2022}
+  Prohlašuji, že jsem tuto závěrečnou práci vypracoval samostatně jen
+  s~použitím uvedené literatury uvedené v~bibliografii a na základě konzultací
+  s~vedoucím práce. Uvedl jsem všechny prameny, z~nichž jsem při psaní práce
+  čerpal.
+\par\vspace{0.5\baselineskip}\par
+  Autor souhlasí se zveřejněním této závěrečné práce ve smyslu \S~47b Zákona
+  č.\,111/1998~Sb. (O~vysokých školách a o~změně a doplnění dalších zákonů)
+  v~platném znění.
+\end{declaration}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Poděkování je volitelné, avšak běžně používané. Jazyk poděkování
+%% lze modifikovat nepovinným argumentem
+%% \begin{acknowledgement}[lang]:
+
+\begin{acknowledgement}
+  Děkuji všem, kdo při vývoji balíčku \uv{\ipotname} přispěli testováním,
+  podněty, připomínkami nebo nálezy chyb.
+\end{acknowledgement}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Věnování je volitelné. Nechcete-li je, zakomentujte celé
+%% prostředí. Jazyk věnování lze modifikovat nepovinným argumentem
+%% \begin{dedication}[lang], "hvězdičková" forma dedication*
+%% explicitně vysází nadpis "Věnování":
+
+\begin{dedication*}
+  Balíček \uv{\ipotname} a tento manuál věnuji všem studentům, kteří za mnou
+  po dlouhá léta docházeli se žádostmi o~radu a pomoc při sazbě svých
+  závěrečných prací.
+\end{dedication*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Obsah je povinný. Hloubku obsahu lze ovlivnit pomocí nastavení
+%% čítače `tocdepth' (implicitně \setcounter{tocdepth}{2})
+%% v konfiguračním souboru nebo v preambuli:
+
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Seznam obrázků a seznam tabulek jsou volitelné:
+
+\listoffigures
+\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% V tomto místě končí titulní stránky a začíná hlavní text práce.
+
+\mainmatter % NEMAŽTE ANI NEZAKOMENTOVÁVEJTE TENTO ŘÁDEK!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Je výhodné rozdělit zdrojový text do více souborů, ideálně
+%% podle kapitol. Během kompilace můžete vložit pouze aktuálně
+%% vyvíjené kapitoly buď zakomentováním \include{} ostatních
+%% kapitol nebo použitím příkazu \includeonly{} command.
+%% Jako první vložíme nečíslovanou kapitolu Úvod:
+
+\include{c_intro}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Závěrečnou práci lze strukturovat do částí (parts, úroveň -1,
+%% nevyžadováno, ale obvykle výhodné), zatímco kapitoly (úroveň 0)
+%% jsou průběžně číslovány od 1.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Zde začíná první část. Všimněte si, jak strukturální příkazy
+%% (a mnohé další čítače generující příkazy) jsou opatřeny
+%% unikátními jmény. To se může hodit pro budoucí křížové odkazy:
+
+\part{Postupy a řešení}\label{procsol}
+
+\include{cp_inst}
+\include{cp_pream}
+%\include{cp_titpg}
+%\include{cp_graph}
+%\include{cp_refc}
+%\include{cp_lang}
+%\include{cp_math}
+\include{cp_other}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Druhá část:
+
+\part{Ukázky z~obhájených závěrečných prací}\label{findef}
+
+\include{x_levit}
+\include{x_diag}
+\include{x_camera}
+\begin{otherlanguage}{english} % this sample is in ENG only
+\include{x_poluni}
+\end{otherlanguage}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Třetí část jsou Dodatky. Předchází jí příkaz \appendix, který
+%% modifikuje způso číslování kapitol s všeobecně přijatým uzusem:
+
+\appendix
+\part{Dodatky}\label{append}
+
+\include{ca_docop}
+\include{ca_lopkg}
+\include{ca_mirr}
+\include{ca_conf}
+\include{ca_hyper}
+%\include{ca_lisen}
+%\include{ca_files}
+%\include{ca_make}
+%\include{ca_essen}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Nakonec vložíme nečíslovanou kapitolu Závěr:
+
+\include{c_conc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Zde budou vloženy Reference generované pomocí BiBTeXu:
+
+%\nocite{*}
+{\small\sloppy
+\bibliography{references}
+\par}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Ti, kdo značkovali slova a fráze pro Rejstřík, odkomentují
+%% následující příkaz:
+
+%\printindex
+
+\end{document} % NEMAŽTE ANI NEZAKOMENTOVÁVEJTE TENTO ŘÁDEK!!
+
+%%
+%% Konec souboru `vzorova_prace.tex'.

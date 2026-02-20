@@ -1,0 +1,45 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is the `bbl-cze.bld' file: Czech bibliography language  %%
+%% definition.                                                  %%
+%% Adapted from %<*bblbst> %</bblbst> section of merlin.mbs.    %%
+%% ------------------------------------------------------------ %%
+%% Version 2022-04-19                                           %%
+%% Developed & maintained by <stanislav.hledik@physics.slu.cz>  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\bbland{a}                  \def\bbletal{et~al.}
+\def\bbleditors{edito\v{r}i}    \def\bbleds{ed.}
+\def\bbleditor{editor}          \def\bbled{ed.}
+\def\bbledby{editov\'ano}
+\def\bbledition{vyd\'an\'{\i}}  \def\bbledn{vyd.}
+\def\bblvolume{svazek}          \def\bblvol{sv.}
+\def\bblof{s\'erie}
+\def\bblnumber{\v{c}\'{\i}slo}  \def\bblno{\v{c}.}
+\def\bblin{v}
+\def\bblpages{str\'anky}        \def\bblpp{str.}
+\def\bblpage{str\'anka}         \def\bblp{str.}
+\def\bbleidpp{str\'anky}
+\def\bblchapter{kapitola}       \def\bblchap{kap.}
+\def\bbltechreport{Technick\'a zpr\'ava}
+\def\bbltechrep{Tech. zpr.}
+\def\bblmthesis{Magistersk\'a pr\'ace}
+\def\bblphdthesis{Diserta\v{c}n\'{\i} pr\'ace}
+\def\bblfirst{prvn\'{\i}}       \def\bblfirsto{1.}
+\def\bblsecond{druh\'e}         \def\bblsecondo{2.}
+\def\bblthird{t\v{r}et\'{\i}}   \def\bblthirdo{3.}
+\def\bblfourth{\v{c}tvrt\'e}    \def\bblfourtho{4.}
+\def\bblfifth{p\'at\'e}         \def\bblfiftho{5.}
+\def\bblst{.}  \def\bblnd{.}    \def\bblrd{.}
+\def\bblth{.}
+\def\bblaccess{nav\v{s}t\'{\i}veno}
+\def\bbljan{leden}              \def\bblfeb{\'unor}
+\def\bblmar{b\v{r}ezen}         \def\bblapr{duben}
+\def\bblmay{kv\v{e}ten}         \def\bbljun{\v{c}erven}
+\def\bbljul{\v{c}ervenec}       \def\bblaug{srpen}
+\def\bblsep{z\'a\v{r}\'{\i}}    \def\bbloct{\v{r}\'{\i}jen}
+\def\bblnov{listopad}           \def\bbldec{prosinec}
+
+\endinput
+
+%%
+%% End of file `bbl-cze.bld'.

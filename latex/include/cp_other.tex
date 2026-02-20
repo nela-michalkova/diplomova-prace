@@ -1,0 +1,61 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toto je inkludovaný LaTeXový soubor `cp_other.tex'.          %%
+%% ------------------------------------------------------------ %%
+%% Verze 2022-05-23                                             %%
+%% Vyvíjí & udržuje <stanislav.hledik@physics.slu.cz>           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Některá drobná vylepšení}\label{improv}%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Pro vysázení motta kapitoly (sekce) lze použít prostředí \pgm{motto} s~jedním
+povinným argumentem (autorem motta) a jedním volitelným argumentem
+(specifikací jazyka motta). Příklad použití je v~začátku Úvodu na
+stránce~\pageref{intro}.
+
+Chcete-li vysadit poznámku, jež není součástí textu (např. pro vedoucího
+práce, upomínku na dodatečné zjištění přesných bibliografických dat apod.),
+použijte příkaz \verb!\note! (viz též stránka~\pageref{opdraft}). Argument
+příkazu \verb!\note! se vysadí jako na ukázce na stránce~\pageref{opdraft},
+ale jen při použití volby \opt{draft}. Jakmile ji vypneme, všechny marginálie
+vysázené pomocí \verb!\note! zmizí a příkaz ani jeho argumenty není třeba ze
+zdrojového textu odstraňovat. Příkaz \verb!\note! má hvězdičkovou variantu
+\verb!\note*!, která vysází marginálii stejným způsobem jako \verb!\note!
+s~tím rozdílem, že vypnutí volby \opt{draft} marginálii ponechá. Tímto
+způsobem je vysázena marginálie na stránce~\pageref{opdraft}, která je
+součástí finální formy manuálu.
+% Tímto způsobem jsou vysázeny marginálie na stránkách~\pageref{opdraft}
+% a~\pageref{mathant}, které jsou součástí finální formy manuálu.
+
+\endinput
+
+\section{Fragmentace zdrojového kódu}\label{fragment}%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Základy vytváření tabulek}\label{tables}%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Tvorba rejstříku}\label{treatindex}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Tipy pro některá IDE pro Windows}\label{winide}%%%%%%%%%%%%%%%%%%%
+
+Někdy se může stát, že v~hypertextové \designation{pdf} verzi (viz
+stránku~\pageref{pkghyperref}) vyžaduje v~některých místech odlišný zdrojový
+text než tisknutelná verze; typicky se tato situace může vyskytnout při
+odkazování na online zdroj (v~hypertextové verzi) nebo na knižní či
+časopisecký zdroj (v~tištěné verzi). To lze jednoduše vyřešit pomocí
+primitivního registru formátu \pkg{pdflatex} \verb!\pdfoutput!, jehož hodnota
+je \texttt{0} pro \designation{dvi} výstup a \texttt{1} pro \designation{pdf}
+výstup:
+
+{\small
+\begin{verbatim}
+\ifcase\pdfoutput % (=0)
+% sem přijde kód pro DVI nebo tisknutelné PDF, např.
+(viz~\cite{Wil-etal:LIVE:PlottingProgram:Gnuplot})
+\else % (>=1)
+% sem přijde alternativní kód pro hypertextové PDF, např.
+(viz \url{http://www.gnuplot.info/})
+\fi
+\end{verbatim}
+\par}
+
+%%
+%% End of file `cp_other.tex'.

@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is the `ipot-fre.ldf' file: French language definitions.%%
+%% ------------------------------------------------------------ %%
+%% Version 2022-04-30                                           %%
+%% Developed & maintained by <stanislav.hledik@physics.slu.cz>  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\appendixname{Annexe}
+\def\@annotationname{Abstrait}
+\def\@keywordsname{Mots cl\'es}
+\def\@acknowledgementname{Reconnaissance}
+\def\@declarationname{D\'eclaration}
+\def\@dedicationname{D\'evouement}
+\def\@thesiskind{th\`ese de baccalaur\'eat}
+\if@narrowmargin
+  \def\@institution{Universit\'e de Sil\'esie \`a Opava\enspace
+    $\boldsymbol\vert$\enspace Institut de physique d'Opava}
+\else
+  \def\@institution{Universit\'e de Sil\'esie \`a Opava\\
+    Institut de physique d'Opava}
+\fi
+\def\@programname{Programme}
+\def\@specializationname{Sp\'ecialisation}
+\def\@supervisorname{Directeur de th\'ese}
+\def\@advisorname{Conseiller}
+\def\@refereename{Opposant}
+\def\@seat{Opava}
+
+\endinput
+
+%%
+%% End of file `ipot-fre.ldf'.

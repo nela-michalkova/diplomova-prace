@@ -1,0 +1,28 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is the `ipotbabel.tex' file.                            %%
+%% Basenames of the *.ldf files are formed as follows:          %%
+%% ipot-<ISO_639-2_three/four-letter_language_abbreviation>     %%
+%% See https://www.loc.gov/standards/iso639-2/php/code_list.php %%
+%% ------------------------------------------------------------ %%
+%% Version 2022-04-29                                           %%
+%% Developed & maintained by <stanislav.hledik@physics.slu.cz>  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatletter
+\iflanguage{czech}{\input{ipot-cze.ldf}}{%
+  \iflanguage{english}{\input{ipot-eng.ldf}}{%={UK,uk,US,us}english=british=american
+    \iflanguage{slovak}{\input{ipot-slo.ldf}}{%
+      \iflanguage{french}{\input{ipot-fre.ldf}}{%
+        \iflanguage{german}{\input{ipot-ger.ldf}}{%=ngerman
+          \input{ipot-eng.ldf}%
+        }%
+      }%
+    }%
+  }%
+}
+\makeatother
+
+\endinput
+
+%%
+%% End of file `ipotbabel.tex'.

@@ -1,0 +1,45 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is the `bbl-slo.bld' file: Slovak bibliography language %%
+%% definition.                                                  %%
+%% Adapted from %<*bblbst> %</bblbst> section of merlin.mbs.    %%
+%% ------------------------------------------------------------ %%
+%% Version 2022-04-19                                           %%
+%% Developed & maintained by <stanislav.hledik@physics.slu.cz>  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\bbland{a}                  \def\bbletal{et~al.}
+\def\bbleditors{editori}        \def\bbleds{ed.}
+\def\bbleditor{editor}          \def\bbled{ed.}
+\def\bbledby{editov\'ano}
+\def\bbledition{vydanie}        \def\bbledn{vyd.}
+\def\bblvolume{svazok}          \def\bblvol{sv.}
+\def\bblof{s\'eria}
+\def\bblnumber{\v{c}\'{\i}slo}  \def\bblno{\v{c}.}
+\def\bblin{v}
+\def\bblpages{strany}           \def\bblpp{str.}
+\def\bblpage{strana}            \def\bblp{str.}
+\def\bbleidpp{strany}
+\def\bblchapter{kapitola}       \def\bblchap{kap.}
+\def\bbltechreport{Technick\'a zpr\'ava}
+\def\bbltechrep{Tech. zpr.}
+\def\bblmthesis{Magistersk\'a pr\'aca}
+\def\bblphdthesis{Dizerta\v{c}n\'a pr\'aca}
+\def\bblfirst{prvn\'e}          \def\bblfirsto{1.}
+\def\bblsecond{druh\'e}         \def\bblsecondo{2.}
+\def\bblthird{tretie}           \def\bblthirdo{3.}
+\def\bblfourth{\v{c}tvrt\'e}    \def\bblfourtho{4.}
+\def\bblfifth{piat\'e}          \def\bblfiftho{5.}
+\def\bblst{.}  \def\bblnd{.}    \def\bblrd{.}
+\def\bblth{.}
+\def\bblaccess{nav\v{s}t\'{\i}ven\'e}
+\def\bbljan{janu\'ar}           \def\bblfeb{febru\'ar}
+\def\bblmar{marec}              \def\bblapr{apr\'{\i}l}
+\def\bblmay{m\'aj}              \def\bbljun{j\'un}
+\def\bbljul{j\'ul}              \def\bblaug{august}
+\def\bblsep{september}          \def\bbloct{okt\'ober}
+\def\bblnov{november}           \def\bbldec{december}
+
+\endinput
+
+%%
+%% End of file `bbl-slo.bld'.

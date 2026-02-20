@@ -1,0 +1,81 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toto je inkludovaný LaTeXový soubor `ca_docop.tex'.          %%
+%% ------------------------------------------------------------ %%
+%% Verze 2022-05-31                                             %%
+%% Vyvíjí & udržuje <stanislav.hledik@physics.slu.cz>           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Volby dokumentní třídy}\label{options}%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Dokumentní třída\INDEX{dokumentní třída} \pgm{\ipotname .cls}\INDEX{dokumentní
+  třída!ipothes} akceptuje následující ortogonální\footnote{Aktivace určité
+  volby neovlivňuje funkčnost voleb ostatních (kromě \opt{draft} a
+  \opt{final}).} volby:
+
+\begin{description}
+\optitem{draft}\label{opdraft} se používá pro často opakované průběžné
+  kompilace během psaní práce. Přetečené řádky budou na pravé straně označeny
+  černým obdélníčkem (\TeX isty nazývaným \emph{slimák}) a argument
+  příkazu\note*{Marginální poznámka vysázená pomocí příkazu
+    \pgm{\textbackslash note}.}  \pgm{\textbackslash note} bude zobrazen jako
+  poznámka na okraji vysázená drobným bezpatkovým fontem.\footnote{Ve
+    skutečnosti je marginální poznámka na této straně vysázena pomocí
+    persistentní \uv{hvězdičkové formy} \pgm{\textbackslash note*}, která
+    nebude ignorována ani při použití volby \opt{final}, což je pochopitelně
+    případ i~tohoto dokumentu.}  Kromě toho je tato volba předána do všech
+  balíčků,\INDEX{balíček} které ji implementují, takže např.
+  balíček\INDEX{balíček} \pkg{graphicx}~\cite{Car:LIVE:CTAN:Graphics} zobrazí
+  místo vložené grafiky obdélník příslušné velikosti s~uvedením názvu
+  obrazového souboru včetně relativní cesty a podobně, čímž se kompilace a
+  ladění urychlí.\footnote{Pokud navíc nechcete být během přípravy práce
+    zdržováni sazbou titulních stránek, anotací, klíčových slov, poděkování,
+    prohlášení, věnování, jednoduše zakomentujte příkazy \pgm{\textbackslash
+      maketitle}, \pgm{\textbackslash tableofcontents}, \pgm{\textbackslash
+      listoffigures}, \pgm{\textbackslash listoftables} a případně i~prostředí
+    typu \pgm{annotation}, jež jsou součástí titulních stran. Příkazy
+    \pgm{\textbackslash author}, \pgm{\textbackslash title} apod. mohou zůstat
+    nezakomentovány, jejich obsah bude ignorován.}
+
+\optitem{final}\label{opfinal} se používá u~kompilace finální verze práce;
+  přetečené řádky nejsou označeny \emph{slimáky} (ostatně žádné by se neměly
+  vyskytnout), a~argument příkazu \pgm{\textbackslash note} je
+  \uv{anihilován}, takže marginálie vkládané pomocí \pgm{\textbackslash note}
+  není třeba pro finální verzi odstraňovat. Balíček
+  \pkg{graphicx}~\cite{Car:LIVE:CTAN:Graphics} vloží skutečné grafické
+  soubory.
+
+\optitem{htext}\label{opthtext} transformuje externí linky i~interní křížové
+  odkazy na hypertext při zachování sazby nezávisle na nastavení \opt{draft}
+  či \opt{final} nebo na kompilaci formátem \pkg{latex} (u~něj se předpokládá
+  následná konverze do \designation{pdf} ovladačem
+  \pgm{dvipdfmx}~\cite{Hir:LIVE:CTAN:dvipdfmx})\footnote{Chcete-li si výsledný
+    \designation{dvi} soubor pouze prohlížet, volbu \opt{htext} vypněte.} či
+  \pkg{pdflatex}.
+
+\optitem{narrowmargin}\label{opnarrowmargin} rozšíří sazební obrazec o~cca
+  $1.08\,\mathrm{in} \approx 27.4\,\mathrm{mm}$ a zvýší počet řádků na stránce
+  z~39 na 41. Bez volby \opt{narrowmargin} je poměr šířky k~výšce 0.618 (zlatý
+  řez), se zapnutou volbou \opt{narrowmargin} 0.707 (stříbrný řez).
+
+\optitem{indentfirst}\label{opindentfirst} způsobí horizontální odsazování
+  (indentaci) úvodního řádku prvního odstavce kapitoly, sekce, subsekce,
+  \ldots\@ Implicitně se úvodní řádky prvního odstavce neindentují.
+
+\optitem{fllastline}\label{optfllastline} potlačí centrování posledního
+  (východového) řádku některých implicitně do bloku sázených odstavců. Typicky
+  se to týká popisek obrázků a tabulek, anotace, klíčových slov, prohlášení,
+  poděkování (nikoli věnování, které je celé sázeno centrovaně). Jejich
+  východové řádky budou místo centrování zarovnány doleva \uv{flush left}.
+
+\optitem{headfootsans}\label{optheadfootsans} změní font živého záhlaví a
+  zápatí (na úvodních stránkách kapitol je v~něm umístěna stránková číslice
+  místo v~záhlaví) ze skloněného patkového na skloněný bezpatkový font.
+\end{description}
+
+\noindent
+Při kompilaci tohoto manuálu byly aktivní volby \opt{final} a \opt{htext}.
+
+\endinput
+
+%%
+%% End of file `ca_docop.tex'.

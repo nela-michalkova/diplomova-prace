@@ -1,0 +1,57 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Toto je inkludovaný LaTeXový soubor `ca_mirr.tex'.           %%
+%% ------------------------------------------------------------ %%
+%% Verze 2022-05-11                                             %%
+%% Vyvíjí & udržuje <stanislav.hledik@physics.slu.cz>           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Umístění sazebního obrazce}\label{mirror}%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Implicitně je sazební obrazec horizontálně centrován a jeho vertikální pozice
+je optimalizována pro tisk na papír
+formátu~A4~\cite{SSMGT:LIVE::FormatyPapiru}. Může se však stát, že uživatel
+bude z~nějakého důvodu chtít posunout sazební obrazec například směrem dovnitř
+(ke hřbetu), například proto, že pro svázání práce použije lepenou vazbu, nebo
+směrem ven (od hřbetu) v~případě obvyklé vazby nabízené většinou
+knihařství. Také může být žádoucí posunout sazební obrazec ve vertikálním
+směru, například kvůli ořezu listů.  K~tomu účelu slouží příkazy
+\pgm{\textbackslash spineoffset} a \pgm{\textbackslash verticalshift}.
+
+Příkaz \pgm{\textbackslash spineoffset} posune sazební obrazec o~délku
+specifikovanou argumentem směrem ke hřbetu (tj. sudé stránky, které jsou při
+rozevření nalevo, budou posunuty o~hodnotu argumentu doprava a liché, které
+jsou při rozevření napravo, budou posunuty o~hodnotu argumentu doleva). To
+platí pro kladný argument, např.~\pgm{5mm}. Zadáme\discretionary{-}{-}{-}li
+záporný argument, např.~\pgm{-24pt}, bude sazební obrazec posunut směrem ven,
+od hřbetu.
+
+Podobně funguje příkaz \pgm{\textbackslash verticalshift}. Kladná hodnota
+argumentu posouvá sazební obrazec nahoru, záporná dolů. V~obou příkazech lze
+použít libovolné jednotky akceptované \TeX em~\cite{Ryb:2005:LaTeX:3,%
+  Kop-Dal:2004:LaTeXPodrPruv:,%
+  Goo-Mit-Sam:1994:Companion:}. Samotné rozměry sazebního obrazce zůstanou
+nedotčeny. Příkazy pro adjustaci polohy sazebního obrazce \pgm{\textbackslash
+  spineoffset} a \pgm{\textbackslash verticalshift} lze výhodně umístit do
+konfiguračního souboru \pgm{\ipotname .cfg}, např.
+
+{\small
+\begin{verbatim}
+%% Page positioning
+\spineoffset{-5mm}
+\verticalshift{2mm}
+\end{verbatim}
+\par}
+
+\noindent
+Popsané chování je nezávislé na aktivaci volby \opt{narrowmargin} (viz
+Dodatek~\ref{options} na stránce~\pageref{opnarrowmargin}). Je pouze třeba
+uvážit, že při aktivaci této volby jsou okraje užší a rozsah použitelných
+posuvů odpovídajícím způsobem menší.
+
+Při umisťování sazebního obrazce je vhodné řídit se pravidly estetické
+sazby, např. podle~\cite{Pop-Fle-Pop:1984:SazbaI:}.
+
+\endinput
+
+%%
+%% End of file `ca_mirr.tex'.

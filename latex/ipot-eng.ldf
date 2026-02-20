@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is the `ipot-eng.ldf' file: English lang. definitions.  %%
+%% ------------------------------------------------------------ %%
+%% Version 2022-04-30                                           %%
+%% Developed & maintained by <stanislav.hledik@physics.slu.cz>  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\appendixname{Appendix}
+\def\@annotationname{Abstract}
+\def\@keywordsname{Key words}
+\def\@acknowledgementname{Acknowledgements}
+\def\@declarationname{Declaration}
+\def\@dedicationname{Dedication}
+\def\@thesiskind{bachelor project}
+\if@narrowmargin
+  \def\@institution{Silesian University in  Opava\enspace
+    $\boldsymbol\vert$\enspace Institute of Physics in Opava}
+\else
+  \def\@institution{Silesian University in  Opava\\
+    Institute of Physics in Opava}
+\fi
+\def\@programname{Program}
+\def\@specializationname{Specialization}
+\def\@supervisorname{Supervisor}
+\def\@advisorname{Advisor}
+\def\@refereename{Opponent}
+\def\@seat{Opava}
+
+\endinput
+
+%%
+%% End of file `ipot-eng.ldf'.

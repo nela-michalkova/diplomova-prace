@@ -1,0 +1,46 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is the `bbl-fre.bld' file: French bibliography language %%
+%% definition.                                                  %%
+%% Adapted from %<*bblbst> %</bblbst> section of merlin.mbs     %%
+%% and from french.mbs.                                         %%
+%% ------------------------------------------------------------ %%
+%% Version 2022-04-19                                           %%
+%% Developed & maintained by <stanislav.hledik@physics.slu.cz>  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\bbland{et}                 \def\bbletal{et~al.}
+\def\bbleditors{r\'edacteurs}   \def\bbleds{r\'eds.}
+\def\bbleditor{r\'edacteur}     \def\bbled{r\'ed.}
+\def\bbledby{edit\'e par}
+\def\bbledition{\'edition}      \def\bbledn{\'ed.}
+\def\bblvolume{tome}            \def\bblvol{t.}
+\def\bblof{de}
+\def\bblnumber{num\'ero}        \def\bblno{n\textsuperscript{o}\kern.2em\relax}
+\def\bblin{dans}
+\def\bblpages{pages}            \def\bblpp{p.}
+\def\bblpage{page}              \def\bblp{p.}
+\def\bbleidpp{pages}
+\def\bblchapter{chapitre}       \def\bblchap{chap.}
+\def\bbltechreport{Rapport technique}
+\def\bbltechrep{Rap. tech.}
+\def\bblmthesis{Th\`ese de ma\^itre}
+\def\bblphdthesis{Th\`ese de doctorat}
+\def\bblfirst{Premi\`ere}       \def\bblfirsto{1$^{\mbox{\scriptsize re}}$}
+\def\bblsecond{Deuxi\`eme}      \def\bblsecondo{2$^{\mbox{\scriptsize e}}$}
+\def\bblthird{Troisi\`eme}      \def\bblthirdo{3$^{\mbox{\scriptsize e}}$}
+\def\bblfourth{Quatri\`eme}     \def\bblfourtho{4$^{\mbox{\scriptsize e}}$}
+\def\bblfifth{Cinqui\`eme}      \def\bblfiftho{5$^{\mbox{\scriptsize e}}$}
+\def\bblst{$^{\mbox{\scriptsize e}}$}
+\def\bblnd{$^{\mbox{\scriptsize e}}$}
+\def\bblrd{$^{\mbox{\scriptsize e}}$}
+\def\bblth{$^{\mbox{\scriptsize e}}$}
+\def\bblaccess{acc\'ed\'e}
+\def\bbljan{janvier}  \def\bblfeb{f\'evrier} \def\bblmar{mars}
+\def\bblapr{avril}    \def\bblmay{mai}       \def\bbljun{juin}
+\def\bbljul{juillet}  \def\bblaug{ao\^ut}    \def\bblsep{septembre}
+\def\bbloct{octobre}  \def\bblnov{novembre}  \def\bbldec{d\'ecembre}
+
+\endinput
+
+%%
+%% End of file `bbl-fre.bld'.

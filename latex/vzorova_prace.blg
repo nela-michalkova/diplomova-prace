@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: vzorova_prace.aux
+The style file: ipothes.bst
+A level-1 auxiliary file: include/c_intro.aux
+A level-1 auxiliary file: include/cp_inst.aux
+A level-1 auxiliary file: include/cp_pream.aux
+A level-1 auxiliary file: include/cp_other.aux
+A level-1 auxiliary file: include/x_levit.aux
+A level-1 auxiliary file: include/x_diag.aux
+A level-1 auxiliary file: include/x_camera.aux
+A level-1 auxiliary file: include/x_poluni.aux
+A level-1 auxiliary file: include/ca_docop.aux
+A level-1 auxiliary file: include/ca_lopkg.aux
+A level-1 auxiliary file: include/ca_mirr.aux
+A level-1 auxiliary file: include/ca_conf.aux
+A level-1 auxiliary file: include/ca_hyper.aux
+A level-1 auxiliary file: include/c_conc.aux
+Database file #1: references.bib
+You've used 110 entries,
+            2788 wiz_defined-function locations,
+            1432 strings with 29820 characters,
+and the built_in function-call counts, 41772 in all, are:
+= -- 3158
+> -- 740
+< -- 26
++ -- 320
+- -- 210
+* -- 2908
+:= -- 3835
+add.period$ -- 254
+call.type$ -- 110
+change.case$ -- 72
+chr.to.int$ -- 0
+cite$ -- 110
+duplicate$ -- 4990
+empty$ -- 4667
+format.name$ -- 260
+if$ -- 9662
+int.to.chr$ -- 0
+int.to.str$ -- 110
+missing$ -- 1120
+newline$ -- 344
+num.names$ -- 109
+pop$ -- 2039
+preamble$ -- 2
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1160
+stack$ -- 0
+substring$ -- 970
+swap$ -- 2974
+text.length$ -- 26
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 210
+warning$ -- 0
+while$ -- 183
+width$ -- 113
+write$ -- 1090
