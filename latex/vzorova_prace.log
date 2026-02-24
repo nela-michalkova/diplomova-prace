@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.20)  20 FEB 2026 17:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.20)  24 FEB 2026 16:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -324,7 +324,7 @@ pdfcompresslevel=9, pdfminorversion=5, pdfobjcompresslevel=2
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count304
 \l__pdf_internal_box=\box55
-) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.aux (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_intro.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/cp_inst.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/cp_pream.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/cp_other.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/x_levit.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/x_diag.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/x_camera.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/x_poluni.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.aux))
+) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.aux (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.aux))
 \openout1 = `vzorova_prace.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
@@ -371,45 +371,10 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
 Package hyperref Info: Link coloring ON on input line 97.
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 239.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 210.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 239.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 239.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 239.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 239.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 239.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 239.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 239.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 239.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 239.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 239.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 239.
-
 
 [1
 
@@ -417,26 +382,48 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 <images/typesetting.png, id=10, 1027.84pt x 770.88pt>
 File: images/typesetting.png Graphic file (type png)
 <use images/typesetting.png>
-Package pdftex.def Info: images/typesetting.png  used on input line 239.
+Package pdftex.def Info: images/typesetting.png  used on input line 210.
 (pdftex.def)             Requested size: 289.07999pt x 216.80946pt.
 
 
 [2
 
  </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/typesetting.png (PNG copy)>]
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 210.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 210.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 210.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 210.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 239.
+(Font)              <12> on input line 210.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 239.
+(Font)              <8> on input line 210.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 210.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 210.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 210.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 <images/emblemiop.pdf, id=15, 951.555pt x 951.555pt>
 File: images/emblemiop.pdf Graphic file (type pdf)
 <use images/emblemiop.pdf>
-Package pdftex.def Info: images/emblemiop.pdf  used on input line 239.
+Package pdftex.def Info: images/emblemiop.pdf  used on input line 210.
 (pdftex.def)             Requested size: 127.73387pt x 127.7284pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <24.88> on input line 239.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 239.
 
 
 [3{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/emblemiop.pdf>]
@@ -450,20 +437,20 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 [6
 
 ]
-Package pdftex.def Info: Option `bb' equivalent to `viewport' with the pdftex driver on input line 300.
+Package pdftex.def Info: Option `bb' equivalent to `viewport' with the pdftex driver on input line 268.
 <images/assign.pdf, id=45, page=1, 597.50829pt x 845.0471pt>
 File: images/assign.pdf Graphic file (type pdf)
 <use images/assign.pdf, page 1>
-Package pdftex.def Info: images/assign.pdf , page1 used on input line 300.
+Package pdftex.def Info: images/assign.pdf , page1 used on input line 268.
 (pdftex.def)             Requested size: 383.20172pt x 536.1912pt.
 
 
 [7 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/assign.pdf>]
-Package pdftex.def Info: Option `bb' equivalent to `viewport' with the pdftex driver on input line 315.
+Package pdftex.def Info: Option `bb' equivalent to `viewport' with the pdftex driver on input line 283.
 <images/assign.pdf, id=55, page=2, 597.50829pt x 845.0471pt>
 File: images/assign.pdf Graphic file (type pdf)
 <use images/assign.pdf, page 2>
-Package pdftex.def Info: images/assign.pdf , page2 used on input line 315.
+Package pdftex.def Info: images/assign.pdf , page2 used on input line 283.
 (pdftex.def)             Requested size: 383.20172pt x 536.1912pt.
 
 
@@ -490,625 +477,92 @@ Package pdftex.def Info: images/assign.pdf , page2 used on input line 315.
 ] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 6.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 33.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-
-[15{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}])
 \tf@toc=\write4
 \openout4 = `vzorova_prace.toc'.
 
 
 
-[16] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.lof)
+[15]
+
+[16
+
+] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.lof)
 \tf@lof=\write5
 \openout5 = `vzorova_prace.lof'.
 
 
 
-[17
+[17]
 
-]
+[18
 
-[18] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.lot)
+] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.lot)
 \tf@lot=\write6
 \openout6 = `vzorova_prace.lot'.
 
 
 
-[19
-
-]
+[19]
 
 [20
 
-]
-\openout2 = `include/c_intro.aux'.
-
- (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_intro.tex
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 62.
-
+] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/ipotbabel.tex (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/ipot-cze.ldf))
 
 [1
-
-
-]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 81.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-
-[2])
-
-[3]
-
-[4
-
-
-
-]
-
-[5]
-\openout2 = `include/cp_inst.aux'.
-
- (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/cp_inst.tex
-
-[6
-
-
-]
-ipothes: Kapitola 1
-
-
-[7]
-<images/MiKTeXdirs.png, id=408, 807.015pt x 636.3775pt>
-File: images/MiKTeXdirs.png Graphic file (type png)
-<use images/MiKTeXdirs.png>
-Package pdftex.def Info: images/MiKTeXdirs.png  used on input line 86.
-(pdftex.def)             Requested size: 329.55371pt x 259.86775pt.
-<images/TeXLiveInstaller1.png, id=410, 641.39626pt x 507.39563pt>
-File: images/TeXLiveInstaller1.png Graphic file (type png)
-<use images/TeXLiveInstaller1.png>
-Package pdftex.def Info: images/TeXLiveInstaller1.png  used on input line 95.
-(pdftex.def)             Requested size: 329.55371pt x 260.7039pt.
-<images/MiKTeXrefr.png, id=418, 807.015pt x 638.385pt>
-File: images/MiKTeXrefr.png Graphic file (type png)
-<use images/MiKTeXrefr.png>
-Package pdftex.def Info: images/MiKTeXrefr.png  used on input line 116.
-(pdftex.def)             Requested size: 314.22821pt x 248.56976pt.
-<images/TeXLiveShell.png, id=419, 549.55313pt x 481.8pt>
-File: images/TeXLiveShell.png Graphic file (type png)
-<use images/TeXLiveShell.png>
-Package pdftex.def Info: images/TeXLiveShell.png  used on input line 125.
-(pdftex.def)             Requested size: 314.22821pt x 275.49634pt.
-
-
-[8]
-
-[9 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/MiKTeXdirs.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/TeXLiveInstaller1.png>]
-
-[10 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/MiKTeXrefr.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/TeXLiveShell.png>]
-<images/TeXworks_pdfLaTeX.png, id=454, 620.3175pt x 519.9425pt>
-File: images/TeXworks_pdfLaTeX.png Graphic file (type png)
-<use images/TeXworks_pdfLaTeX.png>
-Package pdftex.def Info: images/TeXworks_pdfLaTeX.png  used on input line 182.
-(pdftex.def)             Requested size: 182.09683pt x 152.628pt.
-<images/TeXworks_TypesetMenu.png, id=455, 620.3175pt x 519.9425pt>
-File: images/TeXworks_TypesetMenu.png Graphic file (type png)
-<use images/TeXworks_TypesetMenu.png>
-Package pdftex.def Info: images/TeXworks_TypesetMenu.png  used on input line 187.
-(pdftex.def)             Requested size: 182.09683pt x 152.628pt.
-
-
-[11])
-
-[12 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/TeXworks_pdfLaTeX.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/TeXworks_TypesetMenu.png>]
-\openout2 = `include/cp_pream.aux'.
-
- (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/cp_pream.tex
-ipothes: Kapitola 2
-
-
-[13
-
-
-
-
-]
-
-[14]
-
-[15])
-
-[16]
-\openout2 = `include/cp_other.aux'.
-
- (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/cp_other.tex
-ipothes: Kapitola 3
-)
-
-[17
-
-
-
-
-]
-
-[18
-
-
-
-]
-
-[19]
-\openout2 = `include/x_levit.aux'.
-
- (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/x_levit.tex
-
-[20
-
-
-]
-ipothes: Kapitola 4
-
-
-[21]
-<images/Levi1.pdf, id=588, 1036.87375pt x 734.745pt>
-File: images/Levi1.pdf Graphic file (type pdf)
-<use images/Levi1.pdf>
-Package pdftex.def Info: images/Levi1.pdf  used on input line 90.
-(pdftex.def)             Requested size: 240.26704pt x 170.25467pt.
-<images/Levi2.png, id=589, 747.79375pt x 1003.75pt>
-File: images/Levi2.png Graphic file (type png)
-<use images/Levi2.png>
-Package pdftex.def Info: images/Levi2.png  used on input line 95.
-(pdftex.def)             Requested size: 127.60332pt x 171.2785pt.
-<images/Levi3.jpg, id=591, 144.54pt x 117.5592pt>
-File: images/Levi3.jpg Graphic file (type jpg)
-<use images/Levi3.jpg>
-Package pdftex.def Info: images/Levi3.jpg  used on input line 113.
-(pdftex.def)             Requested size: 233.75328pt x 190.12912pt.
-<images/Earnshaw.pdf, id=592, 201.75375pt x 289.08pt>
-File: images/Earnshaw.pdf Graphic file (type pdf)
-<use images/Earnshaw.pdf>
-Package pdftex.def Info: images/Earnshaw.pdf  used on input line 120.
-(pdftex.def)             Requested size: 134.12294pt x 192.17844pt.
-
-
-[22]
-
-[23 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/Levi1.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/Levi2.png (PNG copy)> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/Levi3.jpg> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/Earnshaw.pdf>]
-
-[24]
-
-[25]
-
-[26]
-
-[27{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
-
-[28]
-
-[29]
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 452.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmss.fd
-File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-<images/UkazSchemaLevitronu.pdf, id=725, 289.08pt x 207.77625pt>
-File: images/UkazSchemaLevitronu.pdf Graphic file (type pdf)
-<use images/UkazSchemaLevitronu.pdf>
-Package pdftex.def Info: images/UkazSchemaLevitronu.pdf  used on input line 464.
-(pdftex.def)             Requested size: 383.20172pt x 275.4417pt.
-
-
-[30]
-
-[31 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/UkazSchemaLevitronu.pdf>]
-
-[32]
-<images/EquilibriumPoints.pdf, id=765, 541.02126pt x 228.855pt>
-File: images/EquilibriumPoints.pdf Graphic file (type pdf)
-<use images/EquilibriumPoints.pdf>
-Package pdftex.def Info: images/EquilibriumPoints.pdf  used on input line 562.
-(pdftex.def)             Requested size: 383.20172pt x 162.10056pt.
-
-
-[33 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/EquilibriumPoints.pdf>]
-
-[34]
-
-[35]
-<images/InteractModelUnstab3.pdf, id=808, 286.06876pt x 358.33875pt>
-File: images/InteractModelUnstab3.pdf Graphic file (type pdf)
-<use images/InteractModelUnstab3.pdf>
-Package pdftex.def Info: images/InteractModelUnstab3.pdf  used on input line 673.
-(pdftex.def)             Requested size: 241.41895pt x 302.4132pt.
-<images/InteractModelUnstab2.pdf, id=809, 142.5325pt x 341.275pt>
-File: images/InteractModelUnstab2.pdf Graphic file (type pdf)
-<use images/InteractModelUnstab2.pdf>
-Package pdftex.def Info: images/InteractModelUnstab2.pdf  used on input line 678.
-(pdftex.def)             Requested size: 126.45726pt x 302.78603pt.
-
-
-[36 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/InteractModelUnstab3.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/InteractModelUnstab2.pdf>]
-
-[37]
-<images/InteractModelStab3.pdf, id=840, 286.06876pt x 359.3425pt>
-File: images/InteractModelStab3.pdf Graphic file (type pdf)
-<use images/InteractModelStab3.pdf>
-Package pdftex.def Info: images/InteractModelStab3.pdf  used on input line 756.
-(pdftex.def)             Requested size: 241.41895pt x 303.26027pt.
-<images/InteractModelStab2.pdf, id=841, 142.5325pt x 342.27875pt>
-File: images/InteractModelStab2.pdf Graphic file (type pdf)
-<use images/InteractModelStab2.pdf>
-Package pdftex.def Info: images/InteractModelStab2.pdf  used on input line 761.
-(pdftex.def)             Requested size: 126.45726pt x 303.67657pt.
-
-
-[38 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/InteractModelStab3.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/InteractModelStab2.pdf>])
-
-[39]
-\openout2 = `include/x_diag.aux'.
-
- (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/x_diag.tex
-
-[40
-
-
-
-
-]
-ipothes: Kapitola 5
-
-
-[41]
-<images/echoloc.pdf, id=882, 202.7575pt x 111.41624pt>
-File: images/echoloc.pdf Graphic file (type pdf)
-<use images/echoloc.pdf>
-Package pdftex.def Info: images/echoloc.pdf  used on input line 57.
-(pdftex.def)             Requested size: 229.92337pt x 126.3477pt.
-
-
-[42 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/echoloc.pdf>]
-<images/longwav.pdf, id=900, 1442.38875pt x 530.98375pt>
-File: images/longwav.pdf Graphic file (type pdf)
-<use images/longwav.pdf>
-Package pdftex.def Info: images/longwav.pdf  used on input line 154.
-(pdftex.def)             Requested size: 275.9057pt x 101.56853pt.
-
-
-[43]
-
-[44 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/longwav.pdf>]
-
-[45]
-
-[46]
-<images/usabs.png, id=949, 1166.3575pt x 524.96124pt>
-File: images/usabs.png Graphic file (type png)
-<use images/usabs.png>
-Package pdftex.def Info: images/usabs.png  used on input line 307.
-(pdftex.def)             Requested size: 306.56255pt x 137.97661pt.
-
-
-[47 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/usabs.png (PNG copy)>]
-<images/usreflex.pdf, id=967, 1455.4375pt x 696.6025pt>
-File: images/usreflex.pdf Graphic file (type pdf)
-<use images/usreflex.pdf>
-Package pdftex.def Info: images/usreflex.pdf  used on input line 356.
-(pdftex.def)             Requested size: 383.20172pt x 183.4083pt.
-
-
-[48 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/usreflex.pdf>]
-<images/ustransda.pdf, id=985, 191.71625pt x 224.84pt>
-File: images/ustransda.pdf Graphic file (type pdf)
-<use images/ustransda.pdf>
-Package pdftex.def Info: images/ustransda.pdf  used on input line 413.
-(pdftex.def)             Requested size: 119.55919pt x 140.21931pt.
-<images/ustransdb.pdf, id=986, 200.75pt x 105.39375pt>
-File: images/ustransdb.pdf Graphic file (type pdf)
-<use images/ustransdb.pdf>
-Package pdftex.def Info: images/ustransdb.pdf  used on input line 414.
-(pdftex.def)             Requested size: 149.44843pt x 78.46616pt.
-<images/uspulse.pdf, id=988, 377.41pt x 140.525pt>
-File: images/uspulse.pdf Graphic file (type pdf)
-<use images/uspulse.pdf>
-Package pdftex.def Info: images/uspulse.pdf  used on input line 437.
-(pdftex.def)             Requested size: 383.20172pt x 142.68173pt.
-
-
-[49]
-
-[50 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/ustransda.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/ustransdb.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/uspulse.pdf>]
-<images/uslobes.pdf, id=1006, 201.75375pt x 102.3825pt>
-File: images/uslobes.pdf Graphic file (type pdf)
-<use images/uslobes.pdf>
-Package pdftex.def Info: images/uslobes.pdf  used on input line 497.
-(pdftex.def)             Requested size: 329.55371pt x 167.23819pt.
-<images/uszones.pdf, id=1008, 204.765pt x 100.375pt>
-File: images/uszones.pdf Graphic file (type pdf)
-<use images/uszones.pdf>
-Package pdftex.def Info: images/uszones.pdf  used on input line 509.
-(pdftex.def)             Requested size: 329.55371pt x 161.55591pt.
-<images/usfocus.pdf, id=1010, 1693.32625pt x 268.00125pt>
-File: images/usfocus.pdf Graphic file (type pdf)
-<use images/usfocus.pdf>
-Package pdftex.def Info: images/usfocus.pdf  used on input line 518.
-(pdftex.def)             Requested size: 383.20172pt x 60.64526pt.
-
-
-[51]
-
-[52 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/uslobes.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/uszones.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/usfocus.pdf>]
-
-[53]
-<images/ive1.jpg, id=1048, 305.3662pt x 356.26056pt>
-File: images/ive1.jpg Graphic file (type jpg)
-<use images/ive1.jpg>
-Package pdftex.def Info: images/ive1.jpg  used on input line 608.
-(pdftex.def)             Requested size: 72.80925pt x 84.94435pt.
-<images/ive2.jpg, id=1049, 305.3662pt x 356.26056pt>
-File: images/ive2.jpg Graphic file (type jpg)
-<use images/ive2.jpg>
-Package pdftex.def Info: images/ive2.jpg  used on input line 612.
-(pdftex.def)             Requested size: 72.80925pt x 84.94435pt.
-<images/joe3.png, id=1050, 301.125pt x 351.3125pt>
-File: images/joe3.png Graphic file (type png)
-<use images/joe3.png>
-Package pdftex.def Info: images/joe3.png  used on input line 616.
-(pdftex.def)             Requested size: 72.80925pt x 84.94391pt.
-<images/joe4.jpg, id=1051, 301.125pt x 351.3125pt>
-File: images/joe4.jpg Graphic file (type jpg)
-<use images/joe4.jpg>
-Package pdftex.def Info: images/joe4.jpg  used on input line 620.
-(pdftex.def)             Requested size: 72.80925pt x 84.94391pt.
-<images/joe5.jpg, id=1052, 301.125pt x 351.3125pt>
-File: images/joe5.jpg Graphic file (type jpg)
-<use images/joe5.jpg>
-Package pdftex.def Info: images/joe5.jpg  used on input line 624.
-(pdftex.def)             Requested size: 72.80925pt x 84.94391pt.
-<images/intro_3i.pdf, id=1054, 302.12875pt x 352.31625pt>
-File: images/intro_3i.pdf Graphic file (type pdf)
-<use images/intro_3i.pdf>
-Package pdftex.def Info: images/intro_3i.pdf  used on input line 643.
-(pdftex.def)             Requested size: 61.31367pt x 71.49417pt.
-<images/intro_3j.pdf, id=1055, 302.12875pt x 352.31625pt>
-File: images/intro_3j.pdf Graphic file (type pdf)
-<use images/intro_3j.pdf>
-Package pdftex.def Info: images/intro_3j.pdf  used on input line 647.
-(pdftex.def)             Requested size: 61.31367pt x 71.49417pt.
-<images/intro_3l.pdf, id=1056, 302.12875pt x 352.31625pt>
-File: images/intro_3l.pdf Graphic file (type pdf)
-<use images/intro_3l.pdf>
-Package pdftex.def Info: images/intro_3l.pdf  used on input line 651.
-(pdftex.def)             Requested size: 61.31367pt x 71.49417pt.
-<images/intro_3m.pdf, id=1057, 302.12875pt x 352.31625pt>
-File: images/intro_3m.pdf Graphic file (type pdf)
-<use images/intro_3m.pdf>
-Package pdftex.def Info: images/intro_3m.pdf  used on input line 655.
-(pdftex.def)             Requested size: 61.31367pt x 71.49417pt.
-<images/intro_3n.pdf, id=1058, 302.12875pt x 352.31625pt>
-File: images/intro_3n.pdf Graphic file (type pdf)
-<use images/intro_3n.pdf>
-Package pdftex.def Info: images/intro_3n.pdf  used on input line 659.
-(pdftex.def)             Requested size: 61.31367pt x 71.49417pt.
-<images/intro_3o.pdf, id=1059, 302.12875pt x 352.31625pt>
-File: images/intro_3o.pdf Graphic file (type pdf)
-<use images/intro_3o.pdf>
-Package pdftex.def Info: images/intro_3o.pdf  used on input line 663.
-(pdftex.def)             Requested size: 61.31367pt x 71.49417pt.
-
-
-[54 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/ive1.jpg> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/ive2.jpg> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/joe3.png (PNG copy)> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/joe4.jpg> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/joe5.jpg>]
-<images/nucspin.pdf, id=1071, 688.5725pt x 210.7875pt>
-File: images/nucspin.pdf Graphic file (type pdf)
-<use images/nucspin.pdf>
-Package pdftex.def Info: images/nucspin.pdf  used on input line 740.
-(pdftex.def)             Requested size: 344.8792pt x 105.57361pt.
-<images/t1.pdf, id=1074, 282.05376pt x 191.71625pt>
-File: images/t1.pdf Graphic file (type pdf)
-<use images/t1.pdf>
-Package pdftex.def Info: images/t1.pdf  used on input line 760.
-(pdftex.def)             Requested size: 122.62735pt x 83.352pt.
-<images/mzt.pdf, id=1075, 302.12875pt x 201.75375pt>
-File: images/mzt.pdf Graphic file (type pdf)
-<use images/mzt.pdf>
-Package pdftex.def Info: images/mzt.pdf  used on input line 764.
-(pdftex.def)             Requested size: 122.62735pt x 81.88528pt.
-<images/mxyt.pdf, id=1076, 302.12875pt x 201.75375pt>
-File: images/mxyt.pdf Graphic file (type pdf)
-<use images/mxyt.pdf>
-Package pdftex.def Info: images/mxyt.pdf  used on input line 768.
-(pdftex.def)             Requested size: 122.62735pt x 81.88528pt.
-
-
-[55 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/intro_3i.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/intro_3j.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/intro_3l.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/intro_3m.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/intro_3n.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/intro_3o.pdf>]
-
-[56 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/nucspin.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/t1.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/mzt.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/mxyt.pdf>]
-
-[57]
-
-[58]
-<images/mrifid.pdf, id=1142, 172.645pt x 185.69376pt>
-File: images/mrifid.pdf Graphic file (type pdf)
-<use images/mrifid.pdf>
-Package pdftex.def Info: images/mrifid.pdf  used on input line 907.
-(pdftex.def)             Requested size: 160.94402pt x 173.10992pt.
-<images/ses.pdf, id=1145, 268.00125pt x 197.73875pt>
-File: images/ses.pdf Graphic file (type pdf)
-<use images/ses.pdf>
-Package pdftex.def Info: images/ses.pdf  used on input line 946.
-(pdftex.def)             Requested size: 183.93518pt x 135.71272pt.
-<images/irs.pdf, id=1146, 263.98625pt x 197.73875pt>
-File: images/irs.pdf Graphic file (type pdf)
-<use images/irs.pdf>
-Package pdftex.def Info: images/irs.pdf  used on input line 950.
-(pdftex.def)             Requested size: 183.93518pt x 137.77652pt.
-
-
-[59]
-
-[60 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/mrifid.pdf>]
-
-[61 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/ses.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/irs.pdf>]
-<images/headhomo.pdf, id=1179, 392.46625pt x 272.01625pt>
-File: images/headhomo.pdf Graphic file (type pdf)
-<use images/headhomo.pdf>
-Package pdftex.def Info: images/headhomo.pdf  used on input line 1030.
-(pdftex.def)             Requested size: 183.93518pt x 127.48654pt.
-<images/headgrad.pdf, id=1180, 392.46625pt x 272.01625pt>
-File: images/headgrad.pdf Graphic file (type pdf)
-<use images/headgrad.pdf>
-Package pdftex.def Info: images/headgrad.pdf  used on input line 1034.
-(pdftex.def)             Requested size: 183.93518pt x 127.48654pt.
-
-
-[62 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/headhomo.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/headgrad.pdf>]
-<images/bkproja.pdf, id=1199, 296.10625pt x 296.10625pt>
-File: images/bkproja.pdf Graphic file (type pdf)
-<use images/bkproja.pdf>
-Package pdftex.def Info: images/bkproja.pdf  used on input line 1083.
-(pdftex.def)             Requested size: 183.93518pt x 183.9409pt.
-<images/bkprojb.pdf, id=1200, 296.10625pt x 296.10625pt>
-File: images/bkprojb.pdf Graphic file (type pdf)
-<use images/bkprojb.pdf>
-Package pdftex.def Info: images/bkprojb.pdf  used on input line 1087.
-(pdftex.def)             Requested size: 183.93518pt x 183.9409pt.
-
-
-[63]
-<images/axhead1.pdf, id=1215, 514.92375pt x 514.92375pt>
-File: images/axhead1.pdf Graphic file (type pdf)
-<use images/axhead1.pdf>
-Package pdftex.def Info: images/axhead1.pdf  used on input line 1129.
-(pdftex.def)             Requested size: 183.93518pt x 183.93456pt.
-<images/axhead2.pdf, id=1216, 514.92375pt x 514.92375pt>
-File: images/axhead2.pdf Graphic file (type pdf)
-<use images/axhead2.pdf>
-Package pdftex.def Info: images/axhead2.pdf  used on input line 1133.
-(pdftex.def)             Requested size: 183.93518pt x 183.93456pt.
-
-
-[64 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/bkproja.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/bkprojb.pdf>]
-
-[65 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/axhead1.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/axhead2.pdf>])
-
-[66]
-\openout2 = `include/x_camera.aux'.
-
- (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/x_camera.tex
-ipothes: Kapitola 6
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 48.
-(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmss.fd
-File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-
-[67
-
-
-
-
-]
-
-[68]
-
-[69]
-
-[70]
-
-[71]
-
-[72]
-
-[73]
-
-[74]
-
-[75])
-
-[76]
-\openout2 = `include/x_poluni.aux'.
-
- (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/x_poluni.tex
-ipothes: Chapter 7
-
-
-[77
-
-
-
-
-]
-
-[78]
-
-[79]
-
-[80]
-
-[81]
-<images/UniSigGBEn.pdf, id=1489, 702.625pt x 443.6575pt>
-File: images/UniSigGBEn.pdf Graphic file (type pdf)
-<use images/UniSigGBEn.pdf>
-Package pdftex.def Info: images/UniSigGBEn.pdf  used on input line 300.
-(pdftex.def)             Requested size: 383.20172pt x 241.96793pt.
-<images/UniSigGBEnZ.pdf, id=1490, 702.625pt x 437.635pt>
-File: images/UniSigGBEnZ.pdf Graphic file (type pdf)
-<use images/UniSigGBEnZ.pdf>
-Package pdftex.def Info: images/UniSigGBEnZ.pdf  used on input line 302.
-(pdftex.def)             Requested size: 383.20172pt x 238.6833pt.
-
-
-[82]
-
-[83 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/UniSigGBEn.pdf> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/UniSigGBEnZ.pdf>])
-
-[84] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/ipotbabel.tex (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/ipot-cze.ldf))
-
-[85
-
-
 
 ]
 \openout2 = `include/ca_docop.aux'.
 
  (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.tex
 
-[86
+[2
 
 
 ]
 ipothes: Dodatek A
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 10.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 13.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 13.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 13.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 16.
 
 
-[87])
+[3])
 
-[88]
+[4]
 \openout2 = `include/ca_lopkg.aux'.
 
  (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.tex
 ipothes: Dodatek B
 
 
-[89
+[5
 
 
 
 
-])
+]
 
-[90]
+LaTeX Warning: Reference `preamble' on page 6 undefined on input line 92.
+
+)
+
+[6]
 \openout2 = `include/ca_mirr.aux'.
 
  (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.tex
 ipothes: Dodatek C
 )
 
-[91
+[7
 
 
 
@@ -1118,7 +572,7 @@ ipothes: Dodatek C
 
  (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.tex
 
-[92
+[8
 
 
 
@@ -1127,82 +581,68 @@ ipothes: Dodatek C
 ipothes: Dodatek D
 
 
-[93]
+[9]
 
-LaTeX Warning: Reference `titpages' on page 94 undefined on input line 66.
+LaTeX Warning: Reference `titpages' on page 10 undefined on input line 66.
 
 )
 
-[94]
+[10]
 \openout2 = `include/ca_hyper.aux'.
 
  (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.tex
 ipothes: Dodatek E
 
 
-[95
+[11
 
 
 
 
 ]
 
-LaTeX Warning: Reference `refs' on page 96 undefined on input line 84.
+LaTeX Warning: Reference `refs' on page 12 undefined on input line 84.
 
 
 
-[96]
-<images/AcroRead_DocProps.png, id=1667, 1067.99pt x 843.15pt>
+[12]
+<images/AcroRead_DocProps.png, id=294, 1067.99pt x 843.15pt>
 File: images/AcroRead_DocProps.png Graphic file (type png)
 <use images/AcroRead_DocProps.png>
 Package pdftex.def Info: images/AcroRead_DocProps.png  used on input line 89.
 (pdftex.def)             Requested size: 379.3718pt x 299.50688pt.
-<images/AcroRead_PgDisp_CZE.png, id=1668, 963.6pt x 361.35pt>
+<images/AcroRead_PgDisp_CZE.png, id=296, 963.6pt x 361.35pt>
 File: images/AcroRead_PgDisp_CZE.png Graphic file (type png)
 <use images/AcroRead_PgDisp_CZE.png>
 Package pdftex.def Info: images/AcroRead_PgDisp_CZE.png  used on input line 98.
 (pdftex.def)             Requested size: 379.3718pt x 142.26025pt.
 )
 
-[97 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/AcroRead_DocProps.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/AcroRead_PgDisp_CZE.png>]
+[13 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/AcroRead_DocProps.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/AcroRead_PgDisp_CZE.png>]
 \openout2 = `include/c_conc.aux'.
 
  (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.tex
 
-[98
+[14
 
 
 
 
 ]
 
-[99])
+[15])
 
-[100] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.bbl (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/babelbst.tex (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/bbl-cze.bld))
+[16] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.bbl (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/babelbst.tex (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/bbl-cze.bld))
 
-[101
+[17
 
 
 
 ]
 
-[102]
+[18])
 
-[103]
-
-[104]
-
-[105]
-
-[106]
-
-[107]
-
-[108]
-
-[109])
-
-[110] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.aux (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_intro.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/cp_inst.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/cp_pream.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/cp_other.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/x_levit.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/x_diag.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/x_camera.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/x_poluni.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.aux))
+[19] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.aux (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.aux) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1213,18 +653,18 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14950 strings out of 473190
- 255199 string characters out of 5715800
- 630163 words of memory out of 5000000
- 37252 multiletter control sequences out of 15000+600000
- 737146 words of font info for 153 fonts, out of 8000000 for 9000
+ 13059 strings out of 473190
+ 210504 string characters out of 5715800
+ 611375 words of memory out of 5000000
+ 35901 multiletter control sequences out of 15000+600000
+ 686975 words of font info for 117 fonts, out of 8000000 for 9000
  1172 hyphenation exceptions out of 8191
- 77i,16n,82p,731b,1257s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.pdf" (130 pages, 1672867 bytes).
+ 77i,8n,82p,731b,909s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
+Output written on "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.pdf" (39 pages, 892437 bytes).
 PDF statistics:
- 2192 PDF objects out of 2487 (max. 8388607)
- 1892 compressed objects within 19 object streams
- 551 named destinations out of 1000 (max. 500000)
- 291 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 522 PDF objects out of 1000 (max. 8388607)
+ 412 compressed objects within 5 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

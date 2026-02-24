@@ -106,52 +106,24 @@ final%         kompiluj finální verzi
 %% (M1) Titul závěrečné práce. Užijte \\, ~ apod. pro vhodné lámání
 %%      řádků, aby přítulná slova držela pospolu. Makro \ipotname
 %%      je definováno v třídě a expanduje na jméno balíčku:
-\title{Fiktivní práce jako uživatelský manuál \LaTeX ového balíčku
-  \uv{\ipotname}}
+\title{Supratekutost v neutronových hvězdách}
 
 %% (M2) Vaše jméno včetně akademických titulů, máte-li je:
-\author{Stanislav Hledík}
+\author{Bc. Nela Michálková}
 
 %% (M3) Jméno vedoucího vaší práce včetně akademických titulů:
-\supervisor{doc. RNDr. Petr Slaný, Ph.D.}
+\supervisor{Mgr. Martin Urbanec, Ph.D.}
 
 %% (M4) Plný rok předložení vaší závěrečné práce k obhajobě. Pouze
 %%      číslice, ne makra jako \year nebo \today:
-\yearofsubmission{2022}
+\yearofsubmission{2026}
 
-%% (M5-6) Váš studijní program a specializace (má-li ji). Pro
-%%        pohodlí studentů Fyzikálního ústavu jsou níže vypsány
-%%        všechny relevantní a případné specializace. Jednoduše
-%%        si vyberte příslušný \program a je-li k dispozici také
-%%        \specialization jejich odkomentováním.
-%%        Ačkoli jsou \program (a příp. \specialization) povinné,
-%%        lze je vynechat bez chybové či varovné hlášky. V takovém
-%%        případě jednoduše nebudou vysazeny.
+%% (M5-6) Váš studijní program a specializace (má-li ji).
 
-%% (M5-6a) Bakalářské studijní programy:
-\program{B0533A110018 Fyzika}
-%  \specialization{Astrofyzika}
-  \specialization{Astronomie a popularizace}
-%\program{B0533P110001 Aplikovaná fyzika}
-%  \specialization{Monitorování životního prostředí}
-%  \specialization{Fyzikální diagnostické metody}
-%\program{B0211P310003 Multimediální techniky} % pod FPF a bez specializace!
-%%
 %% (M5-6b) Navazující magisterské studijní programy:
-%\program{N0533A110045 Teoretická fyzika}
-%  \specialization{Částicová fyzika}
-%  \specialization{Relativistická astrofyzika}
-%  \specialization{Počítačová fyzika}
-%\program{N0533A110050 Observační astrofyzika vysokých energií} % bez spec.!
-%\program{N0211P310007 Multimediální techniky} % bez spec.!
-%%
-%% (M5-6c) Rigorosní program (státní rigorosní zkouška):
-%\program{N0533A110045 Teoretická fyzika} % bez spec.!
-%%
-%% (M5-6d) Doktorský studijní program:
-%\program{P0533D110046 Teoretická fyzika a astrofyzika}
-%  \specialization{Teoretická fyzika a astrofyzika (presenční)}
-%  \specialization{Teoretická fyzika a astrofyzika (kombinovaná)}
+\program{N0533A110045 Teoretická fyzika}
+  \specialization{Relativistická astrofyzika}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Dále máme následujících 7 volitelných položek O1, ..., O7.
@@ -198,8 +170,7 @@ final%         kompiluj finální verzi
 %%      a podobně pro vhodné nalámání řádků, aby přítulná slova
 %%      hezky držela pospolu. (Makro \ipotname je definováno
 %%      v dokumentní třídě a expanduje na jméno balíčku.):
-\subtitle{A fictitious Thesis as a user manual for\\ the~``\ipotname''
-  \LaTeX{} package}
+\subtitle{Superfluidity in neutron stars}
 
 %% (O5) Typ vaší závěrečné práce. Ti, kdo píší bakalářskou práci,
 %%      mohou nechat následující příkaz zakomentovaný; "Bakalářská
@@ -207,12 +178,12 @@ final%         kompiluj finální verzi
 %%      "Diplomová práce", "Rigorózní práce" a "Dizertační práce"
 %%      (či "Rigorosní práce" a "Disertační práce", jste-li
 %%      konservativně založeni), případně cokoli potřebujete:
-%\thesiskind{}
+\thesiskind{Diplomová práce}
 
 %% (O6) Jméno vašeho konzultanta včetně akademických titulů. Tato
 %%      položka se obvykle vynechává zakomentováním, avšak občas
 %%      se může hodit:
-\advisor{Hana Černínová}
+%%\advisor{Hana Černínová}%%
 
 %% (O7) Frontispice (protititul) se nachází na stránce sousedící
 %%      vlevo se stránkou titulní. Obvykle se nechává prázdný, ale
@@ -245,19 +216,16 @@ final%         kompiluj finální verzi
 %% stránkovému zlomu a vertikálnímu odstupu) v "hvězdičkové" formě:
 
 \begin{annotation*}
-  Tento manuál seznamuje s~použitím balíčku \uv{\ipotname} rozšiřujícího
-  publikační systém \LaTeX{} o~dokumentní třídu a \BibTeX ový bibliografický
-  styl optimalizované k~sazbě bakalářských, diplomových, rigorózních nebo
-  dizertačních prací, případně jiných typů závěrečných prací (ročníkových,
-  semestrálních, seminárních) na Fyzikálním ústavu v~Opavě. Manuál sám je
-  vysázen pomocí popisovaného balíčku ve formě fiktivní bakalářské práce.
+Cílem práce bude popsat vliv přitomnosti supratekuté složky ve vnějších
+ částech neutronových hvězd na jejich pozorované vlastnosti. Hlavní pozoronost 
+ bude zaměřena na frekvenční vývoj pulsarů a jeho iregularity.
 \end{annotation*}
 \begin{annotation}[english]
   This manual introduces the use of the ``\ipotname'' package extending the
   \LaTeX{} publishing system by document class and \BibTeX{} bibliographic
   style optimized for typesetting of Bachelor, Master, Rigorous and Doctoral
-  Theses, possibly other kinds of Final Theses (year, semester, seminar) at
-  The Institute of Physics in Opava.  The manual itself is typeset using the
+  Theses, possibly other kinds of Final Thecs in Opava.  The manual itself ses (year, semester, seminar) at
+  The Institute of Physiis typeset using the
   tools of the package described by this manual in the form of a fictitious
   Bachelor~Project. A simple formula example: $E = mc^2$.
 \end{annotation}
@@ -384,7 +352,7 @@ final%         kompiluj finální verzi
 %% kapitol nebo použitím příkazu \includeonly{} command.
 %% Jako první vložíme nečíslovanou kapitolu Úvod:
 
-\include{c_intro}
+%\include{c_intro}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Závěrečnou práci lze strukturovat do částí (parts, úroveň -1,
@@ -396,28 +364,28 @@ final%         kompiluj finální verzi
 %% (a mnohé další čítače generující příkazy) jsou opatřeny
 %% unikátními jmény. To se může hodit pro budoucí křížové odkazy:
 
-\part{Postupy a řešení}\label{procsol}
+%\part{Postupy a řešení}\label{procsol}
 
-\include{cp_inst}
-\include{cp_pream}
+%\include{cp_inst}
+%\include{cp_pream}
 %\include{cp_titpg}
 %\include{cp_graph}
 %\include{cp_refc}
 %\include{cp_lang}
 %\include{cp_math}
-\include{cp_other}
+%\include{cp_other}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Druhá část:
 
-\part{Ukázky z~obhájených závěrečných prací}\label{findef}
+%\part{Ukázky z~obhájených závěrečných prací}\label{findef}
 
-\include{x_levit}
-\include{x_diag}
-\include{x_camera}
-\begin{otherlanguage}{english} % this sample is in ENG only
-\include{x_poluni}
-\end{otherlanguage}
+%\include{x_levit}
+%\include{x_diag}
+%\include{x_camera}
+%\begin{otherlanguage}{english} % this sample is in ENG only
+%\include{x_poluni}
+%\end{otherlanguage}
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Třetí část jsou Dodatky. Předchází jí příkaz \appendix, který
