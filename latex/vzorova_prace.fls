@@ -40,6 +40,14 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/lmodern.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/lmodern.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
@@ -143,24 +151,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.de
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.aux
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.aux
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.aux
 OUTPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.aux
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -170,6 +160,9 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.st
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -190,10 +183,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/typesetting.png
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/typesetting.png
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/typesetting.png
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/typesetting.png
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -220,12 +209,18 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmbx12.tfm
@@ -254,8 +249,6 @@ INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/l
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/ipot-eng.ldf
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/ipot-eng.ldf
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/ipot-eng.ldf
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/assign.pdf
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/assign.pdf
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/assign.pdf
@@ -275,7 +268,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 OUTPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.toc
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.lof
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.lof
@@ -285,95 +277,19 @@ INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/l
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.lot
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.lot
 OUTPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.lot
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/ipotbabel.tex
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/ipot-cze.ldf
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.tex
-OUTPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.tex
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmtt12.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi7.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy7.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr7.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmtk10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmss8.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmtt8.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.tex
-OUTPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.tex
+INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.bbl
+INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.bbl
+INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.bbl
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmss10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmtti10.tfm
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.tex
-OUTPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.tex
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.tex
-OUTPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/ipothes.cfg
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.tex
-OUTPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/hyperref.cfg
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/hyperref.cfg
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/hyperref.cfg
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/hyperref.cfg
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmsso10.tfm
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/AcroRead_DocProps.png
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/AcroRead_DocProps.png
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/AcroRead_DocProps.png
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/AcroRead_DocProps.png
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmss10.tfm
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/AcroRead_PgDisp_CZE.png
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/AcroRead_PgDisp_CZE.png
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/AcroRead_PgDisp_CZE.png
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/AcroRead_PgDisp_CZE.png
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.tex
-OUTPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.tex
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.bbl
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.bbl
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.bbl
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/babelbst.tex
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/babelbst.tex
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/babelbst.tex
@@ -381,49 +297,39 @@ INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/l
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/bbl-cze.bld
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/bbl-cze.bld
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmr8.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmri8.tfm
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/vzorova_prace.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_docop.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_lopkg.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_mirr.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_conf.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/ca_hyper.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.aux
-INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/include/c_conc.aux
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri8.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss8.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtti10.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
