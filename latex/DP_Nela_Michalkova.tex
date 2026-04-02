@@ -466,27 +466,81 @@ Nakonec opět dosadíme do vzorce pro brzdný index a dostaneme
 
 Pozorování však ukazují, že brzdný index pulsarů není vždy roven 3 nebo 5, což naznačuje, že existují další mechanismy, které ovlivňují rotaci pulsarů. 
 
+\section{Vrstvy neutronové hvězdy} Ghosh 5.2
+Geometricky se neutronová hvězda dělí na několik vrstev, které se liší svou hustotou, složením a fyzikálními vlastnostmi.
 
-\chapter{Supratekutost v neutronových hvězdách}
+1.
+Atmosféra
+Jedná se o velmi tenkou vrstvu plazmatu na povrchu neutronové hvězdy, kde se formuje pozorovatelné tepelné záření. Její tloušťka se pohybuje od několika centimetrů (u horkých hvězd) po milimetry (u chladných hvězd).
+
+2.
+Vnější kůra (Outer Crust)
+Pod povrchem plazmatu se nachází vnější kůra, která má charakter pevné látky a je tvořena mříží těžkých atomových jader, ponořených ve vysoce degenerovaném elektronovém plynu. S rostoucí hloubkou se hustota zvyšuje a jádra se stávají bohatšími na neutrony.
+
+3. 
+Vnitřní kůra (Inner Crust)
+
+Hranice: Začíná v tzv. bodě „neutronového odkapu“ (neutron drip), kde hustota dosahuje $\rho_{\text{drip}} \approx 4 \times 10^{11} \text{ g/cm}^3$
+Složení: Zde se již volné neutrony nacházejí mimo atomová jádra. Hmota se skládá z neutronem bohatých jader, elektronového moře a superfluidních neutronů. Pasta fáze: V této vrstvě dochází v důsledku soupeření mezi nukleárními a Coulombovými silami k vytváření exotických struktur známých jako „nukleární pasta“ (např. tvary připomínající tyčinky, desky či bubliny).
+
+4.
+Vnější jádro (Outer Core)
+Hranice: Začíná v místě, kde se hustota blíží hustotě jaderné hmoty ($\rho_{\text{nm}} \approx 0.16 \text{ fm}^{-3}$)
+Složení: Jádra se rozpouštějí a hmota tvoří uniformní kvantovou tekutinu. Skládá se převážně z neutronů (v $p$-vlnném superfluidním stavu) s malou příměsí protonů (supravodivé) a elektronů. Jakmile chemický potenciál elektronů dosáhne určité úrovně, objevují se i miony ($\mu_\mu = \mu_e$).
+
+5.
+Vnitřní jádro (Inner Core)
+Hranice: Oblast s hustotou vyšší než $\approx 2\rho_{\text{nm}}$ až po centrální hustotu $\rho_c$
+Složení: Zde se nachází nejvíce spekulativní fáze hmoty. Vzhledem k extrémním tlakům se předpokládá výskyt „exotických“ částic nebo stavů, jako jsou:
+hyperony (baryony obsahující podivné kvarky), pionové nebo kaonové kondenzáty, dekonfinované kvarkové hmota (plazma volných kvarků).
+Tento model „vrstev“ je zásadní pro interpretaci pozorovaných jevů, jako jsou glitche. Jak uvádí práce Graber et al. ( 13  14), právě interakce mezi kůrou a těmito různými vrstvami (např. tření mezi vortikály v superfluidu a krystalickou mříží kůry) přímo určuje dynamiku rotace hvězdy, kterou pozorujeme jako náhlé změny v periodě pulsaru.
+
+Z pohledu supratekutosti se však neutronová hěvzda dělí na:
+
+1. Nesupra-tekutá „kůrová“ komponenta (rigidně rotující normální hmota)
+Tato komponenta představuje: pevnou jadernou mříž v kůře a pevně vázanou nabitou tekutinu v jádře (protony + elektrony), která je s kůrou spojená elektromagnetickými silami. Je považována za jedno rigidní těleso s úhlovou rychlostí $\Omega_{\text{crust}}$ a momentem setrvačnosti $I_{\text{crust}}$. Toto je část hvězdy, která:
+
+pociťuje vnější brzdný moment (magnetodipólový, větrný atd.), jejíž rotaci přímo měříme jako frekvenci rotace pulsaru.
+V Graberově terminologii tedy „kůra“ $\approx$ veškerá nesupratekutá (nebo velmi pevně vázaná) hmota, která rotuje jako jeden celek, nikoliv pouze fyzikální pevná kůra.
+
+2. Kůrová neutronová superfluidita (supratekutost vnitřní kůry)
+Toto je supratekutina „odkapaných“ neutronů (dripped neutrons) ve vnitřní kůře, protkaná kvantovanými vortikály, které se mohou „připnout“ (pinning) k jaderné mříži. V modelu jde o samostatnou dynamickou komponentu s vlastní úhlovou rychlostí $\Omega_{\text{sf}}$ a momentem setrvačnosti $I_{\text{sf}}$.
+
+Její vazba ke „kůře“ je řízena koeficientem vzájemného tření $\mathcal{B}(\tilde{r})$ závislým na hustotě, vypočteným z excitací Kelvinových vln na pohybujících se vortikálech v realistické struktuře vnitřní kůry. Klíčová role při glitchích: Před glitchem umožňuje pinning stav, kdy $\Omega_{\text{sf}} > \Omega_{\text{crust}}$, čímž se v této supratekuté zásobárně ukládá moment hybnosti. Když se vortikály uvolní, vzájemné tření přenese tento moment hybnosti do kůry na časových škálách daných $\mathcal{B}(\rho)$, což formuje nárůst glitche a případné přestřely (overshoot).
+
+3. Jádrová neutronová superfluidita
+Jádro obsahuje další supratekutou neutronovou komponentu, o které se předpokládá, že rotuje rigidně s vlastní úhlovou rychlostí $\Omega_{\text{core}}$ a momentem setrvačnosti $I_{\text{core}}$. Její vazba k rigidní „kůrové“ komponentě je modelována pomocí konstantního parametru vzájemného tření jádra $\mathcal{B}_{\text{core}}$. Hodnota $\mathcal{B}_{\text{core}} \sim 5 \times 10^{-5} - 10^{-4}$ odpovídá vazbě prostřednictvím rozptylu elektronů na zmagnetizovaných vortikálech. Mnohem větší $\mathcal{B}_{\text{core}}$ by vzniklo, pokud by vortikály silně interagovaly s protonovými magnetickými trubicemi v supravodivém jádře typu II, ale zdá se, že nárůst glitche u Vely tuto silnou vazbu nepotvrzuje. Relativní síla vazby kůrové supratekutiny (přes $\mathcal{B}(\rho)$) a jádrové supratekutiny (přes $\mathcal{B}_{\text{core}}$) určuje, zda moment hybnosti proudí nejprve pouze do kůry, nebo do kombinovaného systému kůra+jádro.
+
+Shrnutí v rámci Graber et al.
+Neutronová hvězda je tedy z pohledu dynamiky supratekutosti rozdělena na:
+Rigidní „kůrovou“ komponentu (normální hmota) – pevná kůra + elektromagneticky vázaná nabitá tekutina v jádře.
+Kůrovou neutronovou supratekutinu – supratekuté neutrony ve vnitřní kůře s třením závislým na hustotě.
+Jádrovou neutronovou supratekutinu – supratekuté neutrony v jádře vázané k rigidní komponentě pomocí parametru $\mathcal{B}_{\text{core}}$.
+Průběh nárůstu glitche je pak přímým testem toho, jak tyto tři komponenty vyměňují moment hybnosti v různých časových měřítkách, a tím i testem fyziky supratekutosti v kůře a jádře.
+
+
+
+
+\section{Supratekutost v neutronových hvězdách}
 
 Supratekutost v neutronových hvězdách je přirozeným důsledkem toho, že hmotna v nitru hvězdy je extrémně hustá a že se skládá z fermionů (neutronů, protonů a elektronů), mezi nimiž působí velmi silně přitažlivé insterakce. Již je známo, že neutronoy a protony v běžných atomových jádrech vykazují supratekuté vlastnosti a je tedy logické předpokládat supratekutost i v neutronových hvězdách, kde je hustota ještě o několik řádů vyšší. [Ghosh 8.1]
 
 Neutronová hvězda je v kontextu dynamiky glitche rozdělena do několika rotačních komponent, které interagují s různou silou tření. Model použitý ve studii glitche pulsaru Vela rozděluje hvězdu do tří hlavních součástí, aby mohl modelovat přenos úhlové hybnosti.
 
-\section*{Kůra a pevná složka (Crust)}
+\subsection*{Kůra a pevná složka (Crust)}
 Skládá se z jaderné mřížky kůry a pevně spojené nabité složky v jádře. 
 Tato složka představuje jadernou mřížku a pevně spojenou nabitou konglomeraci v jádře, které rotují rigidně. Představuje tu část hvězdy, která je přímo pozorovatelná a jejíž frekvence $\Omega_{\text{crust}}$ se náhle mění během glitche.
 
-\section*{Neutronová supratekutina v kůře (Crust Superfluid)}
+\subsection*{Neutronová supratekutina v kůře (Crust Superfluid)}
 Skládá se ze supratekutých neutronů ve vnitřní kůře.
 Tato složka se nachází ve vnitřní kůře a je tvořena volnými neutrony v supratekutém stavu. Je oddělena od kůry pomocí pinningu vírů k jaderné mřížce. Tato supratekutina slouží jako rezervoár úhlové hybnosti, která je uvolněna během glitche. Rychlost opětovného propojení kůry a této supratekutiny je řízena hustotně závislým vzájemným třením $\mathcal{B}(\tilde{r})$, pravděpodobně prostřednictvím excitace Kelvinových vln.
 
-\section*{Supratekuté jádro (Core Superfluid)}
+\subsection*{Supratekuté jádro (Core Superfluid)}
 Tato složka zahrnuje supratekuté neutrony v jádře hvězdy. Jádro v tomto modelu rotuje jako pevná koule, a tedy všechny jeho částice mají stejnou úhlovou rychlost, přičemž jeho propojení s kůrou je řízeno konstantním koeficientem vzájemného tření $B_{\text{core}}$. Síla tohoto propojení je klíčová pro tvar nárůstu glitche, protože určuje, zda se úhlová hybnost přenáší nejprve z kůrové supratekutiny, nebo ze supratekutého jádra do kombinovaného systému kůry a jádra. Tyto komponenty mají úhlové rychlosti $\Omega_x$ a momenty setrvačnosti $I_x$, kde $x \in \{\text{crust}, \text{crust superfluid}, \text{core superfluid}\}$. Vzájemné tření mezi těmito složkami na různých časových škálách a v závislosti na hustotě řídí veškerou dynamiku glitche.
 Dynamika supertekutiny, která je důsledkem hustotně závislého tření, způsobuje, že se moment hybnosti přenáší do různých částí kůry a jádra v různých časových měřítkách. To může vést k tomu, že se změna frekvence rotace stane v čase nemonotónní, což umožňuje dosažení maximální hodnoty mnohem větší, než je naměřená velikost glitche, a také zpoždění v regeneraci.
 
 
-\chapter{Fyzika supratekutosti v kůře neutronové hvězdy}
+\section{Fyzika supratekutosti v kůře neutronové hvězdy}
 
 \section{Kvantová mechanika supratekutosti}
 

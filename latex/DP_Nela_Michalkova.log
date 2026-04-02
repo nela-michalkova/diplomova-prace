@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.20)  25 MAR 2026 19:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.20)  30 MAR 2026 14:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -525,6 +525,11 @@ Package pdftex.def Info: images/assign.pdf , page2 used on input line 278.
 ] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 6.
+
+Overfull \hbox (0.60826pt too wide) detected at line 26
+\T1/lmr/m/n/10.95 2.10. 
+ []
+
 )
 \tf@toc=\write4
 \openout4 = `DP_Nela_Michalkova.toc'.
@@ -581,21 +586,16 @@ ipothes: Kapitola 2
 
 [7]
 
-[8
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
-ipothes: Kapitola 3
 
 
 [9]
 
 [10]
-ipothes: Kapitola 4
 
-
-[11
-
-]
+[11]
 
 [12{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
 
@@ -613,11 +613,11 @@ ipothes: Kapitola 4
 
 [19]
 
-[20
+[20] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.bbl
 
-] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.bbl
+[21
 
-[21]
+]
 
 [22
 
@@ -671,18 +671,18 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15714 strings out of 473190
- 257427 string characters out of 5715800
+ 15723 strings out of 473190
+ 257536 string characters out of 5715800
  683980 words of memory out of 5000000
  37994 multiletter control sequences out of 15000+600000
- 678193 words of font info for 304 fonts, out of 8000000 for 9000
+ 678545 words of font info for 308 fonts, out of 8000000 for 9000
  1172 hyphenation exceptions out of 8191
  77i,11n,82p,1318b,1385s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.pdf" (54 pages, 704603 bytes).
+Output written on "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.pdf" (54 pages, 712823 bytes).
 PDF statistics:
- 860 PDF objects out of 1000 (max. 8388607)
- 740 compressed objects within 8 object streams
- 262 named destinations out of 1000 (max. 500000)
+ 862 PDF objects out of 1000 (max. 8388607)
+ 742 compressed objects within 8 object streams
+ 263 named destinations out of 1000 (max. 500000)
  66064 words of extra memory for PDF output out of 74296 (max. 10000000)
 
