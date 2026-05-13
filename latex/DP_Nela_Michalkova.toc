@@ -23,18 +23,19 @@
 \contentsline {section}{\numberline {3.3\relax .\enspace }Závislost na hmotnosti jádra $M_{\rm core}$}{16}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1\relax .\enspace }Diskuze}{16}{subsection.3.3.1}%
 \contentsline {section}{\numberline {3.4\relax .\enspace }Shrnutí maxim – Profil A}{20}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1\relax .\enspace }Diskuze}{21}{subsection.3.4.1}%
 \contentsline {section}{\numberline {3.5\relax .\enspace }Supratekutost v neutronových hvězdách}{21}{section.3.5}%
-\contentsline {subsection}{Kůra a pevná složka (Crust)}{21}{section.3.5}%
-\contentsline {subsection}{Neutronová supratekutina v kůře (Crust Superfluid)}{21}{section.3.5}%
+\contentsline {subsection}{Kůra a pevná složka (Crust)}{22}{section.3.5}%
+\contentsline {subsection}{Neutronová supratekutina v kůře (Crust Superfluid)}{22}{section.3.5}%
 \contentsline {subsection}{Supratekuté jádro (Core Superfluid)}{22}{section.3.5}%
-\contentsline {section}{\numberline {3.6\relax .\enspace }Fyzika supratekutosti v kůře neutronové hvězdy}{22}{section.3.6}%
-\contentsline {section}{\numberline {3.7\relax .\enspace }Kvantová mechanika supratekutosti}{22}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1\relax .\enspace }Teorie BCS a Cooperovo párování nukleonů}{22}{subsection.3.7.1}%
+\contentsline {section}{\numberline {3.6\relax .\enspace }Fyzika supratekutosti v kůře neutronové hvězdy}{23}{section.3.6}%
+\contentsline {section}{\numberline {3.7\relax .\enspace }Kvantová mechanika supratekutosti}{23}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1\relax .\enspace }Teorie BCS a Cooperovo párování nukleonů}{23}{subsection.3.7.1}%
 \contentsline {section}{\numberline {3.8\relax .\enspace }Supratekutá složka v rotující kůře}{24}{section.3.8}%
-\contentsline {section}{\numberline {3.9\relax .\enspace }Vortex pinning (zachycování vírů)}{26}{section.3.9}%
+\contentsline {section}{\numberline {3.9\relax .\enspace }Vortex pinning (zachycování vírů)}{27}{section.3.9}%
 \contentsline {section}{\numberline {3.10\relax .\enspace }Relaxace po glitchi}{28}{section.3.10}%
-\contentsline {section}{\numberline {3.11\relax .\enspace } Glitch data}{28}{section.3.11}%
-\contentsline {section}{\numberline {3.12\relax .\enspace }Nedávný vývoj v oblasti glitchů pulsarů}{30}{section.3.12}%
+\contentsline {section}{\numberline {3.11\relax .\enspace } Glitch data}{29}{section.3.11}%
+\contentsline {section}{\numberline {3.12\relax .\enspace }Nedávný vývoj v oblasti glitchů pulsarů}{31}{section.3.12}%
 \contentsline {part}{\numberline {I\relax .\enspace }Dodatky}{33}{part.1}%
 \contentsline {chapter}{Literatura}{35}{part.1}%
 \babel@toc {english}{}\relax 
