@@ -339,9 +339,6 @@ Neutronové hvězdy se řadí mezi jedny z nej extrémnějších objektů ve ves
 Neutronová hvězda je extrémně kompaktní pozůstatek velmi hmotné hvězdy, který vzniká po explozi supernovy, kdy se jádro zhroutí vlivem vlastní gravitace. Její hmotnost se pohybuje okolo $1.4\,M_{\odot}$, přičemž její poloměr je jen $10$--$15\,\text{km}$, což vede k hustotám řádově $10^{14}\,\text{g}\,\text{cm}^{-3}$. Jedná se tak o jedny z nejhustších objektů ve vesmíru. Díky těmto vlastnostem vzniká v okolí neutronové hvězdy velmi silné magnetické a gravitační pole. Uvnitř neutronové hvězdy se nachází převážně neutrony a nižší množství protonů a elektronů. Stabilita takovéto hvězdy je zajištěna kombinací neutronového degeneračního tlaku a jaderných interakcí.
 
 
-\section{TOV rovnice}
-Odvození TOV rovnice.
-
 
 \section{Historie neutronových hvězd}
 (Ghosh, kap 2.1)
@@ -351,6 +348,76 @@ Obnova zájmu nastala v 60.\,letech s objevením diskrétních X rayových zdroj
 K rozhodujícímu průlomovému momentu došlo v roce\,1967, kdy byly objeveny první radio pulsary (např. PSR\,1919+21). Rychlé a pravidelné pulzace poskytly přesný měřítko rotace a potvrdily, že tyto objekty jsou rotující, magnetizované neutronové hvězdy, jak naznačil Gold (1968). Následně byly v roce\,1971 detekovány první X rayové pulsary (např. Cen\,X 3), což rozšířilo pojetí neutronových hvězd i o akreční systémy. 
 Celý vývoj, od teoretických úvah 30.\,let, přes dlouhé období skepse, až po rychlé rozmach v 60.\,a 70.\,letech spojený s radio\, a X rayovými objevy, položil pevný základ pro současné pochopení neutronových hvězd jako klíčových laboratoří pro studium hmoty při supranukleárních hustotách, extrémních magnetických polí a evoluce kompaktních objektů ve vesmíru.
 
+\section{Tolmanova--Oppenheimerova--Volkoffova rovnice}
+
+\label{sec:tov}
+
+Základním nástrojem pro popis struktury nerotující, sféricky symetrické neutronové hvězdy v obecné teorii relativity je Tolmanova--\allowbreak{}Oppenheimerova--\allowbreak{}Volkoffova rovnice (dále TOV). Tato rovnice představuje relativistickou obdobu Newtonovy podmínky hydrostatické rovnováhy a popisuje rovnováhu mezi gravitační silou a tlakem degenerované hmoty uvnitř hvězdy.
+
+\subsection{Odvození z obecné relativity}
+
+Einsteinovy rovnice pole pro sféricky symetrickou, statickou hvězdu vedou k metrice Schwarzschildova typu. Podmínka hydrostatické rovnováhy v obecné relativitě vyžaduje, aby gradient tlaku $P(r)$ souvisel s metrikou a hustotou hmoty-energie. Pomocí Einsteinových rovnic lze eliminovat derivaci metriky a získat tak TOV rovnici \cite{ghosh2007}
+
+\begin{equation}
+\label{eq:tov}
+\frac{dP(r)}{dr} = -\frac{G m(r) \rho(r)}{r^{2}} \,
+\left(1 + \frac{4\pi r^{3} P(r)}{m(r) c^{2}}\right) \,
+\left(1 + \frac{P(r)}{\rho(r) c^{2}}\right) \,
+\left(1 - \frac{2G m(r)}{c^{2} r}\right)^{-1},
+\end{equation}
+
+kde $G$ je gravitační konstanta, $c$ rychlost světla, $\rho(r)$ je hmotnostní hustota (v nerelativistickém smyslu) a $m(r)$ je hmota-energie obsažená uvnitř poloměru $r$, definovaná diferenciální rovnicí \cite{ghosh2007}
+
+\begin{equation}
+\label{eq:mass}
+\frac{dm(r)}{dr} = 4\pi r^{2} \rho(r).
+\end{equation}
+
+Hmotnost $M$ hvězdy měřená vzdáleným pozorovatelem je pak $M = m(R)$, kde $R$ je poloměr hvězdy. Je důležité si uvědomit, že $m(r)$ v obecné relativitě nezahrnuje pouze klidovou hmotnost částic, ale i veškerou energii včetně vlastní gravitační energie \cite{ghosh2007}.
+
+V literatuře se často používá zápis v jednotkách $G = c = 1$, kde místo hmotnostní hustoty $\rho$ vystupuje hustota energie $\varepsilon = \rho c^{2}$ \cite{vodiana2017}
+
+\begin{equation}
+\label{eq:tov_geometric}
+\frac{dP(r)}{dr} = -\frac{M(r) \varepsilon(r)}{r^{2}} \,
+\left(1 + \frac{4\pi r^{3} P(r)}{M(r)}\right) \,
+\left(1 + \frac{P(r)}{\varepsilon(r)}\right) \,
+\left(1 - \frac{2M(r)}{r}\right)^{-1},
+\end{equation}
+
+\begin{equation}
+\label{eq:mass_geometric}
+\frac{dM(r)}{dr} = 4\pi r^{2} \varepsilon(r).
+\end{equation}
+
+\subsection{Fyzikální interpretace}
+
+Rovnici~\eqref{eq:tov_geometric} lze interpretovat následovně \cite{vodiana2017}. Levá strana $dP(r)/dr$ představuje čistou sílu působící směrem ven na slupku hmoty o tloušťce $dr$. První člen na pravé straně, $-M(r)\varepsilon(r)/r^{2}$, je přitažlivá Newtonovská gravitační síla působící na slupku od hmoty uvnitř. Zbývající tři členy jsou čistě relativistické korekce:
+
+\begin{itemize}
+    \item Člen $(1 + P(r)/\varepsilon(r))$ je korekce vyplývající z relativistické ekvivalence hmoty a energie. V obecné relativitě přispívá ke zdroji gravitace nejen hmota, ale i tlak.
+    \item Člen $(1 + 4\pi r^{3} P(r)/M(r))$ zohledňuje gravitační účinek tlaku uvnitř uvažované slupky.
+    \item Člen $(1 - 2M(r)/r)^{-1}$ je korekcí metriky (Schwarzschildův faktor), která způsobuje divergenci tlaku při dosažení Schwarzschildova poloměru $R = 2M$ a omezuje tak maximální možnou kompaktnost stabilní neutronové hvězdy \cite{ghosh2007}.
+\end{itemize}
+
+Všechny tři korekce hrají klíčovou roli zejména v centrálních oblastech hmotných neutronových hvězd, kde $P(r)/\varepsilon(r) \sim 1$ a $2M(r)/r \to 1$.
+
+\subsection{Numerické řešení}
+
+Řešení TOV rovnic probíhá numerickou integrací od středu hvězdy směrem ven. Počáteční podmínky jsou \cite{vodiana2017}
+
+\begin{equation}
+\label{eq:bc}
+M(0) = 0, \qquad P(0) = P_{c},
+\end{equation}
+
+kde $P_{c}$ je centrální tlak (resp. centrální hustota energie $\varepsilon_{c}$) jako volný parametr. V každém integračním kroku jsou tlak $P$ a hustota $\varepsilon$ svázány stavovou rovnicí hmoty neutronové hvězdy (EoS). Integrace pokračuje, dokud tlak neklesne na nulu, tedy $P(R) = 0$, což definuje poloměr hvězdy $R$ a její hmotnost $M = M(R)$ \cite{ghosh2007, vodiana2017}.
+
+Tento postup, poprvé provedený Oppenheimerem a Volkoffem v roce 1939, ukázal, že neutronové hvězdy mají maximální hmotnost, neboli Op\-pen\-hei\-me\-rův--\allowbreak{}Vol\-kof\-fův limit. Tento limit je podstatně nižší, než předpovídaly New\-ton\-ov\-ské modely \cite{ghosh2007}. Moderní výpočty s realistickými stavovými rovnicemi zahrnujícími interakce mezi nukleony posouvají tuto hranici na přibližně $2$ až $2{,}5\,M_{\odot}$.
+
+\subsection{Využití v modelování glitchů}
+
+TOV rovnice nachází přímé uplatnění i při modelování vnitřní struktury neutronových hvězd pro účely studia glitchů. Graber et al.~\cite{graber2018} při konstrukci modelu vzájemného tření v supratekuté kůře integrují TOV rovnice za předpokladu jádra o poloměru $10\ \mathrm{km}$ a hmotnosti $1{,}4\ M_{\odot}$. Používají při tom Negeleho--Vautherinovu stavovou rovnici pro vnitřní kůru. Z TOV řešení získávají profil hustoty $\rho(\tilde{r})$ potřebný pro výpočet koeficientů vzájemného tření $\mathcal{B}(\tilde{r})$.
 
 
 \section{Vrstvy neutronové hvězdy} Ghosh 5.2
