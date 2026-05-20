@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova"] 1779226421.96312 "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.aux" "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.bbl" "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova" 1779226928.5108 0
+["bibtex /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova"] 1779282643.96219 "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.aux" "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.bbl" "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova" 1779282647.95248 0
   "./ipothes.bst" 1771599006 29670 f2a78f22896578a2b7e4f476c35452ab ""
-  "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.aux" 1779226927.50803 26808 f178696f0969ad3f1c711b9717392ba9 "pdflatex"
+  "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.aux" 1779282647.17547 27284 70725f101687b6b38ea44c65efba5788 "pdflatex"
   "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/references.bib" 1779225278.74891 88267 046a5675c1c85b7cd597211fe952f331 ""
   (generated)
   "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.bbl"
   "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.blg"
   (rewritten before read)
-["pdflatex"] 1779226923.84356 "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.tex" "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.pdf" "DP_Nela_Michalkova" 1779226928.51121 0
+["pdflatex"] 1779282644.24388 "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.tex" "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.pdf" "DP_Nela_Michalkova" 1779282647.95286 0
   "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png" 1776255176.29475 69237 5e483ad66afca98a8646a10cd50848c7 ""
   "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png" 1776255226.90004 66973 17a2a62cd8c589f30df224d058d86158 ""
   "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png" 1776255249.25412 51425 b7e54ceea68597bd4fa8cead890e28db ""
@@ -28,12 +28,12 @@
   "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_casA_Rcci.png" 1776255566.78568 29907 645bd4e562c2fafe6866be301d804575 ""
   "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_maxA_Mcoeff.png" 1776255567.4339 42141 5fc8cd118a1aaa3eb64f1d43adb49573 ""
   "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_maxA_Rcci.png" 1776255566.16204 42159 b2a0a167139c9c1e0f4dda2075d984ff ""
-  "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.aux" 1779226927.50803 26808 f178696f0969ad3f1c711b9717392ba9 "pdflatex"
-  "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.bbl" 1779226422.26743 44629 613c38b3ed55f986c577c2e2f460205f "bibtex /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova"
-  "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lof" 1779226927.5707 11206 26faa3f15c7193855aefba9a5fd07cc8 "pdflatex"
-  "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lot" 1779226927.57081 8994 c2ba5ecd9e24569dd29a36c2bbdf1d32 "pdflatex"
-  "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.tex" 1779226923.46685 69311 5db71a0e39e22e0449d7de3de1ae50dc ""
-  "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.toc" 1779226927.57054 12167 0e9f61785ab3432ee4f367180a140613 "pdflatex"
+  "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.aux" 1779282647.17547 27284 70725f101687b6b38ea44c65efba5788 "pdflatex"
+  "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.bbl" 1779282644.23221 44629 613c38b3ed55f986c577c2e2f460205f "bibtex /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova"
+  "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lof" 1779282647.21946 11226 d2abcd40feb93b9526ded416538b1c73 "pdflatex"
+  "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lot" 1779282647.21962 9014 315db57d1ec73b5ed796900007900e73 "pdflatex"
+  "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.tex" 1779282639.43273 69426 c67afcfd3f2acb400e069ed27ce421e1 ""
+  "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.toc" 1779282647.21907 12441 82f01bcd1b2f140f3c889c022a3632f3 "pdflatex"
   "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/babelbst.tex" 1771599006 996 1f9b5e42014f4ed7da133a95b7572b2b ""
   "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/bbl-cze.bld" 1771599006 1947 a3a211a300e5287f101bdac56b8bf660 ""
   "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/hyperref.cfg" 1771599006 2871 48c5f4e1fe737846bc11f72f81951080 ""

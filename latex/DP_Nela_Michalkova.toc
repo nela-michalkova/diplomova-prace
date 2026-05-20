@@ -31,7 +31,8 @@
 \contentsline {section}{\numberline {1.10\relax .\enspace } Glitch data}{16}{section.1.10}%
 \contentsline {section}{\numberline {1.11\relax .\enspace }Nedávný vývoj v oblasti glitchů pulsarů}{17}{section.1.11}%
 \contentsline {chapter}{Kapitola\ 2\relax .\enspace Praktická část}{19}{chapter.2}%
-\contentsline {section}{\numberline {2.1\relax .\enspace }Brzdný index}{19}{section.2.1}%
+\contentsline {section}{\numberline {2.1\relax .\enspace }Popis modelu}{19}{section.2.1}%
+\contentsline {section}{\numberline {2.2\relax .\enspace }Brzdný index}{19}{section.2.2}%
 \contentsline {chapter}{Kapitola\ 3\relax .\enspace Výsledky praktické části}{23}{chapter.3}%
 \contentsline {section}{\numberline {3.1\relax .\enspace }Závislost na poloze rozhraní $R_{\rm cci}$}{23}{section.3.1}%
 \contentsline {section}{\numberline {3.2\relax .\enspace }Diskuze}{28}{section.3.2}%
@@ -39,8 +40,10 @@
 \contentsline {subsection}{\numberline {3.3.1\relax .\enspace }Diskuze}{28}{subsection.3.3.1}%
 \contentsline {section}{\numberline {3.4\relax .\enspace }Shrnutí maxim – Profil A}{32}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1\relax .\enspace }Diskuze}{33}{subsection.3.4.1}%
-\contentsline {part}{\numberline {I\relax .\enspace }Dodatky}{35}{part.1}%
-\contentsline {chapter}{Literatura}{37}{part.1}%
+\contentsline {section}{\numberline {3.5\relax .\enspace }Porovnání s reálnými daty}{33}{section.3.5}%
+\contentsline {chapter}{Kapitola\ 4\relax .\enspace Závěr}{35}{chapter.4}%
+\contentsline {part}{\numberline {I\relax .\enspace }Dodatky}{37}{part.1}%
+\contentsline {chapter}{Literatura}{39}{part.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {czech}{}\relax 
 \babel@toc {czech}{}\relax 
