@@ -11,14 +11,17 @@
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
 \providecommand{\eprint}[2][]{\url{#2}}
 
-\bibitem{ghosh2007}
-\textsc{Ghosh, P.}: {\selectlanguage{english}\emph{{Rotation and Accretion Powered Pulsars}}}. World Scientific, Singapore, 2007, ISBN 978-981-02-4744-7.
+\bibitem{vidana2020}
+\textsc{Vida{\~n}a, I.}: {\selectlanguage{english}{Short introduction to the physics of neutron stars}}. \emph{EPJ Web of Conferences}, \textbf{227}, \bblp{} 01018, 2020, \doi{10.1051/epjconf/202022701018}.
 
-\bibitem{vodiana2017}
-\textsc{AUTORA, D.}: {\selectlanguage{czech}\emph{{DOPLŇ NÁZEV PRÁCE}}}. DoplŇ typ (diplomová práce / bakalářská práce / článek), DOPLŇ ŠKOLU, DOPLŇ MÍSTO, 2017.
+\bibitem{ghosh2007}
+\textsc{Ghosh, P.}: {\selectlanguage{english}\emph{{Rotation and Accretion Powered Pulsars}}}. World Scientific Publishing Company, Singapore, 2007, ISBN 978-981-270-592-1.
 
 \bibitem{graber2018}
-\textsc{Graber, V.; Andersson, N. \& Hogg, M.}: {\selectlanguage{english}{Neutron stars in the laboratory}}. \emph{International Journal of Modern Physics D}, \textbf{26}(08), \bblp{} 1730015, 2017, \doi{10.1142/S0218271817300154}.
+\textsc{Graber, V.; Cumming, A. \& Andersson, N.}: {\selectlanguage{english}{Glitch Rises as a Test for Rapid Superfluid Coupling in Neutron Stars}}. \emph{The Astrophysical Journal}, \textbf{865}(1), \bblp{}~23, 2018, \doi{10.3847/1538-4357/aad776}.
+
+\bibitem{crab2022}
+\textsc{Zhang, C.-M.; Cui, X.-H.; Li, D.; Wang, D.-H.; Wang, S.-Q.; Wang, N.; Zhang, J.-W.; Peng, B.; Zhu, W.-W.; Yang, Y.-Y. \& Pan, Y.-Y.}: {\selectlanguage{english}{Evolution of Spin Period and Magnetic Field of the Crab Pulsar: Decay of the Braking Index by the Particle Wind Flow Torque}}. \emph{Universe}, \textbf{8}(12), \bblp{} 628, 2022, \doi{10.3390/universe8120628}.
 
 \bibitem{LaTeXNet:LIVE:TheLaTeXNetwork:}
 \textsc{{{\LaTeX}.net, {\LaTeX}.org and {\LaTeX}-Community.org}}: {\selectlanguage{english}\emph{{The {\LaTeX} Network}}}, online (\bblaccess{} \bblaccymd{2022}{04}{25}). {On La\-TeX-Com\-munity.org, founded January 2007, many authors published articles about LaTeX and related tools (the site has been renamed to \url{https://LaTeX.net})}, \urlprefix\url{https://latex.net/}.
