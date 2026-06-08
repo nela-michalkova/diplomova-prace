@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.20)  28 MAY 2026 20:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.20)  8 JUN 2026 12:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -384,24 +384,24 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 ) (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.aux)
 \openout1 = `DP_Nela_Michalkova.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count316
@@ -421,20 +421,20 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \microtypecontext on input line 100.
-Package microtype Info: Applying patch `item' on input line 100.
-Package microtype Info: Applying patch `toc' on input line 100.
-Package microtype Info: Applying patch `eqnum' on input line 100.
-Package microtype Info: Applying patch `footnote' on input line 100.
-Package microtype Info: Applying patch `verbatim' on input line 100.
-LaTeX Info: Redefining \microtypesetup on input line 100.
+LaTeX Info: Redefining \microtypecontext on input line 84.
+Package microtype Info: Applying patch `item' on input line 84.
+Package microtype Info: Applying patch `toc' on input line 84.
+Package microtype Info: Applying patch `eqnum' on input line 84.
+Package microtype Info: Applying patch `footnote' on input line 84.
+Package microtype Info: Applying patch `verbatim' on input line 84.
+LaTeX Info: Redefining \microtypesetup on input line 84.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 100.
+LaTeX Info: Redefining \showhyphens on input line 84.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -452,8 +452,8 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 100.
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 177.
+Package hyperref Info: Link coloring ON on input line 84.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 127.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -470,35 +470,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 [2
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 177.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 127.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 177.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 127.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 177.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 127.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 177.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 127.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 177.
+(Font)              <12> on input line 127.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 177.
+(Font)              <8> on input line 127.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 177.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 177.
+(Font)              <6> on input line 127.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 127.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 177.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 127.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -507,7 +507,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 <images/emblemiop.pdf, id=14, 951.555pt x 951.555pt>
 File: images/emblemiop.pdf Graphic file (type pdf)
 <use images/emblemiop.pdf>
-Package pdftex.def Info: images/emblemiop.pdf  used on input line 177.
+Package pdftex.def Info: images/emblemiop.pdf  used on input line 127.
 (pdftex.def)             Requested size: 127.73387pt x 127.7284pt.
 
 
@@ -522,20 +522,20 @@ Package pdftex.def Info: images/emblemiop.pdf  used on input line 177.
 [6
 
 ]
-Package pdftex.def Info: Option `bb' equivalent to `viewport' with the pdftex driver on input line 229.
+Package pdftex.def Info: Option `bb' equivalent to `viewport' with the pdftex driver on input line 179.
 <images/assign.pdf, id=41, page=1, 597.50829pt x 845.0471pt>
 File: images/assign.pdf Graphic file (type pdf)
 <use images/assign.pdf, page 1>
-Package pdftex.def Info: images/assign.pdf , page1 used on input line 229.
+Package pdftex.def Info: images/assign.pdf , page1 used on input line 179.
 (pdftex.def)             Requested size: 383.20172pt x 536.1912pt.
 
 
 [7 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/images/assign.pdf>]
-Package pdftex.def Info: Option `bb' equivalent to `viewport' with the pdftex driver on input line 244.
+Package pdftex.def Info: Option `bb' equivalent to `viewport' with the pdftex driver on input line 194.
 <images/assign.pdf, id=51, page=2, 597.50829pt x 845.0471pt>
 File: images/assign.pdf Graphic file (type pdf)
 <use images/assign.pdf, page 2>
-Package pdftex.def Info: images/assign.pdf , page2 used on input line 244.
+Package pdftex.def Info: images/assign.pdf , page2 used on input line 194.
 (pdftex.def)             Requested size: 383.20172pt x 536.1912pt.
 
 
@@ -553,34 +553,28 @@ Package pdftex.def Info: images/assign.pdf , page2 used on input line 244.
 
 [12
 
-]
-
-[13]
-
-[14
-
 ] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 6.
 
 
-[15{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}])
+[13{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}])
 \tf@toc=\write4
 \openout4 = `DP_Nela_Michalkova.toc'.
 
 
 
-[16] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lof)
+[14] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lof)
 \tf@lof=\write5
 \openout5 = `DP_Nela_Michalkova.lof'.
 
 
 
-[17
+[15
 
 ]
 
-[18
+[16
 
 ] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lot)
 \tf@lot=\write6
@@ -588,9 +582,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 
-[19]
+[17]
 
-[20
+[18
 
 ]
 
@@ -609,7 +603,7 @@ ipothes: Kapitola 1
 [4]
 
 [5]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 424.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 362.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -651,223 +645,178 @@ ipothes: Kapitola 2
 [21]
 
 [22]
-
-[23]
-
-[24]
 ipothes: Kapitola 3
-
-
-[25
-
-]
-
-[26
-
-]
-ipothes: Kapitola 4
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 784.
+(Font)              <14.4> on input line 693.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 784.
+(Font)              <10> on input line 693.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 784.
+(Font)              <7> on input line 693.
 \tableonebox=\box58
 (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Experiment_1_Tabulka_Rcci.tex)
-<../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png, id=474, 656.2116pt x 457.4691pt>
+<../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png, id=442, 656.2116pt x 457.4691pt>
 File: ../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png Graphic file (type png)
 <use ../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png>
-Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png  used on input line 798.
+Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png  used on input line 707.
 (pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png, id=476, 656.2116pt x 457.4691pt>
+<../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png, id=444, 656.2116pt x 457.4691pt>
 File: ../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png Graphic file (type png)
 <use ../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png>
-Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png  used on input line 804.
+Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png  used on input line 713.
 (pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png, id=477, 656.2116pt x 457.4691pt>
+<../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png, id=445, 656.2116pt x 457.4691pt>
 File: ../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png Graphic file (type png)
 <use ../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png>
-Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png  used on input line 810.
+Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png  used on input line 719.
 (pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png, id=478, 656.2116pt x 457.4691pt>
+<../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png, id=446, 656.2116pt x 457.4691pt>
 File: ../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png Graphic file (type png)
 <use ../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png>
-Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png  used on input line 816.
+Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png  used on input line 725.
 (pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png, id=479, 656.2116pt x 457.4691pt>
+<../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png, id=447, 656.2116pt x 457.4691pt>
 File: ../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png Graphic file (type png)
 <use ../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png>
-Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png  used on input line 823.
+Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png  used on input line 732.
 (pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png, id=480, 656.2116pt x 457.4691pt>
+<../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png, id=448, 656.2116pt x 457.4691pt>
 File: ../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png Graphic file (type png)
 <use ../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png>
-Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png  used on input line 829.
+Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png  used on input line 738.
 (pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png, id=481, 656.2116pt x 457.4691pt>
+<../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png, id=449, 656.2116pt x 457.4691pt>
 File: ../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png Graphic file (type png)
 <use ../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png>
-Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png  used on input line 835.
+Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png  used on input line 744.
 (pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
 
 
-[27]
-
-[28 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png>]
-
-[29 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png>]
-
-[30 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png>]
-
-[31 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png>]
-\tabletwobox=\box59
- (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Experiment_2_Tabulka_Mcoeff.tex)
-<../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png, id=510, 656.2116pt x 457.4691pt>
-File: ../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png Graphic file (type png)
-<use ../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png>
-Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png  used on input line 864.
-(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png, id=511, 656.2116pt x 457.4691pt>
-File: ../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png Graphic file (type png)
-<use ../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png>
-Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png  used on input line 870.
-(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png, id=512, 656.2116pt x 457.4691pt>
-File: ../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png Graphic file (type png)
-<use ../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png>
-Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png  used on input line 876.
-(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png, id=513, 656.2116pt x 457.4691pt>
-File: ../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png Graphic file (type png)
-<use ../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png>
-Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png  used on input line 882.
-(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png, id=514, 656.2116pt x 457.4691pt>
-File: ../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png Graphic file (type png)
-<use ../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png>
-Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png  used on input line 888.
-(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png, id=515, 656.2116pt x 457.4691pt>
-File: ../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png Graphic file (type png)
-<use ../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png>
-Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png  used on input line 894.
-(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png, id=516, 656.2116pt x 457.4691pt>
-File: ../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png Graphic file (type png)
-<use ../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png>
-Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png  used on input line 900.
-(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-
-
-[32
+[23
 
 ]
 
-[33 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png>]
+[24 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png>]
 
-[34 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png>]
+[25 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png>]
 
-[35 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png>]
-<../glitchrises-master/zavislost_maxA_Rcci.png, id=541, 527.571pt x 414.8298pt>
+[26 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png>]
+
+[27 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png>]
+\tabletwobox=\box59
+ (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Experiment_2_Tabulka_Mcoeff.tex)
+<../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png, id=478, 656.2116pt x 457.4691pt>
+File: ../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png Graphic file (type png)
+<use ../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png>
+Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png  used on input line 773.
+(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
+<../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png, id=479, 656.2116pt x 457.4691pt>
+File: ../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png Graphic file (type png)
+<use ../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png>
+Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png  used on input line 779.
+(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
+<../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png, id=480, 656.2116pt x 457.4691pt>
+File: ../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png Graphic file (type png)
+<use ../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png>
+Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png  used on input line 785.
+(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
+<../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png, id=481, 656.2116pt x 457.4691pt>
+File: ../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png Graphic file (type png)
+<use ../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png>
+Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png  used on input line 791.
+(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
+<../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png, id=482, 656.2116pt x 457.4691pt>
+File: ../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png Graphic file (type png)
+<use ../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png>
+Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png  used on input line 797.
+(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
+<../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png, id=483, 656.2116pt x 457.4691pt>
+File: ../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png Graphic file (type png)
+<use ../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png>
+Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png  used on input line 803.
+(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
+<../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png, id=484, 656.2116pt x 457.4691pt>
+File: ../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png Graphic file (type png)
+<use ../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png>
+Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png  used on input line 809.
+(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
+
+
+[28
+
+]
+
+[29 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png>]
+
+[30 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png>]
+
+[31 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png>]
+<../glitchrises-master/zavislost_maxA_Rcci.png, id=508, 527.571pt x 414.8298pt>
 File: ../glitchrises-master/zavislost_maxA_Rcci.png Graphic file (type png)
 <use ../glitchrises-master/zavislost_maxA_Rcci.png>
-Package pdftex.def Info: ../glitchrises-master/zavislost_maxA_Rcci.png  used on input line 921.
+Package pdftex.def Info: ../glitchrises-master/zavislost_maxA_Rcci.png  used on input line 826.
 (pdftex.def)             Requested size: 183.93518pt x 144.62924pt.
-<../glitchrises-master/zavislost_casA_Rcci.png, id=542, 501.5538pt x 414.8298pt>
+<../glitchrises-master/zavislost_casA_Rcci.png, id=509, 501.5538pt x 414.8298pt>
 File: ../glitchrises-master/zavislost_casA_Rcci.png Graphic file (type png)
 <use ../glitchrises-master/zavislost_casA_Rcci.png>
-Package pdftex.def Info: ../glitchrises-master/zavislost_casA_Rcci.png  used on input line 923.
+Package pdftex.def Info: ../glitchrises-master/zavislost_casA_Rcci.png  used on input line 828.
 (pdftex.def)             Requested size: 183.93518pt x 152.13004pt.
-<../glitchrises-master/zavislost_maxA_Mcoeff.png, id=543, 527.571pt x 414.8298pt>
+<../glitchrises-master/zavislost_maxA_Mcoeff.png, id=510, 527.571pt x 414.8298pt>
 File: ../glitchrises-master/zavislost_maxA_Mcoeff.png Graphic file (type png)
 <use ../glitchrises-master/zavislost_maxA_Mcoeff.png>
-Package pdftex.def Info: ../glitchrises-master/zavislost_maxA_Mcoeff.png  used on input line 930.
+Package pdftex.def Info: ../glitchrises-master/zavislost_maxA_Mcoeff.png  used on input line 835.
 (pdftex.def)             Requested size: 183.93518pt x 144.62924pt.
-<../glitchrises-master/zavislost_casA_Mcoeff.png, id=544, 533.3526pt x 414.8298pt>
+<../glitchrises-master/zavislost_casA_Mcoeff.png, id=511, 533.3526pt x 414.8298pt>
 File: ../glitchrises-master/zavislost_casA_Mcoeff.png Graphic file (type png)
 <use ../glitchrises-master/zavislost_casA_Mcoeff.png>
-Package pdftex.def Info: ../glitchrises-master/zavislost_casA_Mcoeff.png  used on input line 932.
+Package pdftex.def Info: ../glitchrises-master/zavislost_casA_Mcoeff.png  used on input line 837.
 (pdftex.def)             Requested size: 183.93518pt x 143.05946pt.
 
 
-[36 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_maxA_Rcci.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_casA_Rcci.png>]
+[32 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_maxA_Rcci.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_casA_Rcci.png>]
 
-[37 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_maxA_Mcoeff.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_casA_Mcoeff.png>]
+[33 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_maxA_Mcoeff.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_casA_Mcoeff.png>]
 
-[38
+[34
 
 ]
-ipothes: Kapitola 5
+ipothes: Kapitola 4
 (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/ipotbabel.tex (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/ipot-cze.ldf))
 
-[39]
+[35]
 
-[40
+[36
 
 ] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.bbl
 
-[41]
+[37]
 
-[42
+[38
 
 ] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/babelbst.tex (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/bbl-cze.bld))
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/8'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 27.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 
-
-[43]
-
-[44]
-
-[45]
-
-[46]
-
-[47]
-
-[48]
-
-[49]
-
-[50]
-
-[51]
-
-[52]
-
-[53])
-
-[54] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.aux)
+[39] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 17567 strings out of 473190
- 297911 string characters out of 5715800
- 719102 words of memory out of 5000000
- 39691 multiletter control sequences out of 15000+600000
- 701892 words of font info for 351 fonts, out of 8000000 for 9000
+ 16734 strings out of 473190
+ 276821 string characters out of 5715800
+ 716788 words of memory out of 5000000
+ 39209 multiletter control sequences out of 15000+600000
+ 688559 words of font info for 256 fonts, out of 8000000 for 9000
  1177 hyphenation exceptions out of 8191
- 77i,12n,82p,1318b,1381s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.pdf" (74 pages, 1661999 bytes).
+ 77i,12n,82p,1318b,688s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.pdf" (57 pages, 1551202 bytes).
 PDF statistics:
- 1152 PDF objects out of 1200 (max. 8388607)
- 973 compressed objects within 10 object streams
- 334 named destinations out of 1000 (max. 500000)
- 80490 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 696 PDF objects out of 1000 (max. 8388607)
+ 542 compressed objects within 6 object streams
+ 171 named destinations out of 1000 (max. 500000)
+ 73834 words of extra memory for PDF output out of 74296 (max. 10000000)
 
