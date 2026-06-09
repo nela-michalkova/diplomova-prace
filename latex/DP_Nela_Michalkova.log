@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.20)  8 JUN 2026 13:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.20)  9 JUN 2026 20:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -558,13 +558,13 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 6.
 
 
-[13{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}])
+[13])
 \tf@toc=\write4
 \openout4 = `DP_Nela_Michalkova.toc'.
 
 
 
-[14] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lof)
+[14{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lof)
 \tf@lof=\write5
 \openout5 = `DP_Nela_Michalkova.lof'.
 
@@ -592,7 +592,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ]
 
-[2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+[2]
 ipothes: Kapitola 1
 
 
@@ -602,8 +602,8 @@ ipothes: Kapitola 1
 
 [4]
 
-[5]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 362.
+[5{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 353.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -646,143 +646,144 @@ ipothes: Kapitola 2
 
 [22]
 ipothes: Kapitola 3
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 693.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 693.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 693.
-\tableonebox=\box58
-(/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Experiment_1_Tabulka_Rcci.tex)
-<../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png, id=442, 656.2116pt x 457.4691pt>
-File: ../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png Graphic file (type png)
-<use ../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png>
-Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png  used on input line 707.
-(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png, id=444, 656.2116pt x 457.4691pt>
-File: ../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png Graphic file (type png)
-<use ../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png>
-Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png  used on input line 713.
-(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png, id=445, 656.2116pt x 457.4691pt>
-File: ../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png Graphic file (type png)
-<use ../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png>
-Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png  used on input line 719.
-(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png, id=446, 656.2116pt x 457.4691pt>
-File: ../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png Graphic file (type png)
-<use ../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png>
-Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png  used on input line 725.
-(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png, id=447, 656.2116pt x 457.4691pt>
-File: ../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png Graphic file (type png)
-<use ../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png>
-Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png  used on input line 732.
-(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png, id=448, 656.2116pt x 457.4691pt>
-File: ../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png Graphic file (type png)
-<use ../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png>
-Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png  used on input line 738.
-(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png, id=449, 656.2116pt x 457.4691pt>
-File: ../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png Graphic file (type png)
-<use ../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png>
-Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png  used on input line 744.
-(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
 
 
 [23
 
 ]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 700.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 700.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 700.
+\tableonebox=\box58
+ (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Experiment_1_Tabulka_Rcci.tex)
+<../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png, id=470, 656.2116pt x 457.4691pt>
+File: ../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png Graphic file (type png)
+<use ../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png>
+Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png  used on input line 714.
+(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
+<../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png, id=472, 656.2116pt x 457.4691pt>
+File: ../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png Graphic file (type png)
+<use ../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png>
+Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png  used on input line 720.
+(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
+<../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png, id=473, 656.2116pt x 457.4691pt>
+File: ../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png Graphic file (type png)
+<use ../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png>
+Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png  used on input line 726.
+(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
+<../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png, id=474, 656.2116pt x 457.4691pt>
+File: ../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png Graphic file (type png)
+<use ../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png>
+Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png  used on input line 732.
+(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
+<../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png, id=475, 656.2116pt x 457.4691pt>
+File: ../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png Graphic file (type png)
+<use ../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png>
+Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png  used on input line 739.
+(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
+<../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png, id=476, 656.2116pt x 457.4691pt>
+File: ../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png Graphic file (type png)
+<use ../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png>
+Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png  used on input line 745.
+(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
+<../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png, id=477, 656.2116pt x 457.4691pt>
+File: ../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png Graphic file (type png)
+<use ../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png>
+Package pdftex.def Info: ../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png  used on input line 751.
+(pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
 
-[24 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png>]
 
-[25 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png>]
+[24]
 
-[26 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png>]
+[25 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_1_R800000.0_M1.4.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_2_R900000.0_M1.4.png>]
 
-[27 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png>]
+[26 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_3_R1000000.0_M1.4.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_4_R1100000.0_M1.4.png>]
+
+[27 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_5_R1200000.0_M1.4.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_6_R1300000.0_M1.4.png>]
+
+[28 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp1_Vary_R_run_7_R1400000.0_M1.4.png>]
 \tabletwobox=\box59
  (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Experiment_2_Tabulka_Mcoeff.tex)
-<../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png, id=478, 656.2116pt x 457.4691pt>
+<../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png, id=506, 656.2116pt x 457.4691pt>
 File: ../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png Graphic file (type png)
 <use ../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png>
-Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png  used on input line 773.
+Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png  used on input line 777.
 (pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png, id=479, 656.2116pt x 457.4691pt>
+<../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png, id=507, 656.2116pt x 457.4691pt>
 File: ../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png Graphic file (type png)
 <use ../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png>
-Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png  used on input line 779.
+Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png  used on input line 783.
 (pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png, id=480, 656.2116pt x 457.4691pt>
+<../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png, id=508, 656.2116pt x 457.4691pt>
 File: ../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png Graphic file (type png)
 <use ../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png>
-Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png  used on input line 785.
+Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png  used on input line 789.
 (pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png, id=481, 656.2116pt x 457.4691pt>
+<../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png, id=509, 656.2116pt x 457.4691pt>
 File: ../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png Graphic file (type png)
 <use ../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png>
-Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png  used on input line 791.
+Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png  used on input line 795.
 (pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png, id=482, 656.2116pt x 457.4691pt>
+<../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png, id=510, 656.2116pt x 457.4691pt>
 File: ../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png Graphic file (type png)
 <use ../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png>
-Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png  used on input line 797.
+Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png  used on input line 801.
 (pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png, id=483, 656.2116pt x 457.4691pt>
+<../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png, id=511, 656.2116pt x 457.4691pt>
 File: ../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png Graphic file (type png)
 <use ../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png>
-Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png  used on input line 803.
+Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png  used on input line 807.
 (pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
-<../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png, id=484, 656.2116pt x 457.4691pt>
+<../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png, id=512, 656.2116pt x 457.4691pt>
 File: ../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png Graphic file (type png)
 <use ../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png>
-Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png  used on input line 809.
+Package pdftex.def Info: ../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png  used on input line 813.
 (pdftex.def)             Requested size: 344.8792pt x 240.43315pt.
 
 
-[28
+[29
 
 ]
 
-[29 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png>]
+[30 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_1_R1000000_M1.1.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_2_R1000000_M1.3.png>]
 
-[30 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png>]
+[31 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_3_R1000000_M1.5.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_4_R1000000_M1.7.png>]
 
-[31 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png>]
-<../glitchrises-master/zavislost_maxA_Rcci.png, id=508, 527.571pt x 414.8298pt>
+[32 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_5_R1000000_M1.9.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_6_R1000000_M2.0.png>]
+<../glitchrises-master/zavislost_maxA_Rcci.png, id=536, 527.571pt x 414.8298pt>
 File: ../glitchrises-master/zavislost_maxA_Rcci.png Graphic file (type png)
 <use ../glitchrises-master/zavislost_maxA_Rcci.png>
-Package pdftex.def Info: ../glitchrises-master/zavislost_maxA_Rcci.png  used on input line 826.
+Package pdftex.def Info: ../glitchrises-master/zavislost_maxA_Rcci.png  used on input line 828.
 (pdftex.def)             Requested size: 183.93518pt x 144.62924pt.
-<../glitchrises-master/zavislost_casA_Rcci.png, id=509, 501.5538pt x 414.8298pt>
+<../glitchrises-master/zavislost_casA_Rcci.png, id=537, 501.5538pt x 414.8298pt>
 File: ../glitchrises-master/zavislost_casA_Rcci.png Graphic file (type png)
 <use ../glitchrises-master/zavislost_casA_Rcci.png>
-Package pdftex.def Info: ../glitchrises-master/zavislost_casA_Rcci.png  used on input line 828.
+Package pdftex.def Info: ../glitchrises-master/zavislost_casA_Rcci.png  used on input line 830.
 (pdftex.def)             Requested size: 183.93518pt x 152.13004pt.
-<../glitchrises-master/zavislost_maxA_Mcoeff.png, id=510, 527.571pt x 414.8298pt>
+<../glitchrises-master/zavislost_maxA_Mcoeff.png, id=538, 527.571pt x 414.8298pt>
 File: ../glitchrises-master/zavislost_maxA_Mcoeff.png Graphic file (type png)
 <use ../glitchrises-master/zavislost_maxA_Mcoeff.png>
-Package pdftex.def Info: ../glitchrises-master/zavislost_maxA_Mcoeff.png  used on input line 835.
+Package pdftex.def Info: ../glitchrises-master/zavislost_maxA_Mcoeff.png  used on input line 837.
 (pdftex.def)             Requested size: 183.93518pt x 144.62924pt.
-<../glitchrises-master/zavislost_casA_Mcoeff.png, id=511, 533.3526pt x 414.8298pt>
+<../glitchrises-master/zavislost_casA_Mcoeff.png, id=539, 533.3526pt x 414.8298pt>
 File: ../glitchrises-master/zavislost_casA_Mcoeff.png Graphic file (type png)
 <use ../glitchrises-master/zavislost_casA_Mcoeff.png>
-Package pdftex.def Info: ../glitchrises-master/zavislost_casA_Mcoeff.png  used on input line 837.
+Package pdftex.def Info: ../glitchrises-master/zavislost_casA_Mcoeff.png  used on input line 839.
 (pdftex.def)             Requested size: 183.93518pt x 143.05946pt.
 
 
-[32 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_maxA_Rcci.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_casA_Rcci.png>]
+[33 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/Exp2_Vary_M_run_7_R1000000_M2.2.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_maxA_Rcci.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_casA_Rcci.png>]
 
-[33 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_maxA_Mcoeff.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_casA_Mcoeff.png>]
-
-[34
-
-]
+[34 </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_maxA_Mcoeff.png> </Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../glitchrises-master/zavislost_casA_Mcoeff.png>]
 ipothes: Kapitola 4
 (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/ipotbabel.tex (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/ipot-cze.ldf))
 
-[35]
+[35
+
+]
 
 [36
 
@@ -796,6 +797,14 @@ ipothes: Kapitola 4
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 21.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 )
 
 [39] (/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.aux)
@@ -805,18 +814,18 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16734 strings out of 473190
- 276821 string characters out of 5715800
- 716788 words of memory out of 5000000
- 39209 multiletter control sequences out of 15000+600000
- 688559 words of font info for 256 fonts, out of 8000000 for 9000
+ 16817 strings out of 473190
+ 278230 string characters out of 5715800
+ 716879 words of memory out of 5000000
+ 39270 multiletter control sequences out of 15000+600000
+ 689389 words of font info for 261 fonts, out of 8000000 for 9000
  1177 hyphenation exceptions out of 8191
  77i,12n,82p,1318b,688s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.pdf" (57 pages, 1551227 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "/Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.pdf" (57 pages, 1584372 bytes).
 PDF statistics:
- 696 PDF objects out of 1000 (max. 8388607)
- 542 compressed objects within 6 object streams
- 171 named destinations out of 1000 (max. 500000)
- 73834 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 742 PDF objects out of 1000 (max. 8388607)
+ 586 compressed objects within 6 object streams
+ 181 named destinations out of 1000 (max. 500000)
+ 74346 words of extra memory for PDF output out of 89155 (max. 10000000)
 

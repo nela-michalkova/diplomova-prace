@@ -1,5 +1,5 @@
 \newcommand*{\bblaccy}[1]{#1} \newcommand*{\bblaccym}[2]{#1\discretionary{-}{-}{-}#2} \newcommand*{\bblaccymd}[3]{#1\discretionary{-}{-}{-}#2\discretionary{-}{-}{-}#3}
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,10 +17,28 @@
 \bibitem{ghosh2007}
 \textsc{Ghosh, P.}: {\selectlanguage{english}\emph{{Rotation and Accretion Powered Pulsars}}}. World Scientific Publishing Company, Singapore, 2007, ISBN 978-981-270-592-1.
 
+\bibitem{haskell2014}
+\textsc{Haskell, B. \& Antonopoulou, D.}: Glitch recoveries in radio-pulsars and magnetars. \emph{Monthly Notices of the Royal Astronomical Society}, \textbf{438}(1), \bblpp{} L16--L20, 2014, \doi{10.1093/mnrasl/slt153}. \urlprefix\url{https://arxiv.org/abs/1306.5214}.
+
+\bibitem{baym2018}
+\textsc{Baym, G.; Hatsuda, T.; Kojo, T.; Powell, P.~D.; Song, Y. \& Takatsuka, T.}: From hadrons to quarks in neutron stars: a review. \emph{Reports on Progress in Physics}, \textbf{81}(5), \bblp{} 056902, 2018, \doi{10.1088/1361-6633/aaae14}. \urlprefix\url{https://arxiv.org/abs/1707.04966}.
+
+\bibitem{andersson2021}
+\textsc{Andersson, N.}: A superfluid perspective on neutron star dynamics. \emph{Universe}, \textbf{7}(1), \bblp{}~17, 2021, \doi{10.3390/universe7010017}. \urlprefix\url{https://arxiv.org/abs/2103.10218}.
+
 \bibitem{graber2018}
 \textsc{Graber, V.; Cumming, A. \& Andersson, N.}: {\selectlanguage{english}{Glitch Rises as a Test for Rapid Superfluid Coupling in Neutron Stars}}. \emph{The Astrophysical Journal}, \textbf{865}(1), \bblp{}~23, 2018, \doi{10.3847/1538-4357/aad776}.
 
+\bibitem{vidana2018}
+\textsc{Vida{\~n}a, I.}: Short introduction to the physics of neutron stars. \emph{AIP Conference Proceedings}, \textbf{1976}(1), \bblp{} 020002, 2018, \doi{10.1063/1.5042364}.
+
 \bibitem{crab2022}
 \textsc{Zhang, C.-M.; Cui, X.-H.; Li, D.; Wang, D.-H.; Wang, S.-Q.; Wang, N.; Zhang, J.-W.; Peng, B.; Zhu, W.-W.; Yang, Y.-Y. \& Pan, Y.-Y.}: {\selectlanguage{english}{Evolution of Spin Period and Magnetic Field of the Crab Pulsar: Decay of the Braking Index by the Particle Wind Flow Torque}}. \emph{Universe}, \textbf{8}(12), \bblp{} 628, 2022, \doi{10.3390/universe8120628}.
+
+\bibitem{guvercinoglu2020}
+\textsc{G{\"u}gercino{\u{g}}lu, E. \& Alpar, M.~A.}: The 2016 vela glitch: a key to neutron star internal structure and dynamics. \emph{Monthly Notices of the Royal Astronomical Society}, \textbf{498}(1), \bblpp{} 1--10, 2020, \doi{10.1093/mnras/staa2319}.
+
+\bibitem{palfreyman2018}
+\textsc{Palfreyman, J.; Dickey, J.~M.; Hotan, A.; Ellingsen, S. \& van Straten, W.}: Alteration of the magnetosphere of the vela pulsar during a glitch. \emph{Nature}, \textbf{556}(7700), \bblpp{} 219--222, 2018, \doi{10.1038/s41586-018-0001-x}.
 
 \end{thebibliography}
