@@ -11,14 +11,20 @@
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem{page_nstar}
+\textsc{Page, D.}: {Neutron Star: Surface and Interior}. online. [cit. 2026-07-04], \urlprefix\url{https://www.astroscu.unam.mx/neutrones/NS-Picture/NStar/NStar.html}.
+
+\bibitem{basu2019}
+\textsc{Basu, A.; Joshi, B.~C.; Krishnakumar, M.~A.; Bhattacharya, D.; Nandi, R.; Bandyopadhyay, D.; Char, P. \& Manoharan, P.~K.}: Observed glitches in 8 young pulsars. \emph{Monthly Notices of the Royal Astronomical Society}, \textbf{491}(3), \bblpp{} 3182--3191, 2020, \doi{10.1093/mnras/stz3230}.
+
 \bibitem{vidana2020}
-\textsc{Vida{\~n}a, I.}: {\selectlanguage{english}{Short introduction to the physics of neutron stars}}. \emph{EPJ Web of Conferences}, \textbf{227}, \bblp{} 01018, 2020, \doi{10.1051/epjconf/202022701018}.
+\textsc{Vida{\~n}a, I.}: Short introduction to the physics of neutron stars. \capitalize\bblin{} \emph{EPJ Web of Conferences}, \bblvolume{} 227, \bblp{} 01018, EDP Sciences, 2020, \doi{10.1051/epjconf/202022701018}. \urlprefix\url{https://doi.org/10.1051/epjconf/202022701018}.
 
 \bibitem{ghosh2007}
-\textsc{Ghosh, P.}: {\selectlanguage{english}\emph{{Rotation and Accretion Powered Pulsars}}}. World Scientific Publishing Company, Singapore, 2007, ISBN 978-981-270-592-1.
+\textsc{Ghosh, P.}: {\selectlanguage{english}\emph{{Rotation and Accretion Powered Pulsars}}}. World Scientific Publishing Company, Singapore, 2007, ISBN 978-981-02-4744-7. \urlprefix\url{https://openlibrary.org/isbn/978-981-02-4744-7}.
 
 \bibitem{haskell2014}
-\textsc{Haskell, B. \& Antonopoulou, D.}: Glitch recoveries in radio-pulsars and magnetars. \emph{Monthly Notices of the Royal Astronomical Society}, \textbf{438}(1), \bblpp{} L16--L20, 2014, \doi{10.1093/mnrasl/slt153}. \urlprefix\url{https://arxiv.org/abs/1306.5214}.
+\textsc{Haskell, B. \& Antonopoulou, D.}: Glitch recoveries in radio-pulsars and magnetars. \emph{Monthly Notices of the Royal Astronomical Society: Letters}, \textbf{438}(1), \bblpp{} L16--L20, 2014, \doi{10.1093/mnrasl/slt146}.
 
 \bibitem{baym2018}
 \textsc{Baym, G.; Hatsuda, T.; Kojo, T.; Powell, P.~D.; Song, Y. \& Takatsuka, T.}: From hadrons to quarks in neutron stars: a review. \emph{Reports on Progress in Physics}, \textbf{81}(5), \bblp{} 056902, 2018, \doi{10.1088/1361-6633/aaae14}. \urlprefix\url{https://arxiv.org/abs/1707.04966}.
@@ -29,16 +35,37 @@
 \bibitem{graber2018}
 \textsc{Graber, V.; Cumming, A. \& Andersson, N.}: {\selectlanguage{english}{Glitch Rises as a Test for Rapid Superfluid Coupling in Neutron Stars}}. \emph{The Astrophysical Journal}, \textbf{865}(1), \bblp{}~23, 2018, \doi{10.3847/1538-4357/aad776}.
 
-\bibitem{vidana2018}
-\textsc{Vida{\~n}a, I.}: Short introduction to the physics of neutron stars. \emph{AIP Conference Proceedings}, \textbf{1976}(1), \bblp{} 020002, 2018, \doi{10.1063/1.5042364}.
+\bibitem{ascenzi2024}
+\textsc{Ascenzi, S.; Graber, V. \& Rea, N.}: Neutron-star measurements in the multi-messenger era. \emph{Astroparticle Physics}, \textbf{156}, \bblp{} 102935, 2024, \doi{10.1016/j.astropartphys.2024.102935}. \urlprefix\url{http://arxiv.org/abs/2401.14930v1}.
+
+\bibitem{buchdahl1959}
+\textsc{Buchdahl, H.~A.}: General relativistic fluid spheres. \emph{Physical Review}, \textbf{116}(4), \bblpp{} 1027--1034, 1959, \doi{10.1103/PhysRev.116.1027}.
+
+\bibitem{araujo2016}
+\textsc{de~Araujo, J. C.~N.; Coelho, J.~G. \& Costa, C.~A.}: {\selectlanguage{english}{Gravitational waves from pulsars with measured braking index}}. \emph{The European Physical Journal C}, \textbf{76}(9), \bblp{} 481, 2016, \doi{10.1140/epjc/s10052-016-4327-y}. \urlprefix\url{https://doi.org/10.1140/epjc/s10052-016-4327-y}.
 
 \bibitem{crab2022}
 \textsc{Zhang, C.-M.; Cui, X.-H.; Li, D.; Wang, D.-H.; Wang, S.-Q.; Wang, N.; Zhang, J.-W.; Peng, B.; Zhu, W.-W.; Yang, Y.-Y. \& Pan, Y.-Y.}: {\selectlanguage{english}{Evolution of Spin Period and Magnetic Field of the Crab Pulsar: Decay of the Braking Index by the Particle Wind Flow Torque}}. \emph{Universe}, \textbf{8}(12), \bblp{} 628, 2022, \doi{10.3390/universe8120628}.
+
+\bibitem{haskell2012}
+\textsc{Haskell, B.; Pizzochero, P.~M. \& Sidery, T.}: Modelling pulsar glitches with realistic pinning forces: a hydrodynamical approach. \emph{Monthly Notices of the Royal Astronomical Society}, \textbf{420}, \bblpp{} 658--667, 2012, \doi{10.1111/j.1365-2966.2011.20080.x}.
 
 \bibitem{guvercinoglu2020}
 \textsc{G{\"u}gercino{\u{g}}lu, E. \& Alpar, M.~A.}: The 2016 vela glitch: a key to neutron star internal structure and dynamics. \emph{Monthly Notices of the Royal Astronomical Society}, \textbf{498}(1), \bblpp{} 1--10, 2020, \doi{10.1093/mnras/staa2319}.
 
 \bibitem{palfreyman2018}
 \textsc{Palfreyman, J.; Dickey, J.~M.; Hotan, A.; Ellingsen, S. \& van Straten, W.}: Alteration of the magnetosphere of the vela pulsar during a glitch. \emph{Nature}, \textbf{556}(7700), \bblpp{} 219--222, 2018, \doi{10.1038/s41586-018-0001-x}.
+
+\bibitem{vidana2018}
+\textsc{Vida{\~n}a, I.}: Short introduction to the physics of neutron stars. \emph{AIP Conference Proceedings}, \textbf{1976}(1), \bblp{} 020002, 2018, \doi{10.1063/1.5042364}.
+
+\bibitem{pizzochero2011}
+\textsc{Pizzochero, P.~M.}: {\selectlanguage{english}{Angular Momentum Transfer in Vela-like Pulsar Glitches}}. \emph{The Astrophysical Journal Letters}, \textbf{743}(1), \bblp{} L20, 2011, \doi{10.1088/2041-8205/743/1/L20}. \urlprefix\url{https://iopscience.iop.org/article/10.1088/2041-8205/743/1/L20}.
+
+\bibitem{jones1998}
+\textsc{Jones, P.~B.}: The origin of pulsar glitches. \emph{Monthly Notices of the Royal Astronomical Society}, \textbf{296}(1), \bblpp{} 217--224, 1998, \doi{10.1046/j.1365-8711.1998.01464.x}.
+
+\bibitem{ruderman1998}
+\textsc{Ruderman, M.; Zhu, T. \& Chen, K.}: Neutron star magnetic field evolution, crust movement, and glitches. \emph{The Astrophysical Journal}, \textbf{492}(1), \bblpp{} 267--280, 1998, \doi{10.1086/305026}.
 
 \end{thebibliography}

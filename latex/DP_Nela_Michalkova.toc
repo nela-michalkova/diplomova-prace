@@ -8,43 +8,45 @@
 \contentsline {chapter}{Úvod}{1}{Doc-Start}%
 \contentsline {section}{Cíle práce}{1}{Doc-Start}%
 \contentsline {chapter}{Kapitola\ 1\relax .\enspace Neutronové hvězdy}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1\relax .\enspace }Neutronové hvězdy a jejich historie}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.1\relax .\enspace }Historie neutronových hvězd}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2\relax .\enspace }Vnitřní struktura neutronové hvězdy}{4}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1\relax .\enspace }Atmosféra}{4}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2\relax .\enspace }Kůra}{4}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3\relax .\enspace }Vnější jádro}{4}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4\relax .\enspace }Vnitřní jádro}{5}{subsection.1.2.4}%
-\contentsline {section}{\numberline {1.3\relax .\enspace }Tolmanova--Oppenheimerova--Volkoffova rovnice}{5}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1\relax .\enspace }Odvození z obecné relativity}{5}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2\relax .\enspace }Fyzikální interpretace}{6}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3\relax .\enspace }Numerické řešení}{7}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.3.4\relax .\enspace }Využití v modelování glitchů}{7}{subsection.1.3.4}%
-\contentsline {section}{\numberline {1.4\relax .\enspace }Pulsary}{7}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1\relax .\enspace }Rotace neutronových hvězd}{8}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2\relax .\enspace }Brzdný index}{10}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3\relax .\enspace }Glitche a pozorované data}{12}{subsection.1.4.3}%
-\contentsline {chapter}{Kapitola\ 2\relax .\enspace Supratekutost v neutronových hvězdách}{13}{chapter.2}%
-\contentsline {section}{\numberline {2.1\relax .\enspace }Tříkomponentní dynamický model glitche}{13}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1\relax .\enspace }Kůra a pevná složka (Crust)}{13}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2\relax .\enspace }Neutronová supratekutina v kůře (Crust Superfluid)}{13}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3\relax .\enspace }Supratekuté jádro (Core Superfluid)}{14}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2\relax .\enspace }Teorie BCS a Cooperovo párování nukleonů}{14}{section.2.2}%
-\contentsline {section}{\numberline {2.3\relax .\enspace }Supratekutá složka v rotující kůře}{15}{section.2.3}%
-\contentsline {section}{\numberline {2.4\relax .\enspace }Vortex pinning (zachycování vírů)}{18}{section.2.4}%
-\contentsline {section}{\numberline {2.5\relax .\enspace }Relaxace po glitchi}{20}{section.2.5}%
-\contentsline {section}{\numberline {2.6\relax .\enspace }Nedávný vývoj v oblasti glitchů pulsarů}{20}{section.2.6}%
-\contentsline {chapter}{Kapitola\ 3\relax .\enspace Numerický model a výsledky}{23}{chapter.3}%
-\contentsline {section}{\numberline {3.1\relax .\enspace }Popis modelu}{23}{section.3.1}%
-\contentsline {section}{\numberline {3.2\relax .\enspace }Závislost na poloze rozhraní $R_{\rm cci}$}{24}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1\relax .\enspace }Diskuze}{29}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3\relax .\enspace }Závislost na hmotnosti jádra $M_{\rm core}$}{29}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1\relax .\enspace }Diskuze}{29}{subsection.3.3.1}%
-\contentsline {section}{\numberline {3.4\relax .\enspace }Shrnutí maxim – Profil A}{33}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1\relax .\enspace }Diskuze}{34}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5\relax .\enspace }Diskuse a interpretace výsledků}{34}{section.3.5}%
-\contentsline {chapter}{Kapitola\ 4\relax .\enspace Závěr}{35}{chapter.4}%
-\contentsline {part}{\numberline {I\relax .\enspace }Dodatky}{37}{part.1}%
-\contentsline {chapter}{Literatura}{39}{part.1}%
+\contentsline {section}{\numberline {1.3\relax .\enspace }Tolmanova--Oppenheimerova--Volkoffova rovnice}{6}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1\relax .\enspace }Odvození TOV rovnice}{6}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2\relax .\enspace }Stavová rovnice}{9}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3\relax .\enspace }Meze kompaktnosti}{10}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4\relax .\enspace }Supratekutost v neutronových hvězdách}{11}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1\relax .\enspace }Cooperovo párování a BCS teorie}{12}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2\relax .\enspace }Supratekuté oblasti v neutronové hvězdě}{13}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3\relax .\enspace }Rotace supratekutiny a kvantované víry}{14}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5\relax .\enspace }Pulsary}{16}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1\relax .\enspace }Rotace neutronových hvězd}{17}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2\relax .\enspace }Brzdný index}{17}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3\relax .\enspace }Glitche a pozorovaná data}{19}{subsection.1.5.3}%
+\contentsline {section}{\numberline {1.6\relax .\enspace }Tříkomponentní dynamický model}{21}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1\relax .\enspace }Pevně vázaná složka}{21}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2\relax .\enspace }Neutronová supratekutina v kůře}{21}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3\relax .\enspace }Supratekuté jádro}{22}{subsection.1.6.3}%
+\contentsline {section}{\numberline {1.7\relax .\enspace }Návaznost na model Graber et al.}{22}{section.1.7}%
+\contentsline {section}{\numberline {1.8\relax .\enspace }Tříkomponentní dynamický model}{23}{section.1.8}%
+\contentsline {subsection}{\numberline {1.8.1\relax .\enspace }Pevně vázaná složka}{23}{subsection.1.8.1}%
+\contentsline {subsection}{\numberline {1.8.2\relax .\enspace }Neutronová supratekutina v kůře}{23}{subsection.1.8.2}%
+\contentsline {subsection}{\numberline {1.8.3\relax .\enspace }Supratekuté jádro}{24}{subsection.1.8.3}%
+\contentsline {section}{\numberline {1.9\relax .\enspace }Návaznost na model Graber et al.}{24}{section.1.9}%
+\contentsline {chapter}{Kapitola\ 2\relax .\enspace Numerický model a výsledky}{25}{chapter.2}%
+\contentsline {section}{\numberline {2.1\relax .\enspace }Popis modelu}{25}{section.2.1}%
+\contentsline {section}{\numberline {2.2\relax .\enspace }Výchozí nastavení simulací}{25}{section.2.2}%
+\contentsline {section}{\numberline {2.3\relax .\enspace }Vliv polohy rozhraní mezi jádrem a kůrou}{26}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1\relax .\enspace }Diskuze}{31}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4\relax .\enspace }Vliv hmotnosti jádra}{31}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1\relax .\enspace }Diskuze}{31}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5\relax .\enspace }Shrnutí výsledků pro profil A}{35}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1\relax .\enspace }Diskuze}{36}{subsection.2.5.1}%
+\contentsline {section}{\numberline {2.6\relax .\enspace }Diskuse a interpretace výsledků}{36}{section.2.6}%
+\contentsline {chapter}{Kapitola\ 3\relax .\enspace Závěr}{37}{chapter.3}%
+\contentsline {part}{\numberline {I\relax .\enspace }Dodatky}{39}{part.1}%
+\contentsline {chapter}{Literatura}{41}{part.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {czech}{}\relax 
 \babel@toc {english}{}\relax 
