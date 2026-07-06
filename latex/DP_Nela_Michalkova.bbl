@@ -33,7 +33,7 @@
 \textsc{Andersson, N.}: A superfluid perspective on neutron star dynamics. \emph{Universe}, \textbf{7}(1), \bblp{}~17, 2021, \doi{10.3390/universe7010017}. \urlprefix\url{https://arxiv.org/abs/2103.10218}.
 
 \bibitem{graber2018}
-\textsc{Graber, V.; Cumming, A. \& Andersson, N.}: {\selectlanguage{english}{Glitch Rises as a Test for Rapid Superfluid Coupling in Neutron Stars}}. \emph{The Astrophysical Journal}, \textbf{865}(1), \bblp{}~23, 2018, \doi{10.3847/1538-4357/aad776}.
+\textsc{Graber, V.; Cumming, A. \& Andersson, N.}: Glitch rises as a test for rapid superfluid coupling in neutron stars. \emph{The Astrophysical Journal}, \textbf{865}, \bblp{}~23, 2018, \doi{10.3847/1538-4357/aad776}.
 
 \bibitem{ascenzi2024}
 \textsc{Ascenzi, S.; Graber, V. \& Rea, N.}: Neutron-star measurements in the multi-messenger era. \emph{Astroparticle Physics}, \textbf{156}, \bblp{} 102935, 2024, \doi{10.1016/j.astropartphys.2024.102935}. \urlprefix\url{http://arxiv.org/abs/2401.14930v1}.
@@ -50,6 +50,12 @@
 \bibitem{haskell2012}
 \textsc{Haskell, B.; Pizzochero, P.~M. \& Sidery, T.}: Modelling pulsar glitches with realistic pinning forces: a hydrodynamical approach. \emph{Monthly Notices of the Royal Astronomical Society}, \textbf{420}, \bblpp{} 658--667, 2012, \doi{10.1111/j.1365-2966.2011.20080.x}.
 
+\bibitem{jones1998}
+\textsc{Jones, P.~B.}: The origin of pulsar glitches. \emph{Monthly Notices of the Royal Astronomical Society}, \textbf{296}(1), \bblpp{} 217--224, 1998, \doi{10.1046/j.1365-8711.1998.01464.x}.
+
+\bibitem{ruderman1998}
+\textsc{Ruderman, M.; Zhu, T. \& Chen, K.}: Neutron star magnetic field evolution, crust movement, and glitches. \emph{The Astrophysical Journal}, \textbf{492}(1), \bblpp{} 267--280, 1998, \doi{10.1086/305026}.
+
 \bibitem{guvercinoglu2020}
 \textsc{G{\"u}gercino{\u{g}}lu, E. \& Alpar, M.~A.}: The 2016 vela glitch: a key to neutron star internal structure and dynamics. \emph{Monthly Notices of the Royal Astronomical Society}, \textbf{498}(1), \bblpp{} 1--10, 2020, \doi{10.1093/mnras/staa2319}.
 
@@ -61,11 +67,5 @@
 
 \bibitem{pizzochero2011}
 \textsc{Pizzochero, P.~M.}: {\selectlanguage{english}{Angular Momentum Transfer in Vela-like Pulsar Glitches}}. \emph{The Astrophysical Journal Letters}, \textbf{743}(1), \bblp{} L20, 2011, \doi{10.1088/2041-8205/743/1/L20}. \urlprefix\url{https://iopscience.iop.org/article/10.1088/2041-8205/743/1/L20}.
-
-\bibitem{jones1998}
-\textsc{Jones, P.~B.}: The origin of pulsar glitches. \emph{Monthly Notices of the Royal Astronomical Society}, \textbf{296}(1), \bblpp{} 217--224, 1998, \doi{10.1046/j.1365-8711.1998.01464.x}.
-
-\bibitem{ruderman1998}
-\textsc{Ruderman, M.; Zhu, T. \& Chen, K.}: Neutron star magnetic field evolution, crust movement, and glitches. \emph{The Astrophysical Journal}, \textbf{492}(1), \bblpp{} 267--280, 1998, \doi{10.1086/305026}.
 
 \end{thebibliography}

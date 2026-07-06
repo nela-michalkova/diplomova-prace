@@ -792,80 +792,101 @@ Glitche jsou proto důležité nejen jako odchylky v přesném časování pulsa
 \end{figure}
 
 
+\chapter{Supratekutý mechanismus glitchů}
 
+\section{Vortex pinning v kůře neutronové hvězdy}
 
-\section{Tříkomponentní dynamický model}
+Doposud nejpřesvědčivější teorií, která vysvětluje vznik glitchů v neutronových hvězdách, je teorie o zachycování vírů (vortex pinning). Tento koncept vznikl jako reakce na dřívější modely, které se při detailním zkoumání ukázaly jako nedostačující. Jedním z nich byla dvousložková teorie post-glitchové relaxace navržená Baymem v roce 1969, která předpokládala existenci „kontejneru“ (pevná kůra a nabité částice) a supratekuté složky v jádru hvězdy, vzájemně svázaných třením \cite[s.~386]{ghosh2007}. Tato teorie ovšem neuspokojivě vysvětlovala pozorované časové parametry relaxace. Výzkumy z 80.\ let totiž ukázaly, že vazba mezi elektrony a magnetizovanými víry v jádru hvězdy je extrémně silná, což vede k dynamické době vazby $\tau_d$ v řádu sekund až minut -- v přímém rozporu s pozorovanými makroskopickými relaxačními časy glitchů, které dosahují desítek až stovek dní \cite[s.~386]{ghosh2007}. Řešení tohoto rozporu bylo nalezeno ve vnitřní kůře neutronové hvězdy, kde existuje specifické prostředí tvořené mřížkou atomových jader obklopenou supratekutinou „odkapaných“ (dripped) neutronů \cite[s.~387]{ghosh2007}.
 
-Neutronová hvězda je v kontextu dynamiky glitche rozdělena do několika rotačních komponent, které interagují s různou silou tření. Model použitý ve studii glitche pulsar Vela rozděluje hvězdu do tří hlavních součástí, aby mohl modelovat přenos úhlové hybnosti.
-
-\subsection{Pevně vázaná složka}
-Skládá se z jaderné mřížky kůry a pevně spojené nabité složky v jádře. 
-Tato složka představuje jadernou mřížku a pevně spojenou nabitou konglomeraci v jádře, které rotují rigidně. Představuje tu část hvězdy, která je přímo pozorovatelná a jejíž frekvence $\Omega_{\text{crust}}$ se náhle mění během glitche.
-
-\subsection{Neutronová supratekutina v kůře}
-Skládá se ze supratekutých neutronů ve vnitřní kůře.
-Tato složka se nachází ve vnitřní kůře a je tvořena volnými neutrony v supratekutém stavu. Je oddělena od kůry pomocí pinningu vírů k jaderné mřížce. Tato supratekutina slouží jako rezervoár úhlové hybnosti, která je uvolněna během glitche. Rychlost opětovného propojení kůry a této supratekutiny je řízena hustotně závislým vzájemným třením $\mathcal{B}(\tilde{r})$, pravděpodobně prostřednictvím excitace Kelvinových vln.
-
-\subsection{Supratekuté jádro}
-Tato složka zahrnuje supratekuté neutrony v jádře hvězdy. Jádro v tomto modelu rotuje jako pevná koule, a tedy všechny jeho částice mají stejnou úhlovou rychlost, přičemž jeho propojení s kůrou je řízeno konstantním koeficientem vzájemného tření $B_{\text{core}}$. Síla tohoto propojení je klíčová pro tvar nárůstu glitche, protože určuje, zda se úhlová hybnost přenáší nejprve z kůrové supratekutiny, nebo ze supratekutého jádra do kombinovaného systému kůry a jádra. Tyto komponenty mají úhlové rychlosti $\Omega_x$ a momenty setrvačnosti $I_x$, kde $x \in \{\text{crust}, \text{crust superfluid}, \text{core superfluid}\}$. Vzájemné tření mezi těmito složkami na různých časových škálách a v závislosti na hustotě řídí veškerou dynamiku glitche.
-Dynamika supertekutiny, která je důsledkem hustotně závislého tření, způsobuje, že se moment hybnosti přenáší do různých částí kůry a jádra v různých časových měřítkách. To může vést k tomu, že se změna frekvence rotace stane v čase nemonotónní, což umožňuje dosažení maximální hodnoty mnohem větší, než je naměřená velikost glitche, a také zpoždění v regeneraci.
-
-\section{Návaznost na model Graber et al.}
-
-V článku od Vanessa Graber et al. (2024) se zaměřují na vliv supratekuté složky na rotaci pulsarů, přičemž používají fixní rozměr a hmotnost pulsaru, konkrétně používají hmotnost $1.4\,M_{\odot}$ a poloměr $10\,\text{km}$. My se zaměřujeme na to, jaký vliv má na rotaci pulsarů změna rozměru a hmotnosti pulsaru. Budeme používat model popsaný v článku, ale s tím rozdílem, že budeme měnit rozměr a hmotnost pulsaru.
-
-
-[Ghosh 8.6]
-Novější výzkumy ukazují, že model vortex pinningu nemusí být pro popsání glitchů v neutronové hvězdě dostačující.
-V roce 1998 přišel Jones s myšlenkou, že neutronové jádro nemůžeme považovat za monokrystal, jako tomu bylo v modelu votex pinningu, protože jádro neutronové hvězdy je ve skutečnosti polykrystalické. Polykrystalická struktura generuje mnohem slabší sílu zachycení vírů ($f_p$) než v monokrystalu, protože příspěvky jednotlivých krystalů se částečně vyruší. Jonesovy výpočty ukázaly, že síla zachycení v kůře je sice dostatečná v oblastech s nízkou hustotou
+Základem této teorie je poznatek, že v rotující supratekutině je moment hybnosti nesen sítí kvantovaných Onsager–Feynmanových vírů. Jádro těchto vírů tvoří oblast normální (nesupratekuté) hmoty o poloměru daném koherenční délkou $\xi$ \cite[s.~390]{ghosh2007}. Vzhledem k tomu, že energetická hustota supratekutiny je nižší než hustota energie v normálním stavu o hodnotu kondenzační energie, je pro systém energeticky výhodné, aby jádra vírů procházela místy, kde je supratekutost již přirozeně narušena, tedy skrze atomová jádra krystalické mřížky kůry. Tento jev se nazývá zachytávání (pinning) \cite[s.~389]{ghosh2007}. Síla tohoto zachytávání je určena energií $E_p$, představující rozdíl mezi energií jádra víru procházejícího vnějším prostředím (odkapanými neutrony) a vnitřkem atomového jádra:
 \begin{equation}
-\delta\Omega_{crit} \approx 10^{-2} \Omega \sim 0.4 \, \mathrm{rad \, s^{-1}},
+E_p = \frac{3}{8} \left[ \left( n_n \frac{E_{G(n)}^2}{E_F^{(n)}} \right)_{\mathrm{out}} - \left( n_n \frac{E_{G(n)}^2}{E_F^{(n)}} \right)_{\mathrm{in}} \right] V,
 \end{equation}
-nicméně v hlubších vrstvách kůry, kde je soustředěna většina momentu setrvačnosti supratekutiny, tato síla drasticky klesá. Metoda zachycování vírů (vortex pinning) v kůře tak sama o sobě pravděpodobně nedokáže vysvětlit obří glitche pozorované u pulsaru Vela.
-Tento poznatek vedl k hlubšímu zkoumání jádra neutronové hvězdy. V stejném roce vznikl Rudermanův model, který je zaměřený na dynamiku jádra. Jádro neutronové hvězdy totiž obsahuje dvě dynamické složky. První je supratekutá neutronová složka, která nese neutronové víry, a druhou je supravodivá protonová složka, která nese magnetické pole ve formě trubic toku. Ruderman tvrdí, že pomalé zpomalování rotace hvězdy nutí neutronové víry se radiálně pohybovat ven, čímž s sebou vleče magnetické trubice toku (Flux-Vortex Interaction).
+kde $E_G$ je energetická mezera, $n_n$ hustota neutronů a $V$ objem překryvu jádra víru s atomovým jádrem \cite[s.~390]{ghosh2007}. Efektivní fungování tohoto mechanismu závisí na poměru koherenční délky $\xi$ a mřížkové rozteče $b$. Ve vnitřní kůře je tento poměr často
+\begin{equation}
+\xi / b \lesssim 1,
+\end{equation}
+což geometricky umožňuje vírům fixovat se na mřížkových bodech \cite[s.~391]{ghosh2007}.
+
+\section{Přenos momentu hybnosti při unpinningu}
+
+Z dynamického hlediska je klíčový vztah mezi rotací kůry a supratekutiny. Zatímco pevná kůra je brzděna vnějšími elektromagnetickými momenty a její úhlová rychlost $\Omega_c$ klesá, zachycené víry nutí supratekutou složku rotovat s původní, vyšší úhlovou rychlostí $\Omega_s$ \cite[s.~394]{ghosh2007}. Tím vzniká rostoucí rozdíl rychlostí
+\begin{equation}
+\delta v = r(\Omega_s - \Omega_c).
+\end{equation}
+Tento rozdíl generuje na jednotku délky víru Magnusovu sílu $f_M$, směřující radiálně ven a působící proti síle zachytávání:
+\begin{equation}
+f_M = \rho(\kappa \times \delta v),
+\end{equation}
+kde $\rho$ je hustota a $\kappa$ vektor cirkulace \cite[s.~394]{ghosh2007}. Tato síla je vyvažována silou zachytávání $f_p$, směřující dovnitř. Jak pulsar v čase zpomaluje, rozdíl $\delta v$ narůstá, dokud Magnusova síla nepřekoná bariéru zachytávání. V tom okamžiku dojde ke katastrofickému a hromadnému odpoutání vírů (unpinning). Víry se prudce přesunou do oblastí s nižší hustotou vírů (směrem ven), čímž dojde k rychlému přenosu momentu hybnosti ze supratekutiny na kůru \cite[s.~395--396]{ghosh2007}. Pozorovaným důsledkem je náhlý nárůst úhlové rychlosti kůry, tedy glitch.
+
+Kritický rozdíl úhlových rychlostí potřebný ke spuštění glitche je dán vztahem
+\begin{equation}
+\delta\Omega_{crit} = \frac{E_p}{\xi a r \rho \kappa},
+\end{equation}
+kde $a$ představuje průměrnou vzdálenost mezi místy zachytávání podél vírové čáry \cite[s.~397]{ghosh2007}. Tato kritická hodnota je silně závislá na velikosti energetické mezery $E_G$, což činí z pozorování glitchů unikátní diagnostický nástroj pro studium supratekutosti a vnitřní struktury neutronových hvězd. Následná dlouhá relaxace po glitchi pak neodpovídá prostému tření, ale procesu plíživého pohybu vírů (vortex creep), kdy se systém postupně vrací do nového rovnovážného stavu \cite[s.~395]{ghosh2007}.
 
 
-%%%
-\section{Tříkomponentní dynamický model}
-Neutronová hvězda je v kontextu dynamiky glitche rozdělena do několika rotačních komponent, které interagují s různou silou tření. Model použitý ve studii glitche pulsaru Vela rozděluje hvězdu do tří hlavních součástí, aby mohl modelovat přenos úhlové hybnosti.
 
-\subsection{Pevně vázaná složka}
-Skládá se z jaderné mřížky kůry a pevně spojené nabité složky v jádře. 
-Tato složka představuje jadernou mřížku a pevně spojenou nabitou konglomeraci v jádře, které rotují rigidně. Představuje tu část hvězdy, která je přímo pozorovatelná a jejíž frekvence $\Omega_{\text{crust}}$ se náhle mění během glitche.
+\section{Návaznost na model Graber et al. (2018)}
 
-\subsection{Neutronová supratekutina v kůře}
-Skládá se ze supratekutých neutronů ve vnitřní kůře.
-Tato složka se nachází ve vnitřní kůře a je tvořena volnými neutrony v supratekutém stavu. Je oddělena od kůry pomocí pinningu vírů k jaderné mřížce. Tato supratekutina slouží jako rezervoár úhlové hybnosti, která je uvolněna během glitche. Rychlost opětovného propojení kůry a této supratekutiny je řízena hustotně závislým vzájemným třením $\mathcal{B}(\tilde{r})$, pravděpodobně prostřednictvím excitace Kelvinových vln.
+Standardní model vortex pinningu popsaný v předchozí kapitole dobře vysvětluje kvalitativní mechanismus glitche -- akumulaci a náhlé uvolnění momentu hybnosti ze zachycené supratekutiny. Pro kvantitativní porovnání s pozorovanými daty, zejména s tvarem a rychlostí nárůstu glitche, je však třeba přesnější dynamický popis, který rozlišuje jednotlivé rotující složky hvězdy a jejich vzájemné propojení. Tímto směrem se ubírá práce Grabera, Cummingové a Anderssona (2018), z níž vychází model použitý v této práci \cite[]{graber2018}.
 
-\subsection{Supratekuté jádro}
-Tato složka zahrnuje supratekuté neutrony v jádře hvězdy. Jádro v tomto modelu rotuje jako pevná koule, a tedy všechny jeho částice mají stejnou úhlovou rychlost, přičemž jeho propojení s kůrou je řízeno konstantním koeficientem vzájemného tření $B_{\text{core}}$. Síla tohoto propojení je klíčová pro tvar nárůstu glitche, protože určuje, zda se úhlová hybnost přenáší nejprve z kůrové supratekutiny, nebo ze supratekutého jádra do kombinovaného systému kůry a jádra. Tyto komponenty mají úhlové rychlosti $\Omega_x$ a momenty setrvačnosti $I_x$, kde $x \in \{\text{crust}, \text{crust superfluid}, \text{core superfluid}\}$. Vzájemné tření mezi těmito složkami na různých časových škálách a v závislosti na hustotě řídí veškerou dynamiku glitche.
-Dynamika supertekutiny, která je důsledkem hustotně závislého tření, způsobuje, že se moment hybnosti přenáší do různých částí kůry a jádra v různých časových měřítkách. To může vést k tomu, že se změna frekvence rotace stane v čase nemonotónní, což umožňuje dosažení maximální hodnoty mnohem větší, než je naměřená velikost glitche, a také zpoždění v regeneraci.
+Graber et al. (2018) se ve své práci zaměřují na to, jak rychlost nárůstu glitche (glitch rise) odráží sílu vzájemného tření mezi jednotlivými rotujícími složkami neutronové hvězdy, s důrazem na roli Kelvinových vln jako mechanismu rychlého propojení kůrové supratekutiny s pevnou kůrou. Autoři při tom pracují s fixní hmotností a poloměrem hvězdy, konkrétně $M \approx 1.41\,M_{\odot}$ a $R = 10\,\text{km}$, odpovídajícími typickému pulsaru jako je Vela \cite[]{graber2018}. Cílem této diplomové práce je rozšířit jejich přístup o systematické zkoumání toho, jaký vliv má na tvar a časový průběh glitche právě změna vnitřních stelárních parametrů -- hmotnosti a poloměru neutronové hvězdy. Přebíráme tedy beze změny jejich tříkomponentní dynamický model, popsaný níže, avšak namísto fixních stelárních parametrů je v následujících kapitolách budeme volně měnit a sledovat důsledky pro předpovídaný profil glitche.
 
-\section{Návaznost na model Graber et al.}
+\subsection{Tříkomponentní dynamický model}
 
-V článku od Vanessa Graber et al. (2024) se zaměřují na vliv supratekuté složky na rotaci pulsarů, přičemž používají fixní rozměr a hmotnost pulsaru, konkrétně používají hmotnost $1.4\,M_{\odot}$ a poloměr $10\,\text{km}$. My se zaměřujeme na to, jaký vliv má na rotaci pulsarů změna rozměru a hmotnosti pulsaru. Budeme používat model popsaný v článku, ale s tím rozdílem, že budeme měnit rozměr a hmotnost pulsaru.
+Neutronová hvězda je v kontextu dynamiky glitche rozdělena do tří rotačních komponent, které jsou navzájem propojeny vzájemným třením s různou silou a na různých časových škálách \cite[]{graber2018}.
+
+\textbf{Pevně vázaná složka (kůra).} Skládá se z jaderné mřížky kůry a pevně spojené nabité konglomerace v jádře, které rotují rigidně jako jeden celek. Tato složka představuje tu část hvězdy, která je přímo pozorovatelná, a její úhlová rychlost $\Omega_{\text{crust}}$ je veličinou, jež se náhle mění během glitche.
+
+\textbf{Kůrová neutronová supratekutina.} Tvoří ji volné neutrony v supratekutém stavu ve vnitřní kůře, oddělené od pevné kůry pinningem vírů k jaderné mřížce. Tato složka slouží jako rezervoár úhlové hybnosti, jenž je uvolněn během glitche. Rychlost opětovného propojení kůry s touto supratekutinou je řízena hustotně závislým koeficientem vzájemného tření $\mathcal{B}(\tilde{r})$, pravděpodobně prostřednictvím excitace Kelvinových vln \cite[]{graber2018}.
+
+\textbf{Supratekuté jádro.} Zahrnuje supratekuté neutrony v jádře hvězdy, které v tomto modelu rotuje jako pevná koule, takže všechny jeho částice sdílejí stejnou úhlovou rychlost $\Omega_{\text{core}}$. Jeho propojení s kůrou je řízeno konstantním koeficientem vzájemného tření $B_{\text{core}}$ \cite[]{graber2018}. Síla tohoto propojení je klíčová pro tvar nárůstu glitche, protože určuje, zda se úhlová hybnost přenáší nejprve z kůrové supratekutiny, nebo ze supratekutého jádra do kombinovaného systému kůry a jádra.
+
+Tyto tři komponenty mají úhlové rychlosti $\Omega_x$ a momenty setrvačnosti $I_x$, kde $x \in \{\text{crust}, \text{crust superfluid}, \text{core superfluid}\}$, jejichž součet dává celkový moment setrvačnosti hvězdy $I$. Právě hustotní závislost vzájemného tření způsobuje, že se moment hybnosti přenáší do různých částí kůry a jádra na různých časových škálách, což může vést k tomu, že změna rotační frekvence se stane v čase nemonotónní -- dosáhne maximální hodnoty výrazně větší, než je naměřená velikost glitche, a projeví se zpožděním v následné regeneraci \cite[]{graber2018}.
+
+\section{Omezení modelu vortex pinningu a nedávný vývoj}
+
+Než přejdeme k vlastnímu modelování, je třeba zmínit, že samotný model vortex pinningu v kůře pravděpodobně nestačí k vysvětlení všech pozorovaných glitchů, a proto se do popisu dynamiky glitche prosazuje i role jádra hvězdy \cite[s.~409]{ghosh2007}.
+
+V roce 1998 přišel Jones s myšlenkou, že vnitřní kůru nelze považovat za jediný monokrystal, jak předpokládal původní model vortex pinningu, protože ve skutečnosti jde o polykrystalickou strukturu \cite{jones1998}. Polykrystalická struktura generuje výrazně slabší sílu zachycení vírů $f_p$ než jediný monokrystal, jelikož příspěvky jednotlivých krystalů se vzájemně částečně vyruší \cite[s.~410]{ghosh2007}. Jonesovy výpočty ukázaly, že síla zachycení je sice dostatečná v oblastech s nízkou hustotou, kde
+\begin{equation}
+\delta\Omega_{crit} \approx 10^{-2}\,\Omega \sim 0.4\,\mathrm{rad\,s^{-1}},
+\end{equation}
+avšak v hlubších vrstvách kůry, kde je soustředěna většina momentu setrvačnosti supratekutiny, tato síla drasticky klesá \cite[s.~410]{ghosh2007}. Samotný mechanismus zachycování vírů v kůře tak pravděpodobně nedokáže vysvětlit obří glitche pozorované u pulsaru Vela.
+
+Tento poznatek vedl k hlubšímu zkoumání jádra neutronové hvězdy. Ve stejném roce představil Ruderman model zaměřený právě na dynamiku jádra, které obsahuje dvě dynamické složky: supratekutou neutronovou složku nesoucí neutronové víry a supravodivou protonovou složku nesoucí magnetické pole ve formě trubic toku \cite{ruderman1998}. Podle Rudermanova modelu nutí pomalé zpomalování rotace hvězdy neutronové víry pohybovat se radiálně ven, čímž s sebou vlečou magnetické trubice toku (interakce vírů s trubicemi toku) \cite[s.~411]{ghosh2007}.
+
+Tyto poznatky ukazují, že jádro neutronové hvězdy nelze při popisu glitche zanedbat jako pouhou pasivní, tuze rotující složku. Právě proto je tříkomponentní model podle Grabera et al. (2018), představený výše, vhodným východiskem pro tuto práci: explicitně zahrnuje jak kůrovou, tak jádrovou supratekutinu jako samostatné dynamické komponenty a umožňuje tak zkoumat, jak vlastnosti obou oblastí -- a v našem případě zejména celková hmotnost a poloměr hvězdy -- ovlivňují pozorovatelný profil glitche.
+
 
 \chapter{Numerický model a výsledky}
 
 \section{Popis modelu}
 
-Základem pro numerické simulace v této práci je kód v jazyce Python z dříve zmíněné studie~\cite{graber2018}, který je volně dostupný na platformách GitHub a Zenodo. Samotný výpočetní postup je rozdělen do dvou hlavních kroků.
+Po představení teoretického rámce v předchozí kapitole se nyní zaměříme na jeho konkrétní numerickou realizaci. Základem pro simulace v této práci je Python kód z dříve zmíněné studie Graber et al. (2018) volně dostupný na platformách GitHub a Zenodo \cite[]{graber2018}. Samotný výpočetní postup je rozdělen do dvou hlavních kroků.
 
-Nejprve se řeší Tolmanova--Oppenheimerova--Volkoffova (TOV) rovnice pro zvolenou stavovou rovnici. Tím získávám profil vnitřní struktury hvězdy, tedy rozložení hustoty, tlaku a hmotnosti v závislosti na poloměru. Z těchto profilů následně počítám radiální závislost koeficientů vzájemného tření v kůře, přičemž využívám modely interakce víru s krystalovou mřížkou~\cite[s.~3--4]{graber2018}.
+Nejprve se řeší TOV rovnice pro zvolenou stavovou rovnici, čímž se získá profil vnitřní struktury hvězdy, tedy rozložení hustoty, tlaku a hmotnosti v závislosti na poloměru \cite[s.~5]{graber2018}. Z těchto profilů se následně počítá radiální závislost koeficientů vzájemného tření v kůře, přičemž se využívají modely interakce víru s krystalovou mřížkou \cite[s.~3--4]{graber2018}.
 
-Druhá část kódu provádí samotnou numerickou integraci pohybových rovnic tříkomponentního modelu~\cite[s.~5]{graber2018}:
+Na tento první krok navazuje druhá část kódu, která provádí samotnou numerickou integraci pohybových rovnic tříkomponentního modelu popsaného v předchozí kapitole \cite[s.~5]{graber2018}:
 \begin{align}
     \dot{\Omega}_{\text{sf}} &= -2\Omega_{\text{sf}}\frac{\partial}{\partial \tilde{r}}\left[\tilde{r}^2 \mathcal{B}(\tilde{r})(\Omega_{\text{sf}} - \Omega_{\text{crust}})\right],\\
     \dot{\Omega}_{\text{core}} &= -2\Omega_{\text{core}}\mathcal{B}_{\text{core}}(\Omega_{\text{core}} - \Omega_{\text{crust}}),\\
     I_{\text{crust}}\dot{\Omega}_{\text{crust}} &= -\int \tilde{r}^2 \mathcal{B}(\tilde{r})(\Omega_{\text{sf}} - \Omega_{\text{crust}})\,\mathrm{d}V - I_{\text{core}}\dot{\Omega}_{\text{core}} - N_{\text{ext}},
 \end{align}
-kde $\Omega_{\text{sf}}$, $\Omega_{\text{core}}$ a $\Omega_{\text{crust}}$ odpovídají úhlovým rychlostem supratekuté kůry, supratekutého jádra a normální složky. Funkce $\mathcal{B}(\tilde{r})$ reprezentuje profil tření v kůře a parametr $\mathcal{B}_{\text{core}}$ popisuje úroveň tření mezi jádrem a kůrou. Člen $N_{\text{ext}}$ zastupuje vnější brzdný moment, který lze ovšem v krátkém časovém úseku těsně po glitchi zanedbat~\cite[s.~5]{graber2018}.
+kde $\Omega_{\text{sf}}$, $\Omega_{\text{core}}$ a $\Omega_{\text{crust}}$ odpovídají úhlovým rychlostem supratekuté kůry, supratekutého jádra a normální složky. Funkce $\mathcal{B}(\tilde{r})$ reprezentuje profil tření v kůře a parametr $\mathcal{B}_{\text{core}}$ popisuje úroveň tření mezi jádrem a kůrou. Člen $N_{\text{ext}}$ zastupuje vnější brzdný moment, který lze v krátkém časovém úseku těsně po glitchi zanedbat \cite[s.~5]{graber2018}.
+
 
 \section{Výchozí nastavení simulací}
-Tento základní kód jsem upravila a rozšířila tak, abych mohla automatizovaně iterovat přes různé hodnoty vstupních parametrů. Testovala jsem například změny $\mathcal{B}_{\text{core}}$ v rozsahu $10^{-5}{-}10^{-2}$, modifikace stavové rovnice a střídání různých modelů disipace (označovaných jako modely A, B a C). Výsledky simulací nakonec konfrontuji s reálnými pozorovacími daty glitche pulsaru Vela z prosince 2016, nasnímanými metodou pulse-to-pulse~\cite[p.~1]{graber2018}. Míru shody modelu s realitou vyhodnocuji primárně pomocí časových reziduí a jejich kumulativního průběhu v prvních 120 sekundách po události~\cite[s.~7]{graber2018}.
+
+Graber et al. (2018) ve své práci sledovali, jak se tvar nárůstu glitche mění v závislosti na volbě modelu vzájemného tření v kůře (modely A, B a C), zatímco stelární parametry i sílu jádro-kůrového propojení drželi fixní: hmotnost jádra $M_{\text{core}} = 1.4\,M_{\odot}$, poloměr rozhraní jádro-kůra $R_{\text{cci}} = 10\,\text{km}$ a $\mathcal{B}_{\text{core}} \approx 5\times10^{-5}$ \cite[s.~5, 7]{graber2018}.
+
+Tato práce postupuje opačným směrem. Namísto zkoumání vlivu modelu tření přejímám jejich nastavení beze změny a místo toho systematicky měním strukturní parametry samotné neutronové hvězdy. V prvním experimentu ponechávám $R_{\text{cci}}$ na původní hodnotě 10 km a měním pouze hmotnost jádra $M_{\text{core}}$, přičemž sleduji, jak se s touto změnou vyvíjí tvar předpovězeného nárůstu glitche. Naopak v druhém experimentu ponechávám $M_{\text{core}} = 1.4\,M_{\odot}$ fixní a měním polohu rozhraní mezi jádrem a kůrou $R_{\text{cci}}$.
+
+Pro každou kombinaci parametrů z obou experimentů následně z vypočtené křivky nárůstu glitche extrahuji dvě charakteristické veličiny pro každý z profilů tření: maximální hodnotu změny rotační frekvence $\Delta\nu_{\text{max}}$ (dosahovanou v rámci přechodného přestřelení popsaného v předchozí kapitole) a čas $t_{\text{max}}$, ve kterém k tomuto maximu dochází. Sledováním závislosti těchto dvou veličin na $R_{\text{cci}}$ a $M_{\text{core}}$ tak lze posoudit, jak citlivě model reaguje na změnu vnitřní struktury hvězdy.
 
 
-Budeme zkoumat vliv poloměru rozhraní kůry a jádra ($R_{\rm cci}$) na nárůst glitche a následně i vliv hmotnosti neutronového jádra ($M_{\rm core}$) na nárůst glitche.
 
 \section{Vliv polohy rozhraní mezi jádrem a kůrou}
 Následující tabulka a sada grafů ilustrují chování neutronové hvězdy při fixní hmotnosti jádra $M_{\rm core} = 1.4 M_{\odot}$.

@@ -22,31 +22,25 @@
 \contentsline {subsection}{\numberline {1.5.1\relax .\enspace }Rotace neutronových hvězd}{17}{subsection.1.5.1}%
 \contentsline {subsection}{\numberline {1.5.2\relax .\enspace }Brzdný index}{17}{subsection.1.5.2}%
 \contentsline {subsection}{\numberline {1.5.3\relax .\enspace }Glitche a pozorovaná data}{19}{subsection.1.5.3}%
-\contentsline {section}{\numberline {1.6\relax .\enspace }Tříkomponentní dynamický model}{21}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1\relax .\enspace }Pevně vázaná složka}{21}{subsection.1.6.1}%
-\contentsline {subsection}{\numberline {1.6.2\relax .\enspace }Neutronová supratekutina v kůře}{21}{subsection.1.6.2}%
-\contentsline {subsection}{\numberline {1.6.3\relax .\enspace }Supratekuté jádro}{22}{subsection.1.6.3}%
-\contentsline {section}{\numberline {1.7\relax .\enspace }Návaznost na model Graber et al.}{22}{section.1.7}%
-\contentsline {section}{\numberline {1.8\relax .\enspace }Tříkomponentní dynamický model}{23}{section.1.8}%
-\contentsline {subsection}{\numberline {1.8.1\relax .\enspace }Pevně vázaná složka}{23}{subsection.1.8.1}%
-\contentsline {subsection}{\numberline {1.8.2\relax .\enspace }Neutronová supratekutina v kůře}{23}{subsection.1.8.2}%
-\contentsline {subsection}{\numberline {1.8.3\relax .\enspace }Supratekuté jádro}{24}{subsection.1.8.3}%
-\contentsline {section}{\numberline {1.9\relax .\enspace }Návaznost na model Graber et al.}{24}{section.1.9}%
-\contentsline {chapter}{Kapitola\ 2\relax .\enspace Numerický model a výsledky}{25}{chapter.2}%
-\contentsline {section}{\numberline {2.1\relax .\enspace }Popis modelu}{25}{section.2.1}%
-\contentsline {section}{\numberline {2.2\relax .\enspace }Výchozí nastavení simulací}{25}{section.2.2}%
-\contentsline {section}{\numberline {2.3\relax .\enspace }Vliv polohy rozhraní mezi jádrem a kůrou}{26}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1\relax .\enspace }Diskuze}{31}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4\relax .\enspace }Vliv hmotnosti jádra}{31}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1\relax .\enspace }Diskuze}{31}{subsection.2.4.1}%
-\contentsline {section}{\numberline {2.5\relax .\enspace }Shrnutí výsledků pro profil A}{35}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1\relax .\enspace }Diskuze}{36}{subsection.2.5.1}%
-\contentsline {section}{\numberline {2.6\relax .\enspace }Diskuse a interpretace výsledků}{36}{section.2.6}%
-\contentsline {chapter}{Kapitola\ 3\relax .\enspace Závěr}{37}{chapter.3}%
-\contentsline {part}{\numberline {I\relax .\enspace }Dodatky}{39}{part.1}%
-\contentsline {chapter}{Literatura}{41}{part.1}%
-\babel@toc {english}{}\relax 
-\babel@toc {czech}{}\relax 
+\contentsline {chapter}{Kapitola\ 2\relax .\enspace Supratekutý mechanismus glitchů}{23}{chapter.2}%
+\contentsline {section}{\numberline {2.1\relax .\enspace }Vortex pinning v kůře neutronové hvězdy}{23}{section.2.1}%
+\contentsline {section}{\numberline {2.2\relax .\enspace }Přenos momentu hybnosti při unpinningu}{24}{section.2.2}%
+\contentsline {section}{\numberline {2.3\relax .\enspace }Návaznost na model Graber et al. (2018)}{25}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1\relax .\enspace }Tříkomponentní dynamický model}{26}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4\relax .\enspace }Omezení modelu vortex pinningu a nedávný vývoj}{26}{section.2.4}%
+\contentsline {chapter}{Kapitola\ 3\relax .\enspace Numerický model a výsledky}{29}{chapter.3}%
+\contentsline {section}{\numberline {3.1\relax .\enspace }Popis modelu}{29}{section.3.1}%
+\contentsline {section}{\numberline {3.2\relax .\enspace }Výchozí nastavení simulací}{30}{section.3.2}%
+\contentsline {section}{\numberline {3.3\relax .\enspace }Vliv polohy rozhraní mezi jádrem a kůrou}{30}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1\relax .\enspace }Diskuze}{35}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4\relax .\enspace }Vliv hmotnosti jádra}{35}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1\relax .\enspace }Diskuze}{35}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5\relax .\enspace }Shrnutí výsledků pro profil A}{39}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1\relax .\enspace }Diskuze}{39}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6\relax .\enspace }Diskuse a interpretace výsledků}{41}{section.3.6}%
+\contentsline {chapter}{Kapitola\ 4\relax .\enspace Závěr}{43}{chapter.4}%
+\contentsline {part}{\numberline {I\relax .\enspace }Dodatky}{45}{part.1}%
+\contentsline {chapter}{Literatura}{47}{part.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {czech}{}\relax 
 \babel@toc {english}{}\relax 
