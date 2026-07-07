@@ -5,16 +5,16 @@ The style file: ipothes.bst
 Database file #1: references.bib
 You've used 19 entries,
             2788 wiz_defined-function locations,
-            802 strings with 9725 characters,
-and the built_in function-call counts, 10139 in all, are:
-= -- 787
+            800 strings with 9684 characters,
+and the built_in function-call counts, 10127 in all, are:
+= -- 784
 > -- 190
 < -- 18
 + -- 76
 - -- 57
-* -- 646
-:= -- 919
-add.period$ -- 46
+* -- 643
+:= -- 917
+add.period$ -- 45
 call.type$ -- 19
 change.case$ -- 19
 chr.to.int$ -- 0
@@ -22,20 +22,20 @@ cite$ -- 19
 duplicate$ -- 1148
 empty$ -- 1042
 format.name$ -- 68
-if$ -- 2376
+if$ -- 2373
 int.to.chr$ -- 0
 int.to.str$ -- 19
 missing$ -- 244
 newline$ -- 71
 num.names$ -- 19
-pop$ -- 402
+pop$ -- 404
 preamble$ -- 2
 purify$ -- 0
 quote$ -- 0
 skip$ -- 413
 stack$ -- 0
 substring$ -- 426
-swap$ -- 747
+swap$ -- 746
 text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
@@ -43,4 +43,4 @@ type$ -- 57
 warning$ -- 0
 while$ -- 60
 width$ -- 21
-write$ -- 210
+write$ -- 209

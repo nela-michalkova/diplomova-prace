@@ -1301,10 +1301,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%% Load ams* packages %%%%
-\RequirePackage[fleqn]{amsmath} %[2021/10/15]
+\RequirePackage{amsmath} %[2021/10/15]
 %\RequirePackage{amsthm} %[2020/05/29]
 \RequirePackage{amssymb} %[2013/01/14]
-  \setlength{\mathindent}{\z@}
 
 %%%% Load graphicx package and path to images %%%%
 \RequirePackage{graphicx} %[2021/09/16]
