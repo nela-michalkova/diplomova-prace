@@ -278,7 +278,8 @@ Cílem je pak modifikovat existující výpočetní model vytvořený autory toh
 
 
 %%%
-\chapter{Neutronové hvězdy}
+\chapter{Makroskopická fyzika neutronových hvězd}
+Tato kapitola představí hvězdu jako celek, gravitaci a její normální chování.
 
 Neutronové hvězdy jsou extrémně kompaktní pozůstatky velmi hmotných hvězd, které vznikají po explozi supernovy (konkrétně typu II, Ib nebo Ic), kdy se jádro zhroutí vlivem vlastní gravitace~\cite[s.~1]{vidana2020}. Jejich hmotnost se pohybuje převážně okolo $1.4\,M_{\odot}$, přičemž poloměr je pouze $10$--$15\,\text{km}$. Tím dosahují hustot v řádu $10^{14}\,\text{g}\,\text{cm}^{-3}$, což z nich dělá jedny z nejhustších pozorovatelných objektů ve vesmíru~\cite[s.~1]{vidana2020}. Díky těmto vlastnostem vzniká v jejich okolí extrémně silné gravitační a magnetické pole \cite[s.~2]{ascenzi2024}. Vnitřek hvězdy tvoří převážně neutrony a nižší množství protonů a elektronů \cite[s.~4]{ascenzi2024}. Stabilitu zajišťuje neutronový degenerační tlak \cite[s.~80, 97]{ghosh2007} v kombinaci se silnou repulzivní jadernou interakcí na krátké vzdálenosti mezi nukleony \cite[s.~132]{ghosh2007}.
 
@@ -550,110 +551,7 @@ TOV rovnice se potom redukuje na klasickou rovnici hydrostatické rovnováhy
 TOV rovnice tedy představuje relativistické zobecnění Newtonovské rovnováhy mezi tlakem a gravitací. U neutronových hvězd jsou relativistické korekce zásadní, protože jejich hmotnosti jsou srovnatelné s hmotností Slunce, zatímco jejich poloměry jsou pouze řádově desítky kilometrů \cite[s.~5]{vidana2020}.
 
 
-\section{Supratekutost v neutronových hvězdách}
-
-Supratekutost je makroskopický kvantový jev, při kterém kapalina může téct bez běžné viskózní disipace. Protože neutrony i protony jsou fermiony, netvoří se supratekutý stav přímou kondenzací jednotlivých částic, jako je tomu u bosonových systémů, ale vznikem Cooperových párů nukleonů. Mechanismus je analogický elektronovému párování v pozemských supravodičích, pouze zde se místo elektronů párují neutrony nebo protony v husté jaderné hmotě \cite[s.~31]{ascenzi2024}. Vznik supratekutého, případně supravodivého stavu je určen kritickou teplotou $T_c$, která závisí na hustotě hmoty a na typu párovacího kanálu.
-
-Neutronové hvězdy krátce po svém vzniku rychle chladnou a v pozdějších fázích vývoje mohou být některé jejich oblasti dostatečně chladné na to, aby teplota klesla pod příslušnou kritickou teplotu. Supratekuté vlastnosti se proto očekávají zejména u volných neutronů ve vnitřní kůře a u neutronů v jádře, zatímco protony v jádře mohou tvořit supravodivou složku \cite[s.~31]{ascenzi2024}.
-
-
-\subsection{Cooperovo párování a BCS teorie}
-
-Mikroskopické vysvětlení supratekutosti a supravodivosti poskytuje BCS teorie, kterou v roce 1957 formulovali Bardeen, Cooper a Schrieffer. Její základní myšlenkou je, že při dostatečně nízké teplotě mohou fermiony s efektivně přitažlivou interakcí vytvářet vázané páry, dnes označované jako Cooperovy páry. V důsledku těchto párových korelací se změní nízkoenergetické spektrum systému. Mezi základním stavem a prvními excitovanými stavy tedy vzniká konečná energetická mezera a pod kritickou teplotou $T_\mathrm{c}$ může systém přejít do supratekutého nebo supravodivého stavu \cite[s.~378]{ghosh2007}.
-
-Původně se BCS teorie týkala párování elektronů v kovech. Již krátce poté však Bohr, Mottelson a Pines upozornili na analogii mezi supravodivostí elektronů a párováním nukleonů v atomových jádrech. Podobnost spočívala zejména v existenci neobvykle velké energetické mezery mezi základním stavem a prvními excitovanými stavy u těžkých sudých-sudých jader, která připomíná mezeru v nízkoenergetickém spektru supravodičů \cite[s.~378]{ghosh2007}. Zatímco v běžných supravodičích je efektivní přitažlivá interakce mezi elektrony zprostředkována fonony krystalové mřížky, v případě nukleonů je zdrojem párování jejich vzájemná jaderná interakce, která je na větších vzdálenostech přitažlivá \cite[s.~378]{ghosh2007}.
-
-Párování probíhá především mezi fermionovými stavy v okolí Fermiho povrchu. Nejvýhodnější je konfigurace dvou fermionů se stejnou velikostí, ale opačným směrem hybnosti a s opačnými spiny. Takové páry tvoří základní stav systému a k excitaci jedné částice je následně potřeba dodat konečnou energii, označovanou jako energetická mezera $E_\mathrm{G}$ \cite[s.~379]{ghosh2007}. V rámci BCS teorie lze tuto mezeru zapsat přibližně ve tvaru
-\begin{equation}
-    E_\mathrm{G}
-    \simeq
-    k_\mathrm{B}T_\mathrm{c}
-    \simeq
-    E_\mathrm{F}
-    \exp\left[-\frac{1}{N(E_\mathrm{F})V}\right],
-    \label{eq:bcs_gap}
-\end{equation}
-kde $E_\mathrm{F}$ je Fermiho energie, $N(E_\mathrm{F})$ je hustota stavů na Fermiho povrchu a $V$ je efektivní přitažlivá interakce mezi fermiony \cite[s.~379]{ghosh2007}.
-
-Energetická mezera $E_\mathrm{G}$ tedy určuje minimální energii potřebnou k rozbití Cooperova páru a je přímo svázána s kritickou teplotou přechodu. Její velikost závisí exponenciálně na efektivní interakci mezi částicemi. V neutronové hvězdě je výpočet této veličiny složitý, protože je ovlivněn jak krátkodosahovým odpudivým jádrem nukleonové interakce, tak polarizačními efekty okolního média, které mohou stínit dlouhodosahovou přitažlivou část interakce \cite[s.~380]{ghosh2007}.
-
-Typ párování závisí na hustotě a na příslušném spinově-orbitálním kanálu. V nižších hustotách, typických pro volné neutrony ve vnitřní kůře, dominuje spinově singletový $^1S_0$ stav. V hustším jádře se naopak u neutronů očekává párování ve spinově tripletovém $^3P_2$ kanálu, zatímco protony v jádře se obvykle párují v singletovém $^1S_0$ stavu \cite[s.~380]{ghosh2007}, \cite[s.~31]{ascenzi2024}. Hodnota energetické mezery a odpovídající kritické teploty proto není konstantní, ale mění se s hustotou a s mikrofyzikálními vlastnostmi dané oblasti neutronové hvězdy \cite[s.~33]{ascenzi2024}.
-
-\subsection{Supratekuté oblasti v neutronové hvězdě}
-
-První oblastí neutronové hvězdy, ve které se očekává supratekutost, je vnitřní kůra. Po dosažení hustoty neutronového odkapávání začínají neutrony unikat z velmi neutronově bohatých jader a vytvářejí plyn volných neutronů prostupující krystalickou mřížkou. Pokud je teplota dostatečně nízká, tento neutronový plyn přechází do supratekutého stavu \cite[s.~4]{ascenzi2024}. V této oblasti se obvykle uvažuje párování neutronů ve spinově singletovém $^1S_0$ kanálu \cite[s.~31]{ascenzi2024}.
-
-Další supratekutá složka se očekává v jádře neutronové hvězdy. Vnější jádro je tvořeno převážně neutrony s menší příměsí protonů, elektronů a při vyšších hustotách také mionů. V dostatečně chladné hvězdě mohou neutrony v jádře vytvářet supratekutý stav a protony supravodivý stav \cite[s.~4]{ascenzi2024}. Zatímco protony se obvykle uvažují ve spinově singletovém $^1S_0$ stavu, neutrony v jádře se při vyšších hustotách párují spíše ve spinově tripletovém $^3P_2$ kanálu \cite[s.~31]{ascenzi2024}.
-
-Rozdíl mezi supratekutostí neutronů a supravodivostí protonů souvisí s elektrickým nábojem částic. Neutrony jsou elektricky neutrální, a proto jejich párování vede k supratekutosti. Protony jsou naopak nabité částice, takže jejich párování vytváří supravodivý stav. V jádře neutronové hvězdy se tak může současně vyskytovat neutronová supratekutina a protonová supravodivá složka \cite[s.~377]{ghosh2007}.
-
-Přesná poloha a rozsah supratekutých oblastí závisí na mikrofyzikálních vlastnostech husté hmoty, zejména na velikosti párovacích mezer a příslušných kritických teplotách. Tyto veličiny nejsou dosud určeny s úplnou jistotou, protože při hustotách přesahujících nukleární saturační hustotu hrají významnou roli ne zcela známé mnohočásticové interakce \cite[s.~31]{ascenzi2024}. Přesto je předpoklad supratekutosti neutronů ve vnitřní kůře a v jádře neutronových hvězd považován za standardní součást moderního popisu jejich vnitřní struktury.
-
-Důležitým důsledkem supratekutosti je vznik nových stupňů volnosti ve vnitřní dynamice hvězdy. Supratekutá složka se obecně nemusí pohybovat přesně stejně jako normální, tedy nesupratekutá složka hmoty. Neutronovou hvězdu proto nelze vždy popsat jako jedinou dokonale vázanou kapalinu, ale v některých situacích je vhodné chápat ji jako vícekomponentní systém \cite[s.~1]{andersson2021}. V rotující neutronové hvězdě je navíc klíčové, že moment hybnosti supratekutiny je nesen soustavou kvantovaných vírů \cite[s.~1]{andersson2021}.
-
-
-
-
-\subsection{Rotace supratekutiny a kvantované víry}
-
-Pro další popis je nutné ukázat, jak supratekutina nese moment hybnosti. Na rozdíl od běžné kapaliny nemůže supratekutina na mikroskopické úrovni rotovat jako tuhé těleso. Z elementární kvantové mechaniky plyne, že rychlost supratekuté složky je dána gradientem fáze kondenzátu,
-\begin{equation}
-    \mathbf{v}_{\mathrm{s}}
-    =
-    \frac{\hbar}{2m_n}\nabla \theta,
-    \label{eq:superfluid_velocity}
-\end{equation}
-kde $\theta$ je fáze vlnové funkce a $2m_n$ je hmotnost neutronového páru \cite[s.~382]{ghosh2007}. Protože $\mathbf{v}_{\mathrm{s}}$ je gradientem skalární funkce, proudění supratekutiny je mimo singularity nevířivé,
-\begin{equation}
-    \nabla \times \mathbf{v}_{\mathrm{s}} = 0.
-    \label{eq:irrotational_flow}
-\end{equation}
-
-Rotace supratekutiny je proto umožněna přítomností čárových singularit, které se označují jako vírové čáry. Cirkulace rychlosti kolem takové vírové čáry je kvantována,
-\begin{equation}
-    \kappa
-    \equiv
-    \oint \mathbf{v}_{\mathrm{s}}\cdot d\mathbf{l}
-    =
-    n\frac{h}{2m_n},
-    \label{eq:circulation_quantization}
-\end{equation}
-kde $n$ je celé číslo. Kvantování cirkulace plyne z jednoznačnosti vlnové funkce, jejíž fáze se při oběhu kolem vírové čáry může změnit pouze o celočíselný násobek $2\pi$ \cite[s.~382]{ghosh2007}. Tyto kvantované víry se často označují jako Onsagerovy--Feynmanovy víry \cite[s.~383]{ghosh2007}.
-
-U osamocené přímé vírové čáry vede cylindrická symetrie ke vztahu
-\begin{equation}
-    \oint \mathbf{v}_{\mathrm{s}}\cdot d\mathbf{l}
-    =
-    2\pi r v_{\mathrm{s}},
-    \label{eq:cylindrical_circulation}
-\end{equation}
-a tedy
-\begin{equation}
-    v_{\mathrm{s}}
-    =
-    \frac{n\hbar}{2m_n r}.
-    \label{eq:vortex_velocity}
-\end{equation}
-Rychlost proudění supratekutiny proto klesá nepřímo úměrně vzdálenosti od vírové čáry \cite[s.~383]{ghosh2007}.
-
-V rotující neutronové hvězdě nevzniká pouze jeden vír, ale hustá soustava vírových čar. Pro typický poloměr hvězdy $R\sim 10\,\mathrm{km}$ a koherenční délku vírového jádra $\xi\sim 10\,\mathrm{fm}$ je dolní kritická úhlová rychlost pro vznik prvního víru extrémně malá, přibližně $\Omega_{\mathrm{c1}}\sim 10^{-14}\,\mathrm{s^{-1}}$. Tato hodnota je zanedbatelná ve srovnání s rotačními rychlostmi pozorovaných pulsarů, takže supratekutá složka neutronové hvězdy je při reálných rotačních rychlostech prostoupena velkým počtem kvantovaných vírů \cite[s.~385]{ghosh2007}.
-
-Na makroskopické škále pak hustá soustava vírů napodobuje téměř tuhou rotaci. Plošná hustota vírů $n_{\mathrm{v}}$ je dána Onsagerovým--Feynmanovým vztahem
-\begin{equation}
-    n_{\mathrm{v}}
-    =
-    \frac{4m_n\Omega}{h}
-    =
-    \frac{2\Omega}{h/(2m_n)}.
-    \label{eq:onsager_feynman_density}
-\end{equation}
-Čím rychleji supratekutina rotuje, tím větší je počet vírových čar na jednotku plochy \cite[s.~385]{ghosh2007}. Lze tedy říci, že supratekutina sice nerotuje klasicky na mikroskopické úrovni, ale prostřednictvím husté sítě kvantovaných vírů se její proudění na velkých škálách chová podobně jako rovnoměrně rotující kapalina.
-
-
-
-
-
-\section{Pulsary}
+\section{Pulsary a jejich rotace}
 
 Ačkoli byla myšlenka neutronových hvězd formulována již ve 30. letech 20. století, dlouhou dobu šlo především o teoretický koncept. Zásadní zlom nastal až s objevem rádiových pulsarů v roce 1967, který poskytl první přímý observační důkaz existence kompaktních rotujících neutronových hvězd \cite[s.~1]{ghosh2007}. Pulsary jsou dnes chápány jako rychle rotující magnetizované neutronové hvězdy, jejichž elektromagnetické záření je pozorováno ve formě pravidelných pulzů \cite[s.~20]{ghosh2007}.
 
@@ -764,7 +662,10 @@ V modernějších modelech se ukazuje, že charakteristické stáří může bý
 Vztah mezi periodou $P$ a její derivací $\dot{P}$ se často znázorňuje v tzv. $P-\dot{P}$ diagramu. Tento diagram umožňuje porovnávat různé populace pulsarů, sledovat jejich rotační vývoj a odhadovat veličiny jako magnetické pole, charakteristické stáří nebo ztrátu rotační energie \cite[s.~330]{ghosh2007}. Brzdný index je proto důležitým nástrojem pro studium dlouhodobého vývoje pulsarů a pro rozlišení fyzikálních mechanismů, které způsobují jejich zpomalování.
 
 
-\subsection{Glitche a pozorovaná data}
+\chapter{Supratekutost a mechanismus glitchů}
+Tato kapitola plynule přejde do kvantového světa a vysvětlí vše kolem glitchů, což tě přímo navede na tvůj model.
+
+\section{Fenomén glitchů a pozorovaná data}
 
 Přestože jsou pulsary velmi stabilními rotátory, jejich rotační vývoj není vždy dokonale hladký. Kromě plynulého zpomalování se u některých pulsarů pozorují náhlé změny rotačního stavu, označované jako glitche. Glitch se projevuje jako skokové zvýšení rotační frekvence $\nu$, případně úhlové rychlosti $\Omega$, tedy jako krátkodobé zrychlení jinak postupně zpomalující neutronové hvězdy \cite[s.~344]{ghosh2007}. 
 
@@ -784,10 +685,108 @@ Glitche jsou proto důležité nejen jako odchylky v přesném časování pulsa
     \label{fig:vela_glitch_basu}
 \end{figure}
 
+\section{Supratekutost v neutronových hvězdách}
 
-\chapter{Supratekutý mechanismus glitchů}
+Supratekutost je makroskopický kvantový jev, při kterém kapalina může téct bez běžné viskózní disipace. Protože neutrony i protony jsou fermiony, netvoří se supratekutý stav přímou kondenzací jednotlivých částic, jako je tomu u bosonových systémů, ale vznikem Cooperových párů nukleonů. Mechanismus je analogický elektronovému párování v pozemských supravodičích, pouze zde se místo elektronů párují neutrony nebo protony v husté jaderné hmotě \cite[s.~31]{ascenzi2024}. Vznik supratekutého, případně supravodivého stavu je určen kritickou teplotou $T_c$, která závisí na hustotě hmoty a na typu párovacího kanálu.
 
-\section{Vortex pinning v kůře neutronové hvězdy}
+Neutronové hvězdy krátce po svém vzniku rychle chladnou a v pozdějších fázích vývoje mohou být některé jejich oblasti dostatečně chladné na to, aby teplota klesla pod příslušnou kritickou teplotu. Supratekuté vlastnosti se proto očekávají zejména u volných neutronů ve vnitřní kůře a u neutronů v jádře, zatímco protony v jádře mohou tvořit supravodivou složku \cite[s.~31]{ascenzi2024}.
+
+
+\subsection{Cooperovo párování a BCS teorie}
+
+Mikroskopické vysvětlení supratekutosti a supravodivosti poskytuje BCS teorie, kterou v roce 1957 formulovali Bardeen, Cooper a Schrieffer. Její základní myšlenkou je, že při dostatečně nízké teplotě mohou fermiony s efektivně přitažlivou interakcí vytvářet vázané páry, dnes označované jako Cooperovy páry. V důsledku těchto párových korelací se změní nízkoenergetické spektrum systému. Mezi základním stavem a prvními excitovanými stavy tedy vzniká konečná energetická mezera a pod kritickou teplotou $T_\mathrm{c}$ může systém přejít do supratekutého nebo supravodivého stavu \cite[s.~378]{ghosh2007}.
+
+Původně se BCS teorie týkala párování elektronů v kovech. Již krátce poté však Bohr, Mottelson a Pines upozornili na analogii mezi supravodivostí elektronů a párováním nukleonů v atomových jádrech. Podobnost spočívala zejména v existenci neobvykle velké energetické mezery mezi základním stavem a prvními excitovanými stavy u těžkých sudých-sudých jader, která připomíná mezeru v nízkoenergetickém spektru supravodičů \cite[s.~378]{ghosh2007}. Zatímco v běžných supravodičích je efektivní přitažlivá interakce mezi elektrony zprostředkována fonony krystalové mřížky, v případě nukleonů je zdrojem párování jejich vzájemná jaderná interakce, která je na větších vzdálenostech přitažlivá \cite[s.~378]{ghosh2007}.
+
+Párování probíhá především mezi fermionovými stavy v okolí Fermiho povrchu. Nejvýhodnější je konfigurace dvou fermionů se stejnou velikostí, ale opačným směrem hybnosti a s opačnými spiny. Takové páry tvoří základní stav systému a k excitaci jedné částice je následně potřeba dodat konečnou energii, označovanou jako energetická mezera $E_\mathrm{G}$ \cite[s.~379]{ghosh2007}. V rámci BCS teorie lze tuto mezeru zapsat přibližně ve tvaru
+\begin{equation}
+    E_\mathrm{G}
+    \simeq
+    k_\mathrm{B}T_\mathrm{c}
+    \simeq
+    E_\mathrm{F}
+    \exp\left[-\frac{1}{N(E_\mathrm{F})V}\right],
+    \label{eq:bcs_gap}
+\end{equation}
+kde $E_\mathrm{F}$ je Fermiho energie, $N(E_\mathrm{F})$ je hustota stavů na Fermiho povrchu a $V$ je efektivní přitažlivá interakce mezi fermiony \cite[s.~379]{ghosh2007}.
+
+Energetická mezera $E_\mathrm{G}$ tedy určuje minimální energii potřebnou k rozbití Cooperova páru a je přímo svázána s kritickou teplotou přechodu. Její velikost závisí exponenciálně na efektivní interakci mezi částicemi. V neutronové hvězdě je výpočet této veličiny složitý, protože je ovlivněn jak krátkodosahovým odpudivým jádrem nukleonové interakce, tak polarizačními efekty okolního média, které mohou stínit dlouhodosahovou přitažlivou část interakce \cite[s.~380]{ghosh2007}.
+
+Typ párování závisí na hustotě a na příslušném spinově-orbitálním kanálu. V nižších hustotách, typických pro volné neutrony ve vnitřní kůře, dominuje spinově singletový $^1S_0$ stav. V hustším jádře se naopak u neutronů očekává párování ve spinově tripletovém $^3P_2$ kanálu, zatímco protony v jádře se obvykle párují v singletovém $^1S_0$ stavu \cite[s.~380]{ghosh2007}, \cite[s.~31]{ascenzi2024}. Hodnota energetické mezery a odpovídající kritické teploty proto není konstantní, ale mění se s hustotou a s mikrofyzikálními vlastnostmi dané oblasti neutronové hvězdy \cite[s.~33]{ascenzi2024}.
+
+\subsection{Supratekuté oblasti v neutronové hvězdě}
+
+První oblastí neutronové hvězdy, ve které se očekává supratekutost, je vnitřní kůra. Po dosažení hustoty neutronového odkapávání začínají neutrony unikat z velmi neutronově bohatých jader a vytvářejí plyn volných neutronů prostupující krystalickou mřížkou. Pokud je teplota dostatečně nízká, tento neutronový plyn přechází do supratekutého stavu \cite[s.~4]{ascenzi2024}. V této oblasti se obvykle uvažuje párování neutronů ve spinově singletovém $^1S_0$ kanálu \cite[s.~31]{ascenzi2024}.
+
+Další supratekutá složka se očekává v jádře neutronové hvězdy. Vnější jádro je tvořeno převážně neutrony s menší příměsí protonů, elektronů a při vyšších hustotách také mionů. V dostatečně chladné hvězdě mohou neutrony v jádře vytvářet supratekutý stav a protony supravodivý stav \cite[s.~4]{ascenzi2024}. Zatímco protony se obvykle uvažují ve spinově singletovém $^1S_0$ stavu, neutrony v jádře se při vyšších hustotách párují spíše ve spinově tripletovém $^3P_2$ kanálu \cite[s.~31]{ascenzi2024}.
+
+Rozdíl mezi supratekutostí neutronů a supravodivostí protonů souvisí s elektrickým nábojem částic. Neutrony jsou elektricky neutrální, a proto jejich párování vede k supratekutosti. Protony jsou naopak nabité částice, takže jejich párování vytváří supravodivý stav. V jádře neutronové hvězdy se tak může současně vyskytovat neutronová supratekutina a protonová supravodivá složka \cite[s.~377]{ghosh2007}.
+
+Přesná poloha a rozsah supratekutých oblastí závisí na mikrofyzikálních vlastnostech husté hmoty, zejména na velikosti párovacích mezer a příslušných kritických teplotách. Tyto veličiny nejsou dosud určeny s úplnou jistotou, protože při hustotách přesahujících nukleární saturační hustotu hrají významnou roli ne zcela známé mnohočásticové interakce \cite[s.~31]{ascenzi2024}. Přesto je předpoklad supratekutosti neutronů ve vnitřní kůře a v jádře neutronových hvězd považován za standardní součást moderního popisu jejich vnitřní struktury.
+
+Důležitým důsledkem supratekutosti je vznik nových stupňů volnosti ve vnitřní dynamice hvězdy. Supratekutá složka se obecně nemusí pohybovat přesně stejně jako normální, tedy nesupratekutá složka hmoty. Neutronovou hvězdu proto nelze vždy popsat jako jedinou dokonale vázanou kapalinu, ale v některých situacích je vhodné chápat ji jako vícekomponentní systém \cite[s.~1]{andersson2021}. V rotující neutronové hvězdě je navíc klíčové, že moment hybnosti supratekutiny je nesen soustavou kvantovaných vírů \cite[s.~1]{andersson2021}.
+
+
+
+
+\subsection{Rotace supratekutiny a kvantované víry}
+
+Pro další popis je nutné ukázat, jak supratekutina nese moment hybnosti. Na rozdíl od běžné kapaliny nemůže supratekutina na mikroskopické úrovni rotovat jako tuhé těleso. Z elementární kvantové mechaniky plyne, že rychlost supratekuté složky je dána gradientem fáze kondenzátu,
+\begin{equation}
+    \mathbf{v}_{\mathrm{s}}
+    =
+    \frac{\hbar}{2m_n}\nabla \theta,
+    \label{eq:superfluid_velocity}
+\end{equation}
+kde $\theta$ je fáze vlnové funkce a $2m_n$ je hmotnost neutronového páru \cite[s.~382]{ghosh2007}. Protože $\mathbf{v}_{\mathrm{s}}$ je gradientem skalární funkce, proudění supratekutiny je mimo singularity nevířivé,
+\begin{equation}
+    \nabla \times \mathbf{v}_{\mathrm{s}} = 0.
+    \label{eq:irrotational_flow}
+\end{equation}
+
+Rotace supratekutiny je proto umožněna přítomností čárových singularit, které se označují jako vírové čáry. Cirkulace rychlosti kolem takové vírové čáry je kvantována,
+\begin{equation}
+    \kappa
+    \equiv
+    \oint \mathbf{v}_{\mathrm{s}}\cdot d\mathbf{l}
+    =
+    n\frac{h}{2m_n},
+    \label{eq:circulation_quantization}
+\end{equation}
+kde $n$ je celé číslo. Kvantování cirkulace plyne z jednoznačnosti vlnové funkce, jejíž fáze se při oběhu kolem vírové čáry může změnit pouze o celočíselný násobek $2\pi$ \cite[s.~382]{ghosh2007}. Tyto kvantované víry se často označují jako Onsagerovy--Feynmanovy víry \cite[s.~383]{ghosh2007}.
+
+U osamocené přímé vírové čáry vede cylindrická symetrie ke vztahu
+\begin{equation}
+    \oint \mathbf{v}_{\mathrm{s}}\cdot d\mathbf{l}
+    =
+    2\pi r v_{\mathrm{s}},
+    \label{eq:cylindrical_circulation}
+\end{equation}
+a tedy
+\begin{equation}
+    v_{\mathrm{s}}
+    =
+    \frac{n\hbar}{2m_n r}.
+    \label{eq:vortex_velocity}
+\end{equation}
+Rychlost proudění supratekutiny proto klesá nepřímo úměrně vzdálenosti od vírové čáry \cite[s.~383]{ghosh2007}.
+
+V rotující neutronové hvězdě nevzniká pouze jeden vír, ale hustá soustava vírových čar. Pro typický poloměr hvězdy $R\sim 10\,\mathrm{km}$ a koherenční délku vírového jádra $\xi\sim 10\,\mathrm{fm}$ je dolní kritická úhlová rychlost pro vznik prvního víru extrémně malá, přibližně $\Omega_{\mathrm{c1}}\sim 10^{-14}\,\mathrm{s^{-1}}$. Tato hodnota je zanedbatelná ve srovnání s rotačními rychlostmi pozorovaných pulsarů, takže supratekutá složka neutronové hvězdy je při reálných rotačních rychlostech prostoupena velkým počtem kvantovaných vírů \cite[s.~385]{ghosh2007}.
+
+Na makroskopické škále pak hustá soustava vírů napodobuje téměř tuhou rotaci. Plošná hustota vírů $n_{\mathrm{v}}$ je dána Onsagerovým--Feynmanovým vztahem
+\begin{equation}
+    n_{\mathrm{v}}
+    =
+    \frac{4m_n\Omega}{h}
+    =
+    \frac{2\Omega}{h/(2m_n)}.
+    \label{eq:onsager_feynman_density}
+\end{equation}
+Čím rychleji supratekutina rotuje, tím větší je počet vírových čar na jednotku plochy \cite[s.~385]{ghosh2007}. Lze tedy říci, že supratekutina sice nerotuje klasicky na mikroskopické úrovni, ale prostřednictvím husté sítě kvantovaných vírů se její proudění na velkých škálách chová podobně jako rovnoměrně rotující kapalina.
+
+
+
+\section{Vortex pinning a přenos momentu hybnosti}
 
 Doposud nejpřesvědčivější teorií, která vysvětluje vznik glitchů v neutronových hvězdách, je teorie o zachycování vírů (vortex pinning). Tento koncept vznikl jako reakce na dřívější modely, které se při detailním zkoumání ukázaly jako nedostačující. Jedním z nich byla dvousložková teorie post-glitchové relaxace navržená Baymem v roce 1969, která předpokládala existenci „kontejneru“ (pevná kůra a nabité částice) a supratekuté složky v jádru hvězdy, vzájemně svázaných třením \cite[s.~386]{ghosh2007}. Tato teorie ovšem neuspokojivě vysvětlovala pozorované časové parametry relaxace. Výzkumy z 80.\ let totiž ukázaly, že vazba mezi elektrony a magnetizovanými víry v jádru hvězdy je extrémně silná, což vede k dynamické době vazby $\tau_d$ v řádu sekund až minut -- v přímém rozporu s pozorovanými makroskopickými relaxačními časy glitchů, které dosahují desítek až stovek dní \cite[s.~386]{ghosh2007}. Řešení tohoto rozporu bylo nalezeno ve vnitřní kůře neutronové hvězdy, kde existuje specifické prostředí tvořené mřížkou atomových jader obklopenou supratekutinou „odkapaných“ (dripped) neutronů \cite[s.~387]{ghosh2007}.
 
@@ -801,7 +800,7 @@ kde $E_G$ je energetická mezera, $n_n$ hustota neutronů a $V$ objem překryvu 
 \end{equation}
 což geometricky umožňuje vírům fixovat se na mřížkových bodech \cite[s.~391]{ghosh2007}.
 
-\section{Přenos momentu hybnosti při unpinningu}
+
 
 Z dynamického hlediska je klíčový vztah mezi rotací kůry a supratekutiny. Zatímco pevná kůra je brzděna vnějšími elektromagnetickými momenty a její úhlová rychlost $\Omega_c$ klesá, zachycené víry nutí supratekutou složku rotovat s původní, vyšší úhlovou rychlostí $\Omega_s$ \cite[s.~394]{ghosh2007}. Tím vzniká rostoucí rozdíl rychlostí
 \begin{equation}
@@ -839,7 +838,7 @@ Neutronová hvězda je v kontextu dynamiky glitche rozdělena do tří rotační
 
 Tyto tři komponenty mají úhlové rychlosti $\Omega_x$ a momenty setrvačnosti $I_x$, kde $x \in \{\text{crust}, \text{crust superfluid}, \text{core superfluid}\}$, jejichž součet dává celkový moment setrvačnosti hvězdy $I$. Právě hustotní závislost vzájemného tření způsobuje, že se moment hybnosti přenáší do různých částí kůry a jádra na různých časových škálách, což může vést k tomu, že změna rotační frekvence se stane v čase nemonotónní -- dosáhne maximální hodnoty výrazně větší, než je naměřená velikost glitche, a projeví se zpožděním v následné regeneraci \cite[]{graber2018}.
 
-\section{Omezení modelu vortex pinningu a nedávný vývoj}
+\subsection{Omezení modelu a nedávný vývoj}
 
 Než přejdeme k vlastnímu modelování, je třeba zmínit, že samotný model vortex pinningu v kůře pravděpodobně nestačí k vysvětlení všech pozorovaných glitchů, a proto se do popisu dynamiky glitche prosazuje i role jádra hvězdy \cite[s.~409]{ghosh2007}.
 
