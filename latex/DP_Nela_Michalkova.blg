@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: DP_Nela_Michalkova.aux
 The style file: ipothes.bst
 Database file #1: references.bib
-You've used 19 entries,
+You've used 20 entries,
             2788 wiz_defined-function locations,
-            800 strings with 9684 characters,
-and the built_in function-call counts, 10127 in all, are:
-= -- 784
-> -- 190
+            806 strings with 9838 characters,
+and the built_in function-call counts, 10403 in all, are:
+= -- 807
+> -- 194
 < -- 18
-+ -- 76
-- -- 57
-* -- 643
-:= -- 917
-add.period$ -- 45
-call.type$ -- 19
-change.case$ -- 19
++ -- 78
+- -- 58
+* -- 653
+:= -- 943
+add.period$ -- 48
+call.type$ -- 20
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 1148
-empty$ -- 1042
-format.name$ -- 68
-if$ -- 2373
+cite$ -- 20
+duplicate$ -- 1182
+empty$ -- 1077
+format.name$ -- 69
+if$ -- 2440
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 244
-newline$ -- 71
-num.names$ -- 19
-pop$ -- 404
+int.to.str$ -- 20
+missing$ -- 251
+newline$ -- 74
+num.names$ -- 20
+pop$ -- 422
 preamble$ -- 2
 purify$ -- 0
 quote$ -- 0
-skip$ -- 413
+skip$ -- 420
 stack$ -- 0
-substring$ -- 426
-swap$ -- 746
+substring$ -- 428
+swap$ -- 761
 text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 57
+type$ -- 58
 warning$ -- 0
-while$ -- 60
-width$ -- 21
-write$ -- 209
+while$ -- 61
+width$ -- 22
+write$ -- 218

@@ -11,6 +11,9 @@
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem{nasa_lifecycle}
+\textsc{{NASA/CXC}}: Stellar evolution. Chandra X-ray Observatory, 2006. [Online; cit. 2026-07-12]. Dostupné z: \url{https://chandra.harvard.edu/stellarev/}.
+
 \bibitem{page_nstar}
 \textsc{Page, D.}: {Neutron Star: Surface and Interior}. online. [cit. 2026-07-04], \urlprefix\url{https://www.astroscu.unam.mx/neutrones/NS-Picture/NStar/NStar.html}.
 

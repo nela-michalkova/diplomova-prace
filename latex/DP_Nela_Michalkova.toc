@@ -7,8 +7,8 @@
 \contentsline {chapter}{Seznam tabulek}{xvii}{Doc-Start}%
 \contentsline {chapter}{Úvod}{1}{Doc-Start}%
 \contentsline {section}{Cíle práce}{1}{Doc-Start}%
-\contentsline {chapter}{Kapitola\ 1\relax .\enspace Makroskopická fyzika neutronových hvězd}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1\relax .\enspace }Historie neutronových hvězd}{3}{section.1.1}%
+\contentsline {chapter}{Kapitola\ 1\relax .\enspace Neutronové hvězdy}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1\relax .\enspace }Historie neutronových hvězd}{4}{section.1.1}%
 \contentsline {section}{\numberline {1.2\relax .\enspace }Vnitřní struktura neutronové hvězdy}{4}{section.1.2}%
 \contentsline {section}{\numberline {1.3\relax .\enspace }Tolmanova--Oppenheimerova--Volkoffova rovnice}{6}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1\relax .\enspace }Odvození TOV rovnice}{6}{subsection.1.3.1}%
@@ -23,7 +23,7 @@
 \contentsline {subsection}{\numberline {2.2.1\relax .\enspace }Cooperovo párování a BCS teorie}{19}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2\relax .\enspace }Supratekuté oblasti v neutronové hvězdě}{20}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3\relax .\enspace }Rotace supratekutiny a kvantované víry}{21}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3\relax .\enspace }Vortex pinning a přenos momentu hybnosti}{23}{section.2.3}%
+\contentsline {section}{\numberline {2.3\relax .\enspace }Vortex pinning a přenos momentu hybnosti}{22}{section.2.3}%
 \contentsline {section}{\numberline {2.4\relax .\enspace }Návaznost na model Graber et al. (2018)}{24}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1\relax .\enspace }Tříkomponentní dynamický model}{25}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2\relax .\enspace }Omezení modelu a nedávný vývoj}{26}{subsection.2.4.2}%
@@ -36,9 +36,9 @@
 \contentsline {subsection}{\numberline {3.4.1\relax .\enspace }Diskuze}{36}{subsection.3.4.1}%
 \contentsline {section}{\numberline {3.5\relax .\enspace }Shrnutí výsledků pro profil A}{41}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1\relax .\enspace }Diskuze}{41}{subsection.3.5.1}%
-\contentsline {chapter}{Kapitola\ 4\relax .\enspace Závěr}{43}{chapter.4}%
-\contentsline {part}{\numberline {I\relax .\enspace }Dodatky}{45}{part.1}%
-\contentsline {chapter}{Literatura}{47}{part.1}%
+\contentsline {chapter}{Kapitola\ 4\relax .\enspace Závěr}{45}{chapter.4}%
+\contentsline {part}{\numberline {I\relax .\enspace }Dodatky}{47}{part.1}%
+\contentsline {chapter}{Literatura}{49}{part.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {czech}{}\relax 
 \babel@toc {english}{}\relax 

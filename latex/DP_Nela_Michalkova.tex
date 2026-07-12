@@ -265,7 +265,7 @@ Cílem práce bude popsat vliv přitomnosti supratekuté složky ve vnějších
 
 
 \noindent\chapter*{Úvod}
-Neutronové hvězdy představují unikátní přírodní laboratoř pro studium hmoty za extrémních podmínek, které na Zemi nelze napodobit~\cite[s.~1]{vidana2020}. S hustotami v nitru převyšujícími hustotu atomových jader, magnetickými poli dosahujícími až $10^{12}$~G a s rotací v řádu stovek otáček za sekundu~\cite[s.~39]{ghosh2007} jsou tyto objekty ideálním místem pro testování fyzikálních teorií.
+Neutronové hvězdy představují unikátní přírodní laboratoř pro studium hmoty za extrémních podmínek, které na Zemi nelze napodobit~\cite[s.~1]{vidana2020}. S hustotami v nitru převyšujícími hustotu atomových jader, magnetickými poli dosahujícími až $10^{12}$~G a rotací v řádu stovek otáček za sekundu~\cite[s.~39]{ghosh2007} jsou tyto objekty ideálním místem pro testování fyzikálních teorií.
 
 Nejdůležitějším zdrojem informací o neutronových hvězdách jsou pulsary. Tyto objekty k nám vysílají vysoce pravidelné pulzy elektromagnetického záření, díky čemuž fungují jako extrémně přesné vesmírné hodiny~\cite[s.~67]{ghosh2007}. Z pozorování však bylo zjištěno, že rotace pulsarů není vždy pravidelná. Právě nečekané a náhlé změny v jejich periodě, takzvané glitche, nám dávají ojedinělou příležitost nahlédnout pod povrch pulsarů a zkoumat dynamiku procesů, které v nich probíhají~\cite[s.~1]{haskell2014}.
 
@@ -278,8 +278,17 @@ Cílem je pak modifikovat existující výpočetní model vytvořený autory toh
 
 
 %%%
-\chapter{Makroskopická fyzika neutronových hvězd}
-Neutronové hvězdy jsou extrémně kompaktní pozůstatky velmi hmotných hvězd, které vznikají po explozi supernovy (konkrétně typu II, Ib nebo Ic), kdy se jádro zhroutí vlivem vlastní gravitace~\cite[s.~1]{vidana2020}. Jejich hmotnost se pohybuje převážně okolo $1.4\,M_{\odot}$, přičemž poloměr je pouze $10$--$15\,\text{km}$. Tím dosahují hustot v řádu $10^{14}\,\text{g}\,\text{cm}^{-3}$, což z nich dělá jedny z nejhustších pozorovatelných objektů ve vesmíru~\cite[s.~1]{vidana2020}. Díky těmto vlastnostem vzniká v jejich okolí extrémně silné gravitační a magnetické pole \cite[s.~2]{ascenzi2024}. Vnitřek hvězdy tvoří převážně neutrony a nižší množství protonů a elektronů \cite[s.~4]{ascenzi2024}. Stabilitu zajišťuje neutronový degenerační tlak \cite[s.~80, 97]{ghosh2007} v kombinaci se silnou repulzivní jadernou interakcí na krátké vzdálenosti mezi nukleony \cite[s.~132]{ghosh2007}.
+\chapter{Neutronové hvězdy}
+Neutronové hvězdy jsou extrémně kompaktní pozůstatky velmi hmotných hvězd, které vznikají po explozi supernovy (konkrétně typu II, Ib nebo Ic), kdy se jádro zhroutí vlivem vlastní gravitace~\cite[s.~1]{vidana2020}. Jejich hmotnost se pohybuje převážně okolo $1.4\,M_{\odot}$, přičemž poloměr je pouze $10$--$15\,\text{km}$. Tím dosahují hustot v řádu $10^{14}\,\text{g}\,\text{cm}^{-3}$, což z nich dělá jedny z nejhustších pozorovatelných objektů ve vesmíru~\cite[s.~1]{vidana2020}. Díky těmto vlastnostem vzniká v jejich okolí extrémně silné gravitační a magnetické pole \cite[s.~2]{ascenzi2024}. Vnitřek hvězdy tvoří převážně neutrony a nižší množství protonů a elektronů \cite[s.~4]{ascenzi2024}. Stabilitu hvězdy pak zajišťuje neutronový degenerační tlak \cite[s.~80, 97]{ghosh2007} v kombinaci se silnou repulzivní jadernou interakcí na krátké vzdálenosti mezi nukleony \cite[s.~132]{ghosh2007}.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../obrazky/stars_lifecycle_full.jpg}
+    \caption{Životní cyklus hvězd. Převzato z NASA/Chandra X-ray Center \cite{nasa_lifecycle}.}
+    \label{fig:lifecycle}
+\end{figure}
+
 
 \section{Historie neutronových hvězd}
 První zmínky o neutronových hvězdách sahají do třicátých let 20.~století. Krátce po objevu neutronu Chadwickem (1932) přišli W.~Baade a F.~Zwicky v roce 1934 s myšlenkou, že tyto kompaktní objekty mohou vznikat při explozích supernov~\cite[s.~40]{ghosh2007}. První výpočty hmotností a poloměrů těchto objektů s uplatněním obecné relativity provedli v roce 1939 J.~R.~Oppenheimer a G.~M.~Volkoff~\cite[s.~1]{ghosh2007}. Teorie neutronových hvězd však v následujících dvou desetiletích nezískala větší pozornost. Zčásti za to mohla mylná představa, že se neutronová jádra nemohou během hvězdného vývoje vůbec vytvořit, a zčásti také fakt, že původní motivace pro jejich studium, tedy hledání zdroje hvězdné energie, byla úspěšně vyřešena objevem termonukleární fúze~\cite[s.~1]{ghosh2007}.
@@ -289,8 +298,7 @@ Zájem o neutronové hvězdy se začal obnovovat až v 60.~letech s objevem extr
 
 
 \section{Vnitřní struktura neutronové hvězdy}
-
-Pro pochopení fyzikálních procesů uvnitř neutronových hvězd je nezbytné znát jejich vnitřní strukturu. Schematické znázornění jednotlivých oblastí od povrchových vrstev až po jádro je uvedeno na obr.~\ref{fig:nstar_vnitrni_struktura}.
+Pro pochopení fyzikálních procesů uvnitř neutronových hvězd je nezbytné znát jejich vnitřní strukturu. 
 
 \begin{figure}[H]
     \centering
@@ -661,7 +669,6 @@ Vztah mezi periodou $P$ a její derivací $\dot{P}$ se často znázorňuje v tzv
 
 
 \chapter{Supratekutost a mechanismus glitchů}
-Tato kapitola plynule přejde do kvantového světa a vysvětlí vše kolem glitchů, což tě přímo navede na tvůj model.
 
 \section{Fenomén glitchů a pozorovaná data}
 
@@ -723,7 +730,6 @@ Rozdíl mezi supratekutostí neutronů a supravodivostí protonů souvisí s ele
 Přesná poloha a rozsah supratekutých oblastí závisí na mikrofyzikálních vlastnostech husté hmoty, zejména na velikosti párovacích mezer a příslušných kritických teplotách. Tyto veličiny nejsou dosud určeny s úplnou jistotou, protože při hustotách přesahujících nukleární saturační hustotu hrají významnou roli ne zcela známé mnohočásticové interakce \cite[s.~31]{ascenzi2024}. Přesto je předpoklad supratekutosti neutronů ve vnitřní kůře a v jádře neutronových hvězd považován za standardní součást moderního popisu jejich vnitřní struktury.
 
 Důležitým důsledkem supratekutosti je vznik nových stupňů volnosti ve vnitřní dynamice hvězdy. Supratekutá složka se obecně nemusí pohybovat přesně stejně jako normální, tedy nesupratekutá složka hmoty. Neutronovou hvězdu proto nelze vždy popsat jako jedinou dokonale vázanou kapalinu, ale v některých situacích je vhodné chápat ji jako vícekomponentní systém \cite[s.~1]{andersson2021}. V rotující neutronové hvězdě je navíc klíčové, že moment hybnosti supratekutiny je nesen soustavou kvantovaných vírů \cite[s.~1]{andersson2021}.
-
 
 
 
@@ -852,12 +858,12 @@ Tyto poznatky ukazují, že jádro neutronové hvězdy nelze při popisu glitche
 
 
 \chapter{Numerický model a výsledky}
-
 \section{Popis modelu}
+Po představení teoretického rámce v předchozí kapitole se nyní zaměříme na jeho konkrétní numerickou realizaci. Základem pro simulace v této práci je Python kód z dříve zmíněné studie Graber et al. (2018) volně dostupný na platformě GitHub \cite[]{graber2018}. Samotný výpočetní postup je rozdělen do dvou hlavních kroků.
 
-Po představení teoretického rámce v předchozí kapitole se nyní zaměříme na jeho konkrétní numerickou realizaci. Základem pro simulace v této práci je Python kód z dříve zmíněné studie Graber et al. (2018) volně dostupný na platformách GitHub a Zenodo \cite[]{graber2018}. Samotný výpočetní postup je rozdělen do dvou hlavních kroků.
+Nejprve se řeší TOV rovnice, čímž se získá profil vnitřní struktury hvězdy. Zde je nutné přesně specifikovat použitou stavovou rovnici (EoS). Model Graber et al. (2018) k tomuto problému přistupuje pomocí zjednodušené obálkové aproximace: nevyužívá globální EoS (např. SLy nebo APR) integrující celou hvězdu od středu až k povrchu. Místo toho je celé vnitřní jádro parametrizováno pouze jako spodní okrajová podmínka o hmotnosti $M_{\text{core}}$ a poloměru $R_{\text{cci}}$. Vlastní integrace TOV rovnice probíhá pouze pro vrstvu kůry od poloměru $R_{\text{cci}}$ směrem ven. 
 
-Nejprve se řeší TOV rovnice pro zvolenou stavovou rovnici, čímž se získá profil vnitřní struktury hvězdy, tedy rozložení hustoty, tlaku a hmotnosti v závislosti na poloměru \cite[s.~5]{graber2018}. Z těchto profilů se následně počítá radiální závislost koeficientů vzájemného tření v kůře, přičemž se využívají modely interakce víru s krystalovou mřížkou \cite[s.~3--4]{graber2018}.
+Pro vnitřní kůru je v kódu fixně implementována klasická stavová rovnice podle Negeleho a Vautherina (1973), přičemž vrstva vnější kůry (pod hustotou neutronového odkapávání) je aproximována modelem relativistického elektronového plynu s konstantním podílem elektronů $Y_e \approx 0.4$ \cite[s.~5]{graber2018}. Z takto získaného hustotního profilu kůry se následně počítá radiální závislost koeficientů vzájemného tření $\mathcal{B}(\tilde{r})$.
 
 Na tento první krok navazuje druhá část kódu, která provádí samotnou numerickou integraci pohybových rovnic tříkomponentního modelu popsaného v předchozí kapitole \cite[s.~5]{graber2018}:
 \begin{align}
@@ -1015,6 +1021,10 @@ Tenčí kůra znamená menší objem, a tedy i menší moment setrvačnosti kůr
 
 Právě tento úbytek supratekuté složky v kůře se odráží v pozorovaném chování: s rostoucí hmotností jádra $M_{\rm core}$ pozorujeme menší amplitudu zrychlení rotační frekvence i pomalejší, méně výrazný náběh glitche. Tento trend je opačný než v případě rostoucího $R_{\rm cci}$ při fixní hmotnosti, což potvrzuje, že klíčovou veličinou, na které v obou experimentech závisí tvar předpovězeného glitche, je právě relativní velikost (respektive moment setrvačnosti) kůrové supratekutiny vůči zbytku hvězdy.
 
+\textbf{Metodologická poznámka k fyzikálnímu realismu parametrů:}
+V souvislosti s použitou obálkovou integrací TOV rovnice je nezbytné kriticky zhodnotit parametry použité v Tabulce 4.2, konkrétně extrapolaci k masivním jádrům až $M_{\text{core}} = 2.2\,M_{\odot}$ při fixním poloměru $R_{\text{cci}} = 10\,\text{km}$. Jelikož model nevyužívá realistickou stavovou rovnici pro nitro hvězdy, není v něm zabudována stabilizační podmínka chránící hvězdu před gravitačním kolapsem. Reálná stavová rovnice (např. SLy4) nedokáže podpořit hmotnost $2.2\,M_{\odot}$ na poloměru pouhých $10\,\text{km}$; takový objekt by s velkou pravděpodobností zkolaboval do černé díry, jelikož Schwarzschildův poloměr pro $2.2\,M_{\odot}$ činí přibližně $6.5\,\text{km}$. Tyto simulace s extrémními parametry zde tedy neslouží jako modely reálných pozorovatelných pulsarů, nýbrž fungují jako teoretický \uv{toy model}. Jejich cílem bylo izolovat dynamický projev modelu a potvrdit asymptotické chování mechanismu: demonstraci faktu, že samotné zatížení vrstvy kůry silnějším gravitačním gradientem (bez ohledu na reálnou existenci takového jádra) vede k potlačení magnitudy glitche a k nelineárnímu prodloužení náběhového času.
+
+
 \section{Shrnutí výsledků pro profil A}
 
 Následující párové grafy znázorňují souhrnné trendy závislosti absolutní výšky frekvenčního skoku ($\Delta\nu_{\rm max}$) a času dosažení tohoto maxima ($t_{\rm max}$) na zkoumaných parametrech. Plným červeným křížkem je pro jasné srovnání vyznačena referenční Sada 1 s nominálními parametry $R_{\rm cci} = 10\,\text{km}$ a $M_{\rm core} = 1.4\,M_{\odot}$.
@@ -1047,6 +1057,22 @@ Oba experimenty tak ukazují stejný fyzikální mechanismus z opačných stran:
 
 \newpage
 \chapter{Závěr}
+
+Tato diplomová práce se zabývala studiem dynamiky glitchů v neutronových hvězdách s důrazem na vliv jejich vnitřní struktury. Pozorované náhlé skoky v rotační frekvenci pulsarů představují jeden z mála přímých projevů makroskopické kvantové fyziky v astrofyzikálních měřítkách a poskytují unikátní okno do supratekutého nitra těchto extrémních objektů.
+
+V úvodních kapitolách jsme shrnuli teoretické základy popisu neutronových hvězd. Odvodili jsme Tolmanovu--Oppenheimerovu--Volkoffovu (TOV) rovnici, která určuje hydrostatickou rovnováhu a profil hustoty napříč hvězdou. Následně jsme se zaměřili na vnitřní strukturu hvězdy a ukázali, že kůra neutronové hvězdy obsahuje plyn volných neutronů, který při dostatečně nízkých teplotách přechází do supratekutého stavu. Rotace tohoto fluida je kvantována do podoby vírů, jejichž zachytávání (vortex pinning) v krystalické mřížce kůry a následné hromadné uvolnění je podle současného poznání primární příčinou pozorovaných glitchů.
+
+Jelikož samotný model zachytávání vírů v kůře naráží u některých pulsarů na energetické i dynamické limity, ukazuje se jako nezbytné zahrnout do popisu glitche i dynamiku jádra. Pro naši práci jsme proto převzali tříkomponentní hydrodynamický model představený Graber et al. (2018), jenž hvězdu rozděluje na kůru, kůrovou supratekutinu a supratekuté jádro, přičemž dynamika přenosu momentu hybnosti mezi těmito složkami je řízena hustotně závislým vzájemným třením. 
+
+Zatímco Graber et al. ve své studii fixovali stelární parametry ($M_{\rm core} = 1.4\,M_{\odot}$ a $R_{\rm cci} = 10\,\text{km}$) a zkoumali závislost nárůstu glitche na různých modelech tření, cílem této práce bylo provést inverzní experiment: při pevném modelu tření systematicky měnit základní strukturní parametry hvězdy a kvantifikovat jejich dopad na tvar a rychlost glitche. Tento postup jsme aplikovali ve dvou nezávislých sériích simulací.
+
+V prvním experimentu jsme fixovali hmotnost jádra na hodnotě $1.4\,M_{\odot}$ a měnili poloměr rozhraní mezi kůrou a jádrem $R_{\rm cci}$. Zjistili jsme, že se zvětšujícím se $R_{\rm cci}$ výrazně roste objem kůry, což vede k větší „zásobě“ momentu hybnosti v kůrové supratekutině. Následkem toho se maximální výška frekvenčního přestřelení ($\Delta\nu_{\rm max}$) zvyšuje (až k hodnotám blížícím se $800\,\mu\text{Hz}$ pro nejširší kůry) a čas nutný k dosažení tohoto maxima ($t_{\rm max}$) se zkracuje. Větší množství supratekutiny tedy vede ke strmějšímu a vyššímu nárůstu glitche.
+
+Ve druhém experimentu jsme naopak zafixovali polohu rozhraní $R_{\rm cci} = 10\,\text{km}$ a měnili celkovou hmotnost jádra $M_{\rm core}$. Nárůst hmotnosti způsobuje ztenčení kůry, čímž klesá objem kůrové supratekutiny. V souladu s předchozím zjištěním tento úbytek vedl k poklesu maximální amplitudy glitche a k pomalejšímu náběhu, tedy prodloužení času $t_{\rm max}$. 
+
+Oba provedené experimenty tak vedou ke konzistentnímu závěru: tvar a rychlost nárůstu glitche v tříkomponentním modelu jsou mimořádně citlivé na fyzický objem vnitřní kůry. Přesněji řečeno, celková rotační dynamika je řízena velikostí momentu setrvačnosti kůrové supratekutiny vzhledem ke zbytku hvězdy. 
+
+Získané výsledky demonstrují, že profil nárůstu glitche (glitch rise) nese silnou závislost nejen na parametrech vzájemného tření, ale také na samotné rovnicové stavbě a velikosti hvězdy. Precizní pulsová pozorování bezprostředně po glitchi, jaká byla pořízena například u pulsaru Vela, proto v kombinaci s prezentovaným modelem představují slibný nástroj pro omezování rovnice stavu a vnitřních strukturních parametrů (jako je tloušťka kůry či poloměr jádra) neutronových hvězd.
 
 
 
