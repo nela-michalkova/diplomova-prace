@@ -17,6 +17,9 @@
 \bibitem{basu2019}
 \textsc{Basu, A.; Joshi, B.~C.; Krishnakumar, M.~A.; Bhattacharya, D.; Nandi, R.; Bandyopadhyay, D.; Char, P. \& Manoharan, P.~K.}: Observed glitches in 8 young pulsars. \emph{Monthly Notices of the Royal Astronomical Society}, \textbf{491}(3), \bblpp{} 3182--3191, 2020, \doi{10.1093/mnras/stz3230}.
 
+\bibitem{graber2018}
+\textsc{Graber, V.; Cumming, A. \& Andersson, N.}: Glitch rises as a test for rapid superfluid coupling in neutron stars. \emph{The Astrophysical Journal}, \textbf{865}, \bblp{}~23, 2018, \doi{10.3847/1538-4357/aad776}.
+
 \bibitem{vidana2020}
 \textsc{Vida{\~n}a, I.}: Short introduction to the physics of neutron stars. \capitalize\bblin{} \emph{EPJ Web of Conferences}, \bblvolume{} 227, \bblp{} 01018, EDP Sciences, 2020, \doi{10.1051/epjconf/202022701018}. \urlprefix\url{https://doi.org/10.1051/epjconf/202022701018}.
 
@@ -31,9 +34,6 @@
 
 \bibitem{andersson2021}
 \textsc{Andersson, N.}: A superfluid perspective on neutron star dynamics. \emph{Universe}, \textbf{7}(1), \bblp{}~17, 2021, \doi{10.3390/universe7010017}. \urlprefix\url{https://arxiv.org/abs/2103.10218}.
-
-\bibitem{graber2018}
-\textsc{Graber, V.; Cumming, A. \& Andersson, N.}: Glitch rises as a test for rapid superfluid coupling in neutron stars. \emph{The Astrophysical Journal}, \textbf{865}, \bblp{}~23, 2018, \doi{10.3847/1538-4357/aad776}.
 
 \bibitem{ascenzi2024}
 \textsc{Ascenzi, S.; Graber, V. \& Rea, N.}: Neutron-star measurements in the multi-messenger era. \emph{Astroparticle Physics}, \textbf{158}, \bblp{} 102935, 2024, \doi{10.1016/j.astropartphys.2024.102935}.

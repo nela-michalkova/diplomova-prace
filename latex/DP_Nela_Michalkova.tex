@@ -279,8 +279,6 @@ Cílem je pak modifikovat existující výpočetní model vytvořený autory toh
 
 %%%
 \chapter{Makroskopická fyzika neutronových hvězd}
-Tato kapitola představí hvězdu jako celek, gravitaci a její normální chování.
-
 Neutronové hvězdy jsou extrémně kompaktní pozůstatky velmi hmotných hvězd, které vznikají po explozi supernovy (konkrétně typu II, Ib nebo Ic), kdy se jádro zhroutí vlivem vlastní gravitace~\cite[s.~1]{vidana2020}. Jejich hmotnost se pohybuje převážně okolo $1.4\,M_{\odot}$, přičemž poloměr je pouze $10$--$15\,\text{km}$. Tím dosahují hustot v řádu $10^{14}\,\text{g}\,\text{cm}^{-3}$, což z nich dělá jedny z nejhustších pozorovatelných objektů ve vesmíru~\cite[s.~1]{vidana2020}. Díky těmto vlastnostem vzniká v jejich okolí extrémně silné gravitační a magnetické pole \cite[s.~2]{ascenzi2024}. Vnitřek hvězdy tvoří převážně neutrony a nižší množství protonů a elektronů \cite[s.~4]{ascenzi2024}. Stabilitu zajišťuje neutronový degenerační tlak \cite[s.~80, 97]{ghosh2007} v kombinaci se silnou repulzivní jadernou interakcí na krátké vzdálenosti mezi nukleony \cite[s.~132]{ghosh2007}.
 
 \section{Historie neutronových hvězd}
@@ -873,6 +871,13 @@ kde $\Omega_{\text{sf}}$, $\Omega_{\text{core}}$ a $\Omega_{\text{crust}}$ odpov
 \section{Výchozí nastavení simulací}
 
 Graber et al. (2018) ve své práci sledovali, jak se tvar nárůstu glitche mění v závislosti na volbě modelu vzájemného tření v kůře (modely A, B a C), zatímco stelární parametry i sílu jádro-kůrového propojení drželi fixní: hmotnost jádra $M_{\text{core}} = 1.4\,M_{\odot}$, poloměr rozhraní jádro-kůra $R_{\text{cci}} = 10\,\text{km}$ a $\mathcal{B}_{\text{core}} \approx 5\times10^{-5}$ \cite[s.~5, 7]{graber2018}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{../obrazky/Referencni_graf_Graber.png}
+    \caption{Vývoj změny rotační frekvence kůry $\Delta\nu(t)$ po glitchi pro fixní jádro-kůrové tření $\mathcal{B}_{\text{core}} \approx 5\times10^{-5}$. Plné čáry odpovídají třem hustotně závislým profilům tření v kůře (A, B, C), přerušovaná čára konstantnímu $\mathcal{B}$; tečkované křivky ukazují srovnání se čtyřmi konstantními hodnotami tření ($10^{-1}$ až $10^{-4}$). Vodorovná čára značí novou rovnovážnou hodnotu $\Delta\nu$ po úplném přenosu momentu hybnosti mezi supratekutinou a kůrou. Převzato a upraveno z Graber et al. (2018) \cite[s.~6]{graber2018}.}
+    \label{fig:delta_nu_Bcore}
+\end{figure}
 
 Tato práce postupuje opačným směrem. Namísto zkoumání vlivu modelu tření přejímám jejich nastavení beze změny a místo toho systematicky měním strukturní parametry samotné neutronové hvězdy. V prvním experimentu ponechávám $R_{\text{cci}}$ na původní hodnotě 10 km a měním pouze hmotnost jádra $M_{\text{core}}$, přičemž sleduji, jak se s touto změnou vyvíjí tvar předpovězeného nárůstu glitche. Naopak v druhém experimentu ponechávám $M_{\text{core}} = 1.4\,M_{\odot}$ fixní a měním polohu rozhraní mezi jádrem a kůrou $R_{\text{cci}}$.
 
