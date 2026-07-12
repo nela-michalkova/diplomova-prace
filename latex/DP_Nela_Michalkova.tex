@@ -273,13 +273,13 @@ Od objevu prvního pulsaru uplynulo již více než 60 let ~\cite[s.~31]{ghosh20
 
 
 \section*{Cíle práce}
-Základem této práce je studium dynamiky glitche v neutronových hvězdách. Vycházíme z článku \textit{Glitch Rises as a Test for Rapid Superfluid Coupling in Neutron Stars} od Graber et al.~\cite{graber2018}, jejichž přístup využívá tříkomponentní hydrodynamický model, který rozděluje neutronovou hvězdu do tří dynamických složek. Tento způsob rozdělení umožňuje sledovat dynamiku přenosu momentu hybnosti mezi jednotlivými složkami~\cite[s.~4]{graber2018}.
-Cílem je pak modifikovat existující výpočetní model vytvořený autory tohoto článku a systematicky prozkoumat závislost průběhu glitche na fyzikálních vlastnostech neutronové hvězdy. Zaměříme se především na to, jak konkrétní parametry hvězdy ovlivňují velikost a tvar glitchů. 
+Základem této práce je studium dynamiky glitche v neutronových hvězdách. Vycházíme z článku \textit{Glitch Rises as a Test for Rapid Superfluid Coupling in Neutron Stars} od Graber et al.~\cite{graber2018}, jejichž přístup využívá tříkomponentní hydrodynamický model, který rozděluje neutronovou hvězdu do tří dynamických složek. Tento způsob rozdělení nám umožňuje sledovat dynamiku přenosu momentu hybnosti mezi jednotlivými složkami~\cite[s.~4]{graber2018}.
+Naším cílem je pak modifikovat existující výpočetní model vytvořený autory tohoto článku a systematicky prozkoumat závislost průběhu glitche na fyzikálních vlastnostech neutronové hvězdy. Zaměříme se především na to, jak konkrétní parametry hvězdy ovlivňují velikost a tvar glitchů. 
 
 
 %%%
 \chapter{Neutronové hvězdy}
-Neutronové hvězdy jsou extrémně kompaktní pozůstatky velmi hmotných hvězd, které vznikají po explozi supernovy (konkrétně typu II, Ib nebo Ic), kdy se jádro zhroutí vlivem vlastní gravitace~\cite[s.~1]{vidana2020}. Jejich hmotnost se pohybuje převážně okolo $1.4\,M_{\odot}$, přičemž poloměr je pouze $10$--$15\,\text{km}$. Tím dosahují hustot v řádu $10^{14}\,\text{g}\,\text{cm}^{-3}$, což z nich dělá jedny z nejhustších pozorovatelných objektů ve vesmíru~\cite[s.~1]{vidana2020}. Díky těmto vlastnostem vzniká v jejich okolí extrémně silné gravitační a magnetické pole \cite[s.~2]{ascenzi2024}. Vnitřek hvězdy tvoří převážně neutrony a nižší množství protonů a elektronů \cite[s.~4]{ascenzi2024}. Stabilitu hvězdy pak zajišťuje neutronový degenerační tlak \cite[s.~80, 97]{ghosh2007} v kombinaci se silnou repulzivní jadernou interakcí na krátké vzdálenosti mezi nukleony \cite[s.~132]{ghosh2007}.
+Neutronové hvězdy jsou extrémně kompaktní pozůstatky velmi hmotných hvězd, které vznikají po explozi supernovy (konkrétně typu II, Ib nebo Ic), kdy se jádro zhroutí vlivem vlastní gravitace (viz Obrázek~\ref{fig:lifecycle}) ~\cite[s.~1]{vidana2020}. Jejich hmotnost se pohybuje převážně okolo $1.4\,M_{\odot}$, přičemž poloměr je pouze $10$--$15\,\text{km}$. Tím dosahují hustot v řádu $10^{14}\,\text{g}\,\text{cm}^{-3}$, což z nich dělá jedny z nejhustších pozorovatelných objektů ve vesmíru~\cite[s.~1]{vidana2020}. Díky těmto vlastnostem vzniká v jejich okolí extrémně silné gravitační a magnetické pole \cite[s.~2]{ascenzi2024}. Vnitřní strukturu neutronové hvězdy tvoří převážně neutrony a nižší množství protonů a elektronů \cite[s.~4]{ascenzi2024}. Stabilitu hvězdy pak zajišťuje neutronový degenerační tlak \cite[s.~80, 97]{ghosh2007} v kombinaci se silnou repulzivní jadernou interakcí na krátké vzdálenosti mezi nukleony \cite[s.~132]{ghosh2007}.
 
 
 \begin{figure}[H]
@@ -333,9 +333,9 @@ Základním nástrojem pro určení profilu tlaku, hustoty, hmotnosti a poloměr
 
 \subsection{Odvození TOV rovnice}
 
-Strukturu nerotující neutronové hvězdy lze popsat jako statickou, sféricky symetrickou konfiguraci hmoty v hydrostatické rovnováze. Vzhledem k její extrémní kompaktnosti již nelze použít čistě Newtonovský popis gravitace, protože gravitační pole je natolik silné, že je nutné vycházet z Einsteinových rovnic obecné relativity.
+Strukturu nerotující neutronové hvězdy můžeme popsat jako statickou, sféricky symetrickou konfiguraci hmoty v hydrostatické rovnováze. Její extrémní kompaktnost způsobuje natolik silné gravitační pole, že pro přesný popis je nutné vycházet z Einsteinových rovnic obecné relativity.
 
-Pro statický a sféricky symetrický prostoročas tak lze zvolit metriku ve tvaru
+Pro statický a sféricky symetrický prostoročas můžeme zvolit metriku ve tvaru
 \begin{equation}
     ds^2 =
     - e^{2\alpha(r)} c^2 dt^2
@@ -345,7 +345,7 @@ Pro statický a sféricky symetrický prostoročas tak lze zvolit metriku ve tva
 \end{equation}
 kde funkce $\alpha(r)$ a $\beta(r)$ závisí pouze na radiální souřadnici $r$. Tento tvar metriky vyjadřuje statičnost a sférickou symetrii systému, tedy skutečnost, že fyzikální veličiny závisí pouze na vzdálenosti od středu hvězdy.
 
-Hmotu uvnitř neutronové hvězdy lze popsat jako ideální tekutinu. Tenzor energie-hybnosti má potom tvar
+Hmotu uvnitř neutronové hvězdy můžeme popsat jako ideální tekutinu. Tenzor energie-hybnosti má potom tvar
 \begin{equation}
     T^{\mu\nu}
     =
@@ -366,7 +366,7 @@ V geometrizovaných jednotkách $G=c=1$ mají Einsteinovy rovnice tvar
     8\pi T^\mu_{\ \nu}.
     \label{eq:einstein_equations_geometrized}
 \end{equation}
-Z těchto rovnic lze získat dvě nezávislé rovnice pro metrické funkce a rozložení hmoty. První z nich se obvykle zapisuje pomocí hmotnostní funkce $m(r)$, která udává hmotu-energii obsaženou uvnitř poloměru $r$ \cite[s.~83]{ghosh2007}. Zavedeme substituci
+Z těchto rovnic můžeme získat dvě nezávislé rovnice pro metrické funkce a rozložení hmoty. První z nich se obvykle zapisuje pomocí hmotnostní funkce $m(r)$, která udává hmotu-energii obsaženou uvnitř poloměru $r$ \cite[s.~83]{ghosh2007}. Zavedeme substituci
 \begin{equation}
     e^{-2\beta(r)}
     =
