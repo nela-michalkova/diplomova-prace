@@ -187,25 +187,25 @@ Cílem práce bude popsat vliv přitomnosti supratekuté složky ve vnějších
 \thispagestyle{empty}
 \noindent
 \ifcase\pdfoutput % DVI
-  \includegraphics[width=\linewidth]{assign1}
+  \includegraphics[width=\linewidth]{../obrazky/Zadani_DP.pdf}
 \else % PDF
-  \includegraphics[width=\linewidth,bb=42 99 553 814,clip=false,page=1]{assign}
+  \includegraphics[width=\linewidth,page=1]{../obrazky/Zadani_DP.pdf}
 \fi
 
 %% Odkomentujete a použijte následující řádek kódu právě tehdy,
 %% když zadání vaší závěrečné práce má jednu stránku:
 
-%\newpage \thispagestyle{empty} \mbox{}
+\newpage \thispagestyle{empty} \mbox{}
 
 %% Odkomentujete a použijte následující kód právě tehdy, když
 %% zadání vaší závěrečné práce má dvě stránky:
 
-\newpage \thispagestyle{empty} \noindent
-\ifcase\pdfoutput % DVI
-  \includegraphics[width=\linewidth]{assign2}
-\else % PDF
-  \includegraphics[width=\linewidth,bb=42 99 553 814,clip=false,page=2]{assign}
-\fi
+%\newpage \thispagestyle{empty} \noindent
+%\ifcase\pdfoutput % DVI
+%  \includegraphics[width=\linewidth]{assign2}
+%\else % PDF
+%  \includegraphics[width=\linewidth,bb=42 99 553 814,clip=false,page=2]{assign}
+%\fi
 
 %% V papírovém výtisku závěrečné práce pak odstraňte tento list
 %% s elektronicky vloženým zadáním a nahraďte jej listem papíru
@@ -281,22 +281,24 @@ Naším cílem je pak modifikovat existující výpočetní model vytvořený au
 
 %%%
 \chapter{Neutronové hvězdy}
-Neutronové hvězdy jsou extrémně kompaktní pozůstatky velmi hmotných hvězd, které vznikají po explozi supernovy (konkrétně typu II, Ib nebo Ic), kdy se jádro zhroutí vlivem vlastní gravitace (viz Obrázek~\ref{fig:lifecycle}) ~\cite{vidana2020}. Jejich hmotnost se pohybuje převážně okolo $1.4\,M_{\odot}$, přičemž poloměr je pouze $10$--$15\,\text{km}$. Tím dosahují hustot v řádu $10^{14}\,\text{g}\,\text{cm}^{-3}$, což z nich dělá jedny z nejhustších pozorovatelných objektů ve vesmíru~\cite{vidana2020}. Díky těmto vlastnostem vzniká v jejich okolí extrémně silné gravitační a magnetické pole \cite{ascenzi2024}. Vnitřní strukturu neutronové hvězdy tvoří převážně neutrony a nižší množství protonů a elektronů \cite{ascenzi2024}. Stabilitu hvězdy pak zajišťuje neutronový degenerační tlak \cite{ghosh2007} v kombinaci se silnou repulzivní jadernou interakcí na krátké vzdálenosti mezi nukleony \cite{ghosh2007}.
+Neutronové hvězdy jsou extrémně kompaktní pozůstatky velmi hmotných hvězd, které vznikají po explozi supernovy (konkrétně typu II, Ib nebo Ic), kdy se jádro zhroutí vlivem vlastní gravitace (viz Obrázek~\ref{fig:lifecycle}) ~\cite{vidana2020}. Jejich hmotnost se pohybuje převážně okolo $1.4\,M_{\odot}$, přičemž poloměr je pouze $10$--$15\,\text{km}$. Tím dosahují hustot v řádu $10^{15}\,\text{g}\,\text{cm}^{-3}$, což z nich dělá jedny z nejhustších pozorovatelných objektů ve vesmíru~\cite{vidana2020}. Díky těmto vlastnostem vzniká v jejich okolí extrémně silné gravitační a magnetické pole \cite{ascenzi2024}. Vnitřní strukturu neutronové hvězdy tvoří převážně neutrony a nižší množství protonů a elektronů \cite{ascenzi2024}. Stabilitu hvězdy pak zajišťuje neutronový degenerační tlak \cite{ghosh2007} v kombinaci se silnou repulzivní jadernou interakcí na krátké vzdálenosti mezi nukleony \cite{ghosh2007}.
 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{../obrazky/stars_lifecycle_full.jpg}
-    \caption{Životní cyklus hvězd. Převzato z NASA/Chandra X-ray Center \cite{nasa_lifecycle}.}
+    \caption[Životní cyklus hvězd.]{Životní cyklus hvězd. Převzato z NASA/Chandra X-ray Center \cite{nasa_lifecycle}.}
     \label{fig:lifecycle}
 \end{figure}
 
 
 \section{Historie neutronových hvězd}
-První zmínky o neutronových hvězdách sahají do třicátých let 20.~století. Krátce po objevu neutronu Chadwickem (1932) přišli W.~Baade a F.~Zwicky v roce 1934 s myšlenkou, že tyto kompaktní objekty mohou vznikat při explozích supernov~\cite{ghosh2007}. První výpočty hmotností a poloměrů těchto objektů s uplatněním obecné relativity provedli v roce 1939 J.~R.~Oppenheimer a G.~M.~Volkoff~\cite{ghosh2007}. Teorie neutronových hvězd však v následujících dvou desetiletích nezískala větší pozornost. Zčásti za to mohla mylná představa, že se neutronová jádra nemohou během hvězdného vývoje vůbec vytvořit, a zčásti také fakt, že původní motivace pro jejich studium, tedy hledání zdroje hvězdné energie, byla úspěšně vyřešena objevem termonukleární fúze~\cite{ghosh2007}.
+První zmínky o neutronových hvězdách sahají do třicátých let 20.~století. Krátce po objevu neutronu Chadwickem (1932) přišli W.~Baade a F.~Zwicky v roce 1934 s revoluční myšlenkou, že tyto extrémně kompaktní objekty tvořené převážně neutrony mohou vznikat při explozích supernov \cite{baade1934}. První teoretické výpočty hmotností a poloměrů těchto objektů s uplatněním obecné relativity provedli v roce 1939 J.~R.~Oppenheimer a G.~M.~Volkoff \cite{oppenheimer1939}, kteří navázali na řešení Einsteinových rovnic pro sféricky symetrické rozložení statické tekutiny publikované téhož roku R.~C.~Tolmanem \cite{tolman1939}. 
 
-Zájem o neutronové hvězdy se začal obnovovat až v 60.~letech s objevem extrasolárních diskrétních rentgenových zdrojů (Giacconi et al., 1962), které se původně interpretovaly jako tepelné záření z horkého povrchu čerstvě zrozených neutronových hvězd~\cite{ghosh2007}. K rozhodujícímu průlomu ale došlo až v roce 1967, kdy Jocelyn Bell a Antony Hewish objevili první rádiový pulsar (PSR B1919+21)~\cite{vidana2020}. Rychlé a vysoce stabilní pulzace poskytly přesné měřítko rotace. Brzy na to T.~Gold (1968) ukázal, že tyto objekty nemohou být nic jiného než rychle rotující, silně magnetizované neutronové hvězdy~\cite{vidana2020}. V roce 1971 se díky objevu prvních rentgenových pulsarů, jako byl Cen~X-3, navíc potvrdilo, že neutronové hvězdy tvoří také akreční systémy~\cite{ghosh2007}.
+Teorie neutronových hvězd však v následujících dvou desetiletích nezískala větší pozornost. Zčásti za to mohla mylná představa, že se neutronová jádra nemohou během hvězdného vývoje vůbec vytvořit, a zčásti také fakt, že původní motivace pro jejich studium, tedy hledání zdroje hvězdné energie, byla v téže době úspěšně vyřešena rozvojem teorie termonukleární fúze \cite{ghosh2007}.
 
+
+Zájem o neutronové hvězdy se začal obnovovat až v 60.~letech s objevem prvních extrasolárních diskrétních rentgenových zdrojů. V roce 1962 detekovali R.~Giacconi a jeho tým intenzivní rentgenový zdroj Scorpius X-1 \cite{giacconi1962}, což se původně interpretovalo jako tepelné záření z horkého povrchu čerstvě zrozených neutronových hvězd \cite{ghosh2007}. K rozhodujícímu průlomu ale došlo až v roce 1967, kdy Jocelyn Bell a Antony Hewish objevili první rádiový pulsar (PSR B1919+21) \cite{hewish1968}. Rychlé a vysoce stabilní pulzace poskytly přesné měřítko rotace. Brzy na to T.~Gold (1968) ukázal, že tyto objekty nemohou být nic jiného než rychle rotující, silně magnetizované neutronové hvězdy \cite{gold1968}. V roce 1971 se díky objevu prvních rentgenových pulsarů, jako byl Cen~X-3, navíc definitivně potvrdilo, že neutronové hvězdy tvoří také akreční systémy \cite{giacconi1971}.
 
 
 \section{Vnitřní struktura neutronové hvězdy}
@@ -305,14 +307,14 @@ Pro pochopení fyzikálních procesů uvnitř neutronových hvězd je nezbytné 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.75\textwidth]{../obrazky/NStar_vnitrni_struktura.png}
-    \caption{Schematické znázornění vnitřní struktury neutronové hvězdy. Převzato z \cite{page_nstar}.}
+    \caption[Schematické znázornění vnitřní struktury neutronové hvězdy.]{Schematické znázornění vnitřní struktury neutronové hvězdy. Převzato z \cite{page_nstar}.}
     \label{fig:nstar_vnitrni_struktura}
 \end{figure}
 
 Na povrchu neutronové hvězdy se nachází atmosféra. Jedná se o velmi tenkou vrstvu plazmatu o tloušťce řádově centimetrů, která zásadně ovlivňuje pozorované spektrum tepelného, zejména rentgenového záření. V běžných modelech se předpokládá, že se atmosféra neutronových hvězd skládá z nejlehčích prvků, především z vodíku, helia nebo uhlíku \cite{vidana2020}.
 
 
-Pod atmosférou se nachází tekutá obálka, často označovaná jako oceán. Její hloubka se pohybuje přibližně v rozmezí $10$ až $100\,\mathrm{m}$ \cite{ascenzi2024}. Tato vrstva je tvořena Coulombovou kapalinou, která může obsahovat velmi těžké prvky jako například železo, případně lehčí prvky dodané akrecí z okolního prostoru \cite{vidana2020}.
+Pod atmosférou se nachází tekutá obálka, často označovaná jako oceán. Její hloubka se pohybuje přibližně v rozmezí $10$ až $100\,\mathrm{m}$ \cite{ascenzi2024}. Tato vrstva je tvořena Coulombovou tekutinou, která může obsahovat velmi těžké prvky jako například železo, případně lehčí prvky dodané akrecí z okolního prostoru \cite{vidana2020}.
 
 
 Pod oceánem, kde dochází ke krystalizaci hmoty, navazuje vnější kůra. Její tloušťka je přibližně $0{,}3$ až $0{,}5\,\mathrm{km}$ \cite{ghosh2007}. Z hlediska složení se jedná o pevnou látku tvořenou Coulombovou krystalickou mřížkou plně ionizovaných atomových jader \cite{vidana2020}. V důsledku extrémního tlaku nejsou elektrony vázány v atomových obalech, ale vytvářejí hustý degenerovaný elektronový plyn, do něhož je jaderná mřížka ponořena. S rostoucí hloubkou se elektrony stávají relativistickými až ultrarelativistickými \cite{vidana2020}.
@@ -337,7 +339,7 @@ Základním nástrojem pro určení profilu tlaku, hustoty, hmotnosti a poloměr
 
 Strukturu nerotující neutronové hvězdy můžeme popsat jako statickou, sféricky symetrickou konfiguraci hmoty v hydrostatické rovnováze. Její extrémní kompaktnost způsobuje natolik silné gravitační pole, že pro přesný popis je nutné vycházet z Einsteinových rovnic obecné relativity.
 
-Pro statický a sféricky symetrický prostoročas můžeme zvolit metriku ve tvaru
+Pro statický a sféricky symetrický prostoročas můžeme pomocí sférických souřadnic zapsat metriku ve tvaru
 \begin{equation}
     ds^2 =
     - e^{2\alpha(r)} c^2 dt^2
@@ -355,20 +357,18 @@ Hmotu uvnitř neutronové hvězdy můžeme popsat jako ideální tekutinu. Tenzo
     + p g^{\mu\nu},
     \label{eq:perfect_fluid_tensor}
 \end{equation}
-kde $\varepsilon(r)$ je hustota energie, $p(r)$ je tlak a $u^\mu$ je čtyřrychlost tekutiny. Protože uvažujeme statickou konfiguraci, tekutina je v souřadnicové soustavě spojené s hvězdou v klidu. Čtyřrychlost má tedy pouze časovou složku,
+kde $\varepsilon(r)$ je hustota energie, $p(r)$ je tlak a $u^\mu$ je čtyřrychlost tekutiny, přičemž používáme geometrizované jednotky $G=c=1$. Protože uvažujeme statickou konfiguraci, tekutina je v souřadnicové soustavě spojené s hvězdou v klidu. Čtyřrychlost má tedy pouze časovou složku,
 \begin{equation}
     u^\mu = \left(e^{-\alpha(r)},0,0,0\right).
     \label{eq:four_velocity}
 \end{equation}
 
-V geometrizovaných jednotkách $G=c=1$ mají Einsteinovy rovnice tvar
+Dále budeme využívat Einsteinovy rovnice ve tvaru
 \begin{equation}
-    G^\mu_{\ \nu}
-    =
-    8\pi T^\mu_{\ \nu}.
+    G^\mu_{\ \nu} = 8\pi T^\mu_{\ \nu},
     \label{eq:einstein_equations_geometrized}
 \end{equation}
-Z těchto rovnic můžeme získat dvě nezávislé rovnice pro metrické funkce a rozložení hmoty. První z nich se obvykle zapisuje pomocí hmotnostní funkce $m(r)$, která udává hmotu-energii obsaženou uvnitř poloměru $r$ \cite{ghosh2007}. Zavedeme substituci
+kde $G^\mu_{\ \nu}$ je Einsteinův tenzor a $T^\mu_{\ \nu}$ je tenzor energie-hybnosti. Z těchto rovnic můžeme získat dvě nezávislé rovnice pro metrické funkce a rozložení hmoty. První z nich se obvykle zapisuje pomocí hmotnostní funkce $m(r)$, která udává hmotu-energii obsaženou uvnitř poloměru $r$ \cite{ghosh2007}. Zavedeme substituci
 \begin{equation}
     e^{-2\beta(r)}
     =
@@ -456,64 +456,40 @@ kde $\rho(r)=\varepsilon(r)/c^2$ je hmotnostní hustota. Příslušná rovnice p
     4\pi r^2 \rho(r).
     \label{eq:mass_physical_units}
 \end{equation}
-Tento zápis ukazuje tři relativistické opravy vůči Newtonovské rovnici hydrostatické rovnováhy. Člen $p/c^2$ přispívá k efektivní hustotě, člen $4\pi r^3p/c^2$ vyjadřuje gravitační účinek tlaku a faktor $\left(1-2Gm/rc^2\right)^{-1}$ souvisí se zakřivením prostoročasu \cite{ghosh2007}.
+Tento zápis ukazuje tři relativistické korekce vůči Newtonovské rovnici hydrostatické rovnováhy. Člen $p/c^2$ přispívá k efektivní hustotě, člen $4\pi r^3p/c^2$ vyjadřuje gravitační účinek tlaku a faktor $\left(1-2Gm/rc^2\right)^{-1}$ souvisí se zakřivením prostoročasu \cite{ghosh2007}.
+
 
 
 \subsection{Stavová rovnice}
-Samotná TOV rovnice však nepředstavuje uzavřený systém rovnic. K jejímu řešení je nutné doplnit stavovou rovnici, tedy vztah mezi tlakem a hustotou energie:
+
+Samotná TOV rovnice nepředstavuje uzavřený systém rovnic. K jejímu řešení je nutné doplnit stavovou rovnici, tedy vztah mezi tlakem a hustotou energie:
 \begin{equation}
     p = p(\varepsilon).
     \label{eq:eos_general}
 \end{equation}
-Zatímco TOV rovnice popisuje relativistickou hydrostatickou rovnováhu, stavová rovnice určuje mikrofyzikální vlastnosti husté hmoty.
+Zatímco TOV rovnice popisuje relativistickou hydrostatickou rovnováhu celého tělesa, stavová rovnice určuje mikrofyzikální vlastnosti husté hmoty v jeho nitru.
 
-V obecném případě může mít stavová rovnice složitý tvar, protože složení hmoty se v různých vrstvách neutronové hvězdy výrazně mění. Ve vnějších oblastech je důležitý příspěvek degenerovaných elektronů a atomových jader, zatímco ve vyšších hustotách se uplatňuje jaderná interakce mezi nukleony a případně i exotické stupně volnosti. V realistických výpočtech se proto často používají tabulkové stavové rovnice získané z mikrofyzikálních modelů husté hmoty \cite{baym2018}.
-
-Pro analytické odhady nebo zjednodušené numerické modely se často používá polytropická stavová rovnice. Ta má tvar
+V obecném případě má stavová rovnice neutronové hvězdy složitý tvar, protože složení hmoty se napříč jejími vrstvami výrazně mění. Pro detailní modely se proto často používají obsáhlé tabulkové stavové rovnice získané ze složitých mikrofyzikálních výpočtů \cite{baym2018}. Pro analytické odhady nebo zjednodušené numerické modely se však často využívá takzvaná polytropická stavová rovnice, která má tvar
 \begin{equation}
     p = K \rho^\Gamma,
     \label{eq:polytropic_eos_rho}
 \end{equation}
-kde $K$ je polytropická konstanta, $\rho$ je hmotnostní hustota a $\Gamma$ je polytropický exponent. Ekvivalentně se někdy zapisuje pomocí baryonové hustoty $n$ ve tvaru
-\begin{equation}
-    p = K n^\Gamma.
-    \label{eq:polytropic_eos_n}
-\end{equation}
-Polytropický exponent $\Gamma$ charakterizuje tuhost hmoty. Větší hodnota $\Gamma$ znamená, že tlak roste s hustotou rychleji, takže hmota je méně stlačitelná. Menší hodnota $\Gamma$ naopak odpovídá měkčí stavové rovnici.
+kde $K$ je polytropická konstanta, $\rho$ je hmotnostní hustota a $\Gamma$ je polytropický exponent. Tento exponent přímo charakterizuje tuhost hmoty, tedy čím je hodnota $\Gamma$ větší, tím rychleji roste tlak s hustotou a hmota je hůře stlačitelná. Reálná hmota neutronové hvězdy se ale nedá popsat jedinou hodnotou exponentu $\Gamma$, proto se v praxi často využívají modely složené z více polytropických úseků \cite{baym2018}.
 
-Polytropická stavová rovnice úzce souvisí s adiabatickým popisem, při kterém je tlak funkcí hustoty při konstantní entropii. Adiabatický index lze zapsat jako
-\begin{equation}
-    \Gamma
-    =
-    \left(
-    \frac{\partial \ln p}{\partial \ln \rho}
-    \right)_s,
-    \label{eq:adiabatic_index}
-\end{equation}
-kde index $s$ označuje, že derivace je brána při konstantní entropii. V jednoduchém modelu tak polytropa odpovídá případu, kdy je adiabatický index konstantní.
-
-Výhodou polytropického tvaru je jeho jednoduchost. Umožňuje získat základní představu o tom, jak tuhost stavové rovnice ovlivňuje hmotnost, poloměr a vnitřní strukturu hvězdy. Například v případě degenerovaného fermionového plynu se v nerelativistickém limitu objevuje polytropický exponent $\Gamma = 5/3$, zatímco v extrémně relativistickém limitu $\Gamma = 4/3$ \cite{ghosh2007}. Tyto jednoduché hodnoty ukazují, proč relativistické efekty mění stabilitu kompaktních hvězd.
-
-Je však nutné zdůraznit, že polytropa je pouze aproximace. Skutečná stavová rovnice neutronové hvězdy nemusí mít po celém rozsahu hustot jeden jednoduchý mocninný tvar. Realistické modely proto obvykle používají různé stavové rovnice nebo tabulkové popisy pro různé hustotní oblasti, případně více polytropických úseků, které dohromady aproximují složitější mikrofyzikální chování husté hmoty \cite{baym2018}.
-
-Po zadání stavové rovnice lze TOV rovnice numericky integrovat od středu hvězdy směrem k povrchu. Volbou centrální hustoty nebo centrálního tlaku se získá jeden konkrétní model hvězdy. Okrajové podmínky ve středu jsou
+\subsection{Numerické řešení TOV rovnice}
+Po zadání stavové rovnice lze soustavu TOV rovnic numericky integrovat od středu hvězdy směrem k povrchu. Volbou centrální hustoty nebo tlaku se získá jeden konkrétní model hvězdy. Okrajové podmínky ve středu jsou
 \begin{equation}
     m(0)=0,
     \qquad
     p(0)=p_c,
     \label{eq:tov_boundary_center}
 \end{equation}
-kde $p_c$ je centrální tlak. Integrace pokračuje směrem ven až do bodu, kde tlak klesne na nulu,
+kde $p_c$ je centrální tlak. Integrace pokračuje směrem ven až do bodu, kde tlak klesne na nulu:
 \begin{equation}
     p(R)=0.
     \label{eq:tov_surface}
 \end{equation}
-Tento bod definuje poloměr hvězdy $R$ a výsledná hodnota hmotnostní funkce určuje celkovou gravitační hmotnost
-\begin{equation}
-    M = m(R).
-    \label{eq:tov_total_mass}
-\end{equation}
-Opakováním výpočtu pro různé centrální hustoty vzniká posloupnost modelů, ze které lze určit například vztah mezi hmotností a poloměrem neutronové hvězdy \cite{ghosh2007}.
+Tento bod definuje poloměr hvězdy $R$ a výsledná hodnota hmotnostní funkce v tomto bodě určuje celkovou gravitační hmotnost $M = m(R)$. Opakováním tohoto výpočtu pro různé hodnoty centrální hustoty získáme posloupnost modelů, ze které lze pro danou stavovou rovnici sestrojit křivku závislosti hmotnosti na poloměru \cite{ghosh2007}.
 
 
 \subsection{Meze kompaktnosti}
@@ -556,19 +532,19 @@ TOV rovnice se potom redukuje na klasickou rovnici hydrostatické rovnováhy
     \frac{Gm(r)\rho(r)}{r^2}.
     \label{eq:newtonian_hydrostatic_equilibrium}
 \end{equation}
-TOV rovnice tedy představuje relativistické zobecnění Newtonovské rovnováhy mezi tlakem a gravitací. U neutronových hvězd jsou relativistické korekce zásadní, protože jejich hmotnosti jsou srovnatelné s hmotností Slunce, zatímco jejich poloměry jsou pouze řádově desítky kilometrů \cite{vidana2020}.
+TOV rovnice tedy obecně představuje relativistické zobecnění Newtonovské rovnováhy mezi tlakem a gravitací.
 
 
 \section{Pulsary a jejich rotace}
 
-Ačkoli byla myšlenka neutronových hvězd formulována již ve 30. letech 20. století, dlouhou dobu šlo především o teoretický koncept. Zásadní zlom nastal až s objevem rádiových pulsarů v roce 1967, který poskytl první přímý observační důkaz existence kompaktních rotujících neutronových hvězd \cite{ghosh2007}. Pulsary jsou dnes chápány jako rychle rotující magnetizované neutronové hvězdy, jejichž elektromagnetické záření je pozorováno ve formě pravidelných pulzů \cite{ghosh2007}.
+Ačkoli byla myšlenka neutronových hvězd formulována již ve 30. letech 20. století, dlouhou dobu šlo především o teoretický koncept. Zásadní zlom nastal až s objevem rádiových pulsarů v roce 1967 \cite{hewish1968}, který poskytl první přímý observační důkaz existence kompaktních rotujících neutronových hvězd. Pulsary jsou dnes chápány jako rychle rotující magnetizované neutronové hvězdy, jejichž elektromagnetické záření je pozorováno ve formě pravidelných pulzů.
 
+První pulsar byl objeven v roce 1967 tehdejší doktorandkou Jocelyn Bell na Univerzitě v Cambridgi. Bell pracovala s nově zkonstruovaným polem dipólových antén určeným ke studiu meziplanetární scintilace kompaktních rádiových zdrojů. Toto pole obsahovalo 2048 dipólových antén, zabíralo plochu přibližně $1{,}8\,\mathrm{ha}$ a pracovalo na frekvenci $81{,}5\,\mathrm{MHz}$ \cite{ghosh2007}. Na záznamech z papírového zapisovače si Bell všimla slabého opakujícího se signálu, který přicházel stále ze stejné oblasti oblohy. Skutečnost, že se signál každou noc objevoval přibližně o čtyři minuty dříve, odpovídala hvězdnému času a ukazovala, že jeho zdroj musí ležet mimo sluneční soustavu \cite{hewish1968}.
 
-První pulsar byl objeven v roce 1967 doktorandkou Jocelyn Bellovou na Univerzitě v Cambridgi. Bellová pracovala s nově zkonstruovaným dipólovým polem určeným ke studiu meziplanetární scintilace kompaktních rádiových zdrojů. Toto pole obsahovalo 2048 dipólových antén, zabíralo plochu přibližně $1{,}8\,\mathrm{ha}$ a pracovalo na frekvenci $81{,}5\,\mathrm{MHz}$ \cite{ghosh2007}. Na záznamech z papírového zapisovače si Bellová všimla slabého opakujícího se signálu, který přicházel stále ze stejné oblasti oblohy. Skutečnost, že se signál každou noc objevoval přibližně o čtyři minuty dříve, odpovídala hvězdnému času a ukazovala, že jeho zdroj musí ležet mimo sluneční soustavu \cite{ghosh2007}.
+Podrobnější analýza ukázala, že nejde o náhodný šum, ale o pravidelné pulzy s periodou $1{,}337\,\mathrm{s}$ \cite{hewish1968}. Zpočátku byla zvažována možnost pozemského rušení, například od automobilů nebo elektrických zařízení. Bellová však tuto interpretaci odmítla, protože signál se opakovaně vracel ze stejného místa na obloze. Krátce se uvažovalo také o možnosti umělého mimozemského signálu, neformálně označované zkratkou LGM z anglického \textit{little green men}. Tato hypotéza se však stala nepravděpodobnou poté, co Dopplerova analýza ukázala, že nepatrné změny periody odpovídají pouze pohybu Země kolem Slunce \cite{hewish1968}.
 
-Podrobnější analýza ukázala, že nejde o náhodný šum, ale o pravidelné pulzy s periodou $1{,}337\,\mathrm{s}$ \cite{ghosh2007}. Zpočátku byla zvažována možnost pozemského rušení, například od automobilů nebo elektrických zařízení. Bellová však tuto interpretaci odmítla, protože signál se opakovaně vracel ze stejného místa na obloze. Krátce se uvažovalo také o možnosti umělého mimozemského signálu, neformálně označované zkratkou LGM z anglického \textit{little green men}. Tato hypotéza se však stala nepravděpodobnou poté, co Dopplerova analýza ukázala, že změny periody odpovídají pouze pohybu Země kolem Slunce \cite{ghosh2007}.
+Na konci roku 1967 objevili Bell a Hewish druhý podobný pulzující rádiový zdroj v jiné části oblohy, čímž se s konečnou platností potvrdilo, že jde o přirozený astronomický jev\cite{pilkington1968}. Výsledky byly publikovány na začátku roku 1968 \cite{hewish1968} a okamžitě vyvolaly otázku, jaký typ objektu může produkovat tak pravidelné pulzy s periodou v řádu sekund. Tak krátká perioda a její extrémní stabilita vylučovaly běžné hvězdy a ukazovaly na kompaktní objekty s vysokou hustotou, zejména bílé trpaslíky nebo neutronové hvězdy. Rozhodující interpretaci vzápětí poskytl T.~Gold (1968), který ukázal, že tyto objekty nemohou být nic jiného než rychle rotující, silně magnetizované neutronové hvězdy \cite{gold1968}.
 
-Na konci roku 1967 byl objeven druhý podobný pulzující rádiový zdroj v jiné části oblohy, čímž se potvrdilo, že jde o přirozený astronomický jev \cite{ghosh2007}. Výsledky byly publikovány v roce 1968 a okamžitě vyvolaly otázku, jaký typ objektu může produkovat tak pravidelné pulzy s periodou řádu sekund. Tak krátká perioda vylučovala běžné hvězdy a ukazovala na kompaktní objekty s vysokou hustotou, zejména bílé trpaslíky nebo neutronové hvězdy \cite{ghosh2007}. Následná interpretace spojila pulsary právě s rotujícími magnetizovanými neutronovými hvězdami.
 
 
 \subsection{Rotace neutronových hvězd}
@@ -577,15 +553,14 @@ Interpretace pulsarů jako rotujících neutronových hvězd přirozeně vyvolá
 
 Stejný kolaps vede také k výraznému zesílení magnetického pole. Při přibližném zachování magnetického toku se zmenšuje plocha, kterou magnetické pole prochází, a proto intenzita pole prudce roste. Výsledkem mohou být povrchová magnetická pole typicky řádu $10^{12}\,\mathrm{G}$, která jsou charakteristická pro mladé rádiové pulsary \cite{ghosh2007}.
 
-Důsledkem kompaktnosti neutronových hvězd jsou velmi krátké rotační periody. Rotací poháněné pulsary mají periody od několika milisekund až po několik sekund \cite{ghosh2007}. Tak krátké periody zároveň omezují maximální možnou velikost zdroje: během jedné periody urazí světlo pouze konečnou vzdálenost, a emitující oblast proto musí být kompaktní. Tento argument byl jedním z důvodů, proč byly pulsary spojeny právě s kompaktními objekty, zejména neutronovými hvězdami \cite{ghosh2007}.
+Důkazem extrémní kompaktnosti neutronových hvězd jsou právě velmi krátké rotační periody pulsarů, které se pohybují od několika milisekund až po několik sekund \cite{ghosh2007}. Z těchto hodnot vyplývají dva klíčové fyzikální limity. Zaprvé, pokud by běžná hvězda nebo bílý trpaslík rotovali s periodou v řádu zlomků sekundy, odstředivá síla na povrchu by překonala jejich gravitaci a objekt by se roztrhl. Přežít takto rychlou rotaci může jedině těleso s enormní hustotou, jako je neutronová hvězda \cite{ghosh2007}. Zadruhé, extrémně krátké trvání samotných pulzů omezuje maximální možnou velikost emitujícího zdroje na základě rychlosti světla. Vzdálenost, kterou světlo urazí během trvání jednoho pulzu, musí být větší než samotná vyzařující oblast, což opět spolehlivě ukazuje na tělesa o rozměrech pouhých desítek kilometrů \cite{ghosh2007}.
 
 Rotace je současně zdrojem pozorované pulzní emise. Ve standardním modelu je magnetická osa neutronové hvězdy skloněna vůči ose rotace a záření vznikající v magnetosféře je vyzařováno do úzkého svazku. Při rotaci hvězdy tento svazek periodicky protíná směr k pozorovateli, podobně jako světelný kužel majáku, a vzniká tak pravidelný sled pozorovaných pulzů \cite{ghosh2007}.
 
-Rotace pulsaru se však v čase postupně zpomaluje, protože hvězda ztrácí rotační energii prostřednictvím elektromagnetického záření a částicových toků. Popis tohoto zpomalování vede k zavedení brzdného indexu, kterému se věnuje následující podkapitola.
 
 \subsection{Brzdný index}
 
-Rotace pulsaru se v čase postupně zpomaluje, protože hvězda ztrácí rotační energii prostřednictvím elektromagnetického záření a případně dalších brzdných mechanismů, například částicového větru z magnetosféry. Rotační energie neutronové hvězdy je
+Rotace pulsaru se v čase postupně zpomaluje, protože hvězda ztrácí rotační energii prostřednictvím elektromagnetického záření, případně dalších brzdných mechanismů, například částicového větru z magnetosféry. Rotační energie neutronové hvězdy je
 \begin{equation}
     E_{\mathrm{rot}}
     =
@@ -663,9 +638,9 @@ Z pozorované periody $P$ a její časové derivace $\dot{P}$ lze odhadnout tzv.
     \frac{P}{2\dot{P}}.
     \label{eq:characteristic_age}
 \end{equation}
-Tento vztah odpovídá modelu dipólového brzdění s $n=3$ a předpokladu, že počáteční perioda byla mnohem menší než současná. Charakteristické stáří proto obecně nepředstavuje přesné skutečné stáří pulsaru, ale spíše odhad časové škály jeho zpomalování \cite{ghosh2007}. Například pro Krabí pulsar vychází charakteristické stáří přibližně $1250$ let, zatímco skutečné stáří odvozené ze supernovy pozorované roku 1054 je přibližně $950$ let \cite{ghosh2007}.
+Tento vztah odpovídá modelu dipólového brzdění s $n=3$ a předpokladu, že počáteční perioda byla mnohem menší než současná. Charakteristické stáří proto obecně nepředstavuje přesné skutečné stáří pulsaru, ale spíše odhad časové škály jeho zpomalování \cite{ghosh2007}. Například pro Krabí pulsar vychází charakteristické stáří přibližně $1250$ let, zatímco skutečné stáří odvozené ze supernovy pozorované roku 1054 je přibližně $970$ let \cite{ghosh2007}.
 
-V modernějších modelech se ukazuje, že charakteristické stáří může být ovlivněno i dalšími brzdnými mechanismy, například částicovým větrem. V případě Krabího pulsaru může částicový vítr přispívat významnou částí k celkové ztrátě rotační energie a vést k tomu, že charakteristické stáří nemusí přesně sledovat skutečné stáří objektu \cite{crab2022}.
+V modernějších modelech se ukazuje, že charakteristické stáří může být ovlivněno i dalšími brzdnými mechanismy, například částicovým větrem. V případě Krabího pulsaru může částicový vítr přispívat významnou částí k celkové ztrátě rotační energie a vést k tomu, že charakteristické stáří nemusíř přesně sledovat skutečné stáří objektu \cite{crab2022}.
 
 Vztah mezi periodou $P$ a její derivací $\dot{P}$ se často znázorňuje v tzv. $P-\dot{P}$ diagramu. Tento diagram umožňuje porovnávat různé populace pulsarů, sledovat jejich rotační vývoj a odhadovat veličiny jako magnetické pole, charakteristické stáří nebo ztrátu rotační energie \cite{ghosh2007}. Brzdný index je proto důležitým nástrojem pro studium dlouhodobého vývoje pulsarů a pro rozlišení fyzikálních mechanismů, které způsobují jejich zpomalování.
 
@@ -681,14 +656,14 @@ Relativní změny frekvence při glitchích se mohou lišit o několik řádů. 
 
 Pozorované glitche se neliší pouze velikostí, ale také následným vývojem. Některé události vypadají jako téměř čistý skok ve frekvenci, zatímco jiné jsou doprovázeny změnou derivace frekvence $\dot{\nu}$ a postupnou relaxací směrem k předchozímu rotačnímu vývoji. Tato relaxace může mít exponenciální složky s různými časovými škálami, od minut až po měsíce, nebo může vést k trvalé změně spin-down rychlosti \cite{haskell2014}. 
 
-Příkladem dobře studovaného objektu je pulsar Vela, který vykazuje opakované obří glitche přibližně jednou za několik let. Tyto události mají typicky relativní změnu frekvence řádu $10^{-6}$ a jejich náběh je velmi rychlý, s observačními horními mezemi v řádu desítek sekund \cite{haskell2012}. Naopak Krabí pulsar vykazuje menší glitche, u nichž může být část náběhu nebo relaxace rozložena do delších časových škál \cite{basu2019}.
+Příkladem dobře studovaného objektu je pulsar Vela, který vykazuje opakované obrovské glitche přibližně jednou za několik let. Tyto události mají typicky relativní změnu frekvence řádu $10^{-6}$ a jejich náběh je extrémně rychlý. Díky průlomovým pulse-to-pulse pozorováním z prosince 2016 se podařilo stanovit horní observační mez na čas náběhu (glitch rise time) na pouhých $12{,}6$ sekundy, přičemž samotné teoretické modely předpokládají fyzikální přenos momentu hybnosti v časových škálách řádu sekund až zlomků sekundy \cite{palfreyman2018}. Naopak Krabí pulsar vykazuje menší glitche, u nichž může být část náběhu nebo relaxace rozložena do delších časových škál \cite{basu2019}.
 
 Glitche jsou proto důležité nejen jako odchylky v přesném časování pulsarů, ale také jako pozorovatelný projev vnitřní dynamiky neutronové hvězdy. Samotná data ukazují, že rotační frekvence pulsaru se může měnit skokově a že po takové změně může následovat různě dlouhá relaxace. Fyzikální vysvětlení těchto jevů vyžaduje popis supratekuté složky uvnitř neutronové hvězdy, kvantovaných vírů a jejich interakce s okolní hmotou, čemuž se věnuje následující kapitola.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{../obrazky/PSR_J0835-4510_Vela.png}
-    \caption{Časové a frekvenční reziduály pro glitch pulsaru Vela (PSR J0835--4510) ze dne 12. prosince 2016. Horní panel ukazuje časové reziduály vzhledem k předpokládanému rotačnímu modelu, dolní panel změnu rotační frekvence $\Delta\nu$. Svislá přerušovaná čára označuje epochu glitche. Převzato z \cite{basu2019}.}
+    \caption[Časové a frekvenční reziduály pro glitch pulsaru Vela (PSR J0835--4510) ze dne 12. prosince 2016.]{Časové a frekvenční reziduály pro glitch pulsaru Vela (PSR J0835--4510) ze dne 12. prosince 2016. Horní panel ukazuje časové reziduály vzhledem k předpokládanému rotačnímu modelu, dolní panel změnu rotační frekvence $\Delta\nu$. Svislá přerušovaná čára označuje epochu glitche. Převzato z \cite{basu2019}.}
     \label{fig:vela_glitch_basu}
 \end{figure}
 
@@ -701,9 +676,9 @@ Neutronové hvězdy krátce po svém vzniku rychle chladnou a v pozdějších f�
 
 \subsection{Cooperovo párování a BCS teorie}
 
-Mikroskopické vysvětlení supratekutosti a supravodivosti poskytuje BCS teorie, kterou v roce 1957 formulovali Bardeen, Cooper a Schrieffer. Její základní myšlenkou je, že při dostatečně nízké teplotě mohou fermiony s efektivně přitažlivou interakcí vytvářet vázané páry, dnes označované jako Cooperovy páry. V důsledku těchto párových korelací se změní nízkoenergetické spektrum systému. Mezi základním stavem a prvními excitovanými stavy tedy vzniká konečná energetická mezera a pod kritickou teplotou $T_\mathrm{c}$ může systém přejít do supratekutého nebo supravodivého stavu \cite{ghosh2007}.
+Mikroskopické vysvětlení supratekutosti a supravodivosti poskytuje BCS teorie, kterou v roce 1957 formulovali J.~Bardeen, L.~N.~Cooper a J.~R.~Schrieffer \cite{bardeen1957}. Její základní myšlenkou je, že při dostatečně nízké teplotě mohou fermiony s efektivně přitažlivou interakcí vytvářet vázané páry, dnes označované jako Cooperovy páry. V důsledku těchto párových korelací se změní nízkoenergetické spektrum systému. Mezi základním stavem a prvními excitovanými stavy tedy vzniká konečná energetická mezera a pod kritickou teplotou $T_\mathrm{c}$ může systém přejít do supratekutého nebo supravodivého stavu \cite{ghosh2007}.
 
-Původně se BCS teorie týkala párování elektronů v kovech. Již krátce poté však Bohr, Mottelson a Pines upozornili na analogii mezi supravodivostí elektronů a párováním nukleonů v atomových jádrech. Podobnost spočívala zejména v existenci neobvykle velké energetické mezery mezi základním stavem a prvními excitovanými stavy u těžkých sudých-sudých jader, která připomíná mezeru v nízkoenergetickém spektru supravodičů \cite{ghosh2007}. Zatímco v běžných supravodičích je efektivní přitažlivá interakce mezi elektrony zprostředkována fonony krystalové mřížky, v případě nukleonů je zdrojem párování jejich vzájemná jaderná interakce, která je na větších vzdálenostech přitažlivá \cite{ghosh2007}.
+Původně se BCS teorie týkala párování elektronů v kovech. Již o rok později (1958) však A.~Bohr, B.~R.~Mottelson a D.~Pines upozornili na analogii mezi supravodivostí elektronů a párováním nukleonů v atomových jádrech \cite{bohr1958}. Podobnost spočívala zejména v existenci neobvykle velké energetické mezery mezi základním stavem a prvními excitovanými stavy u těžkých sudo-sudých jader, která připomíná mezeru v nízkoenergetickém spektru supravodičů \cite{bohr1958}. Zatímco v běžných supravodičích je efektivní přitažlivá interakce mezi elektrony zprostředkována fonony krystalové mřížky, v případě nukleonů je zdrojem párování jejich vzájemná jaderná síla \cite{ghosh2007}.
 
 Párování probíhá především mezi fermionovými stavy v okolí Fermiho povrchu. Nejvýhodnější je konfigurace dvou fermionů se stejnou velikostí, ale opačným směrem hybnosti a s opačnými spiny. Takové páry tvoří základní stav systému a k excitaci jedné částice je následně potřeba dodat konečnou energii, označovanou jako energetická mezera $E_\mathrm{G}$ \cite{ghosh2007}. V rámci BCS teorie lze tuto mezeru zapsat přibližně ve tvaru
 \begin{equation}
@@ -731,8 +706,7 @@ Rozdíl mezi supratekutostí neutronů a supravodivostí protonů souvisí s ele
 
 Přesná poloha a rozsah supratekutých oblastí závisí na mikrofyzikálních vlastnostech husté hmoty, zejména na velikosti párovacích mezer a příslušných kritických teplotách. Tyto veličiny nejsou dosud určeny s úplnou jistotou, protože při hustotách přesahujících nukleární saturační hustotu hrají významnou roli ne zcela známé mnohočásticové interakce \cite{ascenzi2024}. Přesto je předpoklad supratekutosti neutronů ve vnitřní kůře a v jádře neutronových hvězd považován za standardní součást moderního popisu jejich vnitřní struktury.
 
-Důležitým důsledkem supratekutosti je vznik nových stupňů volnosti ve vnitřní dynamice hvězdy. Supratekutá složka se obecně nemusí pohybovat přesně stejně jako normální, tedy nesupratekutá složka hmoty. Neutronovou hvězdu proto nelze vždy popsat jako jedinou dokonale vázanou kapalinu, ale v některých situacích je vhodné chápat ji jako vícekomponentní systém \cite{andersson2021}. V rotující neutronové hvězdě je navíc klíčové, že moment hybnosti supratekutiny je nesen soustavou kvantovaných vírů \cite{andersson2021}.
-
+Důležitým důsledkem supratekutosti je vznik nových stupňů volnosti ve vnitřní dynamice hvězdy. Supratekutá složka se obecně nemusí pohybovat přesně stejně jako normální, tedy nesupratekutá složka hmoty. Neutronovou hvězdu proto nelze vždy popsat jako jedinou dokonale vázanou kapalinu, ale v některých situacích je vhodné chápat ji jako vícekomponentní systém \cite{andersson2021}.
 
 
 \subsection{Rotace supratekutiny a kvantované víry}
@@ -750,7 +724,7 @@ kde $\theta$ je fáze vlnové funkce a $2m_n$ je hmotnost neutronového páru \c
     \label{eq:irrotational_flow}
 \end{equation}
 
-Rotace supratekutiny je proto umožněna přítomností čárových singularit, které se označují jako vírové čáry. Cirkulace rychlosti kolem takové vírové čáry je kvantována,
+Rotace supratekutiny je proto umožněna pouze vznikem jednorozměrných topologických singularit, takzvaných kvantovaných vírů. Cirkulace rychlosti kolem osy každého víru je kvantována,
 \begin{equation}
     \kappa
     \equiv
@@ -759,9 +733,9 @@ Rotace supratekutiny je proto umožněna přítomností čárových singularit, 
     n\frac{h}{2m_n},
     \label{eq:circulation_quantization}
 \end{equation}
-kde $n$ je celé číslo. Kvantování cirkulace plyne z jednoznačnosti vlnové funkce, jejíž fáze se při oběhu kolem vírové čáry může změnit pouze o celočíselný násobek $2\pi$ \cite{ghosh2007}. Tyto kvantované víry se často označují jako Onsagerovy--Feynmanovy víry \cite{ghosh2007}.
+kde $n$ je celé číslo. Kvantování cirkulace plyne z jednoznačnosti vlnové funkce, jejíž fáze se při oběhu kolem osy víru může změnit pouze o celočíselný násobek $2\pi$. Tyto kvantované víry, jejichž existenci v supratekutinách jako první postuloval L.~Onsager (1949) \cite{onsager1949} a podrobněji rozpracoval R.~P.~Feynman (1955) \cite{feynman1955}, se na jejich počest často označují jako Onsagerovy--Feynmanovy víry.
 
-U osamocené přímé vírové čáry vede cylindrická symetrie ke vztahu
+U osamoceného přímého víru vede cylindrická symetrie ke vztahu
 \begin{equation}
     \oint \mathbf{v}_{\mathrm{s}}\cdot d\mathbf{l}
     =
@@ -775,11 +749,11 @@ a tedy
     \frac{n\hbar}{2m_n r}.
     \label{eq:vortex_velocity}
 \end{equation}
-Rychlost proudění supratekutiny proto klesá nepřímo úměrně vzdálenosti od vírové čáry \cite{ghosh2007}.
+Rychlost proudění supratekutiny proto klesá nepřímo úměrně vzdálenosti od osy víru \cite{ghosh2007}.
 
-V rotující neutronové hvězdě nevzniká pouze jeden vír, ale hustá soustava vírových čar. Pro typický poloměr hvězdy $R\sim 10\,\mathrm{km}$ a koherenční délku vírového jádra $\xi\sim 10\,\mathrm{fm}$ je dolní kritická úhlová rychlost pro vznik prvního víru extrémně malá, přibližně $\Omega_{\mathrm{c1}}\sim 10^{-14}\,\mathrm{s^{-1}}$. Tato hodnota je zanedbatelná ve srovnání s rotačními rychlostmi pozorovaných pulsarů, takže supratekutá složka neutronové hvězdy je při reálných rotačních rychlostech prostoupena velkým počtem kvantovaných vírů \cite{ghosh2007}.
+V rotující neutronové hvězdě nevzniká pouze jeden vír, ale hustá soustava těchto kvantovaných vírů. Pro typický poloměr hvězdy $R\sim 10\,\mathrm{km}$ a koherenční délku vírového jádra $\xi\sim 10\,\mathrm{fm}$ je dolní kritická úhlová rychlost pro vznik prvního víru extrémně malá, přibližně $\Omega_{\mathrm{c1}}\sim 10^{-14}\,\mathrm{s^{-1}}$. Tato hodnota je zanedbatelná ve srovnání s rotačními rychlostmi pozorovaných pulsarů, takže supratekutá složka neutronové hvězdy je při reálných rotačních rychlostech prostoupena obrovským množstvím kvantovaných vírů \cite{ghosh2007}.
 
-Na makroskopické škále pak hustá soustava vírů napodobuje téměř tuhou rotaci. Plošná hustota vírů $n_{\mathrm{v}}$ je dána Onsagerovým--Feynmanovým vztahem
+Na makroskopické škále pak tato hustá soustava vírů napodobuje téměř tuhou rotaci. Plošná hustota vírů $n_{\mathrm{v}}$ je dána Onsagerovým--Feynmanovým vztahem
 \begin{equation}
     n_{\mathrm{v}}
     =
@@ -788,15 +762,13 @@ Na makroskopické škále pak hustá soustava vírů napodobuje téměř tuhou r
     \frac{2\Omega}{h/(2m_n)}.
     \label{eq:onsager_feynman_density}
 \end{equation}
-Čím rychleji supratekutina rotuje, tím větší je počet vírových čar na jednotku plochy \cite{ghosh2007}. Lze tedy říci, že supratekutina sice nerotuje klasicky na mikroskopické úrovni, ale prostřednictvím husté sítě kvantovaných vírů se její proudění na velkých škálách chová podobně jako rovnoměrně rotující kapalina.
-
-
+Čím rychleji supratekutina rotuje, tím větší je počet vírů na jednotku plochy \cite{feynman1955}. Lze tedy říci, že supratekutina sice nerotuje klasicky na mikroskopické úrovni, ale prostřednictvím husté sítě kvantovaných vírů se její proudění na velkých škálách chová podobně jako rovnoměrně rotující kapalina.
 
 \section{Vortex pinning a přenos momentu hybnosti}
 
-Doposud nejpřesvědčivější teorií, která vysvětluje vznik glitchů v neutronových hvězdách, je teorie o zachycování vírů (vortex pinning). Tento koncept vznikl jako reakce na dřívější modely, které se při detailním zkoumání ukázaly jako nedostačující. Jedním z nich byla dvousložková teorie post-glitchové relaxace navržená Baymem v roce 1969, která předpokládala existenci „kontejneru“ (pevná kůra a nabité částice) a supratekuté složky v jádru hvězdy, vzájemně svázaných třením \cite{ghosh2007}. Tato teorie ovšem neuspokojivě vysvětlovala pozorované časové parametry relaxace. Výzkumy z 80.\ let totiž ukázaly, že vazba mezi elektrony a magnetizovanými víry v jádru hvězdy je extrémně silná, což vede k dynamické době vazby $\tau_d$ v řádu sekund až minut -- v přímém rozporu s pozorovanými makroskopickými relaxačními časy glitchů, které dosahují desítek až stovek dní \cite{ghosh2007}. Řešení tohoto rozporu bylo nalezeno ve vnitřní kůře neutronové hvězdy, kde existuje specifické prostředí tvořené mřížkou atomových jader obklopenou supratekutinou „odkapaných“ (dripped) neutronů \cite{ghosh2007}.
+Doposud nejpřesvědčivější teorií, která vysvětluje vznik glitchů v neutronových hvězdách, je teorie o zachycování vírů (vortex pinning). Tento koncept vznikl jako reakce na dřívější modely, které se při detailním zkoumání ukázaly jako nedostačující. Jedním z nich byla dvousložková teorie post-glitchové relaxace navržená Baymem et al. v roce 1969 \cite{baym1969}, která předpokládala existenci „kontejneru“ (pevná kůra a nabité částice) a supratekuté složky v jádru hvězdy, vzájemně svázaných třením. Tato teorie ovšem neuspokojivě vysvětlovala pozorované časové parametry relaxace. Výzkumy z 80. let totiž ukázaly, že vazba mezi elektrony a magnetizovanými víry v jádru hvězdy je extrémně silná, což vede k dynamické době vazby $\tau_d$ v řádu sekund až minut -- v přímém rozporu s pozorovanými makroskopickými relaxačními časy glitchů, které dosahují desítek až stovek dní \cite{ghosh2007}. Řešení tohoto rozporu bylo nalezeno ve vnitřní kůře neutronové hvězdy, kde existuje specifické prostředí tvořené mřížkou atomových jader obklopenou supratekutinou „odkapaných“ (dripped) neutronů.
 
-Základem této teorie je poznatek, že v rotující supratekutině je moment hybnosti nesen sítí kvantovaných Onsager–Feynmanových vírů. Jádro těchto vírů tvoří oblast normální (nesupratekuté) hmoty o poloměru daném koherenční délkou $\xi$ \cite{ghosh2007}. Vzhledem k tomu, že energetická hustota supratekutiny je nižší než hustota energie v normálním stavu o hodnotu kondenzační energie, je pro systém energeticky výhodné, aby jádra vírů procházela místy, kde je supratekutost již přirozeně narušena, tedy skrze atomová jádra krystalické mřížky kůry. Tento jev se nazývá zachytávání (pinning) \cite{ghosh2007}. Síla tohoto zachytávání je určena energií $E_p$, představující rozdíl mezi energií jádra víru procházejícího vnějším prostředím (odkapanými neutrony) a vnitřkem atomového jádra:
+Základem této teorie, se kterou přišli Anderson a Itoh v roce 1975 \cite{anderson1975}, je poznatek, že v rotující supratekutině je moment hybnosti nesen sítí kvantovaných Onsagerových--Feynmanových vírů. Jádro těchto vírů tvoří oblast normální (nesupratekuté) hmoty o poloměru daném koherenční délkou $\xi$ \cite{ghosh2007}. Vzhledem k tomu, že energetická hustota supratekutiny je nižší než hustota energie v normálním stavu o hodnotu kondenzační energie, je pro systém energeticky výhodné, aby jádra vírů procházela místy, kde je supratekutost již přirozeně narušena, tedy skrze atomová jádra krystalické mřížky kůry. Tento jev se nazývá zachytávání (pinning) \cite{anderson1975}. Síla tohoto zachytávání je určena energií $E_p$, představující rozdíl mezi energií jádra víru procházejícího vnějším prostředím (odkapanými neutrony) a vnitřkem atomového jádra:
 \begin{equation}
 E_p = \frac{3}{8} \left[ \left( n_n \frac{E_{G(n)}^2}{E_F^{(n)}} \right)_{\mathrm{out}} - \left( n_n \frac{E_{G(n)}^2}{E_F^{(n)}} \right)_{\mathrm{in}} \right] V,
 \end{equation}
@@ -806,8 +778,6 @@ kde $E_G$ je energetická mezera, $n_n$ hustota neutronů a $V$ objem překryvu 
 \end{equation}
 což geometricky umožňuje vírům fixovat se na mřížkových bodech \cite{ghosh2007}.
 
-
-
 Z dynamického hlediska je klíčový vztah mezi rotací kůry a supratekutiny. Zatímco pevná kůra je brzděna vnějšími elektromagnetickými momenty a její úhlová rychlost $\Omega_c$ klesá, zachycené víry nutí supratekutou složku rotovat s původní, vyšší úhlovou rychlostí $\Omega_s$ \cite{ghosh2007}. Tím vzniká rostoucí rozdíl rychlostí
 \begin{equation}
 \delta v = r(\Omega_s - \Omega_c).
@@ -816,21 +786,20 @@ Tento rozdíl generuje na jednotku délky víru Magnusovu sílu $f_M$, směřuj�
 \begin{equation}
 f_M = \rho(\kappa \times \delta v),
 \end{equation}
-kde $\rho$ je hustota a $\kappa$ vektor cirkulace \cite{ghosh2007}. Tato síla je vyvažována silou zachytávání $f_p$, směřující dovnitř. Jak pulsar v čase zpomaluje, rozdíl $\delta v$ narůstá, dokud Magnusova síla nepřekoná bariéru zachytávání. V tom okamžiku dojde ke katastrofickému a hromadnému odpoutání vírů (unpinning). Víry se prudce přesunou do oblastí s nižší hustotou vírů (směrem ven), čímž dojde k rychlému přenosu momentu hybnosti ze supratekutiny na kůru \cite{ghosh2007}. Pozorovaným důsledkem je náhlý nárůst úhlové rychlosti kůry, tedy glitch.
+kde $\rho$ je hustota a $\kappa$ vektor cirkulace \cite{ghosh2007}. Tato síla je vyvažována silou zachytávání $f_p$, směřující dovnitř. Jak pulsar v čase zpomaluje, rozdíl $\delta v$ narůstá, dokud Magnusova síla nepřekoná bariéru zachytávání. V tom okamžiku dojde ke katastrofickému a hromadnému odpoutání vírů (unpinning). Víry se prudce přesunou do oblastí s nižší hustotou vírů (směrem ven), čímž dojde k rychlému přenosu momentu hybnosti ze supratekutiny na kůru \cite{anderson1975}. Pozorovaným důsledkem je náhlý nárůst úhlové rychlosti kůry, tedy glitch.
 
 Kritický rozdíl úhlových rychlostí potřebný ke spuštění glitche je dán vztahem
 \begin{equation}
 \delta\Omega_{crit} = \frac{E_p}{\xi a r \rho \kappa},
 \end{equation}
-kde $a$ představuje průměrnou vzdálenost mezi místy zachytávání podél vírové čáry \cite{ghosh2007}. Tato kritická hodnota je silně závislá na velikosti energetické mezery $E_G$, což činí z pozorování glitchů unikátní diagnostický nástroj pro studium supratekutosti a vnitřní struktury neutronových hvězd. Následná dlouhá relaxace po glitchi pak neodpovídá prostému tření, ale procesu plíživého pohybu vírů (vortex creep), kdy se systém postupně vrací do nového rovnovážného stavu \cite{ghosh2007}.
+kde $a$ představuje průměrnou vzdálenost mezi místy zachytávání podél osy víru \cite{ghosh2007}. Tato kritická hodnota je silně závislá na velikosti energetické mezery $E_G$, což činí z pozorování glitchů unikátní diagnostický nástroj pro studium supratekutosti a vnitřní struktury neutronových hvězd. Následná dlouhá relaxace po glitchi pak neodpovídá prostému tření, ale modelu plíživého pohybu vírů (vortex creep), navrženému Alparem et al. v roce 1984 \cite{alpar1984}, kdy se systém postupně vrací do nového rovnovážného stavu tepelně aktivovaným přeskakováním vírů mezi mřížkovými body.
 
 
+\section{Graber et al. (2018)}
 
-\section{Návaznost na model Graber et al. (2018)}
+Standardní model vortex pinningu popsaný v předchozí kapitole dobře vysvětluje kvalitativní mechanismus glitche, tedy akumulaci a náhlé uvolnění momentu hybnosti ze zachycené supratekutiny. Pro kvantitativní porovnání s pozorovanými daty, zejména s tvarem a rychlostí nárůstu glitche, je však třeba přesnější dynamický popis, který rozlišuje jednotlivé rotující složky hvězdy a jejich vzájemné propojení. Tímto směrem se ubírá práce Graber, Cumming a Andersson (2018), z níž vychází model použitý v této práci \cite{graber2018}.
 
-Standardní model vortex pinningu popsaný v předchozí kapitole dobře vysvětluje kvalitativní mechanismus glitche -- akumulaci a náhlé uvolnění momentu hybnosti ze zachycené supratekutiny. Pro kvantitativní porovnání s pozorovanými daty, zejména s tvarem a rychlostí nárůstu glitche, je však třeba přesnější dynamický popis, který rozlišuje jednotlivé rotující složky hvězdy a jejich vzájemné propojení. Tímto směrem se ubírá práce Grabera, Cummingové a Anderssona (2018), z níž vychází model použitý v této práci \cite{graber2018}.
-
-Graber et al. (2018) se ve své práci zaměřují na to, jak rychlost nárůstu glitche (glitch rise) odráží sílu vzájemného tření mezi jednotlivými rotujícími složkami neutronové hvězdy, s důrazem na roli Kelvinových vln jako mechanismu rychlého propojení kůrové supratekutiny s pevnou kůrou. Autoři při tom pracují s fixní hmotností a poloměrem hvězdy, konkrétně $M \approx 1.41\,M_{\odot}$ a $R = 10\,\text{km}$, odpovídajícími typickému pulsaru jako je Vela \cite{graber2018}. Cílem této diplomové práce je rozšířit jejich přístup o systematické zkoumání toho, jaký vliv má na tvar a časový průběh glitche právě změna vnitřních stelárních parametrů -- hmotnosti a poloměru neutronové hvězdy. Přebíráme tedy beze změny jejich tříkomponentní dynamický model, popsaný níže, avšak namísto fixních stelárních parametrů je v následujících kapitolách budeme volně měnit a sledovat důsledky pro předpovídaný profil glitche.
+Graber et al. (2018) se ve své práci zaměřují na to, jak rychlost nárůstu glitche (glitch rise) odráží sílu vzájemného tření mezi jednotlivými rotujícími složkami neutronové hvězdy, s důrazem na roli Kelvinových vln jako mechanismu rychlého propojení kůrové supratekutiny s pevnou kůrou. Autoři při tom pracují s fixní hmotností a poloměrem hvězdy, konkrétně $M \approx 1.41\,M_{\odot}$ a $R = 10\,\text{km}$, odpovídajícími typickému pulsaru jako je Vela \cite{graber2018}. Cílem této diplomové práce je rozšířit jejich přístup o systematické zkoumání toho, jaký vliv má na tvar a časový průběh glitche právě změna vnitřních stelárních parametrů, tedy hmotnosti a poloměru neutronové hvězdy. Přebíráme tedy beze změny jejich tříkomponentní dynamický model, popsaný níže, avšak namísto fixních stelárních parametrů je v následujících kapitolách budeme volně měnit a sledovat důsledky pro předpovídaný profil glitche.
 
 \subsection{Tříkomponentní dynamický model}
 
@@ -838,40 +807,40 @@ Neutronová hvězda je v kontextu dynamiky glitche rozdělena do tří rotační
 
 \textbf{Pevně vázaná složka (kůra).} Skládá se z jaderné mřížky kůry a pevně spojené nabité konglomerace v jádře, které rotují rigidně jako jeden celek. Tato složka představuje tu část hvězdy, která je přímo pozorovatelná, a její úhlová rychlost $\Omega_{\text{crust}}$ je veličinou, jež se náhle mění během glitche.
 
-\textbf{Kůrová neutronová supratekutina.} Tvoří ji volné neutrony v supratekutém stavu ve vnitřní kůře, oddělené od pevné kůry pinningem vírů k jaderné mřížce. Tato složka slouží jako rezervoár úhlové hybnosti, jenž je uvolněn během glitche. Rychlost opětovného propojení kůry s touto supratekutinou je řízena hustotně závislým koeficientem vzájemného tření $\mathcal{B}(\tilde{r})$, pravděpodobně prostřednictvím excitace Kelvinových vln \cite{graber2018}.
+\textbf{Kůrová neutronová supratekutina.} Tvoří ji volné neutrony v supratekutém stavu prostupující vnitřní kůrou. Z hlediska rotační dynamiky je tato složka dočasně oddělena (decoupled) od zpomalující kůry právě díky zachytávání vírů (vortex pinning) v jaderné mřížce. Slouží tak jako rezervoár úhlové hybnosti, jenž je uvolněn během glitche. Rychlost opětovného propojení kůry s touto supratekutinou při samotném glitchi je řízena hustotně závislým koeficientem vzájemného tření $\mathcal{B}(\tilde{r})$, pravděpodobně prostřednictvím excitace Kelvinových vln \cite{graber2018}.
 
 \textbf{Supratekuté jádro.} Zahrnuje supratekuté neutrony v jádře hvězdy, které v tomto modelu rotuje jako pevná koule, takže všechny jeho částice sdílejí stejnou úhlovou rychlost $\Omega_{\text{core}}$. Jeho propojení s kůrou je řízeno konstantním koeficientem vzájemného tření $B_{\text{core}}$ \cite{graber2018}. Síla tohoto propojení je klíčová pro tvar nárůstu glitche, protože určuje, zda se úhlová hybnost přenáší nejprve z kůrové supratekutiny, nebo ze supratekutého jádra do kombinovaného systému kůry a jádra.
 
-Tyto tři komponenty mají úhlové rychlosti $\Omega_x$ a momenty setrvačnosti $I_x$, kde $x \in \{\text{crust}, \text{crust superfluid}, \text{core superfluid}\}$, jejichž součet dává celkový moment setrvačnosti hvězdy $I$. Právě hustotní závislost vzájemného tření způsobuje, že se moment hybnosti přenáší do různých částí kůry a jádra na různých časových škálách, což může vést k tomu, že změna rotační frekvence se stane v čase nemonotónní -- dosáhne maximální hodnoty výrazně větší, než je naměřená velikost glitche, a projeví se zpožděním v následné regeneraci \cite{graber2018}.
+Tyto tři komponenty mají úhlové rychlosti $\Omega_x$ a momenty setrvačnosti $I_x$, kde $x \in \{\text{crust}, \text{crust superfluid}, \text{core superfluid}\}$, jejichž součet dává celkový moment setrvačnosti hvězdy $I$. Právě hustotní závislost vzájemného tření způsobuje, že se moment hybnosti přenáší do různých částí kůry a jádra na různých časových škálách, což může vést k tomu, že změna rotační frekvence se stane v čase nemonotónní, tedy dosáhne maximální hodnoty výrazně větší, než je naměřená velikost glitche, a projeví se zpožděním v následné regeneraci \cite{graber2018}.
 
 \subsection{Omezení modelu a nedávný vývoj}
 
-Než přejdeme k vlastnímu modelování, je třeba zmínit, že samotný model vortex pinningu v kůře pravděpodobně nestačí k vysvětlení všech pozorovaných glitchů, a proto se do popisu dynamiky glitche prosazuje i role jádra hvězdy \cite{ghosh2007}.
+Než přejdeme k vlastnímu modelování, je třeba zmínit, že samotný model vortex pinningu v kůře pravděpodobně nestačí k vysvětlení všech pozorovaných glitchů, a proto se do popisu dynamiky glitche prosazuje i role jádra hvězdy.
 
-V roce 1998 přišel Jones s myšlenkou, že vnitřní kůru nelze považovat za jediný monokrystal, jak předpokládal původní model vortex pinningu, protože ve skutečnosti jde o polykrystalickou strukturu \cite{jones1998}. Polykrystalická struktura generuje výrazně slabší sílu zachycení vírů $f_p$ než jediný monokrystal, jelikož příspěvky jednotlivých krystalů se vzájemně částečně vyruší \cite{ghosh2007}. Jonesovy výpočty ukázaly, že síla zachycení je sice dostatečná v oblastech s nízkou hustotou, kde
+V roce 1998 přišel P.~B.~Jones s myšlenkou, že vnitřní kůru nelze považovat za jediný monokrystal, jak předpokládal původní model vortex pinningu, protože ve skutečnosti jde o polykrystalickou strukturu \cite{jones1998}. Polykrystalická struktura generuje výrazně slabší sílu zachycení vírů $f_p$ než jediný monokrystal, jelikož příspěvky jednotlivých krystalů se vzájemně částečně vyruší \cite{jones1998}. Jonesovy výpočty ukázaly, že síla zachycení je sice dostatečná v oblastech s nízkou hustotou, kde
 \begin{equation}
 \delta\Omega_{crit} \approx 10^{-2}\,\Omega \sim 0.4\,\mathrm{rad\,s^{-1}},
 \end{equation}
-avšak v hlubších vrstvách kůry, kde je soustředěna většina momentu setrvačnosti supratekutiny, tato síla drasticky klesá \cite{ghosh2007}. Samotný mechanismus zachycování vírů v kůře tak pravděpodobně nedokáže vysvětlit obří glitche pozorované u pulsaru Vela.
+avšak v hlubších vrstvách kůry, kde je soustředěna většina momentu setrvačnosti supratekutiny, tato síla drasticky klesá \cite{jones1998}. Samotný mechanismus zachycování vírů v kůře tak pravděpodobně nedokáže vysvětlit obří glitche pozorované u pulsaru Vela.
 
-Tento poznatek vedl k hlubšímu zkoumání jádra neutronové hvězdy. Ve stejném roce představil Ruderman model zaměřený právě na dynamiku jádra, které obsahuje dvě dynamické složky: supratekutou neutronovou složku nesoucí neutronové víry a supravodivou protonovou složku nesoucí magnetické pole ve formě trubic toku \cite{ruderman1998}. Podle Rudermanova modelu nutí pomalé zpomalování rotace hvězdy neutronové víry pohybovat se radiálně ven, čímž s sebou vlečou magnetické trubice toku (interakce vírů s trubicemi toku) \cite{ghosh2007}.
+Tento poznatek vedl k hlubšímu zkoumání jádra neutronové hvězdy. Ve stejném roce představili Ruderman, Zhu a Chen model zaměřený právě na dynamiku jádra, které obsahuje dvě dynamické složky: supratekutou neutronovou složku nesoucí neutronové víry a supravodivou protonovou složku nesoucí magnetické pole ve formě trubic toku \cite{ruderman1998}. Podle tohoto modelu nutí pomalé zpomalování rotace hvězdy neutronové víry pohybovat se radiálně ven, čímž s sebou vlečou i magnetické trubice toku \cite{ruderman1998}.
 
-Tyto poznatky ukazují, že jádro neutronové hvězdy nelze při popisu glitche zanedbat jako pouhou pasivní, tuze rotující složku. Právě proto je tříkomponentní model podle Grabera et al. (2018), představený výše, vhodným východiskem pro tuto práci: explicitně zahrnuje jak kůrovou, tak jádrovou supratekutinu jako samostatné dynamické komponenty a umožňuje tak zkoumat, jak vlastnosti obou oblastí -- a v našem případě zejména celková hmotnost a poloměr hvězdy -- ovlivňují pozorovatelný profil glitche.
-
-
+Tento poznatek ukazuje, že jádro neutronové hvězdy nelze při popisu glitche zanedbat jako pouhou pasivní, tuhou, rotující složku. Tříkomponentní model je tedy vhodným východiskem pro tuto práci, jelikož explicitně zahrnuje jak kůrovou, tak jádrovou supratekutinu jako samostatné dynamické komponenty a umožňuje tak zkoumat, jak vlastnosti obou oblastí ovlivňují pozorovatelný profil glitche.
 \chapter{Numerický model a výsledky}
+
 \section{Popis modelu}
-Po představení teoretického rámce v předchozí kapitole se nyní zaměříme na jeho konkrétní numerickou realizaci. Základem pro simulace v této práci je Python kód z dříve zmíněné studie Graber et al. (2018) volně dostupný na platformě GitHub \cite{graber2018}. Samotný výpočetní postup je rozdělen do dvou hlavních kroků.
 
-Nejprve se řeší TOV rovnice, čímž se získá profil vnitřní struktury hvězdy. Zde je nutné přesně specifikovat použitou stavovou rovnici (EoS). Model Graber et al. (2018) k tomuto problému přistupuje pomocí zjednodušené obálkové aproximace: nevyužívá globální EoS (např. SLy nebo APR) integrující celou hvězdu od středu až k povrchu. Místo toho je celé vnitřní jádro parametrizováno pouze jako spodní okrajová podmínka o hmotnosti $M_{\text{core}}$ a poloměru $R_{\text{cci}}$. Vlastní integrace TOV rovnice probíhá pouze pro vrstvu kůry od poloměru $R_{\text{cci}}$ směrem ven. 
+Po představení teoretického rámce v předchozí kapitole se nyní zaměříme na jeho konkrétní numerickou realizaci. Základem pro simulace v této práci je Python kód z dříve zmíněné studie Graber et al. (2018), jenž je volně dostupný na platformě GitHub a archivovaný v repozitáři Zenodo \cite{graber2018_code}. Samotný výpočetní postup je rozdělen do dvou hlavních kroků.
 
-Pro vnitřní kůru je v kódu fixně implementována klasická stavová rovnice podle Negeleho a Vautherina (1973), přičemž vrstva vnější kůry (pod hustotou neutronového odkapávání) je aproximována modelem relativistického elektronového plynu s konstantním podílem elektronů $Y_e \approx 0.4$ \cite{graber2018}. Z takto získaného hustotního profilu kůry se následně počítá radiální závislost koeficientů vzájemného tření $\mathcal{B}(\tilde{r})$.
+Nejprve se řeší TOV rovnice, čímž se získá profil vnitřní struktury hvězdy. Zde je nutné přesně specifikovat použitou stavovou rovnici (EoS). Model Graber et al. (2018) k tomuto problému přistupuje pomocí zjednodušené obálkové aproximace, kdy se nevyužívá globální EoS (např. SLy nebo APR) integrující celou hvězdu od středu až k povrchu. Místo toho je celé vnitřní jádro parametrizováno pouze jako spodní okrajová podmínka o hmotnosti $M_{\text{core}}$ a poloměru $R_{\text{cci}}$. Vlastní integrace TOV rovnice probíhá pouze pro vrstvu kůry od poloměru $R_{\text{cci}}$ směrem ven. 
+
+Pro vnitřní kůru je v kódu fixně implementována klasická stavová rovnice podle Negeleho a Vautherina (1973) \cite{negele1973}, přičemž vrstva vnější kůry (pod hustotou neutronového odkapávání) je aproximována modelem relativistického elektronového plynu s konstantním podílem elektronů $Y_e \approx 0.4$ \cite{graber2018}. Z takto získaného hustotního profilu kůry se následně počítá radiální závislost koeficientů vzájemného tření $\mathcal{B}(\tilde{r})$.
 
 Na tento první krok navazuje druhá část kódu, která provádí samotnou numerickou integraci pohybových rovnic tříkomponentního modelu popsaného v předchozí kapitole \cite{graber2018}:
 \begin{align}
     \dot{\Omega}_{\text{sf}} &= -2\Omega_{\text{sf}}\frac{\partial}{\partial \tilde{r}}\left[\tilde{r}^2 \mathcal{B}(\tilde{r})(\Omega_{\text{sf}} - \Omega_{\text{crust}})\right],\\
     \dot{\Omega}_{\text{core}} &= -2\Omega_{\text{core}}\mathcal{B}_{\text{core}}(\Omega_{\text{core}} - \Omega_{\text{crust}}),\\
-    I_{\text{crust}}\dot{\Omega}_{\text{crust}} &= -\int \tilde{r}^2 \mathcal{B}(\tilde{r})(\Omega_{\text{sf}} - \Omega_{\text{crust}})\,\mathrm{d}V - I_{\text{core}}\dot{\Omega}_{\text{core}} - N_{\text{ext}},
+    I_{\text{crust}}\dot{\Omega}_{\text{crust}} &= -\int \tilde{r}^2 \mathcal{B}(\tilde{r})(\Omega_{\text{sf}} - \Omega_{\text{crust}})\, \mathrm{d}V - I_{\text{core}}\dot{\Omega}_{\text{core}} - N_{\text{ext}},
 \end{align}
 kde $\Omega_{\text{sf}}$, $\Omega_{\text{core}}$ a $\Omega_{\text{crust}}$ odpovídají úhlovým rychlostem supratekuté kůry, supratekutého jádra a normální složky. Funkce $\mathcal{B}(\tilde{r})$ reprezentuje profil tření v kůře a parametr $\mathcal{B}_{\text{core}}$ popisuje úroveň tření mezi jádrem a kůrou. Člen $N_{\text{ext}}$ zastupuje vnější brzdný moment, který lze v krátkém časovém úseku těsně po glitchi zanedbat \cite{graber2018}.
 
@@ -883,7 +852,7 @@ Graber et al. (2018) ve své práci sledovali, jak se tvar nárůstu glitche mě
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{../obrazky/Referencni_graf_Graber.png}
-    \caption{Vývoj změny rotační frekvence kůry $\Delta\nu(t)$ po glitchi pro fixní jádro-kůrové tření $\mathcal{B}_{\text{core}} \approx 5\times10^{-5}$. Plné čáry odpovídají třem hustotně závislým profilům tření v kůře (A, B, C), přerušovaná čára konstantnímu $\mathcal{B}$; tečkované křivky ukazují srovnání se čtyřmi konstantními hodnotami tření ($10^{-1}$ až $10^{-4}$). Vodorovná čára značí novou rovnovážnou hodnotu $\Delta\nu$ po úplném přenosu momentu hybnosti mezi supratekutinou a kůrou. Převzato a upraveno z Graber et al. (2018) \cite{graber2018}.}
+    \caption[Vývoj změny rotační frekvence kůry $\Delta\nu(t)$ po glitchi pro fixní jádro-kůrové tření $\mathcal{B}_{\text{core}} \approx 5\times10^{-5}$.]{Vývoj změny rotační frekvence kůry $\Delta\nu(t)$ po glitchi pro fixní jádro-kůrové tření $\mathcal{B}_{\text{core}} \approx 5\times10^{-5}$. Plné čáry odpovídají třem hustotně závislým profilům tření v kůře (A, B, C), přerušovaná čára konstantnímu $\mathcal{B}$; tečkované křivky ukazují srovnání se čtyřmi konstantními hodnotami tření ($10^{-1}$ až $10^{-4}$). Vodorovná čára značí novou rovnovážnou hodnotu $\Delta\nu$ po úplném přenosu momentu hybnosti mezi supratekutinou a kůrou. Převzato a upraveno z Graber et al. (2018) \cite{graber2018}.}
     \label{fig:delta_nu_Bcore}
 \end{figure}
 
@@ -1155,7 +1124,7 @@ Získané výsledky demonstrují, že profil nárůstu glitche (glitch rise) nes
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Zde budou vloženy Reference generované pomocí BiBTeXu:
 
-\nocite{*}
+%\nocite{*}
 {\small\sloppy
 \bibliography{references}
 \par}

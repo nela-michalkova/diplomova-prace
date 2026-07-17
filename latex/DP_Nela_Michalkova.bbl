@@ -1,133 +1,175 @@
-\newcommand*{\bblaccy}[1]{#1}
-  \newcommand*{\bblaccym}[2]{#1\discretionary{-}{-}{-}#2}
-  \newcommand*{\bblaccymd}[3]{#1\discretionary{-}{-}{-}#2\discretionary{-}{-}{-}#3}
+\newcommand*{\bblaccy}[1]{#1} \newcommand*{\bblaccym}[2]{#1\discretionary{-}{-}{-}#2} \newcommand*{\bblaccymd}[3]{#1\discretionary{-}{-}{-}#2\discretionary{-}{-}{-}#3}
 \begin{thebibliography}{10}
-\providecommand{\url}[1]{\texttt{#1}}
-\providecommand{\urlprefix}{URL }
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
-  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
-  \urlstyle{rm}\Url}\fi
-\providecommand{\selectlanguage}[1]{\relax}
-\input{babelbst.tex}
-\newcommand{\Capitalize}[1]{\uppercase{#1}}
-\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
-\providecommand{\eprint}[2][]{\url{#2}}
-
-\bibitem{nasa_lifecycle}
-\textsc{{NASA/CXC}}: Stellar evolution. Chandra X-ray Observatory, 2006.
-  [Online; cit. 2026-07-12]. Dostupné z:
-  \url{https://chandra.harvard.edu/stellarev/}.
-
-\bibitem{page_nstar}
-\textsc{Page, D.}: {Neutron Star: Surface and Interior}. online. [cit.
-  2026-07-04],
-  \urlprefix\url{https://www.astroscu.unam.mx/neutrones/NS-Picture/NStar/NStar.html}.
-
-\bibitem{basu2019}
-\textsc{Basu, A.; Joshi, B.~C.; Krishnakumar, M.~A.; Bhattacharya, D.; Nandi,
-  R.; Bandyopadhyay, D.; Char, P. \& Manoharan, P.~K.}: Observed glitches in 8
-  young pulsars. \emph{Monthly Notices of the Royal Astronomical Society},
-  \textbf{491}(3), \bblpp{} 3182--3191, 2020, \doi{10.1093/mnras/stz3230}.
-
-\bibitem{graber2018}
-\textsc{Graber, V.; Cumming, A. \& Andersson, N.}: Glitch rises as a test for
-  rapid superfluid coupling in neutron stars. \emph{The Astrophysical Journal},
-  \textbf{865}, \bblp{}~23, 2018, \doi{10.3847/1538-4357/aad776}.
 
 \bibitem{vidana2020}
-\textsc{Vida{\~n}a, I.}: Short introduction to the physics of neutron stars.
-  \capitalize\bblin{} \emph{EPJ Web of Conferences}, \bblvolume{} 227, \bblp{}
-  01018, EDP Sciences, 2020, \doi{10.1051/epjconf/202022701018}.
-  \urlprefix\url{https://doi.org/10.1051/epjconf/202022701018}.
+Isaac Vida{\~n}a.
+\newblock Short introduction to the physics of neutron stars.
+\newblock In {\em EPJ Web of Conferences}, volume 227, page 01018. EDP Sciences, 2020.
 
 \bibitem{ghosh2007}
-\textsc{Ghosh, P.}: {\selectlanguage{english}\emph{{Rotation and Accretion
-  Powered Pulsars}}}. World Scientific Publishing Company, Singapore, 2007,
-  ISBN 978-981-02-4744-7.
-  \urlprefix\url{https://openlibrary.org/isbn/978-981-02-4744-7}.
+Pranab Ghosh.
+\newblock {\em {Rotation and Accretion Powered Pulsars}}.
+\newblock World Scientific Publishing Company, Singapore, 2007.
 
 \bibitem{haskell2014}
-\textsc{Haskell, B. \& Antonopoulou, D.}: Glitch recoveries in radio-pulsars
-  and magnetars. \emph{Monthly Notices of the Royal Astronomical Society:
-  Letters}, \textbf{438}(1), \bblpp{} L16--L20, 2014,
-  \doi{10.1093/mnrasl/slt146}.
+B.~Haskell and D.~Antonopoulou.
+\newblock Glitch recoveries in radio-pulsars and magnetars.
+\newblock {\em Monthly Notices of the Royal Astronomical Society: Letters}, 438(1):L16--L20, 2014.
 
 \bibitem{baym2018}
-\textsc{Baym, G.; Hatsuda, T.; Kojo, T.; Powell, P.~D.; Song, Y. \& Takatsuka,
-  T.}: From hadrons to quarks in neutron stars: a review. \emph{Reports on
-  Progress in Physics}, \textbf{81}(5), \bblp{} 056902, 2018,
-  \doi{10.1088/1361-6633/aaae14}.
-  \urlprefix\url{https://arxiv.org/abs/1707.04966}.
+Gordon Baym, Tetsuo Hatsuda, Toru Kojo, Philip~D. Powell, Yifan Song, and Tatsuyuki Takatsuka.
+\newblock From hadrons to quarks in neutron stars: a review.
+\newblock {\em Reports on Progress in Physics}, 81(5):056902, 2018.
 
 \bibitem{andersson2021}
-\textsc{Andersson, N.}: A superfluid perspective on neutron star dynamics.
-  \emph{Universe}, \textbf{7}(1), \bblp{}~17, 2021,
-  \doi{10.3390/universe7010017}.
-  \urlprefix\url{https://arxiv.org/abs/2103.10218}.
+Nils Andersson.
+\newblock A superfluid perspective on neutron star dynamics.
+\newblock {\em Universe}, 7(1):17, 2021.
+
+\bibitem{graber2018}
+Vanessa Graber, Andrew Cumming, and Nils Andersson.
+\newblock Glitch rises as a test for rapid superfluid coupling in neutron stars.
+\newblock {\em The Astrophysical Journal}, 865:23, 2018.
 
 \bibitem{ascenzi2024}
-\textsc{Ascenzi, S.; Graber, V. \& Rea, N.}: Neutron-star measurements in the
-  multi-messenger era. \emph{Astroparticle Physics}, \textbf{158}, \bblp{}
-  102935, 2024, \doi{10.1016/j.astropartphys.2024.102935}.
+Stefano Ascenzi, Vanessa Graber, and Nanda Rea.
+\newblock Neutron-star measurements in the multi-messenger era.
+\newblock {\em Astroparticle Physics}, 158:102935, 2024.
+
+\bibitem{nasa_lifecycle}
+{NASA/CXC}.
+\newblock Stellar evolution.
+\newblock Chandra X-ray Observatory, 2006.
+\newblock [Online; cit. 2026-07-12]. Dostupné z: \url{https://chandra.harvard.edu/stellarev/}.
+
+\bibitem{baade1934}
+W.~Baade and F.~Zwicky.
+\newblock On super-novae.
+\newblock {\em Proceedings of the National Academy of Sciences}, 20(5):254--259, 1934.
+
+\bibitem{oppenheimer1939}
+J.~R. Oppenheimer and G.~M. Volkoff.
+\newblock On massive neutron cores.
+\newblock {\em Physical Review}, 55(4):374--381, 1939.
+
+\bibitem{tolman1939}
+Richard~C. Tolman.
+\newblock Static solutions of einstein's field equations for spheres of fluid.
+\newblock {\em Physical Review}, 55(4):364--373, 1939.
+
+\bibitem{giacconi1962}
+Riccardo Giacconi, Herbert Gursky, Frank~R. Paolini, and Bruno~B. Rossi.
+\newblock Evidence for {X} rays from sources outside the solar system.
+\newblock {\em Physical Review Letters}, 9(11):439--443, 1962.
+
+\bibitem{hewish1968}
+A.~Hewish, S.~J. Bell, J.~D.~H. Pilkington, P.~F. Scott, and R.~A. Collins.
+\newblock Observation of a rapidly pulsating radio source.
+\newblock {\em Nature}, 217(5130):709--713, 1968.
+
+\bibitem{gold1968}
+T.~Gold.
+\newblock Rotating neutron stars as the origin of the pulsating radio sources.
+\newblock {\em Nature}, 218(5143):731--732, 1968.
+
+\bibitem{giacconi1971}
+R.~Giacconi, H.~Gursky, E.~Kellogg, E.~Schreier, and H.~Tananbaum.
+\newblock Discovery of periodic {X}-ray pulsations in {Centaurus X-3} from {UHURU}.
+\newblock {\em The Astrophysical Journal}, 167:L67, 1971.
+
+\bibitem{page_nstar}
+Dany Page.
+\newblock {Neutron Star: Surface and Interior}.
+\newblock online.
+\newblock [cit. 2026-07-04].
 
 \bibitem{buchdahl1959}
-\textsc{Buchdahl, H.~A.}: General relativistic fluid spheres. \emph{Physical
-  Review}, \textbf{116}(4), \bblpp{} 1027--1034, 1959,
-  \doi{10.1103/PhysRev.116.1027}.
+H.~A. Buchdahl.
+\newblock General relativistic fluid spheres.
+\newblock {\em Physical Review}, 116(4):1027--1034, 1959.
+
+\bibitem{pilkington1968}
+J.~D.~H. Pilkington, A.~Hewish, S.~J. Bell, and T.~W. Cole.
+\newblock Observations of some further pulsed radio sources.
+\newblock {\em Nature}, 218(5137):126--129, 1968.
 
 \bibitem{araujo2016}
-\textsc{de~Araujo, J. C.~N.; Coelho, J.~G. \& Costa, C.~A.}:
-  {\selectlanguage{english}{Gravitational waves from pulsars with measured
-  braking index}}. \emph{The European Physical Journal C}, \textbf{76}(9),
-  \bblp{} 481, 2016, \doi{10.1140/epjc/s10052-016-4327-y}.
-  \urlprefix\url{https://doi.org/10.1140/epjc/s10052-016-4327-y}.
+Jos{\'e} C.~N. de~Araujo, Jaziel~G. Coelho, and C.~A. Costa.
+\newblock {Gravitational waves from pulsars with measured braking index}.
+\newblock {\em The European Physical Journal C}, 76(9):481, 2016.
 
 \bibitem{crab2022}
-\textsc{Zhang, C.-M.; Cui, X.-H.; Li, D.; Wang, D.-H.; Wang, S.-Q.; Wang, N.;
-  Zhang, J.-W.; Peng, B.; Zhu, W.-W.; Yang, Y.-Y. \& Pan, Y.-Y.}:
-  {\selectlanguage{english}{Evolution of Spin Period and Magnetic Field of the
-  Crab Pulsar: Decay of the Braking Index by the Particle Wind Flow Torque}}.
-  \emph{Universe}, \textbf{8}(12), \bblp{} 628, 2022,
-  \doi{10.3390/universe8120628}.
+Cheng-Min Zhang, Xiang-Han Cui, Di~Li, De-Hua Wang, Shuang-Qiang Wang, Na~Wang, Jian-Wei Zhang, Bo~Peng, Wei-Wei Zhu, Yi-Yan Yang, and Yuan-Yue Pan.
+\newblock {Evolution of Spin Period and Magnetic Field of the Crab Pulsar: Decay of the Braking Index by the Particle Wind Flow Torque}.
+\newblock {\em Universe}, 8(12):628, 2022.
 
 \bibitem{haskell2012}
-\textsc{Haskell, B.; Pizzochero, P.~M. \& Sidery, T.}: Modelling pulsar
-  glitches with realistic pinning forces: a hydrodynamical approach.
-  \emph{Monthly Notices of the Royal Astronomical Society}, \textbf{420},
-  \bblpp{} 658--667, 2012, \doi{10.1111/j.1365-2966.2011.20080.x}.
+B.~Haskell, P.~M. Pizzochero, and T.~Sidery.
+\newblock Modelling pulsar glitches with realistic pinning forces: a hydrodynamical approach.
+\newblock {\em Monthly Notices of the Royal Astronomical Society}, 420:658--667, 2012.
 
-\bibitem{jones1998}
-\textsc{Jones, P.~B.}: The origin of pulsar glitches. \emph{Monthly Notices of
-  the Royal Astronomical Society}, \textbf{296}(1), \bblpp{} 217--224, 1998,
-  \doi{10.1046/j.1365-8711.1998.01464.x}.
-
-\bibitem{ruderman1998}
-\textsc{Ruderman, M.; Zhu, T. \& Chen, K.}: Neutron star magnetic field
-  evolution, crust movement, and glitches. \emph{The Astrophysical Journal},
-  \textbf{492}(1), \bblpp{} 267--280, 1998, \doi{10.1086/305026}.
-
-\bibitem{guvercinoglu2020}
-\textsc{G{\"u}gercino{\u{g}}lu, E. \& Alpar, M.~A.}: The 2016 vela glitch: a
-  key to neutron star internal structure and dynamics. \emph{Monthly Notices of
-  the Royal Astronomical Society}, \textbf{498}(1), \bblpp{} 1--10, 2020,
-  \doi{10.1093/mnras/staa2319}.
+\bibitem{basu2019}
+Avishek Basu, Bhal~Chandra Joshi, M.~A. Krishnakumar, Dipankar Bhattacharya, Rana Nandi, Debades Bandyopadhyay, Prasanta Char, and P.~K. Manoharan.
+\newblock Observed glitches in 8 young pulsars.
+\newblock {\em Monthly Notices of the Royal Astronomical Society}, 491(3):3182--3191, 2020.
 
 \bibitem{palfreyman2018}
-\textsc{Palfreyman, J.; Dickey, J.~M.; Hotan, A.; Ellingsen, S. \& van Straten,
-  W.}: Alteration of the magnetosphere of the vela pulsar during a glitch.
-  \emph{Nature}, \textbf{556}(7700), \bblpp{} 219--222, 2018,
-  \doi{10.1038/s41586-018-0001-x}.
+J.~Palfreyman, J.~M. Dickey, A.~Hotan, S.~Ellingsen, and C.~Macquart.
+\newblock Alteration of the magnetosphere before a glitch in the vela pulsar.
+\newblock {\em Nature}, 556:219--222, 2018.
 
-\bibitem{vidana2018}
-\textsc{Vida{\~n}a, I.}: Short introduction to the physics of neutron stars.
-  \emph{AIP Conference Proceedings}, \textbf{1976}(1), \bblp{} 020002, 2018,
-  \doi{10.1063/1.5042364}.
+\bibitem{bardeen1957}
+J.~Bardeen, L.~N. Cooper, and J.~R. Schrieffer.
+\newblock Theory of superconductivity.
+\newblock {\em Physical Review}, 108(5):1175--1204, 1957.
 
-\bibitem{pizzochero2011}
-\textsc{Pizzochero, P.~M.}: {\selectlanguage{english}{Angular Momentum Transfer
-  in Vela-like Pulsar Glitches}}. \emph{The Astrophysical Journal Letters},
-  \textbf{743}(1), \bblp{} L20, 2011, \doi{10.1088/2041-8205/743/1/L20}.
-  \urlprefix\url{https://iopscience.iop.org/article/10.1088/2041-8205/743/1/L20}.
+\bibitem{bohr1958}
+A.~Bohr, B.~R. Mottelson, and D.~Pines.
+\newblock Possible analogy between the excitation spectra of nuclei and those of the superconducting metallic state.
+\newblock {\em Physical Review}, 110(4):936--938, 1958.
+
+\bibitem{onsager1949}
+L.~Onsager.
+\newblock Statistical hydrodynamics.
+\newblock {\em Il Nuovo Cimento}, 6(S2):279--287, 1949.
+
+\bibitem{feynman1955}
+R.~P. Feynman.
+\newblock Application of quantum mechanics to liquid helium.
+\newblock In C.~J. Gorter, editor, {\em Progress in Low Temperature Physics}, volume~1, pages 17--53. North-Holland, 1955.
+
+\bibitem{baym1969}
+G.~Baym, C.~J. Pethick, D.~Pines, and M.~Ruderman.
+\newblock Spin up in neutron stars: The future of the {Vela} pulsar.
+\newblock {\em Nature}, 224(5222):872--874, 1969.
+
+\bibitem{anderson1975}
+P.~W. Anderson and N.~Itoh.
+\newblock Pulsar glitches and restlessness as a hard superfluidity phenomenon.
+\newblock {\em Nature}, 256(5512):25--27, 1975.
+
+\bibitem{alpar1984}
+M.~A. Alpar, P.~W. Anderson, D.~Pines, and J.~Shaham.
+\newblock Vortex creep and the internal temperature of neutron stars. {I} - general theory.
+\newblock {\em The Astrophysical Journal}, 276:325--338, 1984.
+
+\bibitem{jones1998}
+P.~B. Jones.
+\newblock The origin of pulsar glitches.
+\newblock {\em Monthly Notices of the Royal Astronomical Society}, 296(1):217--224, 1998.
+
+\bibitem{ruderman1998}
+Malvin Ruderman, Tianhua Zhu, and Kaiyou Chen.
+\newblock Neutron star magnetic field evolution, crust movement, and glitches.
+\newblock {\em The Astrophysical Journal}, 492(1):267--280, 1998.
+
+\bibitem{graber2018_code}
+Vanessa Graber.
+\newblock vanessagraber/glitchrises: {F}irst release, 2018.
+
+\bibitem{negele1973}
+J.~W. Negele and D.~Vautherin.
+\newblock Neutron star matter at sub-nuclear densities.
+\newblock {\em Nuclear Physics A}, 207(2):298--320, 1973.
 
 \end{thebibliography}

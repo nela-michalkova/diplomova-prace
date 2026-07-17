@@ -1,46 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: DP_Nela_Michalkova.aux
-The style file: ipothes.bst
+The style file: unsrt.bst
 Database file #1: references.bib
-You've used 20 entries,
-            2788 wiz_defined-function locations,
-            806 strings with 9838 characters,
-and the built_in function-call counts, 10403 in all, are:
-= -- 807
-> -- 194
-< -- 18
-+ -- 78
-- -- 58
-* -- 653
-:= -- 943
-add.period$ -- 48
-call.type$ -- 20
-change.case$ -- 21
+You've used 34 entries,
+            1791 wiz_defined-function locations,
+            723 strings with 9342 characters,
+and the built_in function-call counts, 8092 in all, are:
+= -- 733
+> -- 357
+< -- 4
++ -- 134
+- -- 100
+* -- 617
+:= -- 1300
+add.period$ -- 105
+call.type$ -- 34
+change.case$ -- 33
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 1182
-empty$ -- 1077
-format.name$ -- 69
-if$ -- 2440
+cite$ -- 34
+duplicate$ -- 320
+empty$ -- 787
+format.name$ -- 100
+if$ -- 1756
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 251
-newline$ -- 74
-num.names$ -- 20
-pop$ -- 422
+int.to.str$ -- 34
+missing$ -- 32
+newline$ -- 175
+num.names$ -- 36
+pop$ -- 65
 preamble$ -- 2
 purify$ -- 0
 quote$ -- 0
-skip$ -- 420
+skip$ -- 126
 stack$ -- 0
-substring$ -- 428
-swap$ -- 761
-text.length$ -- 18
+substring$ -- 646
+swap$ -- 55
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 58
+type$ -- 0
 warning$ -- 0
-while$ -- 61
-width$ -- 22
-write$ -- 218
+while$ -- 88
+width$ -- 36
+write$ -- 379

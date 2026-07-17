@@ -1224,7 +1224,7 @@
     \def\@refereename{Opponent}
     \def\@seat{Opava}
   }
-\bibliographystyle{\ipotname}
+\bibliographystyle{unsrt}
 \def\@emblem{emblemiop}
 %% Moved from "Useful font setting macros" to override "subfig":
 \def\captionsetup{\small}
