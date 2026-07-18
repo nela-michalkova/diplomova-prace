@@ -826,13 +826,15 @@ avšak v hlubších vrstvách kůry, kde je soustředěna většina momentu setr
 Tento poznatek vedl k hlubšímu zkoumání jádra neutronové hvězdy. Ve stejném roce představili Ruderman, Zhu a Chen model zaměřený právě na dynamiku jádra, které obsahuje dvě dynamické složky: supratekutou neutronovou složku nesoucí neutronové víry a supravodivou protonovou složku nesoucí magnetické pole ve formě trubic toku \cite{ruderman1998}. Podle tohoto modelu nutí pomalé zpomalování rotace hvězdy neutronové víry pohybovat se radiálně ven, čímž s sebou vlečou i magnetické trubice toku \cite{ruderman1998}.
 
 Tento poznatek ukazuje, že jádro neutronové hvězdy nelze při popisu glitche zanedbat jako pouhou pasivní, tuhou, rotující složku. Tříkomponentní model je tedy vhodným východiskem pro tuto práci, jelikož explicitně zahrnuje jak kůrovou, tak jádrovou supratekutinu jako samostatné dynamické komponenty a umožňuje tak zkoumat, jak vlastnosti obou oblastí ovlivňují pozorovatelný profil glitche.
+
+
 \chapter{Numerický model a výsledky}
 
 \section{Popis modelu}
 
 Po představení teoretického rámce v předchozí kapitole se nyní zaměříme na jeho konkrétní numerickou realizaci. Základem pro simulace v této práci je Python kód z dříve zmíněné studie Graber et al. (2018), jenž je volně dostupný na platformě GitHub a archivovaný v repozitáři Zenodo \cite{graber2018_code}. Samotný výpočetní postup je rozdělen do dvou hlavních kroků.
 
-Nejprve se řeší TOV rovnice, čímž se získá profil vnitřní struktury hvězdy. Zde je nutné přesně specifikovat použitou stavovou rovnici (EoS). Model Graber et al. (2018) k tomuto problému přistupuje pomocí zjednodušené obálkové aproximace, kdy se nevyužívá globální EoS (např. SLy nebo APR) integrující celou hvězdu od středu až k povrchu. Místo toho je celé vnitřní jádro parametrizováno pouze jako spodní okrajová podmínka o hmotnosti $M_{\text{core}}$ a poloměru $R_{\text{cci}}$. Vlastní integrace TOV rovnice probíhá pouze pro vrstvu kůry od poloměru $R_{\text{cci}}$ směrem ven. 
+Nejprve se řeší TOV rovnice, čímž se získá profil vnitřní struktury hvězdy. Zde je nutné přesně specifikovat použitou stavovou rovnici (EoS). Model Graber et al. (2018) k tomuto problému přistupuje pomocí zjednodušené obálkové aproximace, kdy se nevyužívá globální EoS (např. SLy nebo APR) integrující celou hvězdu od středu až k povrchu. Místo toho je celé vnitřní jádro parametrizováno pouze jako spodní okrajová podmínka o hmotnosti $M_{\text{core}}$ a poloměru $R_{\text{cci}}$. Vlastní integrace TOV rovnice probíhá pouze pro vrstvu kůry od poloměru $R_{\text{cci}}$ směrem ven.
 
 Pro vnitřní kůru je v kódu fixně implementována klasická stavová rovnice podle Negeleho a Vautherina (1973) \cite{negele1973}, přičemž vrstva vnější kůry (pod hustotou neutronového odkapávání) je aproximována modelem relativistického elektronového plynu s konstantním podílem elektronů $Y_e \approx 0.4$ \cite{graber2018}. Z takto získaného hustotního profilu kůry se následně počítá radiální závislost koeficientů vzájemného tření $\mathcal{B}(\tilde{r})$.
 
@@ -844,10 +846,13 @@ Na tento první krok navazuje druhá část kódu, která provádí samotnou num
 \end{align}
 kde $\Omega_{\text{sf}}$, $\Omega_{\text{core}}$ a $\Omega_{\text{crust}}$ odpovídají úhlovým rychlostem supratekuté kůry, supratekutého jádra a normální složky. Funkce $\mathcal{B}(\tilde{r})$ reprezentuje profil tření v kůře a parametr $\mathcal{B}_{\text{core}}$ popisuje úroveň tření mezi jádrem a kůrou. Člen $N_{\text{ext}}$ zastupuje vnější brzdný moment, který lze v krátkém časovém úseku těsně po glitchi zanedbat \cite{graber2018}.
 
-
 \section{Výchozí nastavení simulací}
 
-Graber et al. (2018) ve své práci sledovali, jak se tvar nárůstu glitche mění v závislosti na volbě modelu vzájemného tření v kůře (modely A, B a C), zatímco stelární parametry i sílu jádro-kůrového propojení drželi fixní: hmotnost jádra $M_{\text{core}} = 1.4\,M_{\odot}$, poloměr rozhraní jádro-kůra $R_{\text{cci}} = 10\,\text{km}$ a $\mathcal{B}_{\text{core}} \approx 5\times10^{-5}$ \cite{graber2018}.
+Graber et al. (2018) ve své práci sledovali, jak se tvar nárůstu glitche mění v závislosti na volbě modelu vzájemného tření v kůře, zatímco stelární parametry i sílu jádro-kůrového propojení drželi fixní. V jejich referenčním scénáři nabývala hmotnost jádra hodnoty $M_{\text{core}} = 1.4\,M_{\odot}$, poloměr rozhraní jádro-kůra byl $R_{\text{cci}} = 10\,\text{km}$ a koeficient tření mezi jádrem a kůrou $\mathcal{B}_{\text{core}} \approx 5\times10^{-5}$ \cite{graber2018}.
+
+Pro výpočet samotného profilu vzájemného tření $\mathcal{B}(\tilde{r})$ uvnitř kůry zvažovali tito autoři tři různé teoretické přístupy k mikroskopické interakci mezi supratekutými víry a atomovými jádry v krystalické mřížce \cite{graber2018}. Tyto mikrofyzikální modely se liší svými předpoklady o povaze pinovacích sil a zásadním způsobem určují rychlost přenosu momentu hybnosti. První z nich, označovaný jako profil A, vychází z formalismu Epsteina a Bayma (1992). Předpokládá komplexní potenciál zahrnující jak krátkodosahovou interakci uvnitř atomového jádra, tak hydrodynamickou dlouhodosahovou (odpudivou) interakci v jeho okolí, přičemž délková škála interakce je určena poloměrem samotného atomového jádra $R_N$. Tento profil vykazuje při vysokých hustotách nejsilnější tření, což vede k nejrychlejšímu náběhu glitche a nejvýraznějšímu přestřelení frekvence. Druhý model, profil B, využívá stejné škálování na poloměru jádra, ale zanedbává hydrodynamickou dlouhodosahovou složku potenciálu a bere v úvahu výhradně krátkodosahovou pinovací energii. Třetí variantou je profil C vycházející z formalismu Jonese (1992). Tento přístup zohledňuje pouze krátkodosahovou pinovací energii, ale na rozdíl od profilů A a B volí jako délkovou škálu interakce koherenční délku supratekutiny $\xi$. Vzhledem k tomu, že koherenční délka se v hlubších vrstvách kůry s rostoucí hustotou výrazně zmenšuje, klesá v profilu C síla tření u dna kůry o několik řádů. Z tohoto důvodu profil C předpovídá nejpomalejší přenos momentu hybnosti a nejplošší nárůst glitche. 
+
+Jak ukázaly simulace v původní studii, z testovaných variant to byl právě profil A (limita nejintenzivnější vazby), který nejlépe reprodukoval dynamiku nárůstu pozorovanou u pulsaru Vela.
 
 \begin{figure}[H]
     \centering
@@ -856,9 +861,10 @@ Graber et al. (2018) ve své práci sledovali, jak se tvar nárůstu glitche mě
     \label{fig:delta_nu_Bcore}
 \end{figure}
 
-Tato práce postupuje opačným směrem. Namísto zkoumání vlivu modelu tření přejímám jejich nastavení beze změny a místo toho systematicky měním strukturní parametry samotné neutronové hvězdy. V prvním experimentu ponechávám $R_{\text{cci}}$ na původní hodnotě 10 km a měním pouze hmotnost jádra $M_{\text{core}}$, přičemž sleduji, jak se s touto změnou vyvíjí tvar předpovězeného nárůstu glitche. Naopak v druhém experimentu ponechávám $M_{\text{core}} = 1.4\,M_{\odot}$ fixní a měním polohu rozhraní mezi jádrem a kůrou $R_{\text{cci}}$.
+Tato práce postupuje opačným směrem. Namísto zkoumání vlivu modelu tření přejímáme nastavení z původní studie beze změny (s důrazem na profil A) a místo toho systematicky měníme strukturní parametry samotné neutronové hvězdy. V prvním experimentu ponecháváme $R_{\text{cci}}$ na původní hodnotě $10\,\text{km}$ a měníme pouze hmotnost jádra $M_{\text{core}}$, přičemž sledujeme, jak se s touto změnou vyvíjí tvar předpovězeného nárůstu glitche pro všechny tři profily tření. Ve druhém experimentu naopak fixujeme $M_{\text{core}} = 1.4\,M_{\odot}$ a měníme polohu rozhraní mezi jádrem a kůrou $R_{\text{cci}}$.
 
-Pro každou kombinaci parametrů z obou experimentů následně z vypočtené křivky nárůstu glitche extrahuji dvě charakteristické veličiny pro každý z profilů tření: maximální hodnotu změny rotační frekvence $\Delta\nu_{\text{max}}$ (dosahovanou v rámci přechodného přestřelení popsaného v předchozí kapitole) a čas $t_{\text{max}}$, ve kterém k tomuto maximu dochází. Sledováním závislosti těchto dvou veličin na $R_{\text{cci}}$ a $M_{\text{core}}$ tak lze posoudit, jak citlivě model reaguje na změnu vnitřní struktury hvězdy.
+Pro každou kombinaci parametrů z obou experimentů následně z vypočtené křivky nárůstu glitche extrahujeme dvě charakteristické veličiny pro každý z profilů tření: maximální hodnotu změny rotační frekvence $\Delta\nu_{\text{max}}$ (dosahovanou v rámci přechodného přestřelení popsaného v předchozí kapitole) a čas $t_{\text{max}}$, ve kterém k tomuto maximu dochází. Sledováním závislosti těchto dvou veličin na $R_{\text{cci}}$ a $M_{\text{core}}$ tak lze posoudit, jak citlivě model reaguje na změnu vnitřní struktury hvězdy.
+
 
 \section{Vliv poloměru jádra}
 
@@ -909,6 +915,30 @@ Následující sada grafů a tabulka ilustrují chování neutronové hvězdy p�
     \label{fig:exp1_r14}
 \end{figure}
 
+\begin{table}[H]
+\centering \renewcommand{\arraystretch}{1.4}
+\caption{Výsledky simulace ($M_{\rm core} = 1.4\,M_{\odot}$, proměnné $R_{\rm cci}$). Veličiny: $R_{\rm cci}$ -- poloměr rozhraní kůry a jádra; $M_{\rm NS}$, $R_{\rm NS}$ -- celková hmotnost a poloměr hvězdy; $\Delta\nu_{\rm max}$ -- max. změna rotační frekvence (přestřelení); $t_{\rm max}$ -- čas dosažení maxima; indexy A, B, C označují zvolený profil tření.}
+\label{tab:exp1_rcci}
+\newsavebox{\tableonebox}
+\sbox{\tableonebox}{\input{../glitchrises-master/Experiment_1_Tabulka_Rcci.tex}}
+\resizebox{\textwidth}{!}{\usebox{\tableonebox}}
+\end{table}
+
+
+\clearpage
+\subsection{Diskuze}
+
+Ve výše zobrazených grafech pozorujeme charakteristický náběh glitche. Rotační frekvence kůry nejprve prudce vzroste a následně se pomalu vrací k nové, ustálené hodnotě zpomalování. Ve všech sedmi případech jsme zafixovali hmotnost jádra na $M_{\rm core} = 1.4\,M_{\odot}$ a měnili jsme pouze polohu rozhraní kůry a jádra $R_{\rm cci}$, abychom mohli izolovaně posoudit vliv tohoto parametru na tvar nárůstu.
+
+Z grafů je patrné, že čím větší je $R_{\rm cci}$, tím výraznější je počáteční zrychlení rotace a tím dříve nastává maximum frekvenčního přestřelení. Vysvětlení tohoto chování vychází ze změny vnitřní struktury hvězdy: zvětšíme-li $R_{\rm cci}$ při zachování konstantní hmotnosti jádra, zvětší se tím i celkový objem hvězdy, aniž by odpovídajícím způsobem narostla její celková hmotnost $M_{\rm NS}$. Výsledná látka je tak méně koncentrovaná a centrální hustota hvězdy klesá.
+
+Tato změna vnitřní struktury se přímo promítá do rotační dynamiky. Objemnější kůra obsahuje větší množství kůrové supratekutiny, a tedy roste i moment setrvačnosti této složky, která funguje jako rezervoár úhlové hybnosti uvolňované během glitche. Moment setrvačnosti jádra sice s rostoucím $R_{\rm cci}$ také mírně narůstá, ale ne tak výrazně jako u kůry. Právě tato nerovnováha -- větší rezervoár momentu hybnosti v kůře vůči jádru -- je důvodem, proč pozorujeme s rostoucím $R_{\rm cci}$ strmější a výraznější náběh glitche.
+
+
+
+\section{Vliv hmotnosti jádra}
+
+Ve druhém experimentu je zkoumán opačný scénář: poloměr rozhraní kůry a jádra je ponechán fixní na hodnotě $R_{\rm cci} = 10\,\text{km}$ a měněným parametrem je namísto toho hmotnost jádra $M_{\rm core}$.
 
 \begin{figure}[H]
     \centering
@@ -952,31 +982,6 @@ Následující sada grafů a tabulka ilustrují chování neutronové hvězdy p�
     \caption{Simulace pro $M_{\rm core} = 2.2\,M_{\odot}$, fixní $R_{\rm cci} = 10\,\text{km}$.}
     \label{fig:exp2_m22}
 \end{figure}
-
-\begin{table}[H]
-\centering \renewcommand{\arraystretch}{1.4}
-\caption{Výsledky simulace ($M_{\rm core} = 1.4\,M_{\odot}$, proměnné $R_{\rm cci}$). Veličiny: $R_{\rm cci}$ -- poloměr rozhraní kůry a jádra; $M_{\rm NS}$, $R_{\rm NS}$ -- celková hmotnost a poloměr hvězdy; $\Delta\nu_{\rm max}$ -- max. změna rotační frekvence (přestřelení); $t_{\rm max}$ -- čas dosažení maxima; indexy A, B, C označují zvolený profil tření.}
-\label{tab:exp1_rcci}
-\newsavebox{\tableonebox}
-\sbox{\tableonebox}{\input{../glitchrises-master/Experiment_1_Tabulka_Rcci.tex}}
-\resizebox{\textwidth}{!}{\usebox{\tableonebox}}
-\end{table}
-
-
-\clearpage
-\subsection{Diskuze}
-
-Ve výše zobrazených grafech pozorujeme charakteristický náběh glitche. Rotační frekvence kůry nejprve prudce vzroste a následně se pomalu vrací k nové, ustálené hodnotě zpomalování. Ve všech sedmi případech jsme zafixovali hmotnost jádra na $M_{\rm core} = 1.4\,M_{\odot}$ a měnili jsme pouze polohu rozhraní kůry a jádra $R_{\rm cci}$, abychom mohli izolovaně posoudit vliv tohoto parametru na tvar nárůstu.
-
-Z grafů je patrné, že čím větší je $R_{\rm cci}$, tím výraznější je počáteční zrychlení rotace a tím dříve nastává maximum frekvenčního přestřelení. Vysvětlení tohoto chování vychází ze změny vnitřní struktury hvězdy: zvětšíme-li $R_{\rm cci}$ při zachování konstantní hmotnosti jádra, zvětší se tím i celkový objem hvězdy, aniž by odpovídajícím způsobem narostla její celková hmotnost $M_{\rm NS}$. Výsledná látka je tak méně koncentrovaná a centrální hustota hvězdy klesá.
-
-Tato změna vnitřní struktury se přímo promítá do rotační dynamiky. Objemnější kůra obsahuje větší množství kůrové supratekutiny, a tedy roste i moment setrvačnosti této složky, která funguje jako rezervoár úhlové hybnosti uvolňované během glitche. Moment setrvačnosti jádra sice s rostoucím $R_{\rm cci}$ také mírně narůstá, ale ne tak výrazně jako u kůry. Právě tato nerovnováha -- větší rezervoár momentu hybnosti v kůře vůči jádru -- je důvodem, proč pozorujeme s rostoucím $R_{\rm cci}$ strmější a výraznější náběh glitche.
-
-
-
-\section{Vliv hmotnosti jádra}
-
-Ve druhém experimentu je zkoumán opačný scénář: poloměr rozhraní kůry a jádra je ponechán fixní na hodnotě $R_{\rm cci} = 10\,\text{km}$ a měněným parametrem je namísto toho hmotnost jádra $M_{\rm core}$.
 
 \begin{table}[H]
 \centering \renewcommand{\arraystretch}{1.4}
@@ -1034,7 +1039,7 @@ Následující párové grafy znázorňují souhrnné trendy závislosti absolut
 
 \subsection{Diskuze}
 
-Obrázky~\ref{fig:dep_rcci_max} a~\ref{fig:dep_rcci_cas} shrnují závislost obou sledovaných veličin na poloměru rozhraní $R_{\rm cci}$ pro profil tření A. S rostoucím $R_{\rm cci}$ roste i objem kůry, a tedy i "zásoba" momentu hybnosti uložená v kůrové supratekutině; proto roste rovněž maximální dosažená hodnota $\Delta\nu_{\rm max}$. Souběžně s tím klesá čas $t_{\rm max}$: čím větší je množství supratekutých neutronů v kůře, tím rychleji se dokáže s kůrou propojit a tím dříve glitch dosáhne svého maxima.
+Obrázky~\ref{fig:dep_rcci_max} a~\ref{fig:dep_rcci_cas} shrnují závislost obou sledovaných veličin na poloměru rozhraní $R_{\rm cci}$ pro profil tření A. S rostoucím $R_{\rm cci}$ roste i objem kůry, a tedy i zásoba momentu hybnosti uložená v kůrové supratekutině; proto roste rovněž maximální dosažená hodnota $\Delta\nu_{\rm max}$. Souběžně s tím klesá čas $t_{\rm max}$: čím větší je množství supratekutých neutronů v kůře, tím rychleji se dokáže s kůrou propojit a tím dříve glitch dosáhne svého maxima.
 
 Obrázky~\ref{fig:dep_mcoeff_max} a~\ref{fig:dep_mcoeff_cas} ukazují analogickou závislost na hmotnosti jádra $M_{\rm core}$, tentokrát však s opačným trendem. S rostoucím $M_{\rm core}$ klesá při fixním $R_{\rm cci} = 10\,\text{km}$ celkový poloměr hvězdy $R_{\rm NS}$, kůra se tak zužuje a obsahuje méně supratekutých neutronů. Menší množství dostupné supratekutiny se projeví jak nižším maximem $\Delta\nu_{\rm max}$, tak pomalejším náběhem glitche, tedy vyšší hodnotou $t_{\rm max}$.
 
@@ -1043,7 +1048,7 @@ Oba experimenty tak ukazují stejný fyzikální mechanismus z opačných stran:
 \newpage
 \chapter{Závěr}
 
-Tato diplomová práce se zabývala studiem dynamiky glitchů v neutronových hvězdách s důrazem na vliv jejich vnitřní struktury. Pozorované náhlé skoky v rotační frekvenci pulsarů představují jeden z mála přímých projevů makroskopické kvantové fyziky v astrofyzikálních měřítkách a poskytují unikátní okno do supratekutého nitra těchto extrémních objektů.
+Tato diplomová práce se zabývala studiem dynamiky glitchů v neutronových hvězdách s důrazem na vliv jejich vnitřní struktury. Pozorované náhlé skoky v rotační frekvenci pulsarů představují jeden z mála přímých makroskopických projevů kvantové fyziky v astrofyzikálních měřítkách a poskytují unikátní okno do supratekutého nitra těchto extrémních objektů.
 
 V úvodních kapitolách jsme shrnuli teoretické základy popisu neutronových hvězd. Odvodili jsme TOV rovnici, která určuje hydrostatickou rovnováhu a profil hustoty napříč hvězdou. Následně jsme se zaměřili na vnitřní strukturu hvězdy a ukázali, že kůra neutronové hvězdy obsahuje plyn volných neutronů, který při dostatečně nízkých teplotách přechází do supratekutého stavu. Rotace tohoto fluida je kvantována do podoby vírů, jejichž zachytávání (vortex pinning) v krystalické mřížce kůry a následné hromadné uvolnění je podle současného poznání primární příčinou pozorovaných glitchů.
 
