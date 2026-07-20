@@ -291,7 +291,6 @@ INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/l
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lot
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lot
 OUTPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lot
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/stars_lifecycle_full.jpg
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/stars_lifecycle_full.jpg
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/stars_lifecycle_full.jpg
@@ -299,6 +298,7 @@ INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/l
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/stars_lifecycle_full.jpg
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmss10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/NStar_vnitrni_struktura.png
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/NStar_vnitrni_struktura.png
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/NStar_vnitrni_struktura.png

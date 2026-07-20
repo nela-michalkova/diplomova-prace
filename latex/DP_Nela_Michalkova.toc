@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {3.3.1\relax .\enspace }Diskuze}{36}{subsection.3.3.1}%
 \contentsline {section}{\numberline {3.4\relax .\enspace }Vliv hmotnosti jádra}{37}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1\relax .\enspace }Diskuze}{41}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5\relax .\enspace }Shrnutí výsledků pro profil A}{43}{section.3.5}%
+\contentsline {section}{\numberline {3.5\relax .\enspace }Shrnutí výsledků pro profil tření A}{43}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1\relax .\enspace }Diskuze}{45}{subsection.3.5.1}%
-\contentsline {chapter}{Kapitola\ 4\relax .\enspace Závěr}{47}{chapter.4}%
-\contentsline {chapter}{Literatura}{49}{chapter.4}%
+\contentsline {chapter}{Závěr}{47}{subsection.3.5.1}%
+\contentsline {chapter}{Literatura}{49}{subsection.3.5.1}%
