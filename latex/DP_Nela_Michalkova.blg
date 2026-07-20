@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: DP_Nela_Michalkova.aux
 The style file: unsrt.bst
 Database file #1: references.bib
-You've used 34 entries,
+You've used 36 entries,
             1791 wiz_defined-function locations,
-            723 strings with 9342 characters,
-and the built_in function-call counts, 8092 in all, are:
-= -- 733
-> -- 357
+            733 strings with 9498 characters,
+and the built_in function-call counts, 8439 in all, are:
+= -- 768
+> -- 365
 < -- 4
-+ -- 134
-- -- 100
-* -- 617
-:= -- 1300
-add.period$ -- 105
-call.type$ -- 34
-change.case$ -- 33
++ -- 138
+- -- 102
+* -- 637
+:= -- 1359
+add.period$ -- 113
+call.type$ -- 36
+change.case$ -- 35
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 320
-empty$ -- 787
-format.name$ -- 100
-if$ -- 1756
+cite$ -- 36
+duplicate$ -- 337
+empty$ -- 823
+format.name$ -- 102
+if$ -- 1831
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 32
-newline$ -- 175
-num.names$ -- 36
-pop$ -- 65
+int.to.str$ -- 36
+missing$ -- 34
+newline$ -- 187
+num.names$ -- 38
+pop$ -- 67
 preamble$ -- 2
 purify$ -- 0
 quote$ -- 0
-skip$ -- 126
+skip$ -- 132
 stack$ -- 0
-substring$ -- 646
-swap$ -- 55
+substring$ -- 662
+swap$ -- 57
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 88
-width$ -- 36
-write$ -- 379
+while$ -- 92
+width$ -- 38
+write$ -- 404

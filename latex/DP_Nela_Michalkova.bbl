@@ -25,6 +25,7 @@ Gordon Baym, Tetsuo Hatsuda, Toru Kojo, Philip~D. Powell, Yifan Song, and Tatsuy
 Nils Andersson.
 \newblock A superfluid perspective on neutron star dynamics.
 \newblock {\em Universe}, 7(1):17, 2021.
+\newblock Přiložený zdroj v knihovně.
 
 \bibitem{graber2018}
 Vanessa Graber, Andrew Cumming, and Nils Andersson.
@@ -34,13 +35,19 @@ Vanessa Graber, Andrew Cumming, and Nils Andersson.
 \bibitem{ascenzi2024}
 Stefano Ascenzi, Vanessa Graber, and Nanda Rea.
 \newblock Neutron-star measurements in the multi-messenger era.
-\newblock {\em Astroparticle Physics}, 158:102935, 2024.
+\newblock {\em arXiv preprint arXiv:2404.10031}, 2024.
+\newblock Přiložený zdroj v knihovně.
 
 \bibitem{nasa_lifecycle}
 {NASA/CXC}.
 \newblock Stellar evolution.
 \newblock Chandra X-ray Observatory, 2006.
 \newblock [Online; cit. 2026-07-12]. Dostupné z: \url{https://chandra.harvard.edu/stellarev/}.
+
+\bibitem{chadwick1932}
+J.~Chadwick.
+\newblock Possible existence of a neutron.
+\newblock {\em Nature}, 129(3252):312, 1932.
 
 \bibitem{baade1934}
 W.~Baade and F.~Zwicky.
@@ -56,6 +63,11 @@ J.~R. Oppenheimer and G.~M. Volkoff.
 Richard~C. Tolman.
 \newblock Static solutions of einstein's field equations for spheres of fluid.
 \newblock {\em Physical Review}, 55(4):364--373, 1939.
+
+\bibitem{bethe1939}
+H.~A. Bethe.
+\newblock Energy production in stars.
+\newblock {\em Physical Review}, 55(5):434--456, 1939.
 
 \bibitem{giacconi1962}
 Riccardo Giacconi, Herbert Gursky, Frank~R. Paolini, and Bruno~B. Rossi.

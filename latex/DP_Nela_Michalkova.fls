@@ -285,8 +285,8 @@ INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/l
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 OUTPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lof
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lot
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lot
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/DP_Nela_Michalkova.lot
@@ -305,11 +305,21 @@ INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/l
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/NStar_vnitrni_struktura.png
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/NStar_vnitrni_struktura.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
+INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/P_P_diagram.png
+INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/P_P_diagram.png
+INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/P_P_diagram.png
+INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/P_P_diagram.png
+INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/P_P_diagram.png
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/PSR_J0835-4510_Vela.png
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/PSR_J0835-4510_Vela.png
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/PSR_J0835-4510_Vela.png
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/PSR_J0835-4510_Vela.png
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/PSR_J0835-4510_Vela.png
+INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/Krtické_teploty.png
+INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/Krtické_teploty.png
+INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/Krtické_teploty.png
+INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/Krtické_teploty.png
+INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/Krtické_teploty.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/Referencni_graf_Graber.png
 INPUT /Users/nelachrapkova/Desktop/Relativistická astrofyzika/diplomova-prace/latex/../obrazky/Referencni_graf_Graber.png
