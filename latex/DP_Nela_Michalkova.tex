@@ -187,9 +187,9 @@ final%         kompiluj finální verzi
 \thispagestyle{empty}
 \noindent
 \ifcase\pdfoutput % DVI
-  \includegraphics[width=\linewidth]{../obrazky/Zadani_DP.pdf}
+  \makebox[\linewidth][c]{\includegraphics[width=1.15\linewidth,height=0.95\textheight,keepaspectratio]{../obrazky/Zadani_DP.pdf}}
 \else % PDF
-  \includegraphics[width=\linewidth,page=1]{../obrazky/Zadani_DP.pdf}
+  \makebox[\linewidth][c]{\includegraphics[width=1.15\linewidth,height=0.95\textheight,keepaspectratio,page=1]{../obrazky/Zadani_DP.pdf}}
 \fi
 
 %% Odkomentujete a použijte následující řádek kódu právě tehdy,
@@ -227,6 +227,10 @@ final%         kompiluj finální verzi
   Souhlasím se zveřejněním této závěrečné práce ve smyslu \S~47b Zákona
   č.\,111/1998~Sb. (O~vysokých školách a o~změně a doplnění dalších zákonů)
   v~platném znění.
+
+  \makeatletter
+  \def\@author{\begin{tabular}[b]{@{}c@{}}\smash{\raisebox{6ex}{\includegraphics[width=5.05cm]{../obrazky/podpis_cropped.png}}}\\ Bc. Nela Michálková\end{tabular}}
+  \makeatother
 \end{declaration}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
